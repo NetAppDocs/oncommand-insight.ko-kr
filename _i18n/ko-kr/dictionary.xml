@@ -69,7 +69,6 @@
   <block id="a93bc0a57623c2facaa010825c808507" category="paragraph"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
   <block id="44255ed683c528ba0c41166a56d37b96" category="summary">OnCommand Insight은 사내 환경, 퍼블릭 및 프라이빗 클라우드에서 하이브리드 IT 인프라의 운영 관리를 단순화합니다.</block>
   <block id="086156bc9cbd8e4be148e68dde15c618" category="doc">OnCommand Insight 문서</block>
-  <block id="6e33917dd8d71a6016eadb83a546533f" category="paragraph">OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다.</block>
   <block id="8cc762b4a3f6f2951567f77120563288" category="summary">추가 정보는 어디에서 찾을 수 있습니까?</block>
   <block id="092bf78f9c97ba171b8232ddff585392" category="doc">추가 정보</block>
   <block id="258f2022b13e94f3f3017d53dbaf5b48" category="paragraph">OnCommand Insight에 대한 추가 정보는 어디에서 확인할 수 있습니까?</block>
@@ -8206,4 +8205,5 @@
   <block id="135cca1b87ae0b4a874f6d6184055603" category="sidebar">시간이 지남에 따라 개체의 동작을 관찰합니다</block>
   <block id="a8ccc3b97766b616055316a691052a65" category="sidebar">한 개체의 총 지연 시간을 상위 10개 개체의 총 지연 시간과 비교합니다</block>
   <block id="1e6ff685c4fea5f20ae54d736f584efe" category="sidebar">보고서의 출력 형식 및 배달 사용자 지정</block>
+  <block id="782e478a3967380e548c616b53e48fa3" category="paragraph">OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다. Insight를 사용하면 현재 인프라를 최적화할 수 있으므로 비즈니스 요구에 맞게 올바른 규모의 운영을 수행할 수 있습니다. 구입 항목 및 구입 시기를 결정하는 프로세스를 간소화합니다. 또한 클라우드 마이그레이션에 적합한 워크로드를 식별하여 하이브리드 클라우드로 전환하는 등의 복잡한 기술 마이그레이션 과정에서도 위험을 줄여줍니다. Insight를 사용하면 리소스를 회사의 전체 IT 서비스 제공망으로 통합하여 IT 인프라를 엔드 투 엔드 서비스로 관리할 수 있습니다.</block>
 </blocks>
