@@ -1,0 +1,107 @@
+---
+permalink: config-admin/ibm-tivoli-monitoring-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 데이터 소스는 파일 시스템 사용에만 사용됩니다. Tivoli Monitoring Data Warehouse라고도 하는 Tivoli Monitoring Database와 직접 통신합니다. Oracle 및 DB2 데이터베이스가 지원됩니다. 
+---
+= IBM Tivoli Monitoring 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 데이터 소스는 파일 시스템 사용에만 사용됩니다. Tivoli Monitoring Data Warehouse라고도 하는 Tivoli Monitoring Database와 직접 통신합니다. Oracle 및 DB2 데이터베이스가 지원됩니다.
+
+
+
+== Oracle 오류 메시지입니다
+
+[NOTE]
+====
+이 데이터 수집기는 OnCommand Insight 7.3.11부터 더 이상 사용할 수 없습니다.
+
+====
+지정된 SID로 인해 연결 시도 시 "ORA-12154"가 포함된 오류 메시지가 나타나는 경우 Oracle DB 네트워크 서비스 구성을 다시 확인하십시오. 액세스 구성에서 정규화된 호스트 이름(예: "names.default_domain")을 지정하는 경우 SID 필드에 정규화된 서비스 이름을 삽입하십시오. 간단한 예로 SID에 대한 연결을 들 수 있습니다 `testdb` 가 실패하고 Oracle 구성이 의 도메인을 지정합니다``company.com``. 연결을 시도하기 위해 기본 SID 대신 다음 문자열을 사용할 수 있습니다. `testdb.company.com`.
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+Tivoli 모니터링 데이터베이스 IP
+ a| 
+Tivoli Monitoring 서버의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+Tivoli Monitoring 서버의 사용자 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+Tivoli 모니터링 서버의 암호입니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+Tivoli 모니터링 데이터베이스 포트
+ a| 
+Tivoli 모니터링 데이터베이스에 사용되는 포트입니다
+
+
+
+ a| 
+Oracle SID 또는 DB2 데이터베이스 이름입니다
+ a| 
+Oracle 리스너 서비스 ID 또는 DB2 데이터베이스 이름입니다
+
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값: 60분)
+
+
+
+ a| 
+사용할 데이터베이스 드라이버
+ a| 
+사용할 데이터베이스 드라이버를 선택합니다
+
+
+
+ a| 
+데이터베이스에 연결하는 데 사용되는 프로토콜입니다
+ a| 
+데이터베이스에 연결하는 데 사용되는 프로토콜입니다
+
+
+
+ a| 
+데이터베이스 스키마
+ a| 
+데이터베이스 스키마를 입력합니다
+
+|===

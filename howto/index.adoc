@@ -1,0 +1,12 @@
+---
+permalink: howto/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= "방법" 가이드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

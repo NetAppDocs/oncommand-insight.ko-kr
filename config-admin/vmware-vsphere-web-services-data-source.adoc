@@ -1,0 +1,190 @@
+---
+permalink: config-admin/vmware-vsphere-web-services-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 'VMware vSphere\(Web Services\) 데이터 원본은 ESX 호스트 정보를 수집하고 Virtual Center 내의 모든 개체에 대해 읽기 전용 권한이 필요합니다.' 
+---
+= VMware vSphere 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere(Web Services) 데이터 소스는 ESX 호스트 정보를 수집하고 Virtual Center 내의 모든 객체에 대해 _read-only_권한을 필요로 합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 VMware vSphere 데이터 소스에서 다음 인벤토리 정보를 가져옵니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+가상 디스크
+ a| 
+디스크
+
+
+
+ a| 
+호스트
+ a| 
+호스트
+
+
+
+ a| 
+가상 머신
+ a| 
+가상 머신
+
+
+
+ a| 
+데이터 저장소
+ a| 
+데이터 저장소
+
+
+
+ a| 
+LUN을 클릭합니다
+ a| 
+LUN을 클릭합니다
+
+
+
+ a| 
+Fibre Channel 포트
+ a| 
+포트
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 요구 사항
+
+* Virtual Center 서버의 IP 주소입니다
+* Virtual Center의 읽기 전용 사용자 이름 및 암호
+* Virtual Center 내의 모든 객체에 대한 읽기 전용 권한
+* Virtual Center 서버에서 SDK 액세스
+* 포트 요구 사항: http-80 https-443
+* 사용자 이름 및 암호를 사용하여 Virtual Center Client에 로그인하고 를 입력하여 SDK가 활성화되었는지 확인하여 액세스를 검증합니다 `telnet <vc_ip\> 443`.
+
+
+
+
+== 구성
+
+|===
+| * 필드 * 
+
+
+| * 설명 * 
+
+
+ a| 
+가상 센터 주소
+
+
+
+ a| 
+IP_(nnn.nnn.nnn.nnn_format) 주소 또는 DNS를 통해 확인할 수 있는 호스트 이름으로 지정된 Virtual Center 또는 vSphere 서버의 네트워크 주소입니다.
+
+
+
+ a| 
+사용자 이름
+
+
+
+ a| 
+VMware 서버의 사용자 이름입니다.
+
+
+
+ a| 
+암호
+
+
+
+ a| 
+VMware 서버의 암호입니다.
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 20분)
+
+
+
+ a| 
+연결 시간 초과(ms)
+ a| 
+연결 시간 초과(기본값 60000ms)
+
+
+
+ a| 
+VM 필터링 기준
+ a| 
+VM 필터링 방법을 선택합니다
+
+
+
+ a| 
+목록을 지정하려면 '제외' 또는 '포함'을 선택하십시오
+ a| 
+데이터를 수집할 때 아래 VM 목록을 포함할지 제외할지 여부를 지정합니다
+
+
+
+ a| 
+필터링할 VM 목록(값에 쉼표를 사용하는 경우 쉼표로 구분 또는 세미콜론으로 구분)
+ a| 
+폴링을 포함하거나 폴링에서 제외할 VM 목록을 쉼표로 구분하거나 세미콜론으로 구분합니다
+
+
+
+ a| 
+vCenter에 대한 요청 재시도 횟수입니다
+ a| 
+vCenter 요청 재시도 횟수입니다
+
+
+
+ a| 
+통신 포트
+ a| 
+VMware 서버에 사용되는 포트입니다
+
+
+
+ a| 
+성능 폴링 간격(초)
+ a| 
+성능 폴링 간격(기본값 300초)
+
+|===

@@ -1,0 +1,14 @@
+---
+permalink: howto/finding-assets-querying.html 
+sidebar: sidebar 
+keywords:  
+summary: 강력한 쿼리를 사용하여 환경에서 자산을 쉽게 찾고 표시할 수 있습니다. 
+---
+= 자산 찾기:질의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+강력한 쿼리를 사용하여 환경에서 자산을 쉽게 찾고 표시할 수 있습니다.

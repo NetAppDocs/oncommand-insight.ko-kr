@@ -1,0 +1,24 @@
+---
+indexpage:
+  lead: OnCommand Insight은 사내 환경, 퍼블릭 및 프라이빗 클라우드에서 하이브리드 IT 인프라의 운영 관리를 단순화합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 설치(Windows)
+      url: install-windows/installation-prerequisites.html
+    - title: 설치(Linux)
+      url: install-linux/installation-prerequisites.html
+    - title: 구성 및 관리
+      url: config-admin/setting-up-insight.html
+  - title: 보고
+    links:
+    - title: 데이터 웨어하우스 관리
+      url: dwh/welcome-to-data-warehouse.html
+    - title: 보고
+      url: reporting/welcome-to-oncommand-insight-reporting.html
+  - title: 방법 및 FAQ 를 참조하십시오
+    links:
+    - title: 방법
+      url: howto/getting-started-with-insight.html
+    - title: 자주 묻는 질문(FAQ
+      url: faq/faq-general-insight-questions.html

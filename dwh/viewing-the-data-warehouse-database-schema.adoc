@@ -1,0 +1,31 @@
+---
+permalink: dwh/viewing-the-data-warehouse-database-schema.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터베이스 스키마를 보고 다른 API에서 데이터를 사용하는 방법을 이해하거나 SQL 쿼리를 개발할 수 있습니다. 스키마 옵션은 스키마의 모든 데이터베이스, 테이블 및 열을 나열합니다. 테이블 관계를 보여 주는 데이터베이스 스키마 다이어그램을 검토할 수도 있습니다. 
+---
+= 데이터 웨어하우스 데이터베이스 스키마 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터베이스 스키마를 보고 다른 API에서 데이터를 사용하는 방법을 이해하거나 SQL 쿼리를 개발할 수 있습니다. 스키마 옵션은 스키마의 모든 데이터베이스, 테이블 및 열을 나열합니다. 테이블 관계를 보여 주는 데이터베이스 스키마 다이어그램을 검토할 수도 있습니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 을 클릭합니다 image:../media/oci-7-help-icon-gif.gif[""] 데이터 웨어하우스 도구 모음에서 * 문서 * 를 선택합니다.
+. 데이터베이스 스키마 * 를 선택합니다.
+. 예를 들어, * Databases * 창에서 * DWH_inventory * 를 클릭합니다.
+. 모든 테이블 * 창에서 * DWH_INVENTORY * 섹션으로 스크롤하여 * annotation_Value * 테이블을 클릭합니다.
++
+image::../media/oci-dwh-databaseschema-inventory-annotation-gif.gif[재고 데이터 마트 주석 값 테이블]
+
++
+dWh_inventory.annotation 테이블이 나타납니다.
+
+

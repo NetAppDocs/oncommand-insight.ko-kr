@@ -1,0 +1,26 @@
+---
+permalink: reporting/navigating-to-the-pre-defined-oncommand-insight-reports-and-dashboards.html 
+sidebar: sidebar 
+keywords:  
+summary: 보고 포털을 열면 팀 콘텐츠 폴더가 OnCommand Insight 보고서에서 필요한 정보 유형을 선택하는 시작점입니다. 
+---
+= 미리 정의된 OnCommand Insight 보고서로 이동합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보고 포털을 열면 팀 콘텐츠 폴더가 OnCommand Insight 보고서에서 필요한 정보 유형을 선택하는 시작점입니다.
+
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 팀 콘텐츠 * 를 클릭하고 사용할 정보 범주를 선택합니다.
++
+image::../media/cognos-menu.gif[Cognos 메뉴]
+
+. 보고서 * 를 클릭하여 미리 정의된 보고서에 액세스합니다.
+. 보고서 작성 방법을 알아보려면 * 시작하기 *, * 샘플 * 또는 * 자습서 * 를 클릭하십시오.
+

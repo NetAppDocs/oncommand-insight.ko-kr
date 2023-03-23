@@ -1,0 +1,50 @@
+---
+permalink: howto/importing-snmp-integration-data.html 
+sidebar: sidebar 
+keywords:  
+summary: '웹 UI를 사용하여 SNMP 통합 팩을 OnCommand Insight로 가져옵니다. 통합 팩은 ZIP 파일에 포함된 integration.json 구성 파일에 정의된 "integrationPackName" 값으로 식별됩니다.' 
+---
+= SNMP 통합 팩을 가져오는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+웹 UI를 사용하여 SNMP 통합 팩을 OnCommand Insight로 가져옵니다. 통합 팩은 에 정의된 "통합 팩 이름" 값으로 식별됩니다 `integration.json` ZIP 파일에 포함된 구성 파일입니다.
+
+
+
+== 시작하기 전에
+
+OnCommand Insight 서버로 가져올 통합 팩이 포함된 올바른 형식의 ZIP 파일을 만들어야 합니다.
+
+
+
+== 이 작업에 대해
+
+다음 단계를 사용하여 SNMP 통합 팩을 Insight 서버로 가져옵니다.
+
+
+
+== 단계
+
+. Admin * > * Setup * > * SNMP Integration * 을 클릭합니다
++
+SNMP 패키지 가져오기 화면이 표시됩니다. image:../media/oci-import-snmp.gif[""]
+
+. SNMP 패키지가 포함된 로컬 파일을 선택하려면 * 파일 선택 * 을 클릭합니다.
++
+선택한 파일이 파일 상자에 표시됩니다.
+
++
+[NOTE]
+====
+같은 이름의 기존 통합 팩을 덮어씁니다.
+
+====
+. 가져오기 * 를 클릭합니다
++
+파일을 Insight 서버로 가져옵니다.
+
+

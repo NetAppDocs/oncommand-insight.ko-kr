@@ -1,0 +1,37 @@
+---
+permalink: install-linux/uninstalling-an-ethernet-monitoring-unit-emu-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 이더넷 모니터링 장치가 더 이상 필요하지 않으면 제거할 수 있습니다. 
+---
+= 이더넷 모니터링 장치 제거
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이더넷 모니터링 장치가 더 이상 필요하지 않으면 제거할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+[NOTE]
+====
+이더넷 모니터링 장치(EMU)는 OnCommand Insight 버전 7.3.12 이상에서 지원되지 않습니다.
+
+====
+
+
+== 단계
+
+. sudo 권한이 있는 계정을 사용하여 이더넷 모니터링 장치 서버에 로그인합니다.
+. 모든 OnCommand Insight 창이 닫혔는지 확인합니다.
+. 에 대한 구문, 명령 인수 및 매개 변수 사용을 볼 수 있습니다 `uninstall.sh` 다음 명령을 입력합니다. `sudo /usr/bin/oci-uninstall.sh --help`
+. 다음 명령을 입력합니다. `sudo /usr/bin/oci-uninstall.sh`
++
+제거 스크립트가 실행됩니다. 화면의 지시를 따릅니다.
+
+. 제거가 완료되면 서버를 다시 시작합니다.
+

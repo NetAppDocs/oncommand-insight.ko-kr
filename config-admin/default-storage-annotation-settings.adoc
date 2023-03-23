@@ -1,0 +1,28 @@
+---
+permalink: config-admin/default-storage-annotation-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 스토리지 주석을 리소스에 빠르게 할당할 수 있도록 OnCommand Insight에는 21개의 기본 주석 규칙이 포함되어 있으며, 이 규칙은 계층 레벨을 스토리지 계층 모델과 연결합니다. 모든 스토리지 리소스는 귀사 환경에서 자산을 획득할 때 계층에 자동으로 연결됩니다. 
+---
+= 기본 스토리지 주석 규칙
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 주석을 리소스에 빠르게 할당할 수 있도록 OnCommand Insight에는 21개의 기본 주석 규칙이 포함되어 있으며, 이 규칙은 계층 레벨을 스토리지 계층 모델과 연결합니다. 모든 스토리지 리소스는 귀사 환경에서 자산을 획득할 때 계층에 자동으로 연결됩니다.
+
+기본 주석 규칙은 다음과 같은 방법으로 계층 주석을 적용합니다.
+
+* 계층 1, 스토리지 품질 계층
++
+Tier 1 주석은 EMC(Symmetrix), HDS(HDS9500V, HDS9900, HDS9900V, R600, R700, USP r, USP V), IBM(DS8000), NetApp(FAS6000 또는 FAS6200), Violin(Memory).
+
+* 계층 2, 스토리지 품질 계층
++
+Tier 2 주석은 HP(3PAR StoreServ 또는 EVA), EMC(CLARiiON), HDS(AMS 또는 D800), IBM(XIV), NetApp(FAS3000, FAS3100 및 FAS3200) 등의 공급업체 및 지정된 제품군에 적용됩니다.
+
+
+
+이러한 규칙의 기본 설정을 계층 요구 사항에 맞게 편집하거나 필요하지 않은 경우 제거할 수 있습니다.

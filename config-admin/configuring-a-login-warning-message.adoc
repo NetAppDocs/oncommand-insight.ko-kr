@@ -1,0 +1,42 @@
+---
+permalink: config-admin/configuring-a-login-warning-message.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight를 사용하면 관리자가 사용자가 로그인할 때 표시되는 사용자 지정 텍스트 메시지를 설정할 수 있습니다. 
+---
+= 로그인 경고 메시지 설정
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight를 사용하면 관리자가 사용자가 로그인할 때 표시되는 사용자 지정 텍스트 메시지를 설정할 수 있습니다.
+
+
+
+== 단계
+
+. OnCommand Insight 서버에서 메시지를 설정하려면 다음을 수행하십시오.
++
+.. 관리 [문제 해결 > 고급 문제 해결 > 고급 설정] 메뉴로 이동합니다.
+.. 텍스트 영역에 로그인 메시지를 입력합니다.
+.. 클라이언트 디스플레이 로그인 경고 메시지 * 확인란을 클릭합니다.
+.. 저장 * 을 클릭합니다.
++
+모든 사용자에 대해 로그인할 때 메시지가 표시됩니다.
+
+
+
+. DWH(Data Warehouse) 및 Cognos(Reporting)에서 메시지를 설정하려면
++
+.. 시스템 정보 * 로 이동하여 * 로그인 경고 * 탭을 클릭합니다.
+.. 텍스트 영역에 로그인 메시지를 입력합니다.
+.. 저장 * 을 클릭합니다.
++
+이 메시지는 모든 사용자의 DWH 및 Cognos 보고 로그인에 표시됩니다.
+
+
+
+

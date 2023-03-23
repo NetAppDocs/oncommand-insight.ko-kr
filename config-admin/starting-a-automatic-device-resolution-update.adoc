@@ -1,0 +1,24 @@
+---
+permalink: config-admin/starting-a-automatic-device-resolution-update.html 
+sidebar: sidebar 
+keywords:  
+summary: 장치 해상도 업데이트는 마지막 전체 자동 장치 해상도 실행 이후 추가된 수동 변경 사항을 커밋합니다. 업데이트를 실행하면 장치 해상도 구성에 대한 새 수동 항목만 커밋하고 실행할 수 있습니다. 전체 장치 해상도 실행이 수행되지 않습니다. 
+---
+= 자동 장치 해상도 업데이트를 시작합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+장치 해상도 업데이트는 마지막 전체 자동 장치 해상도 실행 이후 추가된 수동 변경 사항을 커밋합니다. 업데이트를 실행하면 장치 해상도 구성에 대한 새 수동 항목만 커밋하고 실행할 수 있습니다. 전체 장치 해상도 실행이 수행되지 않습니다.
+
+
+
+== 단계
+
+. Insight 웹 UI에 로그인합니다.
+. Manage * > * Device Resolution * 을 클릭합니다
+. 장치 해상도 * 화면에서 * AR 실행 * 버튼의 아래쪽 화살표를 클릭합니다.
+. 업데이트를 시작하려면 * 업데이트 * 를 클릭합니다.
+

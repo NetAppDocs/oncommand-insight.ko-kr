@@ -1,0 +1,80 @@
+---
+permalink: install-windows/replacing-a-certificate-after-upgrading.html 
+sidebar: sidebar 
+keywords:  
+summary: 업그레이드 후 OnCommand Insight 웹 UI를 열면 인증 경고가 표시됩니다. 업그레이드 후 유효한 자체 서명된 인증서를 사용할 수 없기 때문에 경고 메시지가 표시됩니다. 나중에 경고 메시지가 표시되지 않도록 하려면 유효한 자체 서명된 인증서를 설치하여 원래 인증서를 대체할 수 있습니다. 
+---
+= OnCommand Insight를 업그레이드한 후 인증서 교체
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+업그레이드 후 OnCommand Insight 웹 UI를 열면 인증 경고가 표시됩니다. 업그레이드 후 유효한 자체 서명된 인증서를 사용할 수 없기 때문에 경고 메시지가 표시됩니다. 나중에 경고 메시지가 표시되지 않도록 하려면 유효한 자체 서명된 인증서를 설치하여 원래 인증서를 대체할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+시스템은 최소 암호화 비트 수준(1024비트)을 충족해야 합니다.
+
+
+
+== 이 작업에 대해
+
+인증 경고는 시스템 사용성에 영향을 주지 않습니다. 메시지 프롬프트에서 위험을 이해하고 있음을 표시한 다음 Insight를 계속 사용할 수 있습니다.
+
+
+
+== 단계
+
+. 키 저장소의 내용을 나열합니다. `C:\Program Files\SANscreen\java64\bin>keytool.exe -list -v -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+암호를 묻는 메시지가 나타나면 를 입력합니다 `changeit`.
+
++
+키 저장소에 인증서가 하나 이상 있어야 합니다. `ssl certificate`.
+
+. 를 삭제합니다 `ssl certificate`: `keytool -delete -alias ssl certificate -keystore c:\ProgramFiles\SANscreen\wildfly\standalone\configuration\server.keystore`
+. 새 키 생성: `keytool -genkey -alias OCI.hostname.com -keyalg RSA -keysize 2048 -keystore "c:\ProgramFiles\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 성과 이름을 묻는 메시지가 나타나면 사용하려는 FQDN(정규화된 도메인 이름)을 입력합니다.
+.. 조직 및 조직 구조에 대한 다음 정보를 제공합니다.
++
+*** 국가: 해당 국가의 두 글자 ISO 약어(예: US)
+*** 시/도: 조직의 본사 소재지가 위치한 시/도의 이름(예: 매사추세츠주)
+*** 지역: 조직의 본사 소재지(예: Waltham)의 이름입니다.
+*** 조직 이름: 도메인 이름을 소유한 조직의 이름(예: NetApp)
+*** 조직 단위 이름: 인증서를 사용할 부서 또는 그룹의 이름(예: 지원)
+*** 도메인 이름/일반 이름: 서버의 DNS 조회에 사용되는 FQDN(예: www.example.com) 시스템이 다음과 유사한 정보로 응답합니다. `Is CN=www.example.com, OU=support, O=NetApp, L=Waltham, ST=MA, C=US correct?`
+
+
+.. 를 입력합니다 `Yes` CN(Common Name)이 FQDN과 같은 경우
+.. 키 암호를 묻는 메시지가 나타나면 암호를 입력하거나 Enter 키를 눌러 기존 키 저장소 암호를 사용합니다.
+
+
+. 인증서 요청 파일 생성: `keytool -certreq -alias localhost -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore" -file c:\localhost.csr`
++
+를 클릭합니다 `c:\localhost.csr` file 은 새로 생성된 인증서 요청 파일입니다.
+
+. 를 제출합니다 `c:\localhost.csr` 승인을 위해 인증 기관(CA)에 파일을 첨부합니다.
++
+인증서 요청 파일이 승인되면 에서 인증서를 반환하도록 합니다 `.der` 형식. 파일이 로 반환될 수도 있고 반환되지 않을 수도 있습니다 `.der` 파일. 기본 파일 형식은 입니다 `.cer` Microsoft CA 서비스의 경우.
+
+. 승인된 인증서 가져오기: `keytool -importcert -alias localhost -file c:\localhost2.DER -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
++
+.. 암호를 묻는 메시지가 나타나면 키 저장소 암호를 입력합니다.
++
+다음과 같은 메시지가 표시됩니다. `Certificate reply was installed in keystore`
+
+
+
+. SANscreen 서버 서비스를 다시 시작합니다.
+
+
+
+
+== 결과
+
+웹 브라우저가 더 이상 인증서 경고를 보고하지 않습니다.

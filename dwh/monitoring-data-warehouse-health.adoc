@@ -1,0 +1,35 @@
+---
+permalink: dwh/monitoring-data-warehouse-health.html 
+sidebar: sidebar 
+keywords: suppress 
+summary: 'DWH\(데이터 웨어하우스\)에는 DWH 상태에 대한 정보를 표시하는 상태 모니터가 포함되어 있습니다. 경고 메시지는 DWH의 커넥터 및 작업 페이지에 표시되며, 연결된 Insight 서버로 전송되어 관리 \> 상태 페이지에 표시됩니다.' 
+---
+= 데이터 웨어하우스 상태 모니터링
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DWH(데이터 웨어하우스)에는 DWH 상태에 대한 정보를 표시하는 상태 모니터가 포함되어 있습니다. 경고 메시지는 DWH의 * 커넥터 * 및 * 작업 * 페이지에 표시되며, 연결된 Insight 서버로 전송되어 * 관리 * > * 상태 * 페이지에 표시됩니다.
+
+DWH는 10분마다 지표를 수집하고 다음과 같은 조건에서 알람을 표시합니다.
+
+* Insight 서버 연결이 끊어졌습니다
+* 디스크 사용률이 90%를 넘습니다
+* 보고(Cognos) 서비스가 다운되었습니다
+* 쿼리는 어떤 테이블에도 오랜 시간 동안 잠금을 유지합니다
+* 유지보수 작업이 비활성화되었습니다
+* 자동 백업이 비활성화되었습니다
+* 보안 위험: 기본 암호화 키가 감지되었습니다
+
+
+데이터 웨어하우스의 상태 모니터 경고는 최대 30일 동안 억제할 수 있습니다.
+
+이메일 알림이 활성화되면 이러한 이벤트도 이메일로 보고됩니다. 이메일에 첨부 파일이 포함되어 있지 않습니다.
+
+이러한 이벤트는 에 기록됩니다 `dwh_troubleshoot.log` 다음 위치에 있는 파일:
+
+* 창: `<install dir>\SANscreen\Wildfly\Standalone\Logs`
+* Linux: `/var/log/netapp/oci/wildfly/`
+

@@ -1,0 +1,37 @@
+---
+permalink: config-admin/deleting-inactive-devices.html 
+sidebar: sidebar 
+keywords:  
+summary: 비활성 상태인 장치를 삭제하면 데이터를 보다 깨끗하게 유지하고 탐색하기 쉽습니다. 
+---
+= 비활성 장치를 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+비활성 상태인 장치를 삭제하면 데이터를 보다 깨끗하게 유지하고 탐색하기 쉽습니다.
+
+
+
+== 이 작업에 대해
+
+Insight에서 비활성 장치를 삭제하려면 다음을 수행합니다.
+
+
+
+== 단계
+
+. 새 쿼리를 만들거나 기존 쿼리를 엽니다.
+. _generic device_, _host_, _storage_, _switch_ 또는 _tape_asset 유형을 선택합니다.
+. 필터 추가 * 가 활성 * 이고 필터를 * 아니요 * 로 설정합니다.
++
+결과 테이블에는 활성 상태가 아닌 자산만 표시됩니다.
+
+. 삭제할 장치를 선택합니다.
+. Actions * 버튼을 클릭하고 * Delete Inactive Devices * 를 선택합니다.
++
+비활성 장치는 삭제되고 더 이상 Insight에 표시되지 않습니다.
+
+

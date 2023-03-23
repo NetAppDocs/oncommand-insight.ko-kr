@@ -1,0 +1,22 @@
+---
+permalink: dwh/viewing-the-annotations-job-in-the-jobs-list.html 
+sidebar: sidebar 
+keywords:  
+summary: 작업 목록에서 주석 작업을 보고 주석 변경 사항을 데이터 웨어하우스 데이터 마트에 적용할 수 있습니다. 
+---
+= 작업 목록에서 주석 작업 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+작업 목록에서 주석 작업을 보고 주석 변경 사항을 데이터 웨어하우스 데이터 마트에 적용할 수 있습니다.
+
+
+
+== 단계
+
+. Data Warehouse Portal( )에 관리자로 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 왼쪽의 탐색 창에서 * Jobs * 를 클릭합니다.
+

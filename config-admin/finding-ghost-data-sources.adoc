@@ -1,0 +1,26 @@
+---
+permalink: config-admin/finding-ghost-data-sources.html 
+sidebar: sidebar 
+keywords:  
+summary: 장치를 제거했지만 장치 데이터가 남아 있는 경우 고스트 데이터 원본을 찾아서 제거할 수 있습니다. 
+---
+= 고스트 데이터 소스 찾기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+장치를 제거했지만 장치 데이터가 남아 있는 경우 고스트 데이터 원본을 찾아서 제거할 수 있습니다.
+
+
+
+== 단계
+
+. 웹 UI에서 * Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
+. 다른 작업 영역의 페이지 하단에서 * 고급 문제 해결 * 링크를 클릭합니다.
+. 보고서 * 탭에서 * 고스트 데이터 소스 * 링크를 클릭합니다.
++
+OnCommand Insight는 장치 정보가 포함된 독창자 목록을 생성합니다.
+
+

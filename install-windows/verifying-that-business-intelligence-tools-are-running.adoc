@@ -1,0 +1,16 @@
+---
+permalink: install-windows/verifying-that-business-intelligence-tools-are-running.html 
+sidebar: sidebar 
+keywords:  
+summary: 해당되는 경우, 업그레이드 후 비즈니스 인텔리전스 도구가 실행 중인지, 그리고 데이터를 검색하는지 확인해야 합니다. 
+---
+= 비즈니스 인텔리전스 툴이 실행 중인지 확인
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+해당되는 경우, 업그레이드 후 비즈니스 인텔리전스 도구가 실행 중인지, 그리고 데이터를 검색하는지 확인해야 합니다.
+
+BMC Atrium 및 ServiceNow와 같은 비즈니스 인텔리전스 도구가 실행되고 있고 데이터를 검색할 수 있는지 확인합니다. 여기에는 REST를 활용하는 BMC 커넥터와 솔루션이 포함됩니다.

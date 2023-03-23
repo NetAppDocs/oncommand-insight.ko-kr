@@ -1,0 +1,56 @@
+---
+permalink: howto/preparing-aws-for-insight-collection.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight에서 클라우드 비용 데이터를 수집할 수 있도록 AWS 계정을 올바르게 구성해야 합니다. 
+---
+= Insight 데이터 수집을 위한 AWS 준비
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight에서 클라우드 비용 데이터를 수집할 수 있도록 AWS 계정을 올바르게 구성해야 합니다.
+
+
+
+== 이 작업에 대해
+
+다음 단계는 AWS 계정을 통해 수행됩니다. 자세한 내용은 아마존 문서를 참조하십시오. https://docs.aws.amazon.com["http://docs.aws.amazon.com"]. AWS 클라우드 계정 설정에 대해 잘 모르는 경우 클라우드 공급자에게 지원을 문의하십시오.
+
+[NOTE]
+====
+이러한 단계는 예의상 제공된 것으로, 발행 시점을 기준으로 정확합니다. NetApp은 이러한 단계의 정확성을 보증하지 않습니다. AWS 계정 구성에 대한 정보나 지원은 클라우드 공급자 또는 AWS 계정 보유자에게 문의하십시오.
+
+====
+모범 사례: Insight는 청구 보고서가 업로드되는 S3 버킷을 소유한 동일한 계정에서 기본 IAM 사용자를 생성하고 이 사용자를 사용하여 AWS 청구 데이터를 구성 및 수집할 것을 권장합니다.
+
+Insight에서 데이터를 수집할 수 있도록 AWS 계정을 구성하려면 다음 단계를 수행하십시오.
+
+
+
+== 단계
+
+. AWS 계정에 IAM(Identity Access Management) 사용자로 로그인합니다. 적절한 수집을 위해 그룹 IAM 계정이 아닌 기본 IAM 계정에 로그인합니다.
+. Amazon S3 * 로 이동하여 버킷을 생성합니다. 고유한 버킷 이름을 입력하고 올바른 지역을 확인하십시오.
+. 아마존 비용 및 사용량 보고서를 켭니다. 을 참조하십시오 https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-gettingstarted-turnonreports.html[] 를 참조하십시오.
++
+.. AWS** 청구 및 비용 관리 대시보드**로 이동하여 * Reports * 를 선택합니다.
+.. 보고서 작성 * 을 클릭하고 보고서 이름 을 입력합니다. 시간 단위 * 의 경우 매일 을 선택합니다. 리소스 ID * 를 포함하려면 확인란을 선택하고 * 다음 * 을 클릭합니다.
+.. 배달 옵션 선택 페이지에서 * 샘플 정책 * 링크를 클릭합니다. 상자에 있는 샘플 정책 텍스트를 클립보드로 복사합니다. 닫기 * 를 클릭합니다.
+.. 생성된 S3 버킷으로 돌아가 * Permissions * 탭을 클릭하고 * Bucket Policy * 버튼을 선택합니다.
+.. 샘플 정책의 텍스트를 붙여 넣고 바꿉니다 `<bucketname>` 다음을 포함하는 각 줄에 실제 버킷 이름 포함: `"Resource": "arn:aws:s3:: <bucketname>"`. * 정책을 저장 * 합니다.
+.. 보고서 작성 화면으로 돌아가서 S3 버킷을 입력하고 * 확인 * 버튼을 클릭합니다. 다음 * 을 클릭합니다.
+.. 정보를 확인하고 * 검토 및 완료 * 를 클릭합니다.
+
+
+. Insight에서 AWS에서 데이터를 수집하려면 사용 권한을 부여해야 합니다. 다음 링크에서는 * 모든 버킷 나열 * (4.1단계) 및 폴더의 객체에 대한 권한을 설정하는 방법에 대한 자세한 정보를 제공합니다(5.2단계). https://docs.aws.amazon.com/AmazonS3/latest/dev/walkthrough1.html[].
+. IAM 콘솔에서 * Policies * 로 이동하고 * Create policy * 를 클릭합니다.
+. Policy Name * 필드에 이름을 입력하고 하단의 * Create policy * 를 클릭합니다.
+. IAM 콘솔에서 사용자를 선택한 다음 화면 하단의 * Add Inline Policy * 를 선택합니다.
+. 서비스 선택 * 을 클릭하고 S3을 선택합니다.
+. JSON * 탭으로 이동합니다. JSON 샘플 텍스트를 AWS 연습의 5.1.2.g 단계에서 JSON 상자로 복사합니다.
+. JSON의 _companybucket_and_Development_fields를 S3 정보로 바꾸십시오.
+. 정책 설정을 검토하려면 * 정책 검토 * 를 클릭합니다.
+

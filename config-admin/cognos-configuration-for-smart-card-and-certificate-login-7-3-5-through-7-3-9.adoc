@@ -1,0 +1,57 @@
+---
+permalink: config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Cognos 서버에 대한 스마트 카드\(CAC\) 및 인증서 로그인을 지원하도록 OnCommand Insight 데이터 웨어하우스 구성을 수정해야 합니다.' 
+---
+= 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cognos 서버에 대한 스마트 카드(CAC) 및 인증서 로그인을 지원하도록 OnCommand Insight 데이터 웨어하우스 구성을 수정해야 합니다.
+
+
+
+== 시작하기 전에
+
+이 절차는 OnCommand Insight 7.3.5 ~ 7.3.9를 실행하는 시스템에 적용됩니다.
+
+[NOTE]
+====
+최신 CAC 및 인증서 지침은 다음 기술 자료 문서를 참조하십시오(Support login required).
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight["OnCommand Insight에 대한 CAC(Common Access Card) 인증을 구성하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight_DataWarehouse["OnCommand Insight 데이터 웨어하우스에 대한 CAC(Common Access Card) 인증을 구성하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_and_import_a_Certificate_Authority_(CA)_signed_certificate_into_OCI_and_DWH_7.3.X["CA(인증 기관) 서명 인증서를 만들어 OnComand Insight 및 OnCommand Insight 데이터 웨어하우스 7.3.x로 가져오는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_a_Self_Signed_Certificate_within_OnCommand_Insight_7.3.X_installed_on_a_Windows_Host["Windows 호스트에 설치된 OnCommand Insight 7.3.X 내에서 자체 서명된 인증서를 만드는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["Cognos CA(인증 기관) 서명 인증서를 OnCommand Datawarehouse 7.3.3 이상으로 가져오는 방법"]
+
+
+====
+
+
+== 단계
+
+. Cognos Trustore에 CA(인증 기관)를 추가합니다.
++
+.. 명령 창에서 로 이동합니다 `..\SANscreen\cognos\analytics\configuration\certs\`
+.. 를 사용합니다 `keytool` 신뢰할 수 있는 CA를 나열하는 유틸리티: `..\..\jre\bin\keytool.exe -list -keystore CAMKeystore.jks -storepass NoPassWordSet`
++
+각 줄의 첫 번째 단어는 CA 별칭을 나타냅니다.
+
+.. 적합한 파일이 없는 경우 CA 인증서 파일(일반적으로 A)을 제공합니다 `.pem` 파일.
+.. OnCommand Insight의 신뢰할 수 있는 CA와 함께 고객의 CA를 포함하려면 으로 이동합니다 `..\SANscreen\cognos\analytics\configuration\certs\`.
+.. 를 사용합니다 `keytool` 을(를) 가져오는 유틸리티입니다 `.pem` 파일: `..\..\jre\bin\keytool.exe -importcert -keystore CAMKeystore.jks -alias my_alias -file 'path/to/my.pem' -v -trustcacerts`
++
+`my_alias` 는 일반적으로 에서 CA를 쉽게 식별하는 별칭입니다``keytool -list`` 작동.
+
+.. 암호를 묻는 메시지가 나타나면 를 입력합니다 `NoPassWordSet`.
+.. 답변 `yes` 인증서를 신뢰할 수 있는 것인지 묻는 메시지가 표시됩니다.
+
+
+. CAC 모드를 활성화하려면 를 실행합니다 `..\SANscreen\bin\cognos_cac\enableCognosCAC.bat`
+. CAC 모드를 해제하려면 를 실행한다 `..\SANscreen\bin\cognos_cac\disableCognosCAC.bat`
+

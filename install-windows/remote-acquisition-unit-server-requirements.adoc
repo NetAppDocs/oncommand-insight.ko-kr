@@ -1,0 +1,69 @@
+---
+permalink: install-windows/remote-acquisition-unit-server-requirements.html 
+sidebar: sidebar 
+keywords: redhat 
+summary: '방화벽 뒤, 원격 사이트, 사설 네트워크 또는 다른 네트워크 세그먼트에 있는 SAN 장치에서 정보를 가져오려면 RAU(원격 획득 장치)\ 를 설치해야 합니다. RAU를 설치하기 전에 사용 환경이 RAU 운영 체제, CPU, 메모리 및 디스크 공간 요구 사항을 충족하는지 확인해야 합니다.' 
+---
+= 원격 획득 장치 서버 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+방화벽 뒤, 원격 사이트, 사설 네트워크 또는 다른 네트워크 세그먼트에 있는 SAN 장치에서 정보를 가져오려면 RAU(원격 획득 장치)를 설치해야 합니다. RAU를 설치하기 전에 사용 환경이 RAU 운영 체제, CPU, 메모리 및 디스크 공간 요구 사항을 충족하는지 확인해야 합니다.
+
+|===
+
+
+| 구성 요소 | 요구 사항 
+
+
+ a| 
+운영 체제
+ a| 
+최신 서비스 팩이 설치된 64비트 Microsoft Windows Server 2012, 2012 R2, 2016 또는 2019를 실행하는 컴퓨터
+
+
+
+ a| 
+CPU
+ a| 
+CPU 코어 4개
+
+
+
+ a| 
+메모리
+ a| 
+16GB RAM
+
+
+
+ a| 
+사용 가능한 디스크 공간입니다
+ a| 
+40GB
+
+
+
+ a| 
+네트워크
+ a| 
+100Mbps/1Gbps 이더넷 연결, 정적 IP 주소, 모든 FC 디바이스에 대한 IP 연결 및 OnCommand Insight 서버에 대한 필수 포트(80 또는 443).
+
+
+
+ a| 
+권한
+ a| 
+RAU 서버에 대한 로컬 관리자 권한
+
+
+
+ a| 
+바이러스 검사
+ a| 
+이 OnCommand Insight 구성 요소를 설치하는 동안 모든 바이러스 스캐너를 완전히 비활성화해야 합니다. 설치 후 Insight 구성 요소에서 사용하는 경로는 바이러스 검사에서 제외되어야 합니다. 또한 설치 후 바이러스 백신 검사에서 IBM/DB2 폴더(예: _C:\Program Files\IBM\DB2_)를 제외해야 합니다.
+
+|===

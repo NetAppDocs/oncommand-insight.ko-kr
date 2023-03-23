@@ -1,0 +1,14 @@
+---
+permalink: config-admin/managing-annotation-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Insight는 자산 수명 주기\(생일 또는 수명 종료\), 건물 또는 데이터 센터 위치, 계층 등 보고서에 표시되도록 사용자 지정할 수 있는 몇 가지 기본 주석 유형을 제공합니다. 기본 주석 유형의 값을 정의하거나 사용자 정의 주석 유형을 직접 만들 수 있습니다. 나중에 이러한 값을 편집할 수 있습니다.' 
+---
+= 주석 유형 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight는 자산 수명 주기(생일 또는 수명 종료), 건물 또는 데이터 센터 위치, 계층 등 보고서에 표시되도록 사용자 지정할 수 있는 몇 가지 기본 주석 유형을 제공합니다. 기본 주석 유형의 값을 정의하거나 사용자 정의 주석 유형을 직접 만들 수 있습니다. 나중에 이러한 값을 편집할 수 있습니다.

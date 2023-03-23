@@ -1,0 +1,48 @@
+---
+permalink: install-linux/submitting-an-online-technical-support-request.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight 설치에 문제가 있는 경우 등록된 지원 고객으로서 온라인 기술 지원 요청을 제출할 수 있습니다. 
+---
+= 온라인 기술 지원 요청 제출
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight 설치에 문제가 있는 경우 등록된 지원 고객으로서 온라인 기술 지원 요청을 제출할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+회사 이메일 주소를 사용하여 온라인 지원 서비스를 받으려면 지원 고객으로 등록해야 합니다. 등록은 지원 사이트를 통해 수행됩니다 (http://support.netapp.com)[].
+
+
+
+== 이 작업에 대해
+
+설치 문제 해결에 대한 고객 지원을 지원하려면 다음 항목을 포함하여 가능한 많은 정보를 수집해야 합니다.
+
+* Insight 일련 번호
+* 문제에 대한 설명입니다
+* 모든 Insight 로그 파일
+* 오류 메시지의 화면 캡처
+
+
+
+
+== 단계
+
+. 을 생성합니다 `.zip` 문제 해결 패키지를 만들기 위해 수집한 정보 파일
+. 에서 지원 사이트에 로그인합니다 http://mysupport.netapp.com/["mysupport.netapp.com"] 을 클릭하고 * 기술 지원 * 을 선택합니다.
+. 케이스 열기 * 를 클릭합니다.
+. 데이터 패키지에 대한 지침을 따르십시오.
+
+
+
+
+== 작업을 마친 후
+
+기술 지원 페이지의 * 케이스 상태 확인 * 을 사용하여 요청을 추적할 수 있습니다.

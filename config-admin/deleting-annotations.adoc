@@ -1,0 +1,30 @@
+---
+permalink: config-admin/deleting-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 더 이상 사용하지 않을 주석을 삭제할 수 있습니다. 시스템 수준 주석 또는 주석 규칙, 쿼리 또는 성능 정책에 사용되는 주석은 삭제할 수 없습니다. 
+---
+= 주석 삭제
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+더 이상 사용하지 않을 주석을 삭제할 수 있습니다. 시스템 수준 주석 또는 주석 규칙, 쿼리 또는 성능 정책에 사용되는 주석은 삭제할 수 없습니다.
+
+
+
+== 단계
+
+. OnCommand Insight 웹 UI에 로그인합니다.
+. 관리 * 를 클릭하고 * 주석 * 을 선택합니다.
++
+주석 페이지가 표시됩니다.
+
+. 삭제할 주석 위에 커서를 놓고 를 클릭합니다 image:../media/trash-can-query.gif[""].
++
+확인 대화 상자가 표시됩니다.
+
+. 확인 * 을 클릭합니다.
+

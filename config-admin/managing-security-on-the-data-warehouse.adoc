@@ -1,0 +1,100 @@
+---
+permalink: config-admin/managing-security-on-the-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: SecurityAdmin 도구를 사용하면 데이터 웨어하우스 서버의 보안 옵션을 관리할 수 있습니다. 보안 관리에는 DWH 서버의 내부 사용자에 대한 내부 암호 업데이트, 보안 구성 백업 생성 또는 기본 설정으로 구성 복원이 포함됩니다. 
+---
+= 데이터 웨어하우스의 보안 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+를 클릭합니다 `securityadmin` 도구를 사용하면 데이터 웨어하우스 서버의 보안 옵션을 관리할 수 있습니다. 보안 관리에는 DWH 서버의 내부 사용자에 대한 내부 암호 업데이트, 보안 구성 백업 생성 또는 기본 설정으로 구성 복원이 포함됩니다.
+
+
+
+== 이 작업에 대해
+
+를 사용합니다 `securityadmin` 보안 관리 도구:
+
+* 윈도우 - `C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat`
+* Linux - `/bin/oci-securityadmin.sh`
+
+
+
+
+== 단계
+
+. 데이터 웨어하우스 서버에 원격 로그인을 수행합니다.
+. 대화형 모드에서 보안 관리 도구를 시작합니다. `Windows - C:\Program Files\SANscreen\securityadmin\bin\securityadmin.bat -i``Linux - /bin/oci-securityadmin.sh -i`
++
+시스템에서 로그인 자격 증명을 요청합니다.
+
+. "Admin" 자격 증명이 있는 계정의 사용자 이름과 암호를 입력합니다.
++
+데이터 웨어하우스에 대한 보안 관리 메뉴가 표시됩니다.
+
++
+** * 백업 *
++
+모든 암호 및 키가 포함된 볼트의 백업 zip 파일을 작성하고 사용자가 지정한 위치 또는 기본 위치에 파일을 배치합니다.
+
++
+*** 윈도우 - `C:\Program Files\SANscreen\backup\vault`
+*** Linux - `/var/log/netapp/oci/backup/vault`
+
+
+** * 복원 *
++
+작성된 볼트의 zip 백업을 복원합니다. 복원되면 모든 암호와 키는 백업 생성 시 기존 값으로 되돌려집니다.
+
++
+[NOTE]
+====
+복원은 여러 서버의 암호와 키를 동기화하는 데 사용할 수 있습니다. 예를 들어 - 한 서버의 암호화 키 변경 - 볼트 백업 작성 - 두 번째 서버로 볼트 백업을 복원합니다
+
+를 누릅니다
+
+====
+** * 암호화 키 변경 *
++
+커넥터 암호 및 SMPT 암호와 같은 암호를 암호화 또는 해독하는 데 사용되는 DWH 암호화 키를 변경합니다.
+
+** * 암호 업데이트 *
++
+특정 사용자 계정의 암호를 변경합니다.
+
++
+*** _내부
+*** 획득
+*** Cognos_admin
+*** 드Wh
+*** DWh _ 내부
+*** Dwhuser(사용자)
+*** 호스트
+*** 인벤토리
+*** 루트
+
+
+
+
++
+[NOTE]
+====
+dwhuser, hosts, inventory 또는 root 암호를 변경하면 SHA-256 암호 해싱을 사용할 수 있습니다. 이 옵션을 사용하려면 계정에 액세스하는 모든 클라이언트가 SSL 연결을 사용해야 합니다.
+
+====
++
+** * 기본값으로 재설정 *
++
+암호화 키 및 암호를 기본값으로 재설정합니다. 기본값은 설치 중에 제공되는 값입니다.
+
+** * 종료 *
++
+를 종료합니다 `securityadmin` 도구.
+
+
+
+

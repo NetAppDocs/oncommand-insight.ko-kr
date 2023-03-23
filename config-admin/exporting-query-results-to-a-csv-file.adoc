@@ -1,0 +1,65 @@
+---
+permalink: config-admin/exporting-query-results-to-a-csv-file.html 
+sidebar: sidebar 
+keywords:  
+summary: 쿼리 결과를 .csv 파일로 내보내 데이터를 다른 응용 프로그램으로 가져올 수 있습니다. 
+---
+= 쿼리 결과를 .csv 파일로 내보내는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+쿼리 결과를 .csv 파일로 내보내 데이터를 다른 응용 프로그램으로 가져올 수 있습니다.
+
+
+
+== 단계
+
+. OnCommand Insight 웹 UI에 로그인합니다.
+. 쿼리 * 를 클릭하고 * 모든 쿼리 표시 * 를 선택합니다.
++
+쿼리 페이지가 표시됩니다.
+
+. 쿼리를 클릭합니다.
+. 을 클릭합니다 image:../media/export-to-csv.gif[""] 쿼리 결과를 로 내보냅니다``.CSV`` 파일.
+. 다음 중 하나를 수행합니다.
++
+** Open with * 를 클릭한 다음 * OK * 를 클릭하여 Microsoft Excel로 파일을 열고 파일을 특정 위치에 저장합니다.
+** 파일 저장 * 을 클릭한 다음 * 확인 * 을 클릭하여 파일을 다운로드 폴더에 저장합니다. 표시된 열의 속성만 내보내집니다. 표시되는 일부 열, 특히 복잡한 중첩 관계의 일부인 열은 내보내지지 않습니다.
+
+
++
+[NOTE]
+====
+자산 이름에 쉼표가 나타나면 자산 이름과 올바른 .csv 형식을 유지하면서 내보내기가 따옴표로 이름을 묶습니다.
+
+====
++
++ 쿼리 결과를 내보낼 때 결과 테이블의 * 모든 * 행이 화면에서 선택 또는 표시된 행이 아닌 최대 10,000개 행까지 내보내진다는 점에 유의하십시오.
+
++
+를 누릅니다
+
++
+[NOTE]
+====
+Excel에서 내보낸 .csv 파일을 열 때 NN:NN(두 자리 뒤에 콜론이 두 자리 더 오는 경우) 형식의 개체 이름이나 기타 필드가 있으면 Excel에서 해당 이름을 텍스트 형식 대신 시간 형식으로 해석하는 경우가 있습니다. 이로 인해 Excel에서 해당 열에 잘못된 값이 표시될 수 있습니다. 예를 들어 "81:45"라는 이름의 개체는 Excel에서 "81:45:00"으로 표시됩니다. 이 문제를 해결하려면 다음 단계를 사용하여 .csv를 Excel로 가져옵니다.
+
+를 누릅니다
+
+....
+-   Open a new sheet in Excel.
+-   On the "Data" tab, choose "From Text".
+-   Locate the desired .CSV file and click "Import".
+-   In the Import wizard, choose "Delimited" and click Next.
+-   Choose "Comma" for the delimiter and click Next.
+-   Select the desired columns and choose "Text" for the column data format.
+-   Click Finish.
+Your objects should show in Excel in the proper format.
+....
+를 누릅니다
+
+====
+

@@ -1,0 +1,23 @@
+---
+permalink: dwh/configuring-user-accounts.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 계정을 구성하려면 몇 가지 단계를 완료해야 합니다. 
+---
+= 사용자 계정을 구성하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 계정을 구성하려면 몇 가지 단계를 완료해야 합니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 왼쪽의 탐색 창에서 * 사용자 관리 * 를 클릭합니다.
+. 각 사용자 계정을 구성합니다.
+

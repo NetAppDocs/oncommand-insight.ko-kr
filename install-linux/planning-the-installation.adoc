@@ -1,0 +1,26 @@
+---
+permalink: install-linux/planning-the-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: 성공적인 배포를 위해서는 OnCommand Insight를 설치하기 전에 특정 시스템 요소를 고려해야 합니다. 
+---
+= 배포 계획
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성공적인 배포를 위해서는 OnCommand Insight를 설치하기 전에 특정 시스템 요소를 고려해야 합니다.
+
+
+
+== 이 작업에 대해
+
+Insight 배포를 계획할 때 다음과 같은 시스템 요소를 고려해야 합니다.
+
+* Insight 아키텍처
+* 모니터링할 네트워크 구성 요소
+* Insight 설치 사전 요구 사항 및 서버 요구 사항
+* Insight 웹 브라우저 요구사항
+

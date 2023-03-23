@@ -1,0 +1,53 @@
+---
+permalink: config-admin/setting-up-and-managing-user-accounts.html 
+sidebar: sidebar 
+keywords:  
+summary: '사용자 계정, 사용자 인증 및 사용자 인증은 Microsoft Active Directory\(버전 2 또는 3\) LDAP\(Lightweight Directory Access Protocol\) 서버 또는 내부 OnCommand Insight 사용자 데이터베이스의 두 가지 방법 중 하나로 정의 및 관리할 수 있습니다. 각 사용자에 대해 다른 사용자 계정을 만들면 액세스 권한, 개인 기본 설정 및 책임을 제어할 수 있습니다. 이 작업에 대한 관리자 권한이 있는 계정을 사용합니다.' 
+---
+= 사용자 계정 설정 및 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 계정, 사용자 인증 및 사용자 인증은 Microsoft Active Directory(버전 2 또는 3) LDAP(Lightweight Directory Access Protocol) 서버 또는 내부 OnCommand Insight 사용자 데이터베이스의 두 가지 방법 중 하나로 정의 및 관리할 수 있습니다. 각 사용자에 대해 다른 사용자 계정을 만들면 액세스 권한, 개인 기본 설정 및 책임을 제어할 수 있습니다. 이 작업에 대한 관리자 권한이 있는 계정을 사용합니다.
+
+
+
+== 시작하기 전에
+
+다음 작업을 완료해야 합니다.
+
+* OnCommand Insight 라이센스를 설치합니다.
+* 각 사용자에 대해 고유한 사용자 이름을 할당합니다.
+* 사용할 암호를 결정합니다.
+* 올바른 사용자 역할을 할당합니다.
+
+
+[NOTE]
+====
+관리자가 비 관리자/표준 사용자의 대화형 로그인을 방지하도록 호스트 운영 체제를 구성하는 것이 보안 모범 사례입니다.
+
+====
+
+
+== 단계
+
+. 브라우저에서 Insight를 엽니다.
+. Insight 도구 모음에서 * Admin * 을 클릭합니다.
+. 설정 * 을 클릭합니다.
+. ** 사용자** 탭을 선택합니다.
+. 새 사용자를 생성하려면 * Actions * 버튼을 클릭하고 * Add user * 를 선택합니다.
++
+이름 *, * 암호 *, * 이메일 * 주소를 입력하고 관리자, 사용자 또는 게스트로 * 역할 * 사용자 중 하나를 선택합니다.
+
+. 사용자 정보를 변경하려면 목록에서 사용자를 선택하고 사용자 설명 오른쪽에 있는 * 사용자 계정 편집 * 기호를 클릭합니다.
+. OnCommand Insight 시스템에서 사용자를 제거하려면 목록에서 사용자를 선택하고 사용자 설명 오른쪽에 있는 * 사용자 계정 삭제 * 를 클릭합니다.
+
+
+
+
+== 결과
+
+사용자가 OnCommand Insight에 로그인하면 LDAP가 활성화된 경우 서버에서 먼저 LDAP를 통해 인증을 시도합니다. OnCommand Insight가 LDAP 서버에서 사용자를 찾을 수 없는 경우 로컬 Insight 데이터베이스에서 검색합니다.

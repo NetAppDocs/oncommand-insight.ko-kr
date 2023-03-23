@@ -1,0 +1,16 @@
+---
+permalink: install-windows/preserving-custom-settings-when-upgrading-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 기본 SMTP 전자 메일 설정이 아닌 사용자 지정 Cognos 설정은 데이터 웨어하우스 업그레이드의 일부로 자동으로 백업되지 않습니다. 업그레이드 후 사용자 지정 설정을 수동으로 문서화한 다음 복원해야 합니다. 
+---
+= 데이터 웨어하우스 업그레이드 중에 사용자 정의 Cognos 설정 유지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본 SMTP 전자 메일 설정이 아닌 사용자 지정 Cognos 설정은 데이터 웨어하우스 업그레이드의 일부로 자동으로 백업되지 않습니다. 업그레이드 후 사용자 지정 설정을 수동으로 문서화한 다음 복원해야 합니다.
+
+데이터 웨어하우스를 업그레이드하기 전에 보존하려는 사용자 지정 Cognos 설정이 포함된 체크리스트를 준비하고 시스템을 업그레이드하기 전에 목록을 검토하십시오. 업그레이드가 완료된 후 값을 수동으로 복원하여 원래 구성의 설정으로 되돌릴 수 있습니다.

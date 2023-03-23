@@ -1,0 +1,29 @@
+---
+permalink: config-admin/device-resolution-fc-identify.html 
+sidebar: sidebar 
+keywords:  
+summary: FC 식별 화면에는 호스트가 자동 디바이스 확인 방법으로 식별되지 않은 Fibre Channel 디바이스의 WWN 및 WWPN이 표시됩니다. 또한 화면에는 수동 장치 해상도에 의해 해결된 모든 장치가 표시됩니다. 
+---
+= 파이버 채널 장치 해상도
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FC 식별 화면에는 호스트가 자동 디바이스 확인 방법으로 식별되지 않은 Fibre Channel 디바이스의 WWN 및 WWPN이 표시됩니다. 또한 화면에는 수동 장치 해상도에 의해 해결된 모든 장치가 표시됩니다.
+
+수동 해상도에 의해 해결된 장치에는 ""OK"" 상태가 포함되어 있으며 장치를 식별하는 데 사용되는 규칙을 식별합니다. 누락된 장치는 ""알 수 없음"" 상태입니다. 장치 식별의 총 범위는 이 페이지에 나와 있습니다.
+
+image::../media/fcidentify.gif[fcidentify]
+
+FC 식별 화면의 왼쪽에서 여러 디바이스를 선택하여 대량 작업을 수행합니다. 장치 위로 마우스를 가져간 다음 목록의 맨 오른쪽에 있는 식별 또는 식별 안 함 단추를 선택하여 단일 장치에서 작업을 수행할 수 있습니다.
+
+Total coverage(전체 범위) 링크는 사용자의 구성에 대해 "식별된 장치 수/사용 가능한 장치 수" 목록을 표시합니다.
+
+* SRM 별칭
+* 스토리지 별칭입니다
+* 별칭 전환
+* 존
+* 사용자 정의
+

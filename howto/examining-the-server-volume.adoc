@@ -1,0 +1,18 @@
+---
+permalink: howto/examining-the-server-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 볼륨 랜딩 페이지에는 상호 연결된 자산에서 볼 수 있는 것과 동일한 친숙한 IOPS 급증 문제가 표시됩니다. 
+---
+= 볼륨을 검사하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 랜딩 페이지에는 상호 연결된 자산에서 볼 수 있는 것과 동일한 친숙한 IOPS 급증 문제가 표시됩니다.
+
+image::../media/server-vol-lp.gif[서버 볼륨 lp]
+
+리소스 섹션에서 여행 예약 애플리케이션의 VM이 식별됩니다. VM 랜딩 페이지를 보려면 VM 링크를 클릭하십시오.

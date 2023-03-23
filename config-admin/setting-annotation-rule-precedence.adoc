@@ -1,0 +1,33 @@
+---
+permalink: config-admin/setting-annotation-rule-precedence.html 
+sidebar: sidebar 
+keywords:  
+summary: 기본적으로 OnCommand Insight에서는 주석 규칙을 순차적으로 평가합니다. 그러나 Insight에서 특정 순서로 규칙을 평가하려면 OnCommand Insight에서 주석 규칙을 평가하는 순서를 구성할 수 있습니다. 
+---
+= 주석 규칙 우선 순위 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본적으로 OnCommand Insight에서는 주석 규칙을 순차적으로 평가합니다. 그러나 Insight에서 특정 순서로 규칙을 평가하려면 OnCommand Insight에서 주석 규칙을 평가하는 순서를 구성할 수 있습니다.
+
+
+
+== 단계
+
+. Insight트위브 UI에 로그인합니다.
+. Manage * 를 클릭하고 * Annotation rules * 를 선택합니다.
++
+주석 규칙 페이지에는 기존 주석 규칙 목록이 표시됩니다.
+
+. 주석 규칙 위에 커서를 놓습니다.
++
+우선 순위 화살표가 규칙의 오른쪽에 나타납니다.
+
+. 목록에서 규칙을 위 또는 아래로 이동하려면 위쪽 화살표 또는 아래쪽 화살표를 클릭합니다.
++
+기본적으로 새 규칙은 규칙 목록에 순차적으로 추가됩니다. Insight에서 주석 규칙을 평가할 때 개별 자산 페이지에 수동으로 설정된 주석이 규칙 기반 주석보다 우선합니다.
+
+

@@ -1,0 +1,16 @@
+---
+permalink: install-linux/troubleshooting-installations.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 설치는 일반적으로 설치 마법사를 통해 관리됩니다. 그러나 업그레이드 도중 문제가 발생하거나 컴퓨터 환경으로 인해 충돌이 발생할 수 있습니다. 
+---
+= 설치 문제 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 설치는 일반적으로 설치 마법사를 통해 관리됩니다. 그러나 업그레이드 도중 문제가 발생하거나 컴퓨터 환경으로 인해 충돌이 발생할 수 있습니다.
+
+또한 소프트웨어 설치에 필요한 모든 OnCommand Insight 라이센스를 설치해야 합니다.

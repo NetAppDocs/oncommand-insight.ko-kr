@@ -1,0 +1,277 @@
+---
+permalink: config-admin/hp-commandview-ae-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 'HP CommandView Advanced Edition\(AE\) 및 CommandView AE CLI/SMI\(AE Lite\) 데이터 소스는 CommandView\(HiCommand\) 장치 관리자 서버의 인벤토리 및 성능을 지원합니다.' 
+---
+= HP CommandView AE 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HP CommandView Advanced Edition(AE) 및 CommandView AE CLI/SMI(AE Lite) 데이터 소스는 CommandView(HiCommand) 장치 관리자 서버라고도 함)의 인벤토리 및 성능을 지원합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 HP CommandView AE 및 AE Lite 데이터 소스에서 다음 인벤토리 정보를 가져옵니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+개발
+ a| 
+디스크
+
+
+
+ a| 
+저널 풀
+ a| 
+디스크 그룹
+
+
+
+ a| 
+스토리지
+ a| 
+스토리지
+
+
+
+ a| 
+포트 컨트롤러
+ a| 
+스토리지 노드
+
+
+
+ a| 
+스토리지 그룹, DP 풀
+ a| 
+스토리지 풀
+
+
+
+ a| 
+논리 유닛, LDEV
+ a| 
+볼륨
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 재고 요건
+
+* HiCommand Device Manager 서버의 IP 주소입니다
+* CommandView AE 소프트웨어 및 피어 권한에 대한 읽기 전용 사용자 이름 및 암호
+* 장치 관리자의 CommandView AE Lite 버전에는 CLI 라이센스만 있습니다
+* 포트 요구 사항: 2001
+
+
+
+
+== 성능 요구사항
+
+* HDS USP, USP V 및 VSP 성능
++
+** 성능 모니터에 라이센스가 있어야 합니다.
+** 모니터링 스위치를 활성화해야 합니다.
+** 내보내기 도구 (`Export.exe`)을 OnCommand Insight 서버에 복사해야 합니다.
+** 내보내기 도구 버전은 대상 스토리지의 마이크로코드 버전과 일치해야 합니다.
+
+
+* HDS AMS 성능
++
+** 성능 모니터의 라이센스를 받아야 합니다.
+** SNM2(Storage Navigator Modular 2) CLI 유틸리티를 OnCommand Insight 서버에 설치해야 합니다.
+** 다음 명령을 사용하여 OnCommand Insight에서 성능을 획득해야 하는 모든 AMS, WMS, SMS 저장소 어레이를 등록해야 합니다.
++
+
+
+** 등록한 모든 스토리지가 다음 명령의 출력에 나열되어 있는지 확인해야 합니다. `auunitref.exe`.
+
+
+
+
+
+
+== 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+HiCommand 서버
+ a| 
+HiCommand Device Manager 서버의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+HiCommand Device Manager 서버의 사용자 이름입니다.
+
+
+
+ a| 
+암호
+ a| 
+HiCommand Device Manager 서버에 사용되는 암호입니다.
+
+
+
+ a| 
+장치 - USP, USP V, VSP/R600 보관
+ a| 
+VSP G1000(R800), VSP(R700), HUS VM(HM700) 및 USP 스토리지를 위한 장치 목록입니다. 각 스토리지에는 다음이 필요합니다.
+
+* 스토리지의 IP: 스토리지의 IP 주소입니다
+* User Name: 스토리지의 사용자 이름입니다
+* 암호: 스토리지의 암호입니다
+* Export Utility Jar Files(유틸리티 JAR 파일 내보내기): Export Utility(내보내기 유틸리티)가 포함된 폴더입니다 `.jar` 파일
+
+
+
+
+ a| 
+SNM2Devices - WMS/SMS/AMS 저장소
+ a| 
+WMS/SMS/AMS 저장소에 대한 장치 목록입니다. 각 스토리지에는 다음이 필요합니다.
+
+* 스토리지의 IP: 스토리지의 IP 주소입니다
+* Storage Navigator CLI 경로: SNM2 CLI 경로
+* 계정 인증 유효: 유효한 계정 인증을 선택하려면 선택합니다
+* User Name: 스토리지의 사용자 이름입니다
+* 암호: 스토리지의 암호입니다
+
+
+
+
+ a| 
+성능 조정 관리자 를 선택합니다
+ a| 
+성능 튜닝 관리자를 선택하고 다른 성능 옵션을 재정의합니다
+
+
+
+ a| 
+튜닝 관리자 호스트
+ a| 
+튜닝 관리자의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+Tuning Manager 포트
+ a| 
+Tuning Manager에 사용되는 포트입니다
+
+
+
+ a| 
+튜닝 관리자 사용자 이름
+ a| 
+Tuning Manager의 사용자 이름입니다
+
+
+
+ a| 
+조정 관리자 암호
+ a| 
+Tuning Manager 암호
+
+|===
+[NOTE]
+====
+HDS USP, USP V 및 VSP에서 모든 디스크는 둘 이상의 스토리지 그룹에 속할 수 있습니다.
+
+====
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+HiCommand 서버 포트
+ a| 
+HiCommand 장치 관리자에 사용되는 포트입니다
+
+
+
+ a| 
+HTTPS가 활성화되었습니다
+ a| 
+HTTPS를 활성화하려면 선택합니다
+
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 40분)
+
+
+
+ a| 
+목록을 지정하려면 '제외' 또는 '포함'을 선택하십시오
+ a| 
+데이터를 수집할 때 아래 어레이 목록을 포함할지 제외할지 여부를 지정합니다
+
+
+
+ a| 
+장치 제외 또는 포함
+ a| 
+포함하거나 제외할 장치 ID 또는 배열 이름의 쉼표로 구분된 목록입니다
+
+
+
+ a| 
+호스트 관리자를 쿼리합니다
+ a| 
+호스트 관리자를 쿼리하려면 선택합니다
+
+
+
+ a| 
+HTTP 시간 제한(초)
+ a| 
+HTTP 연결 시간 초과(기본값 60초)
+
+
+
+ a| 
+성능 폴링 간격(초)
+ a| 
+성능 폴링 간격(기본값 300초)
+
+
+
+ a| 
+내보내기 제한 시간(초
+ a| 
+내보내기 유틸리티 시간 초과(기본값 300초)
+
+|===

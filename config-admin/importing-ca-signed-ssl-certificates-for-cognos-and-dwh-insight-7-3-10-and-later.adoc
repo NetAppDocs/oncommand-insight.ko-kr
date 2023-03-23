@@ -1,0 +1,118 @@
+---
+permalink: config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html 
+sidebar: sidebar 
+keywords: CAC,Cognos 11,SSL certificates 
+summary: SSL 인증서를 추가하여 데이터 웨어하우스 및 Cognos 환경에 대한 향상된 인증 및 암호화를 활성화할 수 있습니다. 
+---
+= Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SSL 인증서를 추가하여 데이터 웨어하우스 및 Cognos 환경에 대한 향상된 인증 및 암호화를 활성화할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+이 절차는 OnCommand Insight 7.3.10 이상을 실행하는 시스템에 적용됩니다.
+
+[NOTE]
+====
+최신 CAC 및 인증서 지침은 다음 기술 자료 문서를 참조하십시오(Support login required).
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight["OnCommand Insight에 대한 CAC(Common Access Card) 인증을 구성하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight_DataWarehouse["OnCommand Insight 데이터 웨어하우스에 대한 CAC(Common Access Card) 인증을 구성하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_and_import_a_Certificate_Authority_(CA)_signed_certificate_into_OCI_and_DWH_7.3.X["CA(인증 기관) 서명 인증서를 만들어 OnComand Insight 및 OnCommand Insight 데이터 웨어하우스 7.3.x로 가져오는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_a_Self_Signed_Certificate_within_OnCommand_Insight_7.3.X_installed_on_a_Windows_Host["Windows 호스트에 설치된 OnCommand Insight 7.3.X 내에서 자체 서명된 인증서를 만드는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["Cognos CA(인증 기관) 서명 인증서를 OnCommand Datawarehouse 7.3.3 이상으로 가져오는 방법"]
+
+
+====
+
+
+== 이 작업에 대해
+
+이 절차를 수행하려면 관리자 권한이 있어야 합니다.
+
+
+
+== 단계
+
+. IBM Cognos 구성 도구를 사용하여 Cognos를 중지합니다. Cognos를 닫습니다.
+. 의 백업을 생성합니다 `..\SANScreen\cognos\analytics\configuration` 및 `..\SANScreen\cognos\analytics\temp\cam\freshness` 폴더.
+. Cognos에서 인증서 암호화 요청을 생성합니다. 관리자 CMD 창에서 다음을 실행합니다.
++
+.. CD `“\Program Files\sanscreen\cognos\analytics\bin”`
+.. `ThirdPartyCertificateTool.bat -java:local -c -e -p NoPassWordSet -a RSA -r c:\temp\encryptRequest.csr -d “CN=server.domain.com,O=NETAPP,C=US” -H “server.domain.com” -I “ipaddress”`. 참고: 여기서 -H와 -I는 DNS 및 ipaddress와 같은 subjectAltNames를 추가합니다.
+
+
+. 를 엽니다 `c:\temp\encryptRequest.csr` 생성된 콘텐츠를 파일로 만들어 복사합니다.
+. encryptRequest.csr 콘텐츠를 입력하고 CA 서명 포털을 사용하여 인증서를 생성합니다.
+. PKCS7 형식을 사용하여 루트 인증서를 포함시켜 체인 인증서를 다운로드합니다
++
+FQDN.p7b 파일이 다운로드됩니다
+
+. CA에서 .p7b 형식의 인증서를 가져옵니다. Cognos Webserver의 인증서로 표시하는 이름을 사용합니다.
+. ThirdPartyCertificateTool.bat 에서 전체 체인을 가져오지 못하므로 모든 인증서를 내보내려면 여러 단계가 필요합니다. 다음과 같이 체인을 개별적으로 내보내서 분할합니다.
++
+.. ""Crypto Shell Extensions""에서 .p7b 인증서를 엽니다.
+.. 왼쪽 창에서 ""인증서""를 찾습니다.
+.. 루트 CA > 모든 작업 > 내보내기를 마우스 오른쪽 버튼으로 클릭합니다.
+.. Base64 출력을 선택합니다.
+.. 루트 인증서로 식별하는 파일 이름을 입력합니다.
+.. 모든 인증서를 .cer 파일로 별도로 내보내려면 8a ~ 8e 단계를 반복합니다.
+.. 파일 이름을 mediateX.cer 및 cognos.cer 로 지정합니다.
+
+
+. CA 인증서가 하나만 있는 경우 이 단계를 무시하거나, 그렇지 않으면 root.cer와 mediateX.cer를 모두 하나의 파일로 병합합니다.
++
+.. 메모장에서 root.cer를 열고 내용을 복사합니다.
+.. 메모장을 사용하여 intermediate.cer를 열고 9a(중간 우선 및 루트 다음)의 콘텐츠를 추가합니다.
+.. 파일을 chain.cer로 저장합니다.
+
+
+. 관리자 CMD 프롬프트를 사용하여 Cognos 키 저장소로 인증서를 가져옵니다.
++
+.. cd ""Program Files\SANscreen\cognos\analytics\bin"
+.. ThirdPartyCertificateTool.bat - java:local -i -T -r c:\temp\root.cer
+.. ThirdPartyCertificateTool.bat - java:local -i -T -r c:\temp\intermediate.cer
+.. ThirdPartyCertificateTool.bat - java:local -i -e -r c:\temp\cognos.cer -t c:\temp\chain.cer
+
+
+. IBM Cognos 구성을 엽니다.
++
+.. 로컬 구성 --> 보안 --> 암호화 --> Cognos 를 선택합니다
+.. "Use third party CA?"를 변경합니다. 를 True로 설정합니다.
+.. 구성을 저장합니다.
+.. Cognos를 다시 시작합니다
+
+
+. 관리 CMD 프롬프트를 사용하여 최신 Cognos 인증서를 cognos.crt로 내보냅니다.
++
+.. CD "'C:\Program Files\SANscreen"
+.. java\bin\keytool.exe -exportcert -file c:\temp\cognos.crt -keystore cognos\analytics\configuration\certs\CAMKeystore-storetype pkcs12-storepass NoPassWordSet-alias encryption
+
+
+. 에서 DWH 서버 트뤼스토어를 백업합니다``..\SANscreen\wildfly\standalone\configuration\server.trustore``
+. 관리 CMD 프롬프트 창을 사용하여 "'c:\temp\cognos.crt""를 DWH trustore로 가져와서 Cognos와 DWH 간에 SSL 통신을 설정합니다.
++
+.. CD "'C:\Program Files\SANscreen"
+.. java\bin\keytool.exe - importcert -file c:\temp\cognos.crt -keystore wandiderfly\standalone\configuration\server.trutstore -storephass changeit -alias coclnos3rdca
+
+
+. SANscreen 서비스를 다시 시작합니다.
+. DWH 백업을 수행하여 DWH가 Cognos와 통신하는지 확인합니다.
+. 'sl 인증서'만 변경되고 기본 Cognos 인증서는 변경되지 않은 경우에도 다음 단계를 수행해야 합니다. 그렇지 않으면 Cognos가 새 SANscreen 인증서에 대해 불만을 제기하거나 DWH 백업을 생성할 수 없습니다.
++
+.. `cd “%SANSCREEN_HOME%cognos\analytics\bin\”`
+.. `“%SANSCREEN_HOME%java64\bin\keytool.exe” -exportcert -file “c:\temp\sanscreen.cer” -keystore “%SANSCREEN_HOME%wildfly\standalone\configuration\server.keystore” -storepass changeit -alias “ssl certificate”`
+.. `ThirdPartyCertificateTool.bat -java:local -i -T -r “c:\temp\sanscreen.cer”`
+
+
++
+일반적으로 이러한 단계는 에 설명된 Cognos 인증서 가져오기 프로세스의 일부로 수행됩니다 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["Cognos CA(인증 기관) 서명 인증서를 OnCommand Datawarehouse 7.3.3 이상으로 가져오는 방법"]
+
+

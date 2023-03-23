@@ -1,0 +1,41 @@
+---
+permalink: install-windows/increasing-cognos-memory.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 웨어하우스 데이터베이스를 복원하기 전에 Cognos에 대한 Java 할당을 768MB에서 2048MB로 늘려 보고서 생성 시간을 줄여야 합니다. 
+---
+= Cognos 메모리 증가
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 웨어하우스 데이터베이스를 복원하기 전에 Cognos에 대한 Java 할당을 768MB에서 2048MB로 늘려 보고서 생성 시간을 줄여야 합니다.
+
+
+
+== 단계
+
+. 데이터 웨어하우스 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.
+. 로 이동합니다 `disk drive:\install directory\SANscreen\cognos\c10_64\bin64` 디렉토리.
+. 다음 명령을 입력합니다. `cogconfigw`
++
+IBM Cognos 구성 창이 표시됩니다.
+
++
+[NOTE]
+====
+IBM Cognos 구성 바로 가기 응용 프로그램은 를 가리킵니다 `disk drive:\Program Files\SANscreen\cognos\c10_64\bin64\cognosconfigw.bat`. 프로그램 파일(공간 없음) 디렉터리 대신 기본값인 프로그램 파일(간격) 디렉터리에 Insight가 설치되어 있는 경우 를 사용합니다 `.bat` 파일이 작동하지 않습니다. 이 경우 응용 프로그램 바로 가기를 마우스 오른쪽 단추로 클릭하고 변경합니다 `cognosconfigw.bat` 를 선택합니다 `cognosconfig.exe` 바로 가기를 수정합니다.
+
+====
+. 왼쪽의 탐색 창에서 * 환경 * 을 확장하고 * IBM Cognos 서비스 * 를 확장한 다음 * IBM Cognos * 를 클릭합니다.
+. Tomcat의 최대 메모리(MB) * 를 선택하고 768 MB에서 2048 MB로 변경합니다.
+. IBM Cognos 구성 도구 모음에서 를 클릭합니다 image:../media/cognos-save-icon.gif[""](저장).
++
+Cognos가 수행 중인 작업을 알려주는 정보 메시지가 표시됩니다.
+
+. 닫기 * 를 클릭합니다.
+. IBM Cognos 구성 도구 모음에서 를 클릭합니다 image:../media/cognos-stop-icon.gif[""](중지).
+. IBM Cognos 구성 도구 모음에서 를 클릭합니다 image:../media/cognos-start-icon.gif[""](시작).
+

@@ -1,0 +1,36 @@
+---
+permalink: install-windows/testing-the-connectors.html 
+sidebar: sidebar 
+keywords:  
+summary: 업그레이드 후 커넥터를 테스트하여 OnCommand Insight 데이터 웨어하우스에서 OnCommand Insight 서버로 연결되었는지 확인합니다. 
+---
+= 커넥터를 테스트합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+업그레이드 후 커넥터를 테스트하여 OnCommand Insight 데이터 웨어하우스에서 OnCommand Insight 서버로 연결되었는지 확인합니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://fqdn/dwh+`.
+. 왼쪽의 탐색 창에서 * 커넥터 * 를 클릭합니다.
+. 첫 번째 커넥터를 선택합니다.
++
+커넥터 편집 페이지가 표시됩니다.
+
+. Test * 를 클릭합니다.
+. 테스트가 성공적으로 완료되면 * Close * 를 클릭합니다. 실패하면 * Name * 필드에 Insight 서버의 이름과 * Host * 필드에 해당 IP 주소를 입력하고 * Test * 를 클릭합니다.
+. 데이터 웨어하우스와 Insight 서버가 성공적으로 연결되면 * 저장 * 을 클릭합니다.
++
+성공하지 못하면 연결 구성을 확인하고 Insight 서버에 문제가 없는지 확인합니다.
+
+. Test * 를 클릭합니다.
++
+데이터 웨어하우스가 연결을 테스트합니다.
+
+

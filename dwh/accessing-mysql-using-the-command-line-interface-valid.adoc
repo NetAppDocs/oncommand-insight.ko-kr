@@ -1,0 +1,71 @@
+---
+permalink: dwh/accessing-mysql-using-the-command-line-interface-valid.html 
+sidebar: sidebar 
+keywords:  
+summary: 보고서 작성 도구를 통해 데이터 웨어하우스 데이터 요소에 액세스하는 것 외에도 MySQL 사용자로 연결하여 데이터 웨어하우스 데이터 요소에 직접 액세스할 수 있습니다. MySQL 사용자로 연결하여 응용 프로그램의 데이터 요소를 사용할 수 있습니다. 
+---
+= 명령줄 인터페이스를 사용하여 MySQL 액세스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보고서 작성 도구를 통해 데이터 웨어하우스 데이터 요소에 액세스하는 것 외에도 MySQL 사용자로 연결하여 데이터 웨어하우스 데이터 요소에 직접 액세스할 수 있습니다. MySQL 사용자로 연결하여 응용 프로그램의 데이터 요소를 사용할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+다양한 방법으로 연결할 수 있습니다. 다음 단계에서는 한 가지 방법을 보여 줍니다.
+
+MySQL에 액세스할 때 데이터 웨어하우스가 설치된 시스템의 MySQL 데이터베이스에 연결합니다. MySQL 포트는 기본적으로 3306이지만 설치 중에 변경할 수 있습니다. 사용자 이름 및 암호는 dwhuser/netap123 입니다.
+
+
+
+== 단계
+
+. 데이터 웨어하우스가 설치된 컴퓨터에서 명령줄 창을 엽니다.
+. OnCommand Insight 디렉토리에서 MySQL 디렉토리에 액세스합니다.
+. 다음 사용자 이름 및 암호를 입력합니다. `mysql -udwhuser -pnetapp123`
++
+데이터 웨어하우스가 설치된 위치에 따라 다음이 표시됩니다.
+
++
+[listing]
+----
+c:\Program Files\SANscreen\mysql\bin> mysql -udwhuser -pnetapp123
+----
++
+[listing]
+----
+Welcome to the MySQL monitor. Commands end with ; or \g.
+Your MySQL connection id is 882
+Server version: 5.1.28-rc-community MySQL Community Server (GPL)
+----
++
+[listing]
+----
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+----
+. 데이터 웨어하우스 데이터베이스 표시: `show databases;`
++
+다음과 같은 메시지가 표시됩니다.
+
++
+[listing]
+----
+mysql> show databases;
++-------------------------+
+| Database                |
++-------------------------+
+| information_schema      |
+| dwh_capacity            |
+| dwh_capacity_efficiency |
+| dwh_fs_util             |
+| dwh_inventory           |
+| dwh_performance         |
+| dwh_ports               |
++-------------------------+
+----
+

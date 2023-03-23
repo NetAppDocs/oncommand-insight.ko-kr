@@ -1,0 +1,28 @@
+---
+permalink: config-admin/determining-data-source-acquisition-status.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 소스가 Insight의 주요 정보원이기 때문에 데이터 소스가 실행 상태를 유지하도록 하는 것이 중요합니다. 
+---
+= 데이터 소스 획득 상태를 확인하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 소스가 Insight의 주요 정보원이기 때문에 데이터 소스가 실행 상태를 유지하도록 하는 것이 중요합니다.
+
+직접 획득한 모든 자산에 대해 모든 자산 페이지에서 데이터 소스 획득 상태를 볼 수 있습니다. 다음 획득 시나리오 중 하나가 발생할 수 있으며, 이 경우 자산 페이지의 오른쪽 상단 모서리에 상태가 표시됩니다.
+
+* 데이터 소스에서 성공적으로 획득되었습니다
++
+상태 ""를 표시합니다 `xxxx``", where `xxxx` 자산 데이터 소스의 가장 최근 획득 시간을 나타냅니다.
+
+* 획득 오류가 있습니다.
++
+상태 ""를 표시합니다 `xxxx``", where `xxxx` 에서 자산에 있는 하나 이상의 데이터 소스의 가장 최근 획득 시간을 나타냅니다 image:../media/acquisition-icon.gif[""]. 를 클릭합니다 image:../media/acquisition-icon.gif[""]창에서 자산에 대한 각 데이터 소스, 데이터 소스의 상태 및 마지막으로 데이터를 획득한 시간을 표시합니다. 데이터 원본을 클릭하면 데이터 원본의 세부 정보 페이지가 표시됩니다.
+
+
+
+자산을 직접 획득하지 않으면 상태가 표시되지 않습니다.

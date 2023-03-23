@@ -1,0 +1,33 @@
+---
+permalink: config-admin/generating-logs-for-customer-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 고객 지원 본부에서 요청하는 경우 문제 해결을 위해 서버, 획득 또는 원격 로그를 생성합니다. 
+---
+= 고객 지원을 위한 로그를 생성하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+고객 지원 본부에서 요청하는 경우 문제 해결을 위해 서버, 획득 또는 원격 로그를 생성합니다.
+
+
+
+== 이 작업에 대해
+
+NetApp 고객 지원을 요청하는 경우 이 옵션을 사용하여 로그를 생성합니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
+. 다른 작업 영역의 페이지 하단에서 * 고급 문제 해결 * 을 클릭합니다.
+. 고급 메뉴의 다음 페이지에서 * 문제 해결 * 링크를 클릭합니다.
+. 로그 * 탭을 클릭하고 다운로드할 로그 파일을 선택합니다.
++
+로그를 열거나 로그를 로컬로 저장할 수 있는 대화 상자가 열립니다.
+
+

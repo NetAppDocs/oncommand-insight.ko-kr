@@ -1,0 +1,33 @@
+---
+permalink: dwh/forcing-an-update-of-annotations-for-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight에서 데이터 웨어하우스로 주석 업데이트를 시작할 수 있습니다. 
+---
+= 데이터 웨어하우스에 대한 주석 업데이트 강제 적용
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight에서 데이터 웨어하우스로 주석 업데이트를 시작할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+다음 두 옵션 중 하나를 사용하여 주석을 업데이트할 수 있습니다.
+
+* 삭제된 객체 포함: 제거된 호스트, 스토리지 시스템 또는 스위치와 같이 더 이상 존재하지 않는 디바이스에 대한 데이터가 포함됩니다. 이 기능은 기록 데이터 요소를 사용하여 데이터 웨어하우스 데이터를 작성하려는 경우에 필요합니다.
+* 삭제된 개체 제외: 삭제된 개체를 제외하려면 이 옵션을 선택합니다.
+
+
+
+
+== 단계
+
+. OnCommand Insight 포털에 관리자로 로그인합니다 `+https://hostname+`, 위치 `hostname` OnCommand Insight가 설치된 시스템의 이름입니다.
+. Admin * > * Troubleshooting * 을 클릭합니다. 페이지 하단에서 * 고급 문제 해결 * 을 클릭합니다.
+. Actions * 탭에서 * Update DWH Annotations (include deleted) * 를 클릭합니다.
+

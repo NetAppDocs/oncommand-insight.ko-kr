@@ -1,0 +1,14 @@
+---
+permalink: howto/preparing-assets-annotating.html 
+sidebar: sidebar 
+keywords:  
+summary: 주석을 사용하면 특정 태그 또는 레이블을 선택한 자산에 연결할 수 있으므로 해당 자산을 관리하고 보고하는 데 도움이 됩니다. 
+---
+= 자산 준비:주석 달기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+주석을 사용하면 특정 태그 또는 레이블을 선택한 자산에 연결할 수 있으므로 해당 자산을 관리하고 보고하는 데 도움이 됩니다.

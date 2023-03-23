@@ -1,0 +1,201 @@
+---
+permalink: config-admin/hp-eva-storage-sssu-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: '구성을 위해 EVA 스토리지\(SSSU\) 데이터 원본에는 명령 보기\(CV\) 서버의 IP 주소와 CV 소프트웨어에 대한 읽기 전용 사용자 이름 및 암호가 필요합니다. 사용자는 CV 소프트웨어에서 정의해야 합니다.' 
+---
+= HP EVA 스토리지 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성을 위해 EVA 스토리지(SSSU) 데이터 원본에는 명령 보기(CV) 서버의 IP 주소와 CV 소프트웨어에 대한 _read-only_username 및 암호가 필요합니다. 사용자는 CV 소프트웨어에서 정의해야 합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 HP EVA 데이터 소스에서 다음 인벤토리 정보를 가져옵니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+디스크
+ a| 
+디스크
+
+
+
+ a| 
+디스크 그룹
+ a| 
+디스크 그룹(모델링되지 않음)
+
+
+
+ a| 
+스토리지 셀
+ a| 
+스토리지
+
+
+
+ a| 
+가상 디스크
+ a| 
+스토리지 풀
+
+
+
+ a| 
+가상 디스크
+ a| 
+볼륨
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 재고 요건
+
+* CV 서버의 IP 주소입니다
+* CV 소프트웨어에 대한 읽기 전용 사용자 이름 및 암호 사용자는 CV 소프트웨어에서 정의해야 합니다.
+* OnCommand Insight 서버/RAU에 설치된 타사 소프트웨어: `sssu.exe`. 를 클릭합니다 `sssu.exe` 버전은 CV 버전과 일치해야 합니다.
+* 액세스 검증: 실행 `sssu.exe` 사용자 이름 및 암호를 사용하는 명령입니다.
+
+
+
+
+== 성능 요구사항
+
+HP StorageWorks 명령 보기 EVA 소프트웨어 제품군을 OnCommand Insight 서버에 설치해야 합니다. 또는 EVA 서버에 RAU(원격 획득 장치)를 설치할 수 있습니다.
+
+. OnCommand Insight 서버에 HP StorageWorks 명령 보기 EVA 소프트웨어 제품군을 설치하거나 명령 보기 EVA 서버에 원격 획득 장치를 설치합니다.
+. 를 찾습니다 `evaperf.exe` 명령. 예를 들면, 다음과 같습니다. `c:\Program Files\Hewlett-Packard\EVA Performance Monitor\`
+. Command View 서버의 IP를 사용하여 다음 단계를 수행하십시오.
++
+.. 860이 기본 포트인 경우 이 명령을 실행합니다 `Evaperf.exe server <Command View Server IP\> 860 <username\>`
+.. 암호 프롬프트에 Command View 서버 암호를 입력합니다.
++
+이렇게 하면 명령줄 프롬프트가 반환되고 다른 것은 반환되지 않습니다.
+
+
+
+. 를 실행하여 설정을 확인합니다 `evaperf.exe ls`.
++
+Command View 서버에서 관리하는 어레이 또는 컨트롤러 목록이 표시됩니다. 각 라인은 EVA 어레이에서 컨트롤러를 표시합니다.
+
+
+
+
+
+== 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+CommandView 서버
+ a| 
+EVA Storage Manager의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+Command View Manager의 사용자 이름입니다. 이름은 Command View에서 정의해야 합니다.
+
+
+
+ a| 
+암호
+ a| 
+Command View Manager에 사용되는 암호입니다.
+
+
+
+ a| 
+성능 사용자 이름입니다
+ a| 
+성능을 위해 Command View Manager의 사용자 이름입니다. 이름은 Command View에서 정의해야 합니다.
+
+
+
+ a| 
+성능 암호
+ a| 
+성능을 위해 Command View Manager에 사용되는 암호입니다.
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 40분)
+
+
+
+ a| 
+CLI 홈
+ a| 
+CLI 홈 디렉토리의 전체 경로 이름 `sssu.exe` 있습니다
+
+
+
+ a| 
+재고 제외 장치
+ a| 
+쉼표로 구분된 포함할 장치 이름 목록입니다
+
+
+
+ a| 
+성능 폴링 간격(초)
+ a| 
+성능 폴링 간격(기본값 300초)
+
+
+
+ a| 
+Performance CLI Home을 참조하십시오
+ a| 
+어레이 성능의 경우 sssu.exe 있는 CLI 홈 디렉토리의 전체 경로 이름입니다. 액세스를 확인하려면 를 실행합니다 `sssu.exe`
+
+
+
+ a| 
+명령 시간 초과(초)
+ a| 
+`evaperf` 명령 대기 시간 초과(기본값 600초)
+
+
+
+ a| 
+성능 제외 장치
+ a| 
+성능 데이터 수집에서 제외할 장치 이름의 쉼표로 구분된 목록입니다
+
+|===

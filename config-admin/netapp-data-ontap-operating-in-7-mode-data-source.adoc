@@ -1,0 +1,226 @@
+---
+permalink: config-admin/netapp-data-ontap-operating-in-7-mode-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 7-Mode에서 작동하는 Data ONTAP 소프트웨어를 사용하는 스토리지 시스템의 경우, 용량 번호를 얻기 위해 CLI를 사용하는 ONTAPI 데이터 소스를 사용해야 합니다. 
+---
+= 7-Mode 데이터 소스에서 작동하는 NetApp Data ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+7-Mode에서 작동하는 Data ONTAP 소프트웨어를 사용하는 스토리지 시스템의 경우, 용량 번호를 얻기 위해 CLI를 사용하는 ONTAPI 데이터 소스를 사용해야 합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 NetApp Data ONTAP 7-Mode 데이터 소스에서 다음 인벤토리 정보를 수집합니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+디스크
+ a| 
+디스크
+
+
+
+ a| 
+RAID 그룹
+ a| 
+디스크 그룹
+
+
+
+ a| 
+파일러
+ a| 
+스토리지
+
+
+
+ a| 
+파일러
+ a| 
+스토리지 노드
+
+
+
+ a| 
+집계
+ a| 
+스토리지 풀
+
+
+
+ a| 
+LUN을 클릭합니다
+ a| 
+볼륨
+
+
+
+ a| 
+볼륨
+ a| 
+내부 볼륨
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 요구 사항
+
+* FAS 스토리지 컨트롤러 및 파트너의 IP 주소입니다
+* 포트 443
+* 컨트롤러 및 파트너의 사용자 이름 및 암호
+* 7-Mode에서 다음 역할 기능을 지원하는 컨트롤러 및 파트너 컨트롤러에 대한 사용자 지정 관리자 레벨 사용자 이름 및 암호:
++
+** "API- *": OnCommand Insight에서 모든 NetApp 스토리지 API 명령을 실행할 수 있도록 허용합니다.
+** "login-http-admin": OnCommand Insight이 HTTP를 통해 NetApp 스토리지에 연결할 수 있도록 허용하려면 이 옵션을 사용하십시오.
+** "security-api-vFiler": OnCommand Insight가 NetApp 스토리지 API 명령을 실행하여 vFiler 유닛 정보를 검색할 수 있도록 합니다.
+** "CLI-options": 스토리지 시스템 옵션을 읽으려면 이 옵션을 사용합니다.
+** "CLI-LUN": LUN 관리를 위한 다음 명령에 액세스합니다. 지정된 LUN 또는 LUN 클래스의 상태(LUN 경로, 크기, 온라인/오프라인 상태 및 공유 상태)를 표시합니다.
+** "CLI-df": 사용 가능한 디스크 공간을 표시하려면 이 옵션을 사용합니다.
+** "CLI-ifconfig": 인터페이스 및 IP 주소를 표시하려면 이 옵션을 사용합니다.
+
+
+
+
+
+
+== 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+파일러 주소
+ a| 
+NetApp Filer의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+NetApp Filer의 사용자 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+NetApp Filer 암호
+
+
+
+ a| 
+클러스터에 있는 HA 파트너 파일러의 주소입니다
+ a| 
+HA 파트너 파일러의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+클러스터에 있는 HA 파트너 파일러의 사용자 이름입니다
+ a| 
+NetApp HA 파트너 파일러의 사용자 이름입니다
+
+
+
+ a| 
+클러스터에 있는 HA 파트너 파일러의 암호
+ a| 
+NetApp HA 파트너 파일러의 암호입니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 20분)
+
+
+
+ a| 
+연결 유형
+ a| 
+연결 유형을 선택합니다
+
+
+
+ a| 
+연결 포트
+ a| 
+NetApp API에 사용되는 포트입니다
+
+
+
+ a| 
+성능 폴링 간격(초)
+ a| 
+성능 폴링 간격(기본값 300초)
+
+|===
+
+
+== 스토리지 시스템 접속입니다
+
+이 데이터 원본에 대한 기본 관리 사용자를 사용하는 대신 NetApp 스토리지 시스템에서 직접 관리 권한을 가진 사용자를 구성하여 데이터 원본이 NetApp 스토리지 시스템에서 데이터를 가져올 수 있도록 할 수 있습니다.
+
+NetApp 스토리지 시스템에 연결하려면 스토리지 시스템이 있는 기본 pfiler를 획득할 때 지정된 사용자가 다음 조건을 충족해야 합니다.
+
+* 사용자는 vfiler0(루트 파일러/pfiler)에 있어야 합니다.
++
+스토리지 시스템은 기본 pfiler를 획득할 때 획득됩니다.
+
+* 다음 명령은 사용자 역할 기능을 정의합니다.
++
+** "API- *": OnCommand Insight에서 모든 NetApp 스토리지 API 명령을 실행할 수 있도록 허용합니다. ZAPI를 사용하려면 이 명령이 필요합니다.
+** "login-http-admin": OnCommand Insight이 HTTP를 통해 NetApp 스토리지에 연결할 수 있도록 허용하려면 이 옵션을 사용하십시오. ZAPI를 사용하려면 이 명령이 필요합니다.
+** "security-api-vFiler": OnCommand Insight가 NetApp 스토리지 API 명령을 실행하여 vFiler 유닛 정보를 검색할 수 있도록 합니다.
+** "CLI-options": "options" 명령에 대해 사용되며 파트너 IP 및 활성화된 라이센스에 사용됩니다.
+** "CLI-LUN": LUN 관리를 위해 다음 명령을 사용합니다. 지정된 LUN 또는 LUN 클래스의 상태(LUN 경로, 크기, 온라인/오프라인 상태 및 공유 상태)를 표시합니다.
+** "CLI-df": "df-s", "df-r", "df-a-r" 명령의 경우 및 사용 가능한 공간을 표시하는 데 사용됩니다.
+** "CLI-ifconfig": "ifconfig -a" 명령용이며 파일러 IP 주소를 가져오는 데 사용됩니다.
+** "CLI-rdfile": "rdfile /etc/netgroup" 명령에 대해, 넷그룹을 가져오는 데 사용됩니다.
+** "CLI-date": "date" 명령을 기준으로, 스냅샷 복사본을 얻기 위한 전체 날짜를 얻는 데 사용됩니다.
+** "CLI-snap": "snap list" 명령에 사용되며 스냅샷 복사본을 가져오는 데 사용됩니다.
+
+
+
+
+CLI-date 또는 CLI-snap 권한이 제공되지 않는 경우, 획득이 완료될 수 있지만 스냅샷 복사본은 보고되지 않습니다.
+
+7-Mode 데이터 소스를 성공적으로 획득하고 스토리지 시스템에 경고가 표시되지 않도록 하려면 다음 명령 문자열 중 하나를 사용하여 사용자 역할을 정의해야 합니다. 여기에 나열된 두 번째 문자열은 첫 번째 문자열의 간소화된 버전입니다.
+
+[listing]
+----
+login-http-admin,api-*,security-api-vfile,cli-rdfile,cli-options,cli-df,cli-lun,cli-ifconfig,cli-date,cli-snap,
+or
+login-http-admin,api-*,security-api-vfile,cli-*
+----

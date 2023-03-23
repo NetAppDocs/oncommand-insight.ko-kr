@@ -1,0 +1,18 @@
+---
+permalink: install-windows/disable-virus-scan-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 시스템에서 바이러스 백신 소프트웨어가 활성 상태인 경우 OnCommand Insight 설치가 실패합니다. 설치하기 전에 바이러스 검사 소프트웨어를 비활성화하여 이 문제를 방지할 수 있습니다. 
+---
+= 바이러스 검사 소프트웨어 비활성화
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+시스템에서 바이러스 백신 소프트웨어가 활성 상태인 경우 OnCommand Insight 설치가 실패합니다. 설치하기 전에 바이러스 검사 소프트웨어를 비활성화하여 이 문제를 방지할 수 있습니다.
+
+활성 바이러스 검사 소프트웨어로 인한 설치 실패를 방지하려면 각 OnCommand Insight 구성 요소를 설치하는 동안 모든 바이러스 스캐너를 완전히 비활성화해야 합니다. 설치 후에는 Insight 구성 요소(설치, 백업 및 Archiver 경로)에서 사용하는 경로를 바이러스 검사에서 제외해야 합니다.
+
+또한 설치 후 바이러스 백신 검사에서 IBM/DB2 폴더(예: _C:\Program Files\IBM\DB2_)를 제외해야 합니다.

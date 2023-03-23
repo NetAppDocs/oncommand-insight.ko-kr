@@ -1,0 +1,180 @@
+---
+permalink: config-admin/configuring-insight-for-ldap-s.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Insight는 회사 LDAP 도메인에서 구성되므로 LDAP(Lightweight Directory Access Protocol) 설정으로 구성해야 합니다.' 
+---
+= LDAP에 대한 Insight 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight는 회사 LDAP 도메인에서 구성되므로 LDAP(Lightweight Directory Access Protocol) 설정으로 구성해야 합니다.
+
+LDAP 또는 보안 LDAP(LDAPS)와 함께 사용하도록 Insight를 구성하기 전에 회사 환경의 Active Directory 구성을 기록해 두십시오. Insight 설정은 조직의 LDAP 도메인 구성에 있는 설정과 일치해야 합니다. LDAP와 함께 사용하도록 Insight를 구성하기 전에 아래 개념을 검토하고 LDAP 도메인 관리자에게 해당 환경에서 사용할 수 있는 적절한 속성을 확인하십시오.
+
+모든 보안 Active Directory(예: LDAPS) 사용자의 경우 인증서에 정의된 대로 AD 서버 이름을 정확히 사용해야 합니다. 보안 AD 로그인에 IP 주소를 사용할 수 없습니다.
+
+[NOTE]
+====
+OnCommand Insight는 Microsoft Active Directory 서버 또는 Azure AD를 통해 LDAP 및 LDAPS를 지원합니다. 추가 LDAP 구현은 작동할 수 있지만 Insight에서 검증되지 않았습니다. 이 가이드의 절차에서는 Microsoft Active Directory 버전 2 또는 3 LDAP(Lightweight Directory Access Protocol)를 사용하고 있다고 가정합니다.
+
+====
+* 사용자 기본 이름 속성: *
+
+LDAP 사용자 기본 이름 속성(userPrincipalName)은 Insight에서 사용자 이름 속성으로 사용하는 속성입니다. 사용자 주체 이름은 AD(Active Directory) 포리스트에서 전역적으로 고유하도록 보장되지만 많은 대규모 조직에서 사용자의 주 이름이 즉시 분명하지 않거나 알려지지 않을 수 있습니다. 조직에서 기본 사용자 이름에 사용자 기본 이름 속성 대신 을 사용할 수 있습니다.
+
+다음은 User Principal Name 속성 필드에 대한 몇 가지 대체 값입니다.
+
+* * sAMAccountName *
++
+이 사용자 속성은 기존 Windows 2000 NT 이전 사용자 이름입니다. 대부분의 사용자가 개인 Windows 시스템에 로그인하는 데 익숙합니다. 이는 AD 포리스트 전체에서 전체적으로 고유한 것으로 보장되지는 않습니다.
+
++
+
+NOTE: sAMAccountName은 User Principal Name 속성에 대해 대/소문자를 구분합니다.
+
+* 메일 *
++
+MS Exchange가 있는 AD 환경에서는 이 속성이 최종 사용자의 기본 이메일 주소입니다. 이는 해당 userPrincipalName 특성과 달리 AD 포리스트 전체에서 전역적으로 고유해야 하며 최종 사용자에게 익숙한 것이어야 합니다. 대부분의 비 MS Exchange 환경에는 메일 특성이 없습니다.
+
+* * 조회 *
++
+LDAP 호출은 요청된 개체의 복사본이 없거나 더 정확하게는 클라이언트 응용 프로그램에 대한 도메인 컨트롤러의 표시 방식입니다. 실제로 존재하는 경우 해당 개체가 될 디렉터리 트리의 섹션을 보유하지 않고 클라이언트에 개체를 보관할 수 있는 위치를 제공합니다. 클라이언트는 도메인 컨트롤러에 대한 DNS 검색 기준으로 조회를 사용합니다. 가장 이상적인 방법은 항상 개체를 포함하는 도메인 컨트롤러를 참조하는 것입니다. 그러나 참조된 도메인 컨트롤러가 다른 조회를 생성할 수는 있지만 일반적으로 개체가 존재하지 않는다는 사실을 발견하고 클라이언트에 알리는 데 시간이 오래 걸리지는 않습니다.
+
+
+
+
+TIP: sAMAccountName은 일반적으로 User Principal Name 보다 선호됩니다. sAMAccountName은 도메인에서 고유하지만(도메인 포리스트에서는 고유하지 않을 수 있음) 일반적으로 로그인에 사용하는 문자열 도메인 사용자입니다(예: _NetApp\username_). 고유 이름은 포리스트의 고유 이름이지만 일반적으로 사용자가 알 수 없습니다.
+
+
+TIP: 동일한 도메인의 Windows 시스템 부분에서 항상 명령 프롬프트를 열고 set 을 입력하여 적절한 도메인 이름(USERDOMAIN=)을 찾을 수 있습니다. 그러면 OCI 로그인 이름이 가 됩니다 `USERDOMAIN\sAMAccountName`.
+
+도메인 이름 * mydomain.x.y.z.com * 에 를 사용합니다 `DC=x,DC=y,DC=z,DC=com` Insight의 Domain 필드
+
+* 포트 *:
+
+LDAP의 기본 포트는 389이고 LDAPS의 기본 포트는 636입니다
+
+LDAPS의 일반 URL: `ldaps://<ldap_server_host_name>:636`
+
+로그 위치:``\\<install directory>\SANscreen\wildfly\standalone\log\ldap.log``
+
+기본적으로 Insight는 다음 필드에 표시된 값을 예상합니다. Active Directory 환경에서 이러한 변경 사항이 발생할 경우 Insight LDAP 구성에서 변경해야 합니다.
+
+|===
+
+
+ a| 
+역할 속성
+
+
+
+ a| 
+멤버
+
+
+
+ a| 
+메일 속성입니다
+
+
+
+ a| 
+메일
+
+
+
+ a| 
+고유 이름 특성입니다
+
+
+
+ a| 
+DistinguishedName입니다
+
+
+
+ a| 
+불합격
+
+
+
+ a| 
+를 따릅니다
+
+|===
+그룹: *
+
+OnCommand Insight 및 DWH 서버에서 서로 다른 액세스 역할을 가진 사용자를 인증하려면 Active Directory에서 그룹을 만들고 OnCommand Insight 및 DWH 서버에 해당 그룹 이름을 입력해야 합니다. 아래 그룹 이름은 예제일 뿐이며 Insight에서 LDAP에 대해 구성하는 이름은 Active Directory 환경에 대해 설정된 이름과 일치해야 합니다.
+
+|===
+
+
+| Insight Group | 예 
+
+
+ a| 
+Insight 서버 관리자 그룹
+ a| 
+insight.server.admins
+
+
+
+ a| 
+Insight administrators 그룹
+ a| 
+Insight.admins입니다
+
+
+
+ a| 
+Insight 사용자 그룹
+ a| 
+insight.users
+
+
+
+ a| 
+Insight Guest 그룹
+ a| 
+Insight.게스트
+
+
+
+ a| 
+보고 관리자 그룹
+ a| 
+Insight.report.admins입니다
+
+
+
+ a| 
+보고 전문가 저자 그룹
+ a| 
+insight.report.proauthors
+
+
+
+ a| 
+보고 작성자 그룹
+ a| 
+insight.report.business.authors
+
+
+
+ a| 
+보고 소비자 그룹
+ a| 
+Insight.report.business.consumer 를 참조하십시오
+
+
+
+ a| 
+보고 받는 사람 그룹
+ a| 
+Insight.report.수신자
+
+|===

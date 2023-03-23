@@ -1,0 +1,171 @@
+---
+permalink: config-admin/importing-annotation-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'CSV 파일에서 SAN 객체(예: 스토리지, 호스트 및 가상 머신\)에 대한 주석을 유지하는 경우 해당 정보를 OnCommand Insight로 가져올 수 있습니다. 응용 프로그램, 사업체 또는 계층 및 건물 등의 주석을 가져올 수 있습니다.' 
+---
+= 주석 값 불러오기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CSV 파일에서 SAN 객체(예: 스토리지, 호스트, 가상 머신)에 대한 주석을 유지하는 경우 해당 정보를 OnCommand Insight로 가져올 수 있습니다. 응용 프로그램, 사업체 또는 계층 및 건물 등의 주석을 가져올 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+다음 규칙이 적용됩니다.
+
+* 주석 값이 비어 있으면 해당 주석이 개체에서 제거됩니다.
+* 볼륨 또는 내부 볼륨에 주석을 달 때 개체 이름은 대시 및 화살표(\->) 구분 기호를 사용하여 스토리지 이름과 볼륨 이름의 조합입니다.
++
+[listing]
+----
+<storage_name>-><volume_name>
+----
+* 스토리지, 스위치 또는 포트에 주석이 추가된 경우 응용 프로그램 열은 무시됩니다.
+* Tenant, Line_of_Business, Business_Unit 및 Project 열은 업무 엔티티를 만듭니다.
++
+모든 값은 비워 둘 수 있습니다. 응용 프로그램이 이미 입력 값과 다른 업무 엔티티와 연결되어 있는 경우 응용 프로그램은 새 업무 엔티티에 할당됩니다.
+
+
+
+가져오기 유틸리티에서 지원되는 개체 유형 및 키는 다음과 같습니다.
+
+|===
+
+
+| 유형 | 키 
+
+
+ a| 
+호스트
+ a| 
+`+id-><id>+` 또는 `<Name>` 또는 `<IP>`
+
+
+
+ a| 
+VM
+ a| 
+`+id-><id>+` 또는 `<Name>`
+
+
+
+ a| 
+스토리지 풀
+ a| 
+`+id-><id>+` 또는 `<Storage_name>`를 클릭합니다``<Storage_Pool_name>``
+
+
+
+ a| 
+내부 볼륨
+ a| 
+`+id-><id>+` 또는 `<Storage_name>`를 클릭합니다``<Internal_volume_name>``
+
+
+
+ a| 
+볼륨
+ a| 
+`+id-><id>+` 또는 `<Storage_name>`를 클릭합니다``<Volume_name>``
+
+
+
+ a| 
+스토리지
+ a| 
+`+id-><id>+` 또는 `<Name>` 또는 `<IP>`
+
+
+
+ a| 
+스위치
+ a| 
+`+id-><id>+` 또는 `<Name>` 또는 `<IP>`
+
+
+
+ a| 
+포트
+ a| 
+`+id-><id>+` 또는 `<WWN>`
+
+
+
+ a| 
+공유
+ a| 
+`+id-><id>+` 또는 `+<Storage Name>-><Internal Volume Name>-><Share Name>-><Protocol>+` [`+-><Qtree Name >+`]`<Qtree>` 기본 qtree가 있는 경우 선택 사항입니다.
+
+
+
+ a| 
+qtree입니다
+ a| 
+`+id-><id>+` 또는 `+<Storage Name>-><Internal Volume Name>-><Qtree Name>+`
+
+|===
+CSV 파일은 다음 형식을 사용해야 합니다.
+
+[listing]
+----
+, , <Annotation Type> [, <Annotation Type> ...]
+[, Application] [, Tenant] [, Line_Of_Business] [,
+Business_Unit] [, Project]
+
+<Object Type Value 1>, <Object Key 1>, <Annotation Value> [,
+<Annotation Value> ...] [, <Application>] [, <Tenant>] [,
+<Line_Of_Business>] [, <Business_Unit>] [, <Project>]
+
+...
+
+<Object Type Value N>, <Object Key N>, <Annotation Value> [,
+<Annotation Value> ...] [, <Application>] [, <Tenant>] [,
+<Line_Of_Business>] [, <Business_Unit>] [, <Project>]
+----
+
+
+== 단계
+
+. Insight 웹 UI에 로그인합니다.
+. Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
++
+문제 해결 페이지가 표시됩니다.
+
+. 페이지의 * 기타 작업 섹션 * 에서 * OnCommand Insight 포털 * 링크를 클릭합니다.
+. Insight Connect API * 를 클릭합니다.
+. 포털에 로그인합니다.
+. 주석 가져오기 유틸리티 * 를 클릭합니다.
+. 를 저장합니다 `.zip` 파일을 압축 해제하고 를 읽습니다 `readme.txt` 추가 정보 및 샘플을 위한 파일.
+. CSV 파일을 와 동일한 폴더에 저장합니다 `.zip` 파일.
+. 명령줄 창에서 다음을 입력합니다.
++
+[listing]
+----
+java -jar rest-import-utility.jar [-uusername] [-ppassword]
+[-aserver name or IP address] [-bbatch size] [-ccase sensitive:true/false]
+[-lextra logging:true/false] csv filename
+----
++
+추가 로깅을 사용하는 -l 옵션과 대/소문자 구분을 사용하는 -c 옵션은 기본적으로 false로 설정됩니다. 따라서 피처를 사용하려는 경우에만 지정해야 합니다.
+
++
+[NOTE]
+====
+옵션과 해당 값 사이에는 공백이 없습니다.
+
+====
++
+[NOTE]
+====
+다음 키워드는 예약되며 사용자가 주석 이름으로 지정할 수 없습니다. - Application - Application_Priority - Tenant - Line_of_Business - Business_Unit - 예약된 키워드 중 하나를 사용하여 주석 유형을 가져오려고 하면 프로젝트 오류가 생성됩니다. 이러한 키워드를 사용하여 주석 이름을 만든 경우, 불러오기 유틸리티 도구가 올바르게 작동할 수 있도록 주석을 수정해야 합니다.
+
+를 누릅니다
+
+====
+

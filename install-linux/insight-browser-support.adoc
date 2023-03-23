@@ -1,0 +1,23 @@
+---
+permalink: install-linux/insight-browser-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 브라우저 기반 OnCommand Insightfob UI는 여러 브라우저에서 작동할 수 있습니다. 
+---
+= OnCommand Insight에서 지원되는 브라우저
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+브라우저 기반 OnCommand Insightfob UI는 여러 브라우저에서 작동할 수 있습니다.
+
+Insight는 다음 브라우저의 새로운 비 베타 릴리스를 지원합니다.
+
+* Mozilla Firefox
+* Google Chrome
+* Microsoft Edge를 참조하십시오
+
+
+OnCommand Insight에 적합한 브라우저 버전의 전체 목록은 를 참조하십시오 https://imt.netapp.com/matrix/#welcome["NetApp 상호 운용성 매트릭스 툴"].

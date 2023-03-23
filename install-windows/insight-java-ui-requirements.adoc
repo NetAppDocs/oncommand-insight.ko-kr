@@ -1,0 +1,45 @@
+---
+permalink: install-windows/insight-java-ui-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand InsightJava UI 클라이언트는 컴퓨터의 Java 런타임 환경에서 작동하므로 환경이 특정 운영 체제, CPU 및 메모리 요구 사항을 충족하는지 확인하는 것이 중요합니다. 
+---
+= Insight Java UI 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand InsightJava UI 클라이언트는 컴퓨터의 Java 런타임 환경에서 작동하므로 환경이 특정 운영 체제, CPU 및 메모리 요구 사항을 충족하는지 확인하는 것이 중요합니다.
+
+Java UI Client에 액세스하려면 컴퓨터에 Java 런타임 환경(JRE)을 설치해야 합니다.
+
+OnCommand Insight 7.3.2 이상의 경우 Insight Java 클라이언트를 실행하려면 64비트 버전의 Java Runtime Environment(JRE)가 필요합니다.
+
+|===
+
+
+| 구성 요소 | 요구 사항 
+
+
+ a| 
+운영 체제
+ a| 
+모든 Java 8 지원 시스템. Java 기반 클라이언트는 Windows, Macintosh 및 Linux 플랫폼을 지원합니다.
+
+
+
+ a| 
+CPU
+ a| 
+1.8GHz 이상이 필요합니다.
+
+
+
+ a| 
+메모리
+ a| 
+2GB 이상을 권장합니다. 복잡한 데이터 센터(스위치 포트 50,000개 이상)의 성능을 모니터링하는 경우 서버에 더 많은 메모리가 필요합니다. 이는 Perform 라이센스가 설치된 경우에만 적용됩니다.
+
+|===

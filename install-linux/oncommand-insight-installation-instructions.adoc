@@ -1,0 +1,26 @@
+---
+permalink: install-linux/oncommand-insight-installation-instructions.html 
+sidebar: sidebar 
+keywords:  
+summary: 설치하려면 여러 OnCommand Insight 구성 요소, Insight Server, 데이터 웨어하우스 및 이상 탐지 장치를 설치해야 합니다. 
+---
+= Insight 설치 지침
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+설치하려면 여러 OnCommand Insight 구성 요소, Insight Server, 데이터 웨어하우스 및 이상 탐지 장치를 설치해야 합니다.
+
+설치에는 다음과 같은 주요 작업이 포함됩니다.
+
+* OnCommand Insight 설치 프로그램을 다운로드하는 중입니다
+* OnCommand Insight 서버 설치 중
+* 라이센스 설치 중
+* 선택적으로 DWH 및 Reporting 설치(별도의 컴퓨터 또는 가상 시스템에 설치해야 합니다. 보고에는 Microsoft Windows가 필요합니다.)
+* 선택적으로 방화벽 뒤에 있는 장치 리소스에서 정보를 가져오는 RAU(원격 획득 장치)를 원격 사이트에 설치하거나 개인 네트워크에 설치합니다
+* 선택적으로 이상 탐지 엔진 설치(별도의 시스템 또는 가상 머신에 설치해야 함)
+
+
+설치 후 환경에 대한 정보를 얻도록 Insight를 구성해야 합니다. 필요한 작업은 _OnCommand Insight 구성 및 관리 가이드_에 설명되어 있습니다.

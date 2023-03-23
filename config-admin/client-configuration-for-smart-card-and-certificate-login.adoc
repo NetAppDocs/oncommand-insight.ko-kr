@@ -1,0 +1,70 @@
+---
+permalink: config-admin/client-configuration-for-smart-card-and-certificate-login.html 
+sidebar: sidebar 
+keywords:  
+summary: 클라이언트 시스템은 스마트 카드 사용 및 인증서 로그인을 지원하기 위해 미들웨어와 브라우저 수정이 필요합니다. 이미 스마트 카드를 사용하고 있는 고객은 클라이언트 시스템을 추가로 수정할 필요가 없습니다. 
+---
+= 스마트 카드 및 인증서 로그인을 지원하도록 클라이언트 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클라이언트 시스템은 스마트 카드 사용 및 인증서 로그인을 지원하기 위해 미들웨어와 브라우저 수정이 필요합니다. 이미 스마트 카드를 사용하고 있는 고객은 클라이언트 시스템을 추가로 수정할 필요가 없습니다.
+
+
+
+== 시작하기 전에
+
+[NOTE]
+====
+최신 CAC 및 인증서 지침은 다음 기술 자료 문서를 참조하십시오(Support login required).
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight["OnCommand Insight에 대한 CAC(Common Access Card) 인증을 구성하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_Common_Access_Card_(CAC)_authentication_for_NetApp_OnCommand_Insight_DataWarehouse["OnCommand Insight 데이터 웨어하우스에 대한 CAC(Common Access Card) 인증을 구성하는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_and_import_a_Certificate_Authority_(CA)_signed_certificate_into_OCI_and_DWH_7.3.X["CA(인증 기관) 서명 인증서를 만들어 OnComand Insight 및 OnCommand Insight 데이터 웨어하우스 7.3.x로 가져오는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_create_a_Self_Signed_Certificate_within_OnCommand_Insight_7.3.X_installed_on_a_Windows_Host["Windows 호스트에 설치된 OnCommand Insight 7.3.X 내에서 자체 서명된 인증서를 만드는 방법"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_import_a_Cognos_Certificate_Authority_(CA)_signed_certificate_into_DWH_7.3.3_and_later["Cognos CA(인증 기관) 서명 인증서를 OnCommand Datawarehouse 7.3.3 이상으로 가져오는 방법"]
+
+
+====
+
+
+== 이 작업에 대해
+
+다음은 일반적인 클라이언트 구성 요구 사항입니다.
+
+* ActivClient와 같은 스마트 카드 미들웨어 설치( 참조 http://militarycac.com/activclient.htm)[]
+* IE 브라우저 수정( 참조 http://militarycac.com/files/Making_AKO_work_with_Internet_Explorer_color.pdf)[]
+* Firefox 브라우저 수정( 참조 https://militarycac.com/firefox2.htm)[]
+
+
+추가 구성 단계는 다음과 같습니다.
+
+
+
+== 단계
+
+. Java 클라이언트를 시작할 때 불필요한 대화 상자 팝업 비활성화:
++
+.. "Java" 제어판을 엽니다.
+.. "고급" 탭을 선택합니다.
+.. "고급 보안 설정"을 선택합니다.
+.. ""브라우저 키 저장소에서 인증서 및 키 사용" 옵션의 선택을 취소합니다.
+
+
+. Chrome 브라우저를 사용하여 사용자 개인 인증서로 소프트 인증서를 가져옵니다.
++
+.. ""고급 설정""으로 이동합니다.
+.. "인증서 관리"를 선택합니다.
+.. "Personal" certificates 탭"을 선택합니다.
+.. ""가져오기...""를 선택합니다.
+.. P12 파일을 선택합니다.
+.. 마법사를 완료하고 인증서를 만드는 데 사용한 암호를 암호 필드에 입력합니다.
+
+
++
+Internet Explorer 및 Firefox 브라우저를 구성하려면 유사한 단계가 필요합니다.
+
+

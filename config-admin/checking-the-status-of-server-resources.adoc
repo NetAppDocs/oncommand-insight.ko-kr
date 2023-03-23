@@ -1,0 +1,27 @@
+---
+permalink: config-admin/checking-the-status-of-server-resources.html 
+sidebar: sidebar 
+keywords:  
+summary: '이 옵션은 서버 메모리, 디스크 공간, OS, CPU 및 OnCommand Insight 데이터베이스 정보(InnoDB 데이터 크기 포함)와 데이터베이스가 있는 디스크 여유 공간 등의 OnCommand Insight 서버 정보를 표시합니다.' 
+---
+= 서버 리소스의 상태 확인
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 옵션은 서버 메모리, 디스크 공간, OS, CPU 및 OnCommand Insight 데이터베이스 정보(InnoDB 데이터 크기 포함)와 데이터베이스가 상주하는 디스크 여유 공간 등의 OnCommand Insight 서버 정보를 표시합니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
+. 다른 작업 영역의 페이지 하단에서 * OnCommand Insight 포털 * 링크를 클릭합니다.
+. 고급 메뉴의 다음 페이지에서 * 문제 해결 * 링크를 클릭합니다.
+. 서버 리소스 상태 * 를 클릭합니다.
++
+* 고급 OnCommand Insight 사용자의 경우: * 관리자는 일부 SQL 테스트를 실행하여 정보 요약 끝에 있는 버튼을 통해 데이터베이스와 서버의 응답 시간을 확인할 수 있습니다. 이 옵션은 서버 리소스가 부족할 경우 경고를 표시합니다.
+
+

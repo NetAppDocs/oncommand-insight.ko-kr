@@ -1,0 +1,14 @@
+---
+permalink: dwh/troubleshooting-setup-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 주석, 빌드 및 보고서를 설치하는 동안 발생할 수 있는 몇 가지 일반적인 문제가 있습니다. 설명된 단계에 따라 이러한 문제를 해결할 수 있습니다. 
+---
+= 설치 문제 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+주석, 빌드 및 보고서를 설치하는 동안 발생할 수 있는 몇 가지 일반적인 문제가 있습니다. 설명된 단계에 따라 이러한 문제를 해결할 수 있습니다.

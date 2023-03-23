@@ -1,0 +1,23 @@
+---
+permalink: howto/servicenow-integration-syncing-the-connector.html 
+sidebar: sidebar 
+keywords:  
+summary: ServiceNow, Insight 및 커넥터가 올바르게 구성되면 커넥터를 동기화할 수 있습니다. 
+---
+= 커넥터 동기화 중
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ServiceNow, Insight 및 커넥터가 올바르게 구성되면 커넥터를 동기화할 수 있습니다.
+
+
+
+== 단계
+
+. cmd 프롬프트를 열고 \OCI2SNOW 폴더로 변경합니다.
+. 다음 명령을 두 번 실행합니다. 첫 번째 동기화는 항목을 업데이트하고 두 번째 동기화는 관계를 업데이트합니다. `oci_snow_sync.pyz sync`
+. ServiceNow 인스턴스의 Storage Server 테이블이 채워져 있는지 확인합니다. 스토리지 서버를 열고 해당 스토리지와 관련된 리소스가 나열되는지 확인합니다.
+

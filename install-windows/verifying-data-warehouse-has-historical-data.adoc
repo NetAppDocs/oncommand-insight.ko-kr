@@ -1,0 +1,25 @@
+---
+permalink: install-windows/verifying-data-warehouse-has-historical-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 지정 보고서를 복원한 후에는 사용자 지정 보고서를 확인하여 데이터 웨어하우스에서 기간별 데이터를 수집하고 있는지 확인해야 합니다. 
+---
+= 데이터 웨어하우스에 기간별 데이터가 있는지 검증
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 지정 보고서를 복원한 후에는 사용자 지정 보고서를 확인하여 데이터 웨어하우스에서 기간별 데이터를 수집하고 있는지 확인해야 합니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://fqdn/dwh+`.
+. 데이터 웨어하우스 도구 모음에서 를 클릭합니다 image:../media/oci-reporting-portal-icon.gif[""] Insight Reporting 포털을 열고 로그인합니다.
+. 사용자 지정 보고서(예: 사용자 지정 보고서)가 들어 있는 폴더를 엽니다.
+. 을 클릭합니다 image:../media/run-with-options.gif[""] 이 보고서의 출력 형식 옵션을 엽니다.
+. 원하는 옵션을 선택하고 * Run * 을 클릭하여 스토리지, 컴퓨팅 및 스위치 내역 데이터가 채워졌는지 확인합니다.
+

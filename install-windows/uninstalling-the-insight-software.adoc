@@ -1,0 +1,14 @@
+---
+permalink: install-windows/uninstalling-the-insight-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 새 버전을 설치하려면 데이터 웨어하우스 및 원격 획득 소프트웨어의 이전 버전을 제거해야 합니다. 이러한 구성 요소를 업그레이드하기 전에 이 작업을 수행해야 합니다. Insight 서버의 소프트웨어는 데이터 이동 없이 업그레이드하는 동안 제거됩니다. 
+---
+= 소프트웨어 제거
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새 버전을 설치하려면 데이터 웨어하우스 및 원격 획득 소프트웨어의 이전 버전을 제거해야 합니다. 이러한 구성 요소를 업그레이드하기 전에 이 작업을 수행해야 합니다. Insight 서버의 소프트웨어는 데이터 이동 없이 업그레이드하는 동안 제거됩니다.

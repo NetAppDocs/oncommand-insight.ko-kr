@@ -1,0 +1,14 @@
+---
+permalink: config-admin/asset-page-sections.html 
+sidebar: sidebar 
+keywords:  
+summary: 자산 페이지에는 자산과 관련된 정보가 포함된 여러 섹션이 표시됩니다. 표시되는 섹션은 자산의 유형에 따라 다릅니다. 
+---
+= 자산 페이지 섹션
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+자산 페이지에는 자산과 관련된 정보가 포함된 여러 섹션이 표시됩니다. 표시되는 섹션은 자산의 유형에 따라 다릅니다.

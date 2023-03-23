@@ -1,0 +1,153 @@
+---
+section: install-windows
+title: Microsoft Windows용 설치
+entries:
+- title: 설치 필수 구성 요소
+  url: "/install-windows/installation-prerequisites.html"
+  entries:
+  - title: 배포 계획
+    url: "/install-windows/planning-the-installation.html"
+    entries:
+    - title: 데이터 소스 지원 정보
+      url: "/install-windows/data-source-support-information.html"
+    - title: 장치 식별 및 데이터 소스 계획
+      url: "/install-windows/device-identification-and-data-source-planning.html"
+    - title: OnCommand Insight에서 생성된 네트워크 트래픽입니다
+      url: "/install-windows/network-traffic-generated-by-oncommand-insight.html"
+  - title: 바이러스 검사 소프트웨어 비활성화
+    url: "/install-windows/disable-virus-scan-software.html"
+  - title: Insight Server 요구사항
+    url: "/install-windows/insight-server-requirements.html"
+  - title: 데이터 웨어하우스 및 보고 서버 요구 사항
+    url: "/install-windows/data-warehouse-and-reporting-server-requirements.html"
+  - title: 원격 획득 장치 서버 요구 사항
+    url: "/install-windows/remote-acquisition-unit-server-requirements.html"
+  - title: 이상 징후 탐지 요구 사항
+    url: "/install-windows/anomaly-detection-requirements.html"
+  - title: Insight Java UI 요구 사항
+    url: "/install-windows/insight-java-ui-requirements.html"
+  - title: OnCommand Insight에서 지원되는 브라우저
+    url: "/install-windows/insight-browser-support.html"
+- title: Insight 설치 지침
+  url: "/install-windows/oncommand-insight-installation-instructions.html"
+  entries:
+  - title: OnCommand Insight 설치 프로그램을 다운로드하는 중입니다
+    url: "/install-windows/downloading-the-oncommand-insight-installer.html"
+  - title: OnCommand Insight 서버 설치
+    url: "/install-windows/installing-the-oncommand-insight-server.html"
+  - title: OnCommand Insight 데이터 웨어하우스 및 보고 설치
+    url: "/install-windows/installing-the-oncommand-insight-data-warehouse-and-reporting.html"
+    entries:
+    - title: IBM Cognos 설명서 찾기
+      url: "/install-windows/locating-ibm-cognos-documentation.html"
+    - title: 데이터 웨어하우스 및 보고 설치 확인
+      url: "/install-windows/verifying-the-data-warehouse-and-reporting-installation.html"
+  - title: 원격 획득 장치(RAU) 설치
+    url: "/install-windows/installing-a-remote-acquisition-unit-rau.html"
+    entries:
+    - title: 원격 획득 장치 서비스 확인
+      url: "/install-windows/verifying-the-rau-service.html"
+    - title: 원격 획득 장치 설치를 검증합니다
+      url: "/install-windows/validating-the-rau-installation.html"
+  - title: 이상 현상 감지 소프트웨어 설치
+    url: "/install-windows/installing-the-anomaly-detection-software.html"
+  - title: 이더넷 모니터링 장치 설치
+    url: "/install-windows/installing-an-ethernet-monitoring-unit-linux.html"
+  - title: 설치 확인
+    url: "/install-windows/checking-the-installation.html"
+    entries:
+    - title: 새로운 Insight 서비스 확인
+      url: "/install-windows/verifying-new-oncommand-insight-services.html"
+    - title: Insight 로그
+      url: "/install-windows/insight-logs.html"
+    - title: 웹 UI 액세스
+      url: "/install-windows/opening-insight.html"
+    - title: Insight 라이센스 설치
+      url: "/install-windows/installing-your-insight-licenses.html"
+      entries:
+      - title: OnCommand Insight 라이센스
+        url: "/install-windows/oncommand-insight-licenses.html"
+  - title: 설치 문제 해결
+    url: "/install-windows/troubleshooting-installations.html"
+    entries:
+    - title: 라이센스가 없습니다
+      url: "/install-windows/missing-licenses.html"
+    - title: 온라인 기술 지원 요청 제출
+      url: "/install-windows/submitting-an-online-technical-support-request.html"
+- title: OnCommand Insight 업그레이드 중
+  url: "/install-windows/upgrade-insight.html"
+  entries:
+  - title: Insight를 버전 7.3.12 이상으로 업그레이드 - Windows
+    url: "/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html"
+  - title: OnCommand Insight 업그레이드 프로세스 개요
+    url: "/install-windows/overview-of-insight-upgrade-process.html"
+    entries:
+    - title: OnCommand Insight 업그레이드 체크리스트
+      url: "/install-windows/insight-upgrade-checklist.html"
+  - title: OnCommand Insight 설치 패키지를 다운로드합니다
+    url: "/install-windows/downloading-the-installation-packages.html"
+  - title: 데이터베이스 백업
+    url: "/install-windows/backing-up-databases.html"
+    entries:
+    - title: 데이터 웨어하우스 데이터베이스 백업
+      url: "/install-windows/backing-up-the-data-warehouse-database.html"
+    - title: OnCommand Insight 데이터베이스를 백업하는 중입니다
+      url: "/install-windows/backing-up-the-insight-server-database.html"
+  - title: 보안 구성 백업
+    url: "/install-windows/backing-up-the-security-configuration.html"
+  - title: 사용자 지정 데이터 웨어하우스 보고서 백업
+    url: "/install-windows/backing-up-custom-data-warehouse-reports.html"
+  - title: 소프트웨어 업그레이드 수행
+    url: "/install-windows/performing-the-software-upgrade.html"
+    entries:
+    - title: Insight 업그레이드
+      url: "/install-windows/upgrading-insight.html"
+    - title: 데이터 웨어하우스 업그레이드 중
+      url: "/install-windows/upgrading-data-warehouse.html"
+      entries:
+      - title: 데이터 웨어하우스 업그레이드 중에 사용자 정의 Cognos 설정 유지
+        url: "/install-windows/preserving-custom-settings-when-upgrading-data-warehouse.html"
+    - title: 보안 구성 백업
+      url: "/install-windows/back-up-the-security-configuration.html"
+    - title: 원격 획득 장치 서버 업그레이드
+      url: "/install-windows/upgrading-remote-acquisition-servers.html"
+    - title: 이상 현상 감지 엔진 업그레이드
+      url: "/install-windows/upgrading-the-anomaly-detection-engine.html"
+  - title: 업그레이드 후 작업 완료
+    url: "/install-windows/completing-post-upgrade-tasks.html"
+    entries:
+    - title: 데이터 소스 패치를 설치하는 중입니다
+      url: "/install-windows/installing-data-source-patches.html"
+    - title: OnCommand Insight를 업그레이드한 후 인증서 교체
+      url: "/install-windows/replacing-a-certificate-after-upgrading.html"
+    - title: Cognos 메모리 증가
+      url: "/install-windows/increasing-cognos-memory.html"
+    - title: 데이터 웨어하우스 데이터베이스 복원
+      url: "/install-windows/restoring-the-data-warehouse-database.html"
+    - title: 사용자 지정 데이터 웨어하우스 보고서 복원
+      url: "/install-windows/restoring-custom-data-warehouse-reports.html"
+    - title: 데이터 웨어하우스에 기간별 데이터가 있는지 검증
+      url: "/install-windows/verifying-data-warehouse-has-historical-data.html"
+    - title: 성능 아카이브 복원 중
+      url: "/install-windows/restoring-the-performance-archive.html"
+    - title: 커넥터를 테스트합니다
+      url: "/install-windows/testing-the-connectors.html"
+    - title: 추출, 변환 및 로드 일정 계획 확인
+      url: "/install-windows/verifying-the-extract-transform-and-load-process.html"
+    - title: 디스크 모델을 업데이트하는 중입니다
+      url: "/install-windows/updating-disk-models.html"
+    - title: 비즈니스 인텔리전스 툴이 실행 중인지 확인
+      url: "/install-windows/verifying-that-business-intelligence-tools-are-running.html"
+  - title: 업그레이드 문제 해결
+    url: "/install-windows/troubleshooting-an-upgrade.html"
+- title: 소프트웨어 제거
+  url: "/install-windows/uninstalling-the-insight-software.html"
+  entries:
+  - title: OnCommand Insight 서버 제거
+    url: "/install-windows/uninstalling-insight.html"
+  - title: 데이터 웨어하우스 소프트웨어 제거
+    url: "/install-windows/uninstalling-the-data-warehouse-software.html"
+  - title: 원격 획득 장치 소프트웨어 제거
+    url: "/install-windows/uninstalling-the-remote-acquisition-unit-software.html"
+  - title: 이상 현상 감지 엔진 제거
+    url: "/install-windows/uninstalling-the-anomaly-detection-engine-linux.html"

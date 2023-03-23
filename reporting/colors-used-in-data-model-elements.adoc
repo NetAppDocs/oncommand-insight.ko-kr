@@ -1,0 +1,18 @@
+---
+permalink: reporting/colors-used-in-data-model-elements.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 모델 요소의 색상은 서로 다른 표시를 가집니다. 
+---
+= 데이터 모델 요소에 사용된 색상
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 모델 요소의 색상은 서로 다른 표시를 가집니다.
+
+* 노란색 자산: 측정값을 나타냅니다.
+* 노란색이 아닌 자산: 속성을 나타냅니다. 이러한 값은 집계되지 않습니다.
+

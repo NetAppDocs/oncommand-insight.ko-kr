@@ -1,0 +1,30 @@
+---
+permalink: howto/setting-up-snmp-for-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight는 위반 또는 데이터 소스 임계값이 초과된 경우 트리거 이벤트에 대해 SNMP 알림을 보낼 수 있습니다. 
+---
+= 알림에 대한 SNMP 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight는 위반 또는 데이터 소스 임계값이 초과된 경우 트리거 이벤트에 대해 SNMP 알림을 보낼 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+Insight에서 SNMP를 구성하려면 다음 기본 단계를 따르십시오.
+
+
+
+== 단계
+
+. Admin * > * Notifications * 를 클릭하고 * SNMP * 섹션으로 이동합니다.
+. Actions * 를 클릭하고 * Add trap source * 를 선택합니다.
+. SNMP 트랩 수신자 추가 * 대화 상자에 SNMP 트랩 메시지를 보낼 * IP * 주소 및 * 포트 * 를 입력합니다. Community String*의 경우 SNMP 트랩 메시지에 ""public""을 사용합니다.
+. 저장 * 을 클릭합니다.
+

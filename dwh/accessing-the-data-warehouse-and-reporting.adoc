@@ -1,0 +1,22 @@
+---
+permalink: dwh/accessing-the-data-warehouse-and-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 웨어하우스 포털은 관리 옵션에 대한 액세스를 제공합니다. 데이터 웨어하우스 포털에서 보고 포털에 액세스할 수도 있습니다. 
+---
+= 데이터 웨어하우스 및 보고 포털 액세스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 웨어하우스 포털은 관리 옵션에 대한 액세스를 제공합니다. 데이터 웨어하우스 포털에서 보고 포털에 액세스할 수도 있습니다.
+
+
+
+== 단계
+
+. Data Warehouse 포털에 관리자로 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 데이터 웨어하우스 도구 모음에서 를 클릭합니다 image:../media/oci-reporting-portal-icon.gif[""] 보고 포털을 엽니다.
+

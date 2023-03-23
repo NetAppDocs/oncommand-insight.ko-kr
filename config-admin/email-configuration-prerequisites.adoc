@@ -1,0 +1,20 @@
+---
+permalink: config-admin/email-configuration-prerequisites.html 
+sidebar: sidebar 
+keywords:  
+summary: '전자 메일 시스템에 액세스하도록 OnCommand Insight를 구성하려면 먼저 \(SMTP 또는 Exchange\) 메일 서버를 식별하고 OnCommand Insight 보고서에 대한 전자 메일 계정을 할당할 호스트 이름 또는 IP 주소를 검색해야 합니다.' 
+---
+= e-메일 구성 사전 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이메일 시스템에 액세스하도록 OnCommand Insight를 구성하려면 먼저 호스트 이름 또는 IP 주소를 검색하여 (SMTP 또는 Exchange) 메일 서버를 식별하고 OnCommand Insight 보고서에 대한 이메일 계정을 할당해야 합니다.
+
+이메일 관리자에게 문의하여 OnCommand Insight에 대한 이메일 계정을 만드십시오. 다음 정보가 필요합니다.
+
+* 조직에서 사용하는 (SMTP 또는 Exchange) 메일 서버를 식별하기 위한 호스트 이름 또는 IP 주소입니다. 이 정보는 전자 메일을 읽는 데 사용하는 응용 프로그램을 통해 찾을 수 있습니다. 예를 들어 Microsoft Outlook에서 계정 구성을 확인하여 서버의 이름을 찾을 수 있습니다. 도구 - 전자 메일 계정 - 기존 전자 메일 계정을 보거나 변경할 수 있습니다.
+* OnCommand Insight에서 정기 보고서를 보내는 데 사용할 전자 메일 계정의 이름입니다. 계정은 조직에서 유효한 이메일 주소여야 합니다. (대부분의 메일 시스템은 유효한 사용자로부터 메시지를 보내지 않는 한 메시지를 보내지 않습니다.) 전자 메일 서버에서 메일을 보내기 위해 사용자 이름과 암호가 필요한 경우 시스템 관리자에게 문의하십시오.
+

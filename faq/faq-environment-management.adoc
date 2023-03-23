@@ -1,0 +1,20 @@
+---
+permalink: faq/faq-environment-management.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 FAQ는 OnCommand Insight 환경 관리에 대한 일반적인 질문에 답합니다. 
+---
+= 환경 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 FAQ는 OnCommand Insight 환경 관리에 대한 일반적인 질문에 답합니다.
+
+
+
+== 특정 사용자에게 OCI에 대한 액세스 권한을 제공하면서 특정 리소스(예: SVM 및 관련 볼륨, VM, 서버)가 있습니까?
+
+OCI는 역할 기반 액세스를 제공합니다. 예를 들어, 보고에 대한 액세스는 OCI의 데이터 웨어하우스 보고를 통해 제어됩니다. 보고서를 예약하거나 PDF, HTML 또는 CSV로 e-메일로 보내거나, 파일 공유 또는 사용자가 보기 전에 인증을 받아야 하는 URL로 보낼 수 있습니다. 사용자 기반 액세스는 Admins, Users 및 Guest 형식으로 부여됩니다. Active Directory/LDAP 지원도 사용할 수 있습니다.

@@ -1,0 +1,16 @@
+---
+permalink: install-linux/insight-logs.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight는 조사 및 문제 해결에 도움이 되는 많은 로그 파일을 제공합니다. 사용 가능한 로그가 로그 디렉토리에 나열됩니다. BareTail과 같은 로그 모니터링 도구를 사용하여 모든 로그를 한 번에 표시할 수 있습니다. 
+---
+= Insight 로그
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight는 조사 및 문제 해결에 도움이 되는 많은 로그 파일을 제공합니다. 사용 가능한 로그가 로그 디렉토리에 나열됩니다. BareTail과 같은 로그 모니터링 도구를 사용하여 모든 로그를 한 번에 표시할 수 있습니다.
+
+로그 파일은 에 있습니다 `/var/log/netapp/oci/wildfly/` 디렉토리. 획득 로그는 에 있습니다 `/var/log/netapp/oci/acq` 디렉토리. 데이터 파일은 에 있습니다 `/var/lib/netapp/oci`.

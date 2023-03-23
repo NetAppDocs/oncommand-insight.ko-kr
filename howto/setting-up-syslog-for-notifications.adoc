@@ -1,0 +1,31 @@
+---
+permalink: howto/setting-up-syslog-for-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight는 용량 또는 경로 위반과 성능 경고를 위해 syslog 이벤트를 전송할 수 있습니다. 
+---
+= 로깅할 Syslog 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight는 용량 또는 경로 위반과 성능 경고를 위해 syslog 이벤트를 전송할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+Insight에서 syslog 알림을 구성하려면 다음 기본 단계를 따르십시오.
+
+
+
+== 단계
+
+. Admin * > * Notifications * 를 클릭하고 * Syslog * 섹션으로 이동합니다.
+. Syslog 활성화 * 확인란을 선택합니다.
+. 서버 * 필드에 로그 서버의 IP 주소를 입력합니다.
+. Facility * 필드에서 메시지를 로깅하는 프로그램 유형에 해당하는 시설 수준을 선택합니다.
+. 저장 * 을 클릭합니다.
+

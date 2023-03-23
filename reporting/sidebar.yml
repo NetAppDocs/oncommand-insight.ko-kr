@@ -1,0 +1,61 @@
+---
+section: reporting
+title: 보고
+entries:
+- title: OnCommand Insight 보고를 시작합니다
+  url: "/reporting/welcome-to-oncommand-insight-reporting.html"
+  entries:
+  - title: OnCommand Insight 보고 포털 액세스
+    url: "/reporting/accessing-the-oncommand-insight-reporting-portal.html"
+  - title: 설치된 라이센스로 인한 변형
+    url: "/reporting/variations-due-to-installed-licenses.html"
+  - title: 사용자 역할을 보고합니다
+    url: "/reporting/reporting-user-roles.html"
+  - title: 보안 헤더 사용
+    url: "/reporting/enabling-security-headers.html"
+- title: 간편한 보고
+  url: "/reporting/reporting-made-easy.html"
+  entries:
+  - title: 미리 정의된 OnCommand Insight 보고서로 이동합니다
+    url: "/reporting/navigating-to-the-pre-defined-oncommand-insight-reports-and-dashboards.html"
+  - title: Storage Manager 대시보드를 통해 수행할 수 있는 작업
+    url: "/reporting/storage-manager-dashboard.html"
+  - title: 사전 정의된 보고서를 사용하여 일반적인 질문에 답합니다
+    url: "/reporting/which-report-answers-your-question.html"
+  - title: Cognos 11을 사용하여 보고서 만들기
+    url: "/reporting/creating-a-report-cognos-11.html"
+- title: 보고서 관리
+  url: "/reporting/managing-reports.html"
+  entries:
+  - title: 보고서의 출력 형식 및 배달 사용자 지정
+    url: "/reporting/customizing-a-report-s-output-format-and-delivery.html"
+  - title: 보고서를 클립보드로 복사합니다
+    url: "/reporting/copying-a-report-to-the-clipboard.html"
+  - title: 클립보드에서 보고서(XML)를 엽니다
+    url: "/reporting/importing-existing-reports-to-cognos-11.html"
+- title: 사용자 정의 임시 보고서 작성
+  url: "/reporting/creating-custom-ad-hoc-reports.html"
+  entries:
+  - title: 보고서를 디자인하기 전에 수행해야 할 작업
+    url: "/reporting/what-you-need-to-do-before-you-design-your-report.html"
+  - title: 보고서 작성 프로세스
+    url: "/reporting/process-of-creating-custom-reports.html"
+    entries:
+    - title: 사용자 지정 보고서의 결과를 계획하는 방법
+      url: "/reporting/how-to-plan-the-results-of-your-custom-report.html"
+    - title: 보고서 디자인 팁
+      url: "/reporting/tips-for-designing-reports.html"
+- title: 보고 데이터 모델
+  url: "/reporting/reporting-data-model.html"
+  entries:
+  - title: 데이터 모델 개요
+    url: "/reporting/data-model-overview.html"
+    entries:
+    - title: OnCommand Insight 데이터 모델
+      url: "/reporting/oncommand-insight-data-model-descriptions.html"
+    - title: 데이터 모델 팩트 및 차원 테이블
+      url: "/reporting/data-model-fact-and-dimension-tables.html"
+    - title: 데이터 모델 요소에 사용된 색상
+      url: "/reporting/colors-used-in-data-model-elements.html"
+    - title: 하나의 보고서에서 여러 데이터 모델 사용
+      url: "/reporting/using-multiple-data-models-in-one-report.html"

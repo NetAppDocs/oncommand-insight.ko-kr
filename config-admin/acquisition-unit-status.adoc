@@ -1,0 +1,29 @@
+---
+permalink: config-admin/acquisition-unit-status.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Acquisition Unit(획득 장치) 화면에서는 상태 및 현재 오류를 포함하여 모든 획득 장치를 볼 수 있습니다.' 
+---
+= 획득 장치 상태
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Acquisition Unit(획득 장치) 화면에서는 상태 및 현재 오류를 포함하여 모든 획득 장치를 볼 수 있습니다.
+
+서버에 연결된 Insight 획득 장치의 상태가 * Admin * > * Acquisition Units * (획득 단위) 표에 표시됩니다. 이 표에는 각 획득 장치에 대한 다음 정보가 표시됩니다.
+
+* * 이름 *
+* * IP *
+* * Status * 는 획득 장치의 작동 상태입니다.
+* ** Last 보고에 보고됨 ** 획득 장치에 연결된 데이터 소스가 마지막으로 보고된 시간을 표시합니다.
+* * 참고 * AU와 관련된 사용자 입력 메모를 표시합니다.
+
+
+목록의 획득 장치에 문제가 있는 경우 Status(상태) 필드에 문제에 대한 간략한 정보가 포함된 빨간색 원이 표시됩니다. 획득 장치 문제는 데이터 수집에 영향을 줄 수 있으므로 조사해야 합니다.
+
+획득 장치를 다시 시작하려면 장치 위로 마우스를 가져가 나타나는 _Restart Acquisition Unit_(획득 장치 재시작) 버튼을 클릭합니다.
+
+텍스트 메모를 추가하려면 획득 장치 위로 마우스를 가져가 나타나는 _Add Note_ 단추를 클릭합니다. 가장 최근에 입력한 메모만 표시됩니다.

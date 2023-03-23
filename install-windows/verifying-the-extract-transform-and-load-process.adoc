@@ -1,0 +1,32 @@
+---
+permalink: install-windows/verifying-the-extract-transform-and-load-process.html 
+sidebar: sidebar 
+keywords:  
+summary: '업그레이드 후에는 ETL\(Extract, Transform, Load\) 프로세스에서 OnCommand Insight 데이터베이스에서 데이터를 검색하고, 데이터를 변환하며, 데이터 마트에 저장해야 합니다.' 
+---
+= 추출, 변환 및 로드 일정 계획 확인
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+업그레이드 후에는 ETL(Extract, Transform, Load) 프로세스에서 OnCommand Insight 데이터베이스에서 데이터를 검색하고 데이터를 변환하며 데이터 마트에 저장해야 합니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://fqdn/dwh+`.
+. 왼쪽의 탐색 창에서 * Schedule * 을 클릭합니다.
+. 일정 편집 * 을 클릭합니다.
+. Type * 목록에서 * Daily * 또는 * Weekly * 를 선택합니다.
++
+하루에 한 번 ETL을 실행하도록 예약하는 것이 좋습니다.
+
+. 선택한 시간이 작업을 실행할 시간인지 확인합니다.
++
+이렇게 하면 빌드 작업이 자동으로 실행됩니다.
+
+. 저장 * 을 클릭합니다.
+

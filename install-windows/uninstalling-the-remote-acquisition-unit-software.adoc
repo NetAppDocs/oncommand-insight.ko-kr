@@ -1,0 +1,24 @@
+---
+permalink: install-windows/uninstalling-the-remote-acquisition-unit-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 새 버전으로 업그레이드하려면 기존 버전의 원격 획득 장치 소프트웨어를 제거해야 합니다. 사용자 환경의 모든 원격 획득 장치 서버에서 이 작업을 수행해야 합니다. 
+---
+= 원격 획득 장치 소프트웨어 제거
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새 버전으로 업그레이드하려면 기존 버전의 원격 획득 장치 소프트웨어를 제거해야 합니다. 사용자 환경의 모든 원격 획득 장치 서버에서 이 작업을 수행해야 합니다.
+
+
+
+== 단계
+
+. 원격 획득 장치 서버에 로그인합니다.
+. 서버의 모든 OnCommand Insight 창이 닫혀 있는지 확인합니다.
+. 제어판에서 * 프로그램 제거 * 기능을 열고 제거할 OnCommand Insight 원격 획득 장치 프로그램을 선택합니다.
+. 제거 * 를 클릭하고 화면의 지시를 따릅니다.
+

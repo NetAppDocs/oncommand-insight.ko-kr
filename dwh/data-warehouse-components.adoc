@@ -1,0 +1,19 @@
+---
+permalink: dwh/data-warehouse-components.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 웨어하우스에는 여러 구성 요소가 포함되어 있습니다. 
+---
+= 데이터 웨어하우스 구성 요소
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 웨어하우스에는 여러 구성 요소가 포함되어 있습니다.
+
+* 데이터 웨어하우스 포털
+* OnCommand Insight 보고 포털
+* 보고서 작성 도구
+

@@ -1,0 +1,732 @@
+---
+section: config-admin
+title: 구성 및 관리
+entries:
+- title: Insight 설정
+  url: "/config-admin/setting-up-insight.html"
+  entries:
+  - title: 웹 UI 액세스
+    url: "/config-admin/opening-insight.html"
+  - title: Insight 라이센스 설치
+    url: "/config-admin/installing-your-insight-licenses.html"
+    entries:
+    - title: OnCommand Insight 라이센스
+      url: "/config-admin/oncommand-insight-licenses.html"
+  - title: 사용자 계정 설정 및 관리
+    url: "/config-admin/setting-up-and-managing-user-accounts.html"
+    entries:
+    - title: Insight 사용자 역할
+      url: "/config-admin/insight-user-roles.html"
+    - title: LDAP에 대한 Insight 구성
+      url: "/config-admin/configuring-insight-for-ldap-s.html"
+      entries:
+      - title: LDAP를 사용하여 사용자 정의 구성
+        url: "/config-admin/configuring-user-definitions-using-ldap.html"
+    - title: 사용자 암호 변경
+      url: "/config-admin/changing-user-passwords.html"
+    - title: 사용자 정의 편집
+      url: "/config-admin/editing-a-user-definition.html"
+    - title: 사용자 계정을 삭제하는 중입니다
+      url: "/config-admin/deleting-a-user-account.html"
+    - title: SSO(Single Sign-On) 구성
+      url: "/config-admin/configuring-sso.html"
+  - title: 로그인 경고 메시지 설정
+    url: "/config-admin/configuring-a-login-warning-message.html"
+  - title: Insight Security 를 참조하십시오
+    url: "/config-admin/security-management.html"
+    entries:
+    - title: Insight 서버의 보안 관리
+      url: "/config-admin/managing-security-on-the-insight-server.html"
+    - title: 로컬 획득 장치의 보안 관리
+      url: "/config-admin/managing-security-on-the-local-acquisition-unit.html"
+    - title: RAU에 대한 보안 관리
+      url: "/config-admin/managing-security-on-an-rau.html"
+    - title: 데이터 웨어하우스의 보안 관리
+      url: "/config-admin/managing-security-on-the-data-warehouse.html"
+    - title: OnCommand Insight 내부 사용자 암호 변경
+      url: "/config-admin/changing-oncommand-insight-internal-user-passwords.html"
+      entries:
+      - title: 서버 연결 구성 UI를 사용하여 "inventory" 및 "dWh_internal" 암호 변경
+        url: "/config-admin/changing-passwords-in-the-server-connection-configuration-ui.html"
+      - title: ODBC 관리 도구를 사용하여 dWh 암호를 변경합니다
+        url: "/config-admin/changing-the-dwh-password-using-the-odbc-administration-tool.html"
+  - title: 스마트 카드 및 인증서 로그인 지원
+    url: "/config-admin/certificate-login-support.html"
+    entries:
+    - title: 스마트 카드 및 인증서 로그인을 위한 호스트 구성
+      url: "/config-admin/host-configuration-for-smart-card-and-certificate-login.html"
+    - title: 스마트 카드 및 인증서 로그인을 지원하도록 클라이언트 구성
+      url: "/config-admin/client-configuration-for-smart-card-and-certificate-login.html"
+    - title: Linux 서버에 대한 CAC 활성화
+      url: "/config-admin/cac-configuration-for-linux.html"
+    - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
+      url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
+    - title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
+      url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
+    - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
+      url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
+    - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
+      url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
+    - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
+      url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
+  - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
+    url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
+  - title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
+    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
+  - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
+    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
+  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
+    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
+  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
+    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
+  - title: SSL 인증서를 가져오는 중입니다
+    url: "/config-admin/importing-an-ssl-certificate.html"
+  - title: Insight 데이터베이스의 주별 백업 설정
+    url: "/config-admin/setting-up-weekly-backups-for-your-oci-database.html"
+    entries:
+    - title: 백업에 포함된 항목
+      url: "/config-admin/what-s-included-in-the-backup.html"
+  - title: 성능 데이터 아카이빙
+    url: "/config-admin/performance-data-archiving.html"
+    entries:
+    - title: 성능 아카이브 지원
+      url: "/config-admin/enabling-performance-archive.html"
+    - title: 성능 아카이브 로드 중
+      url: "/config-admin/loading-performance-archive.html"
+  - title: 전자 메일 구성
+    url: "/config-admin/configuring-your-email.html"
+    entries:
+    - title: e-메일 구성 사전 요구 사항
+      url: "/config-admin/email-configuration-prerequisites.html"
+    - title: Insight에 대한 이메일 구성
+      url: "/config-admin/configuring-your-email-for-insight.html"
+  - title: SNMP 알림을 구성합니다
+    url: "/config-admin/configuring-snmp-notifications.html"
+  - title: syslog 기능을 활성화합니다
+    url: "/config-admin/enabling-the-syslog-facility.html"
+    entries:
+    - title: Insight syslog 콘텐츠
+      url: "/config-admin/insight-syslog-contents.html"
+  - title: 성능을 구성하고 위반 알림을 확인합니다
+    url: "/config-admin/configuring-performance-and-assurance-violation-notifications.html"
+  - title: 시스템 수준 이벤트 알림 구성
+    url: "/config-admin/configuring-system-level-event-notifications.html"
+  - title: ASUP 처리 구성
+    url: "/config-admin/configuring-your-asup-processing.html"
+    entries:
+    - title: AutoSupport(ASUP) 패키지에 포함된 내용
+      url: "/config-admin/what-s-included-in-the-autosupport-package.html"
+  - title: 응용 프로그램 정의
+    url: "/config-admin/defining-applications.html"
+    entries:
+    - title: 자산에 애플리케이션 할당
+      url: "/config-admin/assigning-applications-to-assets.html"
+    - title: 응용 프로그램 편집
+      url: "/config-admin/editing-applications.html"
+    - title: 응용 프로그램을 삭제하는 중입니다
+      url: "/config-admin/deleting-an-application.html"
+  - title: OnCommand Insight 이상 징후 탐지 작동 방식
+    url: "/config-admin/about-oncommand-insight-anomaly-detection.html"
+    entries:
+    - title: 이상 징후 검출을 위한 애플리케이션 구성
+      url: "/config-admin/configuring-anomaly-detection-for-applications.html"
+    - title: 이상 섹션 사용
+      url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
+    - title: 이상 징후 탐지 모니터링 상태
+      url: "/config-admin/anomaly-detection-monitoring-status.html"
+    - title: 애플리케이션 성능 정책 생성
+      url: "/config-admin/creating-an-application-performance-policy.html"
+  - title: 업무 엔티티 계층 구조
+    url: "/config-admin/your-business-entities-hierarchy.html"
+    entries:
+    - title: 비즈니스 엔터티 계층 구조 디자인
+      url: "/config-admin/designing-your-business-entities-hierarchy.html"
+    - title: 비즈니스 엔티티 생성
+      url: "/config-admin/setting-up-business-entities.html"
+    - title: 자산에 업무 엔티티 할당
+      url: "/config-admin/assigning-business-entities-to-assets.html"
+    - title: 여러 자산에 비즈니스 엔티티를 할당하거나 제거합니다
+      url: "/config-admin/adding-or-removing-business-entities-from-multiple-assets.html"
+  - title: 주석 정의
+    url: "/config-admin/defining-annotations.html"
+    entries:
+    - title: 주석을 사용하여 환경을 모니터링합니다
+      url: "/config-admin/using-annotations-to-monitor-your-environment.html"
+      entries:
+      - title: 주석 유형 관리
+        url: "/config-admin/managing-annotation-types.html"
+        entries:
+        - title: 기본 주석 유형
+          url: "/config-admin/predefined-annotation-types.html"
+        - title: 주석 지정 방법
+          url: "/config-admin/how-annotations-are-assigned.html"
+        - title: 주석과 비용 연관
+          url: "/config-admin/associating-costs-with-annotations.html"
+      - title: 사용자 정의 주석 작성
+        url: "/config-admin/creating-custom-annotations.html"
+        entries:
+        - title: 자산에 주석 수동 할당
+          url: "/config-admin/manually-assigning-annotations-to-assets.html"
+        - title: 주석 수정
+          url: "/config-admin/modifying-annotations.html"
+        - title: 주석 삭제
+          url: "/config-admin/deleting-annotations.html"
+      - title: 주석 규칙을 사용하여 자산에 주석 지정
+        url: "/config-admin/assigning-annotations-to-assets-using-annotation-rules.html"
+        entries:
+        - title: 기본 스토리지 주석 규칙
+          url: "/config-admin/default-storage-annotation-settings.html"
+        - title: 주석 규칙 작성
+          url: "/config-admin/configuring-annotation-rules-for-automatic-assignment.html"
+        - title: 주석 규칙 우선 순위 설정
+          url: "/config-admin/setting-annotation-rule-precedence.html"
+        - title: 주석 규칙 수정
+          url: "/config-admin/modifying-annotation-rules.html"
+        - title: 주석 규칙 삭제
+          url: "/config-admin/deleting-annotation-rules.html"
+      - title: 주석 값 불러오기
+        url: "/config-admin/importing-annotation-values.html"
+      - title: 쿼리를 사용하여 여러 자산에 주석 할당
+        url: "/config-admin/assigning-annotations-using-a-query.html"
+  - title: 자산 쿼리 중
+    url: "/config-admin/using-queries.html"
+    entries:
+    - title: 쿼리 및 대시보드에 사용되는 자산
+      url: "/config-admin/assets-used-in-queries-and-dashboards.html"
+    - title: 쿼리 만들기
+      url: "/config-admin/creating-a-query.html"
+    - title: 쿼리 보기
+      url: "/config-admin/viewing-queries.html"
+    - title: 쿼리 결과를 .csv 파일로 내보내는 중입니다
+      url: "/config-admin/exporting-query-results-to-a-csv-file.html"
+    - title: 쿼리 수정
+      url: "/config-admin/modifying-queries.html"
+    - title: 쿼리를 삭제하는 중입니다
+      url: "/config-admin/deleting-queries.html"
+    - title: 자산에 여러 애플리케이션을 할당하거나 자산에서 여러 애플리케이션을 제거합니다
+      url: "/config-admin/editing-or-removing-applications-in-bulk.html"
+    - title: 자산에서 여러 주석 편집 또는 제거
+      url: "/config-admin/editing-or-removing-annotations-from-assets-in-bulk.html"
+    - title: 테이블 값 복사 중
+      url: "/config-admin/copying-table-values.html"
+  - title: 성능 정책 관리
+    url: "/config-admin/performance-policy-management.html"
+    entries:
+    - title: 성능 정책 생성 중
+      url: "/config-admin/creating-performance-policies.html"
+    - title: 성능 정책 평가 우선 순위
+      url: "/config-admin/performance-policy-precedence.html"
+      entries:
+      - title: 성능 정책의 우선 순위 변경
+        url: "/config-admin/configuring-performance-policy-precedence.html"
+    - title: 성능 정책 편집
+      url: "/config-admin/modifying-performance-policies.html"
+    - title: 성능 정책을 삭제하는 중입니다
+      url: "/config-admin/deleting-performance-policies.html"
+  - title: 사용자 데이터 가져오기 및 내보내기
+    url: "/config-admin/importing-and-exporting-user-data.html"
+- title: Insight Security 를 참조하십시오
+  url: "/config-admin/security-management.html"
+  entries:
+  - title: Insight 서버의 보안 관리
+    url: "/config-admin/managing-security-on-the-insight-server.html"
+  - title: 로컬 획득 장치의 보안 관리
+    url: "/config-admin/managing-security-on-the-local-acquisition-unit.html"
+  - title: RAU에 대한 보안 관리
+    url: "/config-admin/managing-security-on-an-rau.html"
+  - title: 데이터 웨어하우스의 보안 관리
+    url: "/config-admin/managing-security-on-the-data-warehouse.html"
+  - title: OnCommand Insight 내부 사용자 암호 변경
+    url: "/config-admin/changing-oncommand-insight-internal-user-passwords.html"
+    entries:
+    - title: 서버 연결 구성 UI를 사용하여 "inventory" 및 "dWh_internal" 암호 변경
+      url: "/config-admin/changing-passwords-in-the-server-connection-configuration-ui.html"
+    - title: ODBC 관리 도구를 사용하여 dWh 암호를 변경합니다
+      url: "/config-admin/changing-the-dwh-password-using-the-odbc-administration-tool.html"
+- title: 스마트 카드 및 인증서 로그인 지원
+  url: "/config-admin/certificate-login-support.html"
+  entries:
+  - title: 스마트 카드 및 인증서 로그인을 위한 호스트 구성
+    url: "/config-admin/host-configuration-for-smart-card-and-certificate-login.html"
+  - title: 스마트 카드 및 인증서 로그인을 지원하도록 클라이언트 구성
+    url: "/config-admin/client-configuration-for-smart-card-and-certificate-login.html"
+  - title: Linux 서버에 대한 CAC 활성화
+    url: "/config-admin/cac-configuration-for-linux.html"
+  - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
+    url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
+  - title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
+    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
+  - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
+    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
+  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
+    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
+  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
+    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
+- title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
+  url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
+- title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
+  url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
+- title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
+  url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
+- title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
+  url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
+- title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
+  url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
+- title: SSL 인증서를 가져오는 중입니다
+  url: "/config-admin/importing-an-ssl-certificate.html"
+- title: OnCommand Insight 이상 징후 탐지 작동 방식
+  url: "/config-admin/about-oncommand-insight-anomaly-detection.html"
+  entries:
+  - title: 이상 징후 검출을 위한 애플리케이션 구성
+    url: "/config-admin/configuring-anomaly-detection-for-applications.html"
+  - title: 이상 섹션 사용
+    url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
+  - title: 이상 징후 탐지 모니터링 상태
+    url: "/config-admin/anomaly-detection-monitoring-status.html"
+  - title: 애플리케이션 성능 정책 생성
+    url: "/config-admin/creating-an-application-performance-policy.html"
+- title: 업무 엔티티 계층 구조
+  url: "/config-admin/your-business-entities-hierarchy.html"
+  entries:
+  - title: 비즈니스 엔터티 계층 구조 디자인
+    url: "/config-admin/designing-your-business-entities-hierarchy.html"
+  - title: 비즈니스 엔티티 생성
+    url: "/config-admin/setting-up-business-entities.html"
+  - title: 자산에 업무 엔티티 할당
+    url: "/config-admin/assigning-business-entities-to-assets.html"
+  - title: 여러 자산에 비즈니스 엔티티를 할당하거나 제거합니다
+    url: "/config-admin/adding-or-removing-business-entities-from-multiple-assets.html"
+- title: 주석 정의
+  url: "/config-admin/defining-annotations.html"
+  entries:
+  - title: 주석을 사용하여 환경을 모니터링합니다
+    url: "/config-admin/using-annotations-to-monitor-your-environment.html"
+    entries:
+    - title: 주석 유형 관리
+      url: "/config-admin/managing-annotation-types.html"
+      entries:
+      - title: 기본 주석 유형
+        url: "/config-admin/predefined-annotation-types.html"
+      - title: 주석 지정 방법
+        url: "/config-admin/how-annotations-are-assigned.html"
+      - title: 주석과 비용 연관
+        url: "/config-admin/associating-costs-with-annotations.html"
+    - title: 사용자 정의 주석 작성
+      url: "/config-admin/creating-custom-annotations.html"
+      entries:
+      - title: 자산에 주석 수동 할당
+        url: "/config-admin/manually-assigning-annotations-to-assets.html"
+      - title: 주석 수정
+        url: "/config-admin/modifying-annotations.html"
+      - title: 주석 삭제
+        url: "/config-admin/deleting-annotations.html"
+    - title: 주석 규칙을 사용하여 자산에 주석 지정
+      url: "/config-admin/assigning-annotations-to-assets-using-annotation-rules.html"
+      entries:
+      - title: 기본 스토리지 주석 규칙
+        url: "/config-admin/default-storage-annotation-settings.html"
+      - title: 주석 규칙 작성
+        url: "/config-admin/configuring-annotation-rules-for-automatic-assignment.html"
+      - title: 주석 규칙 우선 순위 설정
+        url: "/config-admin/setting-annotation-rule-precedence.html"
+      - title: 주석 규칙 수정
+        url: "/config-admin/modifying-annotation-rules.html"
+      - title: 주석 규칙 삭제
+        url: "/config-admin/deleting-annotation-rules.html"
+    - title: 주석 값 불러오기
+      url: "/config-admin/importing-annotation-values.html"
+    - title: 쿼리를 사용하여 여러 자산에 주석 할당
+      url: "/config-admin/assigning-annotations-using-a-query.html"
+- title: 자산 쿼리 중
+  url: "/config-admin/using-queries.html"
+  entries:
+  - title: 쿼리 및 대시보드에 사용되는 자산
+    url: "/config-admin/assets-used-in-queries-and-dashboards.html"
+  - title: 쿼리 만들기
+    url: "/config-admin/creating-a-query.html"
+  - title: 쿼리 보기
+    url: "/config-admin/viewing-queries.html"
+  - title: 쿼리 결과를 .csv 파일로 내보내는 중입니다
+    url: "/config-admin/exporting-query-results-to-a-csv-file.html"
+  - title: 쿼리 수정
+    url: "/config-admin/modifying-queries.html"
+  - title: 쿼리를 삭제하는 중입니다
+    url: "/config-admin/deleting-queries.html"
+  - title: 자산에 여러 애플리케이션을 할당하거나 자산에서 여러 애플리케이션을 제거합니다
+    url: "/config-admin/editing-or-removing-applications-in-bulk.html"
+  - title: 자산에서 여러 주석 편집 또는 제거
+    url: "/config-admin/editing-or-removing-annotations-from-assets-in-bulk.html"
+  - title: 테이블 값 복사 중
+    url: "/config-admin/copying-table-values.html"
+- title: Insight 데이터 소스 관리
+  url: "/config-admin/insight-data-source-management.html"
+  entries:
+  - title: Insight에서 데이터 소스 설정
+    url: "/config-admin/setting-up-your-data-sources-in-insight.html"
+    entries:
+    - title: 데이터 소스 지원 정보
+      url: "/config-admin/data-source-support-information.html"
+    - title: 데이터 소스 추가
+      url: "/config-admin/adding-data-sources.html"
+      entries:
+      - title: 스프레드시트에서 데이터 원본을 가져옵니다
+        url: "/config-admin/importing-data-sources-from-a-spreadsheet.html"
+      - title: 패치를 사용하여 새 데이터 원본을 추가합니다
+        url: "/config-admin/adding-a-new-data-source-patch-us26313-fr.html"
+    - title: 데이터 소스 클론 생성
+      url: "/config-admin/cloning-a-data-source.html"
+    - title: 데이터 소스 구성을 테스트하는 중입니다
+      url: "/config-admin/testing-the-data-source-configuration.html"
+  - title: 공급업체별 데이터 소스 참조
+    url: "/config-admin/vendor-specific-data-source-reference.html"
+    entries:
+    - title: 3PAR InServ 데이터 소스
+      url: "/config-admin/3par-inserv-firmware-ssh-data-source.html"
+    - title: Amazon AWS EC2 데이터 소스
+      url: "/config-admin/amazon-aws-ec2-data-source.html"
+    - title: Brocade Enterprise Fabric Connectivity Manager 데이터 소스
+      url: "/config-admin/brocade-efcm-9-5-to-9-7-data-sources.html"
+    - title: Brocade FC 스위치 데이터 소스
+      url: "/config-admin/brocade-fc-switch-firmware-ssh-data-source.html"
+    - title: Brocade Sphereon/Intrepid 스위치 데이터 소스
+      url: "/config-admin/brocade-sphereon-intrepid-switch-snmp-data-source.html"
+    - title: Cisco FC 스위치 펌웨어(SNMP) 데이터 소스
+      url: "/config-admin/cisco-fc-switch-firmware-snmp-data-source.html"
+    - title: EMC Celerra 데이터 소스
+      url: "/config-admin/emc-celerra-ssh-data-source.html"
+    - title: EMC CLARiX(NaviCLI) 데이터 소스
+      url: "/config-admin/emc-clariion-navicli-data-source.html"
+    - title: EMC Data Domain 데이터 소스
+      url: "/config-admin/emc-datadomain-data-source.html"
+    - title: EMC ECC StorageScope 데이터 소스
+      url: "/config-admin/generic-emc-ecc-storagescope-data-source.html"
+    - title: Dell EMC ECS 데이터 소스
+      url: "/config-admin/dell-emc-ecs-data-source.html"
+    - title: EMC Isilon 데이터 소스
+      url: "/config-admin/emc-isilon-ssh-data-source.html"
+    - title: Dell EMC PowerStore 데이터 소스
+      url: "/config-admin/dell-emc-powerstore-data-source.html"
+    - title: EMC RecoverPoint 데이터 소스
+      url: "/config-admin/emc-recoverpoint-data-source.html"
+    - title: SMI-S 성능 데이터 소스를 지원하는 EMC Solutions Enabler
+      url: "/config-admin/emc-solutions-enabler-cli-with-smi-s-performance.html"
+    - title: EMC VNX 데이터 소스
+      url: "/config-admin/emc-vnx-ssh-data-source.html"
+    - title: EMC VNXe 데이터 소스
+      url: "/config-admin/emc-vnxe-data-source.html"
+    - title: EMC VPLEX 데이터 소스
+      url: "/config-admin/emc-vplex-cli-data-source.html"
+    - title: EMC XtremIO 데이터 소스
+      url: "/config-admin/emc-xtremeio-data-source.html"
+    - title: Fujitsu ETERNUS 데이터 소스
+      url: "/config-admin/fujitsu-eternus-data-source.html"
+    - title: Hitachi Content Platform(HCP) 데이터 소스
+      url: "/config-admin/hitachi-content-platform-hcp-data-source.html"
+    - title: HDS HiCommand Device Manager 데이터 소스
+      url: "/config-admin/hds-hicommand-devicemanager-data-source.html"
+      entries:
+      - title: HDS 스토리지
+        url: "/config-admin/hds-landing-page-terminology-storage.html"
+      - title: HDS 스토리지 풀
+        url: "/config-admin/hds-landing-page-terminology-storage-pool.html"
+      - title: HDS 스토리지 노드
+        url: "/config-admin/hds-landing-page-terminology-storage-node.html"
+    - title: HDS NAS(HNAS) 데이터 소스
+      url: "/config-admin/hds-hnas-data-source.html"
+    - title: HP CommandView AE 데이터 소스
+      url: "/config-admin/hp-commandview-ae-data-source.html"
+    - title: HP EVA 스토리지 데이터 소스
+      url: "/config-admin/hp-eva-storage-sssu-data-source.html"
+    - title: HPE Nimble 데이터 소스
+      url: "/config-admin/hpe-nimble-data-source.html"
+    - title: Huawei OceanStor 데이터 소스
+      url: "/config-admin/huawei-oceanstor-data-source.html"
+    - title: IBM Cleversafe 데이터 소스
+      url: "/config-admin/ibm-cleversafe-data-source.html"
+    - title: IBM DS 데이터 소스
+      url: "/config-admin/ibm-ds-cli-data-source.html"
+    - title: IBM PowerVM 데이터 소스
+      url: "/config-admin/ibm-powervm-ssh-data-source.html"
+    - title: IBM SVC 데이터 소스
+      url: "/config-admin/ibm-svc-ssh-data-source.html"
+    - title: IBM Tivoli Monitoring 데이터 소스
+      url: "/config-admin/ibm-tivoli-monitoring-data-source.html"
+    - title: IBM TotalStorage DS4000 데이터 소스
+      url: "/config-admin/ibm-totalstorage-ds4000-data-source.html"
+    - title: IBM XIV 데이터 소스
+      url: "/config-admin/ibm-xiv-cli-data-source.html"
+    - title: Infinidat .NET 데이터 소스
+      url: "/config-admin/infinidat-infinibox-http-data-source.html"
+    - title: Microsoft Azure 컴퓨팅 데이터 소스
+      url: "/config-admin/microsoft-azure-compute-data-source.html"
+    - title: Azure NetApp Files 데이터 소스
+      url: "/config-admin/microsoft-azure-netapp-files-data-source.html"
+    - title: Microsoft Hyper-V 데이터 소스
+      url: "/config-admin/microsoft-hyper-v-wmi-data-source.html"
+    - title: NetApp clustered Data ONTAP 데이터 소스
+      url: "/config-admin/netapp-clustered-data-ontap-data-source.html"
+      entries:
+      - title: Clustered Data ONTAP 스토리지
+        url: "/config-admin/cdot-landing-page-terminology-storage.html"
+      - title: Clustered Data ONTAP 스토리지 풀
+        url: "/config-admin/cdot-landing-page-terminology-storage-pool.html"
+      - title: Clustered Data ONTAP 스토리지 노드
+        url: "/config-admin/cdot-landing-page-terminology-storage-node.html"
+    - title: Unified Manager 데이터 소스를 위한 NetApp clustered Data ONTAP
+      url: "/config-admin/netapp-clustered-data-ontap-for-unified-manager-data-source.html"
+    - title: 7-Mode 데이터 소스에서 작동하는 NetApp Data ONTAP
+      url: "/config-admin/netapp-data-ontap-operating-in-7-mode-data-source.html"
+    - title: NetApp E-Series 데이터 소스
+      url: "/config-admin/netapp-e-series-data-source.html"
+      entries:
+      - title: E-Series 스토리지
+        url: "/config-admin/e-series-landing-page-terminology-storage.html"
+      - title: E-Series 스토리지 풀
+        url: "/config-admin/e-series-landing-page-terminology-storage-pool.html"
+      - title: E-Series 스토리지 노드
+        url: "/config-admin/e-series-landing-page-terminology-storage-node.html"
+    - title: NetApp 호스트 및 VM 파일 시스템 데이터 소스
+      url: "/config-admin/netapp-host-and-vm-filesystems-data-source.html"
+    - title: NetApp SolidFire 데이터 소스
+      url: "/config-admin/netapp-solidfire-data-source.html"
+    - title: NetApp StorageGRID 데이터 소스
+      url: "/config-admin/netapp-storagegrid-data-source.html"
+    - title: OpenStack 데이터 소스
+      url: "/config-admin/openstack-data-source.html"
+    - title: Oracle ZFS 데이터 소스
+      url: "/config-admin/oracle-zfs-data-source.html"
+    - title: Pure Storage FlashArray 데이터 소스
+      url: "/config-admin/pure-storage-flasharray-http-data-source.html"
+    - title: QLogic FC 스위치 데이터 소스
+      url: "/config-admin/qlogic-fc-switch-snmp-data-source.html"
+    - title: Red Hat(RHEV) 데이터 소스
+      url: "/config-admin/red-hat-rhev-data-source.html"
+    - title: Violin Flash Memory Array 데이터 소스
+      url: "/config-admin/violin-memory-data-source.html"
+    - title: VMware vSphere 데이터 소스
+      url: "/config-admin/vmware-vsphere-web-services-data-source.html"
+  - title: 데이터 소스 자격 증명을 변경하는 중입니다
+    url: "/config-admin/changing-data-source-credentials.html"
+  - title: 데이터 수집 문제를 일으키는 변경 사항
+    url: "/config-admin/changes-causing-data-collection-problems.html"
+  - title: 하나의 데이터 소스를 자세히 조사 중입니다
+    url: "/config-admin/examining-one-data-source-in-detail.html"
+  - title: 실패한 데이터 소스 조사
+    url: "/config-admin/researching-a-failed-data-source.html"
+  - title: 데이터 소스 폴링을 제어합니다
+    url: "/config-admin/controlling-data-source-polling.html"
+  - title: 데이터 원본 정보 편집
+    url: "/config-admin/editing-data-source-information.html"
+  - title: 여러 데이터 원본에 대한 정보 편집
+    url: "/config-admin/editing-multiple-data-sources.html"
+  - title: 주석에 데이터 원본 태그 매핑
+    url: "/config-admin/mapping-data-source-tags-to-annotations.html"
+  - title: 데이터 원본을 삭제하는 중입니다
+    url: "/config-admin/deleting-a-data-source-from-the-monitoring-environment.html"
+  - title: 어떤 데이터 소스 패치가 있는지 확인합니다
+    url: "/config-admin/data-source-patches.html"
+    entries:
+    - title: 데이터 소스 패치를 적용하는 중입니다
+      url: "/config-admin/applying-a-data-source-patch.html"
+    - title: 하나의 데이터 소스에 패치 설치
+      url: "/config-admin/installing-a-patch-on-all-data-sources-of-one-type.html"
+    - title: 패치 관리
+      url: "/config-admin/managing-patches.html"
+    - title: 데이터 소스 패치 커밋
+      url: "/config-admin/committing-a-data-source-patch.html"
+    - title: 데이터 소스 패치를 롤백하는 중입니다
+      url: "/config-admin/rolling-back-a-data-source-patch.html"
+- title: 장치 해상도
+  url: "/config-admin/device-resolution.html"
+  entries:
+  - title: 시작하기 전에
+    url: "/config-admin/before-you-begin.html"
+  - title: 환경에 대한 장치 해결 규칙 계획
+    url: "/config-admin/creating-rules-for-your-environment.html"
+  - title: 장치 해상도 규칙을 만드는 중입니다
+    url: "/config-admin/creating-device-resolution-rules.html"
+    entries:
+    - title: 자동 장치 해상도 업데이트를 시작합니다
+      url: "/config-admin/starting-a-automatic-device-resolution-update.html"
+    - title: 규칙 지원 수동 식별
+      url: "/config-admin/rule-assisted-manual-identification.html"
+  - title: 파이버 채널 장치 해상도
+    url: "/config-admin/device-resolution-fc-identify.html"
+    entries:
+    - title: Fibre Channel 디바이스를 수동으로 추가합니다
+      url: "/config-admin/adding-fc-devices-manually.html"
+    - title: CSV 파일에서 Fibre Channel 디바이스 ID 가져오기
+      url: "/config-admin/importing-fc-identification-from-a-csv-file.html"
+    - title: Fibre Channel 디바이스 식별 정보를 CSV 파일로 내보내는 중입니다
+      url: "/config-admin/exporting-fc-identification-to-a-csv-file.html"
+  - title: IP 장치 해상도
+    url: "/config-admin/device-resolution-ip-identify.html"
+    entries:
+    - title: 수동으로 IP 장치 추가
+      url: "/config-admin/adding-ip-devices-manually.html"
+    - title: CSV 파일에서 IP 장치 ID 가져오기
+      url: "/config-admin/importing-ip-identification-from-a-csv-file.html"
+    - title: CSV 파일로 IP 장치 ID를 내보내는 중입니다
+      url: "/config-admin/exporting-ip-identification-to-a-csv-file.html"
+  - title: 기본 설정 탭에서 옵션 설정
+    url: "/config-admin/using-options-in-the-preferences-tab.html"
+  - title: 정규식 예
+    url: "/config-admin/regular-expression-examples.html"
+- title: Insight 유지 관리
+  url: "/config-admin/maintaining-insight.html"
+  entries:
+  - title: Insight 관리
+    url: "/config-admin/managing-insight.html"
+  - title: OnCommand Insight 시스템 상태 모니터링
+    url: "/config-admin/monitoring-oncommand-insight-system-health.html"
+  - title: 비활성 장치를 삭제하는 중입니다
+    url: "/config-admin/deleting-inactive-devices.html"
+  - title: 시스템 및 사용자 작업 감사
+    url: "/config-admin/auditing-system-and-user-activities.html"
+  - title: 네트워크 위반 모니터링
+    url: "/config-admin/opening-the-violations-dashboard.html"
+  - title: 획득 장치 상태
+    url: "/config-admin/acquisition-unit-status.html"
+  - title: Insight 데이터베이스를 복원하는 중입니다
+    url: "/config-admin/restoring-the-insight-database.html"
+  - title: 만료된 라이센스를 업데이트하는 중입니다
+    url: "/config-admin/updating-expired-licenses.html"
+    entries:
+    - title: 라이센스가 더 이상 규정을 준수하지 않습니다
+      url: "/config-admin/licenses-no-longer-compliant.html"
+    - title: 이전 Insight 버전의 라이센스 대체
+      url: "/config-admin/replacing-licenses-for-older-insight-versions.html"
+  - title: 서비스 팩을 적용하는 중입니다
+    url: "/config-admin/applying-a-service-pack.html"
+  - title: 특수 문제 해결 보고서 준비
+    url: "/config-admin/preparing-a-special-troubleshooting-report.html"
+    entries:
+    - title: OnCommand Insight 데이터베이스를 수동으로 백업합니다
+      url: "/config-admin/manually-backing-up-the-oci-database.html"
+    - title: 지원을 위한 로그 번들링
+      url: "/config-admin/bundling-logs-for-support.html"
+    - title: NetApp Support에 정보 전송
+      url: "/config-admin/sending-information-to-netapp-support.html"
+    - title: 전송을 지원하기 위해 데이터를 스크러빙합니다
+      url: "/config-admin/scrubbing-data-for-transfer-to-support-webui.html"
+  - title: 고급 문제 해결
+    url: "/config-admin/advanced-troubleshooting.html"
+    entries:
+    - title: 동적 데이터를 무시할 시간 구성
+      url: "/config-admin/configuring-the-number-of-hours-to-ignore-dynamic-data.html"
+    - title: 고객 지원을 위한 로그를 생성하는 중입니다
+      url: "/config-admin/generating-logs-for-customer-support.html"
+    - title: 시스템 정보를 표시합니다
+      url: "/config-admin/displaying-system-information.html"
+    - title: 설치된 OnCommand Insight 구성 요소 나열
+      url: "/config-admin/listing-installed-oncommand-insight-packages.html"
+    - title: 데이터베이스 객체 수 계산
+      url: "/config-admin/calculating-the-number-of-database-objects.html"
+    - title: OnCommand Insight 서버를 다시 시작합니다
+      url: "/config-admin/restarting-the-oncommand-insight-server-or-acquisition-unit.html"
+    - title: 마이그레이션 옵션을 사용하여 MySQL 데이터를 이동하는 중입니다
+      url: "/config-admin/moving-mysql-data-using-the-migrate-option.html"
+      entries:
+      - title: 명령줄을 사용하여 MySQL 데이터를 이동하는 중입니다
+        url: "/config-admin/moving-mysql-data-using-the-command-line.html"
+    - title: 주석 업데이트 적용
+      url: "/config-admin/forcing-annotation-updates.html"
+    - title: 클라이언트 설정 구성
+      url: "/config-admin/configuring-client-settings.html"
+    - title: 서버 리소스의 상태 확인
+      url: "/config-admin/checking-the-status-of-server-resources.html"
+    - title: 고스트 데이터 소스 찾기
+      url: "/config-admin/finding-ghost-data-sources.html"
+    - title: 누락된 디스크 모델을 추가하는 중입니다
+      url: "/config-admin/adding-a-missing-disk-model.html"
+      entries:
+      - title: 새 디스크 모델에 필요한 정보 찾기
+        url: "/config-admin/locating-required-information-for-new-disk-model.html"
+        entries:
+        - title: new_disk_models.txt 파일의 내용입니다
+          url: "/config-admin/content-of-the-new-disk-models-txt-file.html"
+- title: 환경을 모니터링합니다
+  url: "/config-admin/monitoring-your-environment.html"
+  entries:
+  - title: 자산 페이지 데이터
+    url: "/config-admin/asset-pages.html"
+    entries:
+    - title: 자산 페이지 유형
+      url: "/config-admin/types-of-asset-pages.html"
+    - title: 특정 자산을 위한 환경 검색
+      url: "/config-admin/searching-your-environment-for-specific-assets.html"
+      entries:
+      - title: 고급 검색 기술
+        url: "/config-admin/advanced-asset-search-techniques-new.html"
+    - title: 표시된 데이터의 시간 범위를 변경합니다
+      url: "/config-admin/changing-the-time-segment-of-the-data-displayed.html"
+    - title: 데이터 소스 획득 상태를 확인하는 중입니다
+      url: "/config-admin/determining-data-source-acquisition-status.html"
+    - title: 자산 페이지 섹션
+      url: "/config-admin/asset-page-sections.html"
+      entries:
+      - title: 요약
+        url: "/config-admin/summary.html"
+        entries:
+        - title: 요약 섹션을 사용합니다
+          url: "/config-admin/what-the-summary-section-enables-you-to-do.html"
+      - title: 토폴로지
+        url: "/config-admin/topology.html"
+        entries:
+        - title: Topology 섹션 사용
+          url: "/config-admin/what-the-topology-section-enables-you-to-do.html"
+      - title: 사용자 데이터
+        url: "/config-admin/user-data.html"
+        entries:
+        - title: 사용자 데이터 섹션을 사용하여 응용 프로그램을 할당하거나 수정합니다
+          url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-applications.html"
+        - title: 사용자 데이터 섹션을 사용하여 업무 엔티티를 할당하거나 수정합니다
+          url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-business-entities.html"
+        - title: User Data(사용자 데이터) 섹션을 사용하여 주석을 할당하거나 수정합니다
+          url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-annotations.html"
+      - title: 이상
+        url: "/config-admin/anomalies.html"
+        entries:
+        - title: 이상 섹션 사용
+          url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
+      - title: 전문가 뷰
+        url: "/config-admin/expert-view.html"
+        entries:
+        - title: 전문가 뷰 메트릭 정의
+          url: "/config-admin/metric-definitions.html"
+        - title: 전문가 보기 섹션을 사용합니다
+          url: "/config-admin/what-the-expert-view-section-enables-you-to-do.html"
+      - title: 관련 자산
+        url: "/config-admin/related-assets.html"
+        entries:
+        - title: 관련 자산 섹션을 사용합니다
+          url: "/config-admin/what-the-related-assets-sections-enable-you-to-do.html"
+      - title: 위반
+        url: "/config-admin/violations.html"
+        entries:
+        - title: 위반 섹션을 사용하십시오
+          url: "/config-admin/what-the-violations-section-enables-you-to-do.html"
+      - title: 사용자 지정 가능한 자산 페이지
+        url: "/config-admin/additional-data.html"
+        entries:
+        - title: '"$이" 변수 이해'
+          url: "/config-admin/understanding-this-variables.html"
+  - title: 네트워크 리소스 밸런싱
+    url: "/config-admin/balancing-network-resources.html"
+  - title: 네트워크 성능 검사
+    url: "/config-admin/examining-network-performance.html"
+    entries:
+    - title: 느린 PC 성능 분석
+      url: "/config-admin/analyzing-slow-pc-performance.html"
+    - title: 관련 리소스 분석 중
+      url: "/config-admin/analyzing-correlated-resources.html"
+  - title: 파이버 채널 환경 모니터링
+    url: "/config-admin/monitoring-fabric-inventory-and-performance.html"
+  - title: TTL(Time-to-Live) 및 다운샘플링 데이터
+    url: "/config-admin/time-to-live-ttl-and-downsampling.html"
+  - title: 재고 기록 정리
+    url: "/config-admin/pruning-of-inventory-history.html"
+  - title: VM의 NAS 경로입니다
+    url: "/config-admin/nas-path-for-vms.html"
+  - title: 시간 시리즈로서의 용량
+    url: "/config-admin/capacity-as-time-series.html"

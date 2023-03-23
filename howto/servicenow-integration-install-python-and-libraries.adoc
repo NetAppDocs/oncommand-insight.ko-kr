@@ -1,0 +1,52 @@
+---
+permalink: howto/servicenow-integration-install-python-and-libraries.html 
+sidebar: sidebar 
+keywords:  
+summary: Python은 Insight 서버 또는 독립 실행형 호스트 또는 VM에 설치할 수 있습니다. 
+---
+= Python 및 라이브러리를 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Python은 Insight 서버 또는 독립 실행형 호스트 또는 VM에 설치할 수 있습니다.
+
+
+
+== 단계
+
+. VM 또는 호스트에서 Python 3.6 이상을 다운로드합니다.
+. 사용자 지정 설치를 선택하고 다음 옵션을 선택합니다. 이러한 작업은 적절한 커넥터 스크립트 작업을 위해 필요하거나 강력하게 권장됩니다.
++
+** 모든 사용자에 대한 시작 관리자를 설치합니다
+** 경로에 Python을 추가합니다
+** PIP 설치(Python에서 다른 패키지 설치 가능)
+** TK/TCL 및 IDLE을 장착하십시오
+** Python 테스트 제품군을 설치합니다
+** 모든 사용자에 대해 py launcher를 설치합니다
+** 파일을 Python과 연결합니다
+** 설치된 응용 프로그램의 바로 가기를 만듭니다
+** 환경 변수에 비단뱀을 추가합니다
+** 표준 라이브러리를 미리 컴파일합니다
+
+
+. Python을 설치한 후 "request" 및 "psnow" Python 라이브러리를 설치합니다. 다음 명령을 실행합니다. `python -m pip install requests pysnow`
++
+* 참고: * 프록시 환경에서 작업 중일 때 이 명령이 실패할 수 있습니다. 이 문제를 해결하려면 파이썬 라이브러리 중 하나를 수동으로 다운로드하고 설치 요청을 하나씩 올바른 순서로 실행해야 합니다.
+
++
+명령을 실행하면 여러 파일이 설치됩니다.
+
+. Python 라이브러리가 올바르게 설치되어 있는지 확인합니다. 다음 방법 중 하나를 사용하여 Python을 시작합니다.
++
+** cmd 프롬프트를 열고 를 입력합니다 `python`
+** Windows에서 * 시작 * 을 열고 * Python * > * python-<version>.exe * 를 선택합니다
+
+
+. Python 프롬프트에서 를 입력합니다 `modules`
++
+Python은 모듈 목록을 수집하는 동안 잠시 기다려 달라고 요청하며, 그러면 모듈이 표시됩니다.
+
+

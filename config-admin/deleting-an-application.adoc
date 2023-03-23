@@ -1,0 +1,27 @@
+---
+permalink: config-admin/deleting-an-application.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 환경에서 더 이상 필요하지 않은 응용 프로그램을 삭제할 수 있습니다. 
+---
+= 응용 프로그램을 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 환경에서 더 이상 필요하지 않은 응용 프로그램을 삭제할 수 있습니다.
+
+
+
+== 단계
+
+. Insight 웹 UI에 로그인합니다.
+. 관리 * 를 클릭하고 * 응용 프로그램 * 을 선택합니다.
+. 삭제할 응용 프로그램 위에 커서를 놓고 클릭합니다 image:../media/trash-can-query.gif[""].
++
+응용 프로그램을 삭제할 것인지 묻는 확인 대화 상자가 표시됩니다.
+
+. 확인 * 을 클릭합니다.
+

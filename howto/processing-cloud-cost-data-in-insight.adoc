@@ -1,0 +1,22 @@
+---
+permalink: howto/processing-cloud-cost-data-in-insight.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight는 이전 달에 한 번 AWS 청구 보고서에서 데이터를 수집하고, 해당 월의 최종 클라우드 비용을 반영합니다. 
+---
+= Insight에서 AWS Cloud Cost 데이터 처리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight는 이전 달에 한 번 AWS 청구 보고서에서 데이터를 수집하고, 해당 월의 최종 클라우드 비용을 반영합니다.
+
+AWS Cloud Cost 데이터 소스를 설정한 후 S3로 생성된 청구 보고서가 이미 있는 경우 첫 번째 데이터 소스 폴링 직후 최대 3개월의 이전 데이터를 받게 됩니다.
+
+Insight는 AWS의 "최종" 데이터를 한 달에 한 번 수집합니다. 이 컬렉션은 이전 달이 끝나고 며칠 후에 이루어지므로 AWS에서 실제 데이터를 마무리할 수 있습니다.
+
+AWS 청구 데이터는 Insight의 데이터 웨어하우스로 전송되어 보고에 사용됩니다.
+
+각 데이터 소스는 청구 가능한 단일 계정/사용자에 대해 구성되어야 합니다.

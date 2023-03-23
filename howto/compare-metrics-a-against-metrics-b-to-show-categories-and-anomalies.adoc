@@ -1,0 +1,25 @@
+---
+permalink: howto/compare-metrics-a-against-metrics-b-to-show-categories-and-anomalies.html 
+sidebar: sidebar 
+keywords:  
+summary: 산포도 를 사용하여 각 개체에 대해 두 개의 데이터 집합을 표시할 수 있습니다. 예를 들어, 각 개체에 대해 표시할 IOPS 읽기 및 지연 시간 합계를 지정할 수 있습니다. 이 차트를 사용하여 IOPS와 지연 시간의 조합을 기반으로 문제가 있다고 생각하는 객체를 식별할 수 있습니다. 
+---
+= 메트릭-A를 메트릭-B와 비교하여 범주 및 이상을 표시합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+산포도 를 사용하여 각 개체에 대해 두 개의 데이터 집합을 표시할 수 있습니다. 예를 들어, 각 개체에 대해 표시할 IOPS 읽기 및 지연 시간 합계를 지정할 수 있습니다. 이 차트를 사용하여 IOPS와 지연 시간의 조합을 기반으로 문제가 있다고 생각하는 객체를 식별할 수 있습니다.
+
+
+
+== 단계
+
+. 분산형 플롯 차트가 있는 위젯을 새 대시보드에 추가합니다. * Widget * > * Scatter Plot Chart *
+. 기본 디바이스를 가상 머신으로 변경합니다. * 스토리지 * > * 가상 머신 * > * 지연 시간 합계 * > * IOPS 읽기 * 를 클릭합니다
++
+다음과 유사한 분산형 플롯이 표시됩니다. image:../media/guid-a2c666db-f53d-42b8-82ef-62743b8b0fe2.gif[""]
+
+

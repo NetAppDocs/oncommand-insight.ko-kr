@@ -1,0 +1,167 @@
+---
+permalink: config-admin/huawei-oceanstor-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Insight는 Huawei OceanStor\(REST/HTTPS\) 데이터 소스를 사용하여 Huawei OceanStor 스토리지의 인벤토리를 검색합니다.' 
+---
+= Huawei OceanStor 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight는 Huawei OceanStor(REST/HTTPS) 데이터 소스를 사용하여 Huawei OceanStor 스토리지의 인벤토리를 검색합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 Huawei OceanStor로부터 다음과 같은 인벤토리 및 성능 정보를 수집합니다. OnCommand Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 수집기를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | OnCommand Insight 용어입니다 
+
+
+ a| 
+스토리지 풀
+ a| 
+스토리지 풀
+
+
+
+ a| 
+파일 시스템
+ a| 
+내부 볼륨
+
+
+
+ a| 
+컨트롤러
+ a| 
+스토리지 노드
+
+
+
+ a| 
+FC 포트(매핑)
+ a| 
+볼륨 맵
+
+
+
+ a| 
+호스트 FC 이니시에이터(매핑)
+ a| 
+볼륨 마스크
+
+
+
+ a| 
+NFS/CIFS 공유입니다
+ a| 
+공유
+
+
+
+ a| 
+공유
+ a| 
+iSCSI 타겟 노드
+
+
+
+ a| 
+iSCSI 링크 초기자
+ a| 
+iSCSI 이니시에이터 노드입니다
+
+
+
+ a| 
+디스크
+ a| 
+디스크
+
+
+
+ a| 
+LUN을 클릭합니다
+ a| 
+볼륨
+
+|===
+
+
+== 요구 사항
+
+다음은 이 데이터 수집기를 구성하고 사용하기 위한 요구 사항입니다.
+
+* 장치 IP
+* OceanStor 장치 관리자에 액세스하기 위한 자격 증명
+* 포트 8088을 사용할 수 있어야 합니다
+
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+OceanStor 호스트 IP 주소입니다
+ a| 
+OceanStor Device Manager의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+OceanStor Device Manager에 로그인하는 데 사용되는 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+OceanStor Device Manager에 로그인하는 데 사용되는 암호입니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+TCP 포트
+ a| 
+OceanStor Device Manager에 연결하는 데 사용되는 TCP 포트(기본값 8088)
+
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값: 60분)
+
+
+
+ a| 
+연결 시간 초과(초)
+ a| 
+연결 시간 초과(기본값 60초)
+
+|===

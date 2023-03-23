@@ -1,0 +1,43 @@
+---
+permalink: config-admin/nas-path-for-vms.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 7.3은 가상 머신에서 스토리지 공유에 대한 NAS 경로를 지원합니다. 이러한 경로는 호스트에서 스토리지 공유에 대한 NAS 경로와 유사합니다. VM의 IP 주소가 공유에 액세스할 수 있으면 NAS 경로가 생성됩니다. 
+---
+= VM의 NAS 경로입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 7.3은 가상 머신에서 스토리지 공유에 대한 NAS 경로를 지원합니다. 이러한 경로는 호스트에서 스토리지 공유에 대한 NAS 경로와 유사합니다. VM의 IP 주소가 공유에 액세스할 수 있으면 NAS 경로가 생성됩니다.
+
+가상 머신의 NAS 경로는 내부 볼륨 랜딩 페이지에 표시됩니다. 이 페이지에는 VM이 액세스할 수 있는 내부 볼륨을 식별하는 게스트 마운트 스토리지 리소스 위젯이 포함되어 있습니다.
+
+* NAS 경로는 가상 머신이 백엔드 공유에 액세스할 수 있을 때 생성됩니다. 가상 머신이 공유에 액세스하는지 여부에 대한 확인은 없습니다.
+* 상관 관계 계산은 지연 시간과 IOPS를 기반으로 하며 VM에 백엔드 스토리지에 대한 NAS 경로가 있는 경우는 포함되지 않습니다.
+* 사용자는 이니시에이터 IP 주소로 공유를 쿼리할 수 있지만, 경로로 쿼리하는 것은 지원되지 않습니다.
+
+
+이제 내부 볼륨의 컴퓨팅 리소스 표에 NAS 경로가 있는 VM도 표시됩니다. 각 VM, CPU 및 메모리에 대해 사용률 및 성능 데이터가 제공됩니다.
+
+
+
+== 데이터 웨어하우스에 미치는 영향
+
+OnCommand Insight 7.3으로 업그레이드한 후 표시되는 데이터 웨어하우스의 변경 사항은 다음과 같습니다.
+
+* dWh_inventory.nas_logical 테이블이 Inventory Data Mart에서 제거되고 보기로 교체됩니다.
++
+NFS 경로 테이블이 포함된 Insight 7.2.x 보고서는 그대로 유지됩니다.
+
+* dWh_inventory.nas_cr_logical 테이블이 Inventory Data Mart에 추가되고 다음 항목이 포함됩니다.
++
+** 컴퓨팅 리소스
+** 내부 볼륨
+** 스토리지
+** NAS 공유
+
+
+

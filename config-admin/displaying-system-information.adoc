@@ -1,0 +1,27 @@
+---
+permalink: config-admin/displaying-system-information.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 서버가 배포된 시스템에 대한 Microsoft Windows IP 구성 정보를 표시할 수 있습니다. 
+---
+= 시스템 정보를 표시합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 서버가 배포된 시스템에 대한 Microsoft Windows IP 구성 정보를 표시할 수 있습니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
+. 다른 작업 영역의 페이지 하단에서 * 고급 문제 해결 * 링크를 클릭합니다.
+. 고급 문제 해결 페이지에서 * 보고서 * 탭을 클릭합니다.
+. 시스템 정보 * 를 클릭합니다.
++
+Windows IP 구성에는 호스트 이름, DNS, IP 주소, 서브넷 마스크, OS 정보 등의 정보가 포함됩니다. 메모리, 부팅 장치 및 연결 이름입니다.
+
+

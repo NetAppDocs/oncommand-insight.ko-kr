@@ -1,0 +1,99 @@
+---
+section: install-linux
+title: Linux용 설치
+entries:
+- title: 설치 필수 구성 요소
+  url: "/install-linux/installation-prerequisites.html"
+  entries:
+  - title: 배포 계획
+    url: "/install-linux/planning-the-installation.html"
+    entries:
+    - title: 데이터 소스 지원 정보
+      url: "/install-linux/data-source-support-information.html"
+    - title: 장치 식별 및 데이터 소스 계획
+      url: "/install-linux/device-identification-and-data-source-planning.html"
+    - title: OnCommand Insight에서 생성된 네트워크 트래픽입니다
+      url: "/install-linux/network-traffic-generated-by-oncommand-insight.html"
+  - title: MariaDB를 제거하는 중입니다
+    url: "/install-linux/uninstalling-mariadb.html"
+  - title: Insight Server 요구사항
+    url: "/install-linux/insight-server-requirements.html"
+  - title: 데이터 웨어하우스 서버 요구 사항
+    url: "/install-linux/data-warehouse-server-requirements-linux.html"
+  - title: 원격 획득 장치 서버 요구 사항
+    url: "/install-linux/remote-acquisition-unit-server-requirements.html"
+  - title: 이상 징후 탐지 요구 사항
+    url: "/install-linux/anomaly-detection-requirements.html"
+  - title: Insight Java UI 요구 사항
+    url: "/install-linux/insight-java-ui-requirements.html"
+  - title: OnCommand Insight에서 지원되는 브라우저
+    url: "/install-linux/insight-browser-support.html"
+- title: Insight 설치 지침
+  url: "/install-linux/oncommand-insight-installation-instructions.html"
+  entries:
+  - title: OnCommand Insight 설치 프로그램을 다운로드하는 중입니다
+    url: "/install-linux/downloading-the-oncommand-insight-installer.html"
+  - title: OnCommand Insight 서버 설치
+    url: "/install-linux/installing-the-oncommand-insight-server-linux.html"
+  - title: OnCommand Insight 데이터 웨어하우스 설치 중
+    url: "/install-linux/installing-oncommand-insight-data-warehouse-linux.html"
+  - title: 원격 획득 장치 설치
+    url: "/install-linux/installing-a-remote-acquisition-unit-rau-linux.html"
+    entries:
+    - title: 원격 획득 장치 설치를 검증합니다
+      url: "/install-linux/validating-the-rau-installation.html"
+  - title: 이상 현상 감지 소프트웨어 설치
+    url: "/install-linux/installing-the-anomaly-detection-software.html"
+  - title: 이더넷 모니터링 장치 설치
+    url: "/install-linux/installing-an-ethernet-monitoring-unit-linux.html"
+  - title: 설치 확인
+    url: "/install-linux/checking-the-installation.html"
+    entries:
+    - title: 새 Insight 구성 요소가 설치되었는지 확인합니다
+      url: "/install-linux/verifying-new-insight-services-linux.html"
+    - title: Insight 로그
+      url: "/install-linux/insight-logs.html"
+    - title: 웹 UI 액세스
+      url: "/install-linux/opening-insight.html"
+    - title: Insight 라이센스 설치
+      url: "/install-linux/installing-your-insight-licenses.html"
+      entries:
+      - title: OnCommand Insight 라이센스
+        url: "/install-linux/oncommand-insight-licenses.html"
+  - title: 설치 문제 해결
+    url: "/install-linux/troubleshooting-installations.html"
+    entries:
+    - title: 라이센스가 없습니다
+      url: "/install-linux/missing-licenses.html"
+    - title: 온라인 기술 지원 요청 제출
+      url: "/install-linux/submitting-an-online-technical-support-request.html"
+- title: Insight 업그레이드
+  url: "/install-linux/upgrading-insight-linux.html"
+  entries:
+  - title: Insight를 버전 7.3.12 이상으로 업그레이드 - Linux
+    url: "/install-linux/upgrading-insight-to-version-7-3-12-or-later-linux.html"
+  - title: Insight Server 소프트웨어 업그레이드 중
+    url: "/install-linux/upgrading-insight-server-software.html"
+  - title: 데이터 웨어하우스 소프트웨어 업그레이드 중
+    url: "/install-linux/upgrading-data-warehouse.html"
+  - title: 원격 획득 장치 소프트웨어 업그레이드
+    url: "/install-linux/upgrading-remote-acquisition-units.html"
+  - title: 이상 현상 감지 엔진 업그레이드
+    url: "/install-linux/upgrading-the-anomaly-detection-engine.html"
+  - title: 이더넷 모니터링 장치 소프트웨어 업그레이드
+    url: "/install-linux/upgrading-ethernet-monitoring-units.html"
+  - title: Windows에서 Linux로 마이그레이션
+    url: "/install-linux/migrating-from-windows-to-linux.html"
+- title: OnCommand Insight를 제거하는 중입니다
+  url: "/install-linux/uninstalling-oncommand-insight.html"
+  entries:
+  - title: OnCommand Insight 서버 제거
+    url: "/install-linux/uninstalling-insight.html"
+  - title: 데이터 웨어하우스 제거 중
+    url: "/install-linux/uninstalling-data-warehouse.html"
+  - title: 원격 획득 장치 제거
+    url: "/install-linux/uninstalling-a-remote-acquisition-unit-rau.html"
+  - title: 이더넷 모니터링 장치 제거
+    url: "/install-linux/uninstalling-an-ethernet-monitoring-unit-emu-linux.html"
+  - title: 이상 현상 감지 엔진 제거
+    url: "/install-linux/uninstalling-the-anomaly-detection-engine-linux.html"

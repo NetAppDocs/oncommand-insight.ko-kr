@@ -1,0 +1,87 @@
+---
+permalink: config-admin/microsoft-azure-netapp-files-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: '이 데이터 소스는 Azure NetApp Files\(ANF\)에 대한 인벤토리 및 성능 데이터를 가져옵니다.' 
+---
+= Azure NetApp Files 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 데이터 소스는 ANF(Azure NetApp Files)에 대한 인벤토리 및 성능 데이터를 가져옵니다.
+
+
+
+== 요구 사항
+
+다음은 이 데이터 소스를 구성하기 위한 요구 사항입니다.
+
+* 포트 요구 사항: 443 HTTPS
+* Azure 관리 REST IP(management.azure.com)
+* Azure 서비스 주 응용 프로그램(클라이언트) ID(사용자 계정)
+* Azure Service Principal 인증 키(사용자 암호)
+* Cloud Insights 검색을 위해 Azure 계정을 설정해야 합니다.
++
+계정이 올바르게 구성되고 Azure에 애플리케이션을 등록하면 Cloud Insights로 Azure 인스턴스를 검색하는 데 필요한 자격 증명이 제공됩니다. 다음 링크에서는 검색을 위해 계정을 설정하는 방법에 대해 설명합니다.
+
++
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+
+
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+Azure 서비스 주 응용 프로그램(클라이언트) ID입니다
+ a| 
+Azure에 로그인 ID를 입력합니다
+
+
+
+ a| 
+Azure 테넌트 ID입니다
+ a| 
+Azure 테넌트 ID입니다
+
+
+
+ a| 
+Azure 서비스 주 인증 키
+ a| 
+로그인 인증 키
+
+
+
+ a| 
+API 요청에 대한 Microsoft의 청구서를 알고 있습니다
+ a| 
+Insight 폴링을 통해 API 요청이 접수된다는 사실을 알고 있는지 확인하려면 이 확인란을 선택하십시오.
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+기본값은 60분입니다
+
+|===

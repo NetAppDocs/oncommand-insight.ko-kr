@@ -1,0 +1,250 @@
+---
+permalink: install-linux/upgrading-insight-to-version-7-3-12-or-later-linux.html 
+sidebar: sidebar 
+keywords: upgrade,previous version,wizard,backup,conversion 
+summary: OnCommand Insight 7.3.10-7.3.11에서 버전 7.3.12 이상으로 업그레이드하기 전에 OCI 데이터 마이그레이션 툴을 실행해야 합니다. 
+---
+= Insight를 버전 7.3.12 이상으로 업그레이드 - Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 7.3.10-7.3.11에서 버전 7.3.12 이상으로 업그레이드하기 전에 OCI 데이터 마이그레이션 툴을 실행해야 합니다.
+
+
+
+== 배경
+
+OnCommand Insight 버전 7.3.12 이상은 이전 버전과 호환되지 않을 수 있는 기본 소프트웨어를 사용합니다. Insight 버전 7.3.12 이상에는 업그레이드를 지원하는 * 데이터 마이그레이션 도구 * 가 포함되어 있습니다.
+
+[NOTE]
+====
+OnCommand Insight 버전 7.3.9 및 이전 버전은 더 이상 지원되지 않습니다. 이러한 버전 중 하나를 실행 중인 경우 7.3.12 이상으로 업그레이드하기 전에 Insight 버전 7.3.10 이상으로 _업그레이드해야 합니다(7.3.11 권장).
+
+====
+
+
+== 데이터 마이그레이션 툴은 어떤 기능을 합니까?
+
+마이그레이션 도구는 초기 호환성 검사를 수행한 다음 세 가지 업그레이드 경로 중 하나를 따릅니다. 선택한 경로는 현재 버전의 데이터 호환성을 기반으로 합니다.
+
+[NOTE]
+====
+업그레이드하기 전에 데이터 마이그레이션 도구를 실행하고 권장 단계를 수행해야 합니다.
+
+====
+
+
+== 시작하기 전에
+
+* 데이터 마이그레이션 툴을 실행하기 전에 OnCommand Insight 시스템을 백업하는 것이 좋습니다.
+* 서버의 Elasticsearch 서비스가 실행 중이어야 합니다.
+* Insight를 업그레이드하기 전에 데이터베이스 및 성능 아카이브를 위해 Data Migration Tool_many_be를 실행해야 합니다.
+
+
+
+
+== 데이터 마이그레이션 툴 실행
+
+. 최신 버전의 데이터 마이그레이션 도구(예: _SANScreenDataMigationTool-x86-7.3.12-97.zip_)를 Insight 서버와 해당 Insight 설치 프로그램 파일로 다운로드합니다. 작업 폴더에 압축을 풉니다. 다운로드는 에서 찾을 수 있습니다 https://mysupport.netapp.com/site/products/all/details/oncommand-insight/downloads-tab["NetApp Support 사이트"].
+. 명령 창을 열고 작업 폴더로 이동합니다.
++
+** Bash 쉘을 사용하는 것이 좋습니다.
+
+
+. 다음 명령을 사용하여 데이터 마이그레이션 툴을 실행합니다.
++
+** _'SUDO./SANScreenDataMigationTool.sh' _
+
+
+. 필요에 따라 지침을 따릅니다. 다음은 예제입니다.
+
+
+[listing]
+----
+sudo ./SanscreenDataMigrationTool.sh
+
+NetApp SANScreen Data Migration Tool 7.3.12-132
+
+OCI 7.3.10.8.139 is installed
+Elasticsearch REST port = 9200
+
+Checking Elasticsearch service...
+Elasticsearch service is up
+
+Checking for obsolete (version 5) indexes...
+Found 54 obsolete indexes. Of these,
+    54 indexes may be migrated with OCI server running,
+       the most recent of which is for 2021-05-13
+
+Verifying migration component is present...
+SANscreen Server service is Running
+
+Proceed with online migration of 54 indexes (y or [n])?:
+----
+데이터 마이그레이션 도구는 시스템에 사용되지 않는 인덱스가 있는지 확인하고 있는지 보고합니다. 없을 경우 도구가 종료됩니다.
+
+SANscreen 서버 서비스가 실행되는 동안 일부 인덱스가 마이그레이션될 수 있습니다. 다른 서버는 서버가 중지된 경우에만 마이그레이션될 수 있습니다. 마이그레이션할 수 있는 인덱스가 없는 경우 이 도구는 종료됩니다. 그렇지 않으면 메시지가 나타나면 지침을 따릅니다.
+
+데이터 마이그레이션 도구가 완료되면 사용되지 않는 인덱스가 있는지 다시 확인합니다. 모든 인덱스가 마이그레이션된 경우 OnCommand Insight 7.3.12로의 업그레이드가 지원된다는 메시지가 표시됩니다. 이제 Insight 업그레이드를 진행할 수 있습니다.
+
+[listing]
+----
+sudo ./SanscreenDataMigrationTool.sh
+
+NetApp SANScreen Data Migration Tool 7.3.12-132
+
+OCI 7.3.10.8.139 is installed
+Elasticsearch REST port = 9200
+
+Checking for obsolete (version 5) indexes...
+Found 76 obsolete OCI indexes. Of these,
+76 indexes may be migrated with OCI server running
+
+SANscreen Server service is running
+
+Proceed with online migration of 76 indexes (y or [n])? y
+If you supply performance archive location, entries for any dates with migrated
+indexes will be replaced. Each orginal entry will be renamed and you may delete
+it after migration is completed.
+When prompted enter the archive location including the site-name directory.
+
+Enter the location of the performance archive or blank if none:
+Performance archive entries will not be updated
+
+Running the migration application with options -u http://localhost:9200 --online -sa -
+
+Preparing to migrate oci-timeseries-disk-2021-03-22: copied; backup; delete old; restore new; cleanup; done.
+Preparing to migrate oci-timeseries-internalvolume-2021-03-22: copied; backup; delete old; restore new; cleanup; done.
+Preparing to migrate oci-timeseries-port-2021-03-22: copied; backup; delete old; restore new; cleanup; done.
+...
+Preparing to migrate oci-timeseries-disk-2021-03-27: copied; backup; delete old; restore new; cleanup; done.
+Execution time 0:08:17
+Checking for obsolete (version 5) indexes...
+
+No obsolete indexes found. Upgrade and Inline Upgrade to 7.3.12+ are supported
+----
+SANscreen 서비스를 중지하라는 메시지가 표시되면 Insight를 업그레이드하기 전에 다시 시작합니다.
+
+
+
+== 검증 실패
+
+인덱스 유효성 검사에 실패하는 경우 마이그레이션 도구는 종료하기 전에 문제를 알려 줍니다.
+
+* OnCommand Insight가 없습니다: *
+
+[listing]
+----
+./SanscreenDataMigrationTool.sh
+
+NetApp SANScreen Data Migration Tool V1.0
+
+Checking OnCommand Insight Installation...
+ERROR: OnCommand Insight is not installed
+----
+* 잘못된 Insight 버전: *
+
+[listing]
+----
+./SanscreenDataMigrationTool.sh
+
+NetApp SANScreen Data Migration Tool 7.3.12-105
+
+Checking OnCommand Insight Installation...
+OnCommand Insight 7.3.4 (126) is installed
+ERROR: The OCI Data Migration Tool is intended to be run against OCI 7.3.5 - 7.3.11
+----
+* Elasticsearch 서비스가 실행되고 있지 않습니다: *
+
+[listing]
+----
+./SanscreenDataMigrationTool.sh
+NetApp SANScreen Data Migration Tool 7.3.12-105
+
+Checking OnCommand Insight Installation...
+OnCommand Insight 7.3.11 (126) is installed
+
+Getting installation parameters...
+Elasticsearch Rest Port: 9200
+
+Checking Elasticsearch service...
+ERROR: The Elasticsearch service is not running
+
+Please start the service and wait for initialization to complete
+Then rerun OCI Data Migration Tool
+----
+
+
+== 명령줄 옵션
+
+데이터 마이그레이션 툴에는 작업에 영향을 주는 몇 가지 선택적 매개 변수가 포함되어 있습니다.
+
+|===
+
+
+| 옵션(Linux) | 기능 
+
+
+ a| 
+s|--조용히
+ a| 
+모든 프롬프트를 표시하지 않습니다
+
+
+
+ a| 
+-A|--아카이브
+ a| 
+지정된 경우 인덱스가 마이그레이션되는 모든 날짜의 기존 아카이브 항목이 교체됩니다. 경로는 아카이브 항목 zip 파일이 포함된 디렉토리를 가리켜야 합니다.
+
+업데이트할 성능 아카이브가 없음을 나타내기 위해 '-'의 인수를 지정할 수 있습니다.
+
+이 인수가 있으면 아카이브 위치에 대한 프롬프트가 표시되지 않습니다.
+
+
+
+ a| 
+c|-- 확인
+ a| 
+이 경우 인덱스 카운트를 보고한 후 스크립트가 즉시 종료됩니다.
+
+
+
+ a| 
+-d|--dryrun
+ a| 
+마이그레이션 실행 파일이 있는 경우 데이터 마이그레이션 및 아카이브 항목 업데이트를 위해 수행할 작업은 보고하지만 작업을 수행하지 않습니다.
+
+
+
+ a| 
+-p|--포트
+ a| 
+제공된 값이 있는 경우 Elasticsearch의 REST 포트로 사용합니다. 없는 경우 가능한 경우 설치에서 값을 구합니다. 그렇지 않으면 기본값 9200을 사용합니다.
+
+
+NOTE: 일부 Linux OnCommand Insight 설치의 경우 기본 9200 포트에서 Elasticsearch REST 포트가 실행되지 않을 수 있습니다. 이 경우 --port 옵션을 사용하여 값을 제공합니다
+
+
+
+ a| 
+-h|- 도움말
+ a| 
+사용 정보를 표시합니다
+
+|===
+
+
+== 문제 해결
+
+아카이브 항목이 업데이트된 경우 업데이트된 아카이브의 소유권 및 권한이 올바른지 _ 해야 합니다. 이 경우 * ocisys ocisys 644 * 이어야 합니다. 그렇지 않은 경우 성능 아카이브 폴더로 이동하여 다음 명령을 실행합니다.
+
+[listing]
+----
+chown ocisys *
+chgrp ocisys *
+chmod 644 *
+----

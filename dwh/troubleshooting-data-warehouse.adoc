@@ -1,0 +1,24 @@
+---
+permalink: dwh/troubleshooting-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 웨어하우스 문제 해결과 관련된 다양한 작업을 수행할 수 있습니다. 
+---
+= 데이터 웨어하우스 문제 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 웨어하우스 문제 해결과 관련된 다양한 작업을 수행할 수 있습니다.
+
+* OnCommand Insight ASUP를 사용하십시오.
+* OnCommand Insight 로그를 봅니다.
+* 업그레이드 및 업무 엔티티와 관련된 문제를 해결합니다.
+* 여러 OnCommand Insight 서버의 통합과 관련된 문제를 해결합니다.
+
+
+여러 OnCommand Insight 서버를 동일한 데이터 웨어하우스 데이터베이스에 통합할 수 있습니다. 여러 구성에서 여러 커넥터에서 동일한 개체를 보고할 수 있습니다(즉, 두 OnCommand Insight 인스턴스에 동일한 스위치가 있음). 이러한 경우 데이터 웨어하우스는 여러 오브젝트를 하나로 통합합니다(기본 커넥터가 선택되고 개체의 데이터는 해당 커넥터에서만 가져옵니다).
+
+스토리지 관리자는 문제 해결 페이지를 사용하여 통합 문제와 관련된 문제를 해결할 수 있습니다.

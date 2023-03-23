@@ -1,0 +1,14 @@
+---
+permalink: config-admin/configuring-your-email.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight Server에서 이메일을 통해 보고서 및 구독자 정보를 제공하고, 문제 해결을 위한 지원 정보를 NetApp 기술 지원 팀에 전송할 수 있도록 이메일 시스템에 액세스하도록 OnCommand Insight를 구성해야 합니다. 
+---
+= 전자 메일 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight Server에서 이메일을 통해 보고서 및 구독자 정보를 제공하고, 문제 해결을 위한 지원 정보를 NetApp 기술 지원 팀에 전송할 수 있도록 이메일 시스템에 액세스하도록 OnCommand Insight를 구성해야 합니다.

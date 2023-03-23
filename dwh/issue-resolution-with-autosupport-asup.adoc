@@ -1,0 +1,68 @@
+---
+permalink: dwh/issue-resolution-with-autosupport-asup.html 
+sidebar: sidebar 
+keywords:  
+summary: 문제 해결에 도움이 필요하면 ASUP 로그를 기술 지원 팀에 보낼 수 있습니다. 데이터 웨어하우스에 대한 ASUP는 자동으로 실행되도록 구성됩니다. 데이터 웨어하우스 포털에서 자동 전송 프로세스를 비활성화하거나 데이터 웨어하우스 데이터베이스의 백업을 포함할지 아니면 ASUP로 전송을 시작할지 선택할 수 있습니다. 
+---
+= ASUP로 문제를 해결합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+문제 해결에 도움이 필요하면 ASUP 로그를 기술 지원 팀에 보낼 수 있습니다. 데이터 웨어하우스에 대한 ASUP는 자동으로 실행되도록 구성됩니다. 데이터 웨어하우스 포털에서 자동 전송 프로세스를 비활성화하거나 데이터 웨어하우스 데이터베이스의 백업을 포함할지 아니면 ASUP로 전송을 시작할지 선택할 수 있습니다.
+
+로그의 정보는 HTTPS 프로토콜을 사용하여 기술 지원 부서로 전달됩니다. Insight Server에서 먼저 구성하지 않으면 ASUP를 사용하여 데이터가 전달되지 않습니다.
+
+데이터 웨어하우스는 로그를 데이터 웨어하우스 포털 커넥터 페이지에 나열된 첫 번째 커넥터인 OnCommand Insight 서버로 보냅니다. 자동 프로세스는 다음 파일을 전송합니다.
+
+* 데이터 웨어하우스 로그 - 다음 포함:
++
+** boot.log (백업 포함)
+** dwh.log (dWh.log와 같은 백업 포함1)
+** dhw_troubleshoot.log
+** dwh_upgrade.log (백업 포함)
+** WildFly.log (백업 포함)
+** ldap.log (백업 포함)
+** 데이터 웨어하우스 관리 데이터베이스의 SQL 덤프
+** MySQL: my.cnf,. err 및 slow query logs
+** Full innodb 상태
+
+
+* 다음 항목이 포함된 Cognos 로그:
++
+** cognos-logs.zip
++
+의 Cognos 로그 파일이 들어 있습니다 `<install>\cognos\c10_64\logs` 디렉토리. 또한 Cognos에서 생성된 로그와 OnCommand Insight 보고 로그인 및 로그아웃 사용자의 모든 로깅이 포함된 OnCommand InsightAP.log 파일도 포함합니다.
+
+** DailyBackup.zip
++
+공용 폴더에 있는 보고 아티팩트의 백업이 포함되어 있습니다. 내 폴더의 내용은 여기에 포함되지 않습니다.
+
+** Cognos _``version``_``site name``_content_store.zip
++
+Cognos 콘텐츠 저장소의 전체 백업이 포함되어 있습니다.
+
+
+
+
+
+문제 해결 보고서를 수동으로 생성할 수 있습니다. Troubleshooting Report.zip 파일에는 다음과 같은 데이터 웨어하우스 정보가 포함되어 있습니다.
+
+* boot.log (백업 포함)
+* dwh.log (dWh.log와 같은 백업 포함1)
+* dwh_upgrade.log (백업 포함)
+* wildfly.log (백업 포함)
+* ldap.log (백업 포함)
+* c:\Program Files\SANscreen\Wildlfly\standalone\log\dWh\에서 파일을 덤프합니다
+* 데이터 웨어하우스 관리 데이터베이스의 SQL 덤프
+* MySQL: my.cnf,. err 및 slow query logs
+* Full innodb 상태
+
+
+[NOTE]
+====
+ASUP 툴은 OnCommand Insight 데이터베이스의 백업을 기술 지원으로 자동으로 전송하지 않습니다.
+
+====

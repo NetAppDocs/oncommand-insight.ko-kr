@@ -1,0 +1,22 @@
+---
+permalink: install-windows/verifying-the-rau-service.html 
+sidebar: sidebar 
+keywords:  
+summary: 'RAU(원격 획득 장치) 설치를 완료한 후에는 Microsoft Windows 서비스 환경에서 OnCommand Insight RAU 서비스를 사용할 수 있어야 합니다.' 
+---
+= 원격 획득 장치 서비스 확인
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RAU(원격 획득 장치)를 성공적으로 설치한 후에는 Microsoft Windows 서비스 환경에서 OnCommand Insight RAU 서비스를 사용할 수 있어야 합니다.
+
+
+
+== 단계
+
+. RAU가 Windows 서비스에 추가되었는지 확인하려면 Windows 시작 메뉴를 열고 * 제어판 * > * 관리 도구 * > * 서비스 * 를 선택합니다.
+. 목록에서 * OnCommand Insight Acq-OnCommand Insight의 원격 획득 장치(RAU) * 를 찾습니다.
+

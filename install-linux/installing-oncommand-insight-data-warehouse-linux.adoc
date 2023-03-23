@@ -1,0 +1,55 @@
+---
+permalink: install-linux/installing-oncommand-insight-data-warehouse-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: '설치는 자동으로 포함되며 OnCommand Insight 데이터 웨어하우스(DWH\)를 실행하고 운영하는 데 필요한 요소가 포함됩니다.' 
+---
+= OnCommand Insight 데이터 웨어하우스 설치 중
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+설치는 자체 완비되었으며 DWH(OnCommand Insight Data Warehouse)를 실행하고 운영하는 데 필요한 요소를 포함합니다.
+
+
+
+== 시작하기 전에
+
+설치 필수 구성 요소를 모두 완료해야 합니다.
+
+
+
+== 이 작업에 대해
+
+데이터 웨어하우스에는 Cognos 보고 기능이 있습니다. Linux 서버에 Insight를 설치하는 경우에는 Windows 서버에 데이터 웨어하우스를 설치하는 경우에만 이러한 기능을 사용할 수 있습니다. Windows에 데이터 웨어하우스 설치 및 Cognos 보고 기능에 대한 자세한 내용은 Microsoft Windows_용 _OnCommand Insight 설치 안내서 를 참조하십시오.
+
+
+
+== 단계
+
+. sudo 권한이 있는 계정을 사용하여 데이터 웨어하우스 서버에 로그인합니다.
+. 설치 파일이 있는 서버의 디렉터리로 이동하여 다음 명령을 입력합니다.
++
+`unzip oci-dwh-<version>-linux-x86_64.zip`
+
++
+설치 파일의 버전 번호를 확인하십시오. 버전 번호가 명령에 표시된 번호와 다를 수 있습니다.
+
+. 에 대한 구문, 명령 인수 및 매개 변수 사용을 볼 수 있습니다 `oci-install.sh` 설치를 시작하기 전에:
++
+`sudo ./oci-dwh-<version>-linux-x86_64/oci-install.sh --help`
+
+. 설치 스크립트를 실행합니다.
++
+`sudo ./oci-dwh-<version>-linux-x86_64/oci-install.sh`
+
+. 사용권 계약을 읽고 동의하며 화면의 지시를 따릅니다.
+
+
+
+
+== 결과
+
+모든 메시지에 응답하면 설치가 시작되고 설치된 응용 프로그램에 따라 약 10분 정도 소요됩니다.

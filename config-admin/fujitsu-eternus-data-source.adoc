@@ -1,0 +1,128 @@
+---
+permalink: config-admin/fujitsu-eternus-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: Fujitsu ETERNUS 데이터 원본에는 스토리지의 IP 주소가 필요합니다. 쉼표로 구분할 수 없습니다. 
+---
+= Fujitsu ETERNUS 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Fujitsu ETERNUS 데이터 원본에는 스토리지의 IP 주소가 필요합니다. 쉼표로 구분할 수 없습니다.
+
+
+
+== 용어
+
+OnCommand Insight는 Fujitsu ETERNUS 데이터 소스에서 다음 인벤토리 정보를 가져옵니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+디스크
+ a| 
+디스크
+
+
+
+ a| 
+스토리지
+ a| 
+스토리지
+
+
+
+ a| 
+씬 풀, 유연한 계층 풀,
+
+RAID 그룹
+ a| 
+스토리지 풀
+
+
+
+ a| 
+표준 볼륨, 스냅 데이터 볼륨(SDV),
+
+스냅 데이터 풀 볼륨(SDPV),
+
+씬 프로비저닝 볼륨(TPV)
+ a| 
+볼륨
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 요구 사항
+
+* ETERNUS 저장소의 IP 주소로, 쉼표로 구분될 수 없습니다
+* SSH 관리 수준 사용자 이름 및 암호
+* 포트 22
+* 페이지 스크롤이 비활성화되어 있는지 확인합니다. (clienv -show -more -scroll disable)
+
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+ETERNUS 스토리지의 IP 주소입니다
+ a| 
+ETERNUS 스토리지의 IP 주소입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+ETERNUS 스토리지에 대한 사용자 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+흉기에 사용되는 암호입니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 20분)
+
+
+
+ a| 
+SSH 프로세스 대기 시간 초과(초)
+ a| 
+SSH 프로세스 시간 초과(기본값 600초)
+
+|===

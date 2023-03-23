@@ -1,0 +1,87 @@
+---
+permalink: config-admin/emc-recoverpoint-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: EMC RecoverPoint 데이터 소스는 EMC RecoverPoint 스토리지에서 인벤토리 정보를 수집합니다. 구성의 경우 데이터 소스에 스토리지 프로세서의 IP 주소와 읽기 전용 사용자 이름 및 암호가 필요합니다. 
+---
+= EMC RecoverPoint 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EMC RecoverPoint 데이터 소스는 EMC RecoverPoint 스토리지에서 인벤토리 정보를 수집합니다. 구성의 경우 데이터 소스에 스토리지 프로세서의 IP 주소와 _read-only_user 이름 및 암호가 필요합니다.
+
+EMC RecoverPoint 데이터 소스는 RecoverPoint가 다른 스토리지 시스템 간에 조정하는 볼륨 간 복제 관계를 수집합니다. OnCommand Insight는 각 RecoverPoint 클러스터의 스토리지 시스템을 보여 주며 해당 클러스터의 노드 및 스토리지 포트에 대한 인벤토리 데이터를 수집합니다. 스토리지 풀 또는 볼륨 데이터가 수집되지 않습니다.
+
+
+
+== 요구 사항
+
+* 스토리지 프로세서의 IP 주소 또는 정규화된 도메인 이름입니다
+* 읽기 전용 사용자 이름 및 암호
+* 포트 443을 통한 REST API 액세스
+* PuTTY를 통한 SSH 액세스
+
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+RecoverPoint의 주소입니다
+ a| 
+RecoverPoint 클러스터의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+RecoverPoint 클러스터의 사용자 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+RecoverPoint 클러스터의 암호입니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+TCP 포트
+ a| 
+RecoverPoint 클러스터에 접속하는 데 사용되는 TCP 포트입니다
+
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 20분)
+
+
+
+ a| 
+제외된 클러스터
+ a| 
+폴링 시 제외할 클러스터 ID 또는 이름의 쉼표로 구분된 목록입니다
+
+|===

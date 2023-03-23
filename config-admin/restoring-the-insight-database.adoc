@@ -1,0 +1,37 @@
+---
+permalink: config-admin/restoring-the-insight-database.html 
+sidebar: sidebar 
+keywords:  
+summary: 검증된 백업 파일에서 Insight 데이터베이스를 복원하려면 문제 해결 옵션을 사용합니다. 이 작업은 현재 OnCommand Insight 데이터를 완전히 대체합니다. 
+---
+= Insight 데이터베이스를 복원하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+검증된 백업 파일에서 Insight 데이터베이스를 복원하려면 문제 해결 옵션을 사용합니다. 이 작업은 현재 OnCommand Insight 데이터를 완전히 대체합니다.
+
+
+
+== 시작하기 전에
+
+** 모범 사례:** OnCommand Insight 데이터베이스를 복원하기 전에 수동 백업 프로세스를 사용하여 현재 데이터베이스의 복사본을 만듭니다. 복원하려는 백업 파일 확인 복원하려는 파일이 포함된 백업이 성공했는지 확인합니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭합니다.
+. 문제 해결 * 을 클릭합니다.
++
+image::../media/oci-7-backup-restore-gif.gif[백업 및 복원 페이지]
+
+. 데이터베이스 복원 섹션의 * 백업 선택 * 메뉴에서 복원할 백업 파일을 선택합니다.
+. 복원 * 을 클릭합니다.
+. 모든 데이터가 교체된다는 경고가 나타나면 * OK * 를 클릭합니다
++
+복원 작업의 상태가 복원 페이지에 표시됩니다.
+
+

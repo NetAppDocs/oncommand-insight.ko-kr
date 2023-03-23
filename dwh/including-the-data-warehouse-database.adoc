@@ -1,0 +1,30 @@
+---
+permalink: dwh/including-the-data-warehouse-database.html 
+sidebar: sidebar 
+keywords:  
+summary: 기본적으로 ASUP에서는 문제 해결에 도움이 되도록 데이터 웨어하우스 로그 파일만 기술 지원 부서에 보냅니다. 그러나 데이터 웨어하우스 데이터베이스의 백업을 포함하고 보낼 데이터 유형을 선택할 수도 있습니다. 
+---
+= 데이터 웨어하우스 데이터베이스의 백업 포함
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본적으로 ASUP에서는 문제 해결에 도움이 되도록 데이터 웨어하우스 로그 파일만 기술 지원 부서에 보냅니다. 그러나 데이터 웨어하우스 데이터베이스의 백업을 포함하고 보낼 데이터 유형을 선택할 수도 있습니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 왼쪽의 탐색 창에서 * 문제 해결 * 을 클릭합니다.
+. 데이터 웨어하우스 데이터베이스의 백업을 ASUP에 포함하도록 지정하려면 * Include DWH Database Backup *(DWH 데이터베이스 백업 포함 *) 목록을 클릭하고 백업에 포함되어야 하는 데이터 유형에 대해 다음 옵션 중 하나를 선택합니다.
++
+** 모두(성능 포함)
+** 성능을 제외한 모든 시장
+** 재고만
+
+
+. Update * 를 클릭합니다.
+

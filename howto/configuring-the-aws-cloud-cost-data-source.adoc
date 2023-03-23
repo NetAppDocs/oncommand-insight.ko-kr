@@ -1,0 +1,50 @@
+---
+permalink: howto/configuring-the-aws-cloud-cost-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 모든 Insight 데이터 원본과 마찬가지로 AWS Cloud Cost 데이터 소스를 구성합니다. 
+---
+= AWS Cloud Cost 데이터 소스 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+모든 Insight 데이터 원본과 마찬가지로 AWS Cloud Cost 데이터 소스를 구성합니다.
+
+
+
+== 시작하기 전에
+
+Insight 데이터를 수집할 수 있도록 Amazon AWS 계정이 이미 설정 및 준비되어 있어야 하며, 다음 정보를 준비해 두어야 합니다.
+
+* 보고서 이름
+* S3 버킷 이름
+* S3 버킷이 상주하는 AWS 지역
+* 보고서 경로 접두어
+
+
+
+
+== 이 작업에 대해
+
+AWS 계정이 준비되고 적절한 사용 권한이 설정되면 청구 보고서 데이터를 수집하도록 OnCommand Insight를 구성할 수 있습니다.
+
+[NOTE]
+====
+청구 데이터를 검색할 각 청구 가능한 사용자/계정에 대해 별도의 AWS Cloud Cost 데이터 소스를 추가해야 합니다.
+
+====
+
+
+== 단계
+
+. 관리자로 OnCommand Insight에 로그인합니다.
+. Admin * > * Data Sources * 를 클릭하여 Insight Data Source 페이지를 엽니다.
+. 새 데이터 원본을 추가하려면 * + 추가 * 를 클릭합니다. Amazon * 을 선택하고 * AWS 클라우드 비용 * 을 선택합니다.
+. Configuration * 섹션에서 _Report name_, _S3 Bucket_name, _S3 Region_(S3 버켓이 있는 지역이어야 함), _Report path prefix_, _AWS IAM Access Key ID_ 및 _AWS IAM Secret Access Key _ 를 입력합니다. 확실하지 않은 경우 클라우드 공급자 또는 AWS 계정 보유자에게 문의하십시오.
+. 이 확인란을 클릭하여 AWS에서 Insight 데이터 소스에서 발생하는 API 요청 및 데이터 전송에 대해 요금을 청구하는지 확인합니다.
+. 고급 구성 * 에서 HTTP 연결 및 소켓 시간 초과를 입력합니다. 기본값은 300초입니다.
+. 저장 * 을 클릭합니다.
+

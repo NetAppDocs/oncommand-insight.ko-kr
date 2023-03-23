@@ -1,0 +1,38 @@
+---
+permalink: reporting/importing-existing-reports-to-cognos-11.html 
+sidebar: sidebar 
+keywords:  
+summary: 이전에 클립보드에 복사한 보고서 설정을 열 수 있습니다. 
+---
+= 클립보드에서 보고서(XML)를 엽니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이전에 클립보드에 복사한 보고서 설정을 열 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+새 보고서를 만들거나 기존 보고서를 열어 보고 사용자 인터페이스를 입력합니다
+
+
+
+== 단계
+
+. Cognos 11 보고 포털 열기: https://server-name:9300/bi/[]
+. 도구 모음에서 를 클릭합니다 image:../media/new-report.gif[""]
+. 보고서 * 를 클릭합니다
+. 페이지 * 아이콘을 클릭합니다image:../media/pages-icon.gif[""]
++
+보고서 * 아이콘 image:../media/report-icon.gif[""] 가 표시됩니다
+
+. Report * 아이콘을 마우스 왼쪽 버튼으로 클릭합니다
++
+보고서 옵션이 표시됩니다.
+
+. 클립보드에서 보고서 열기 * 를 클릭합니다.
+

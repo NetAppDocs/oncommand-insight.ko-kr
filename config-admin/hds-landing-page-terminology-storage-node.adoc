@@ -1,0 +1,24 @@
+---
+permalink: config-admin/hds-landing-page-terminology-storage-node.html 
+sidebar: sidebar 
+keywords:  
+summary: HDS 스토리지 노드 자산 랜딩 페이지에서 찾을 수 있는 오브젝트나 참조에 적용되는 용어입니다. 
+---
+= HDS 스토리지 노드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HDS 스토리지 노드 자산 랜딩 페이지에서 찾을 수 있는 오브젝트나 참조에 적용되는 용어입니다.
+
+
+
+== HDS 스토리지 노드 용어
+
+다음 용어는 HDS 스토리지 노드 자산 랜딩 페이지에서 찾을 수 있는 오브젝트 또는 참조에 적용됩니다. 이러한 용어 중 다수는 다른 데이터 수집기에도 적용됩니다.
+
+* 이름 - 모놀리식 어레이에 있는 프런트엔드 디렉터(FED) 또는 채널 어댑터의 이름 또는 모듈식 어레이에서 컨트롤러의 이름입니다. 주어진 HDS 어레이에는 2개 이상의 스토리지 노드가 있습니다
+* 볼륨 -- 볼륨 테이블에는 이 스토리지 노드가 소유한 포트에 매핑된 모든 볼륨이 표시됩니다
+

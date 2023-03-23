@@ -1,0 +1,56 @@
+---
+permalink: config-admin/exporting-fc-identification-to-a-csv-file.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 디바이스 확인 기능을 사용하여 기존 Fibre Channel 디바이스 식별 정보를 CSV 파일로 내보낼 수 있습니다. 장치 ID를 수정하여 Insight로 다시 가져온 다음 내보낸 ID와 원래 일치하는 장치를 식별하는 데 이 ID를 사용할 수 있도록 장치 ID를 내보낼 수 있습니다. 
+---
+= Fibre Channel 디바이스 식별 정보를 CSV 파일로 내보내는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 디바이스 확인 기능을 사용하여 기존 Fibre Channel 디바이스 식별 정보를 CSV 파일로 내보낼 수 있습니다. 장치 ID를 수정하여 Insight로 다시 가져온 다음 내보낸 ID와 원래 일치하는 장치를 식별하는 데 이 ID를 사용할 수 있도록 장치 ID를 내보낼 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+이 시나리오는 CSV 파일에서 쉽게 편집한 후 시스템으로 다시 가져올 수 있는 유사한 속성이 장치에 있을 때 사용할 수 있습니다.
+
+Fibre Channel 디바이스 ID를 CSV 파일로 내보낼 때 파일은 다음 정보를 표시된 순서대로 포함합니다.
+
+|===
+
+
+ a| 
+WWN입니다
+
+
+
+ a| 
+IP
+
+
+
+ a| 
+이름
+
+
+
+ a| 
+유형
+
+|===
+
+
+== 단계
+
+. Insight 웹 UI에 로그인합니다.
+. Manage * > * Device Resolution * 을 클릭합니다
+. FC 식별 * 탭을 선택합니다.
+. ID를 내보낼 Fibre Channel 디바이스를 선택합니다.
+. 내보내기를 클릭합니다 image:../media/export-to-csv.gif[""] 아이콘을 클릭합니다.
+. CSV 파일을 열거나 파일을 저장할 것인지 선택합니다.
+

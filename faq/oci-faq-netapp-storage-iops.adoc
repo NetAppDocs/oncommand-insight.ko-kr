@@ -1,0 +1,36 @@
+---
+permalink: faq/oci-faq-netapp-storage-iops.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 FAQ는 Data ONTAP 스토리지 시스템에서 IOPS 수치가 도출되는 방식에 대한 일반적인 질문에 답변합니다. 
+---
+= Data ONTAP 스토리지 IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 FAQ는 Data ONTAP 스토리지 시스템에서 IOPS 수치가 도출되는 방식에 대한 일반적인 질문에 답변합니다.
+
+
+
+== 스토리지 IOPS가 Data ONTAP 스토리지 시스템에서 파생되는 방법
+
+* 스토리지 어레이 레벨 IOPS는 내부 볼륨 IOPS에서 집계됩니다
+* 스토리지 노드 레벨 IOPS에는 메타 데이터 OPS가 포함됩니다
+* 스토리지 풀 레벨 IOPS는 메타 데이터 OPS를 제외하며 디스크만 측정합니다
+* 내부 볼륨 레벨 IOPS에는 읽기 + 쓰기 OPS(작업) + 기타 OPS가 포함됩니다
+
+
+
+
+== 질문 - 애그리게이트 IOPS가 노드 IOPS보다 높을 수 있는 경우도 있습니다.
+
+cDOT 8.3.1 이전 노드 IOPS는 프로토콜 IOPS로 구성됩니다. 향상된 주요 기능을 확인하십시오. 이후 이들은 시스템 구성 요소별 메트릭으로 구성됩니다. 여기에는 데이터에 대한 '전용' 요청, 프런트 도어를 통한 요청, snapmirror, 중복 제거 등의 백엔드 작업은 포함되지 않습니다. 반면에 이러한 작업은 디스크 IOPS를 생성하므로 Aggregate IOPS가 발생합니다. 따라서 집계 IOPS가 노드 IOPS보다 높을 수 있습니다.
+
+
+
+== 질문 - 메타 데이터 또는 기타 OPS는 어떻게 계산합니까
+
+기타 OPS = 합계 - (읽기 + 쓰기)

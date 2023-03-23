@@ -1,0 +1,16 @@
+---
+permalink: config-admin/pruning-of-inventory-history.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Insight는 버전 7.3.2부터 90일 동안 인벤토리 \(기반 \) 변경 기록을 유지합니다. 이전 버전의 Insight에서는 설치 시점의 모든 재고 변경 내역이 유지됩니다. 이전 버전의 Insight에서 업그레이드한 후 오래된 재고 기록은 로 정리된 후 90일 동안 유지됩니다.' 
+---
+= 재고 기록 정리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight는 버전 7.3.2부터 90일 동안 인벤토리(기반) 변경 기록을 유지합니다. 이전 버전의 Insight에서는 설치 시점의 모든 재고 변경 내역이 유지됩니다. 이전 버전의 Insight에서 업그레이드한 후 오래된 재고 기록은 로 정리된 후 90일 동안 유지됩니다.
+
+최신 버전의 OnCommand Insight로 업그레이드한 후 가장 최근 90일 동안 기록이 정리됩니다. Insight는 가장 오래된 것부터 시작하여 90일 분량의 역사가 남아 있을 때까지 하루에 한 번 30일 단위로 역사를 정리합니다. 그런 다음, 매일 역사를 정리하여 90일 동안의 재고 변경 내역을 유지합니다.

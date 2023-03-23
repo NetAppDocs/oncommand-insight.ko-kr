@@ -1,0 +1,243 @@
+---
+permalink: dwh/historical-data-retention-in-data-warehouse.html 
+sidebar: sidebar 
+keywords:  
+summary: 데이터 웨어하우스는 일정에 따라 데이터를 유지 관리합니다. 데이터가 오래되면 데이터 레코드 보존이 줄어듭니다. 
+---
+= 과거 데이터가 데이터 웨어하우스에 보관되는 방식
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 웨어하우스는 일정에 따라 데이터를 유지 관리합니다. 데이터가 오래되면 데이터 레코드 보존이 줄어듭니다.
+
+데이터 웨어하우스는 다음 표와 같이 데이터 마트와 데이터 세분화를 기반으로 기간별 데이터를 보유합니다.
+
+|===
+
+
+| 데이터 마트 | 측정 대상 | 세분화 | 보존 기간 
+
+
+ a| 
+성능 마트
+ a| 
+볼륨 및 내부 볼륨
+ a| 
+매시간
+ a| 
+14일
+
+
+
+ a| 
+성능 마트
+ a| 
+볼륨 및 내부 볼륨
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+응용 프로그램
+ a| 
+매시간
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+호스트
+ a| 
+매시간
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+포트의 스위치 성능
+ a| 
+매시간
+ a| 
+5주
+
+
+
+ a| 
+성능 마트
+ a| 
+호스트, 스토리지 및 테이프의 스위치 성능
+ a| 
+매시간
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+스토리지 노드
+ a| 
+매시간
+ a| 
+14일
+
+
+
+ a| 
+성능 마트
+ a| 
+스토리지 노드
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+VM 성능
+ a| 
+매시간
+ a| 
+14일
+
+
+
+ a| 
+성능 마트
+ a| 
+VM 성능
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+하이퍼바이저 성능
+ a| 
+매시간
+ a| 
+14일
+
+
+
+ a| 
+성능 마트
+ a| 
+하이퍼바이저 성능
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+VMDK 성능
+ a| 
+매시간
+ a| 
+14일
+
+
+
+ a| 
+성능 마트
+ a| 
+VMDK 성능
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+성능 마트
+ a| 
+디스크 성능
+ a| 
+매시간
+ a| 
+14일
+
+
+
+ a| 
+성능 마트
+ a| 
+디스크 성능
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+용량 마트
+ a| 
+모두(개별 볼륨 제외)
+ a| 
+매일
+ a| 
+13개월
+
+
+
+ a| 
+용량 마트
+ a| 
+모두(개별 볼륨 제외)
+ a| 
+월간 담당자
+ a| 
+14개월 이상
+
+
+
+ a| 
+재고 마트
+ a| 
+개별 볼륨
+ a| 
+현재 상태
+ a| 
+1일(또는 다음 ETL이 될 때까지)
+
+|===
+13개월 후(구성 가능) 데이터 웨어하우스는 다음 팩트 테이블에서 용량, 성능 및 리소스 데이터에 대해 하루 한 개의 레코드 대신 매월 한 개의 레코드만 보유합니다.
+
+* 차지백 팩트 테이블(dwh_capacity.chargeback_fact)
+* 파일 시스템 사용률 팩트 테이블(dWh_fs_util.fs_util_fact)
+* 호스트 팩트 테이블(dWh_sa.sa_host_fact)
+* 내부 볼륨 용량 팩트 테이블(dwh_capacity.internal_volume_capacity_fact)
+* 포트 팩트 테이블(dWh_ports.ports_fact)
+* qtree 용량 팩트 테이블(dWh_capacity.qtree_capacity_fact)
+* 스토리지 및 스토리지 풀 용량 팩트 테이블(dWh_capacity.storage_and_storage_pool_capacity_fact)
+* 볼륨 용량 팩트 테이블(dWh_capacity.vm_capacity_fact)
+* 스토리지 노드 시간별 성능(storage_node_hourly_performance_fact) 및 스토리지 노드 일별 성능(storage_node_daily_performance_fact) 팩트 테이블
+

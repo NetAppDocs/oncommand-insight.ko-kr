@@ -1,0 +1,184 @@
+---
+permalink: config-admin/emc-vnxe-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: EMC VNXe 데이터 소스는 EMC VNXe 및 Unity 유니파이드 스토리지 시스템에 대한 인벤토리 지원을 제공합니다. 
+---
+= EMC VNXe 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+EMC VNXe 데이터 소스는 EMC VNXe 및 Unity 유니파이드 스토리지 시스템에 대한 인벤토리 지원을 제공합니다.
+
+이 데이터 소스는 CLI 기반이며 VNXe 데이터 소스가 상주하는 수집 유닛에 Unisphere for VNXe CLI(uemcli.exe)를 설치해야 합니다. uemcli.exe 전송 프로토콜로 HTTPS를 사용하므로 획득 장치에서 VNXe/Unity 어레이에 대한 HTTPS 연결을 시작할 수 있어야 합니다. 데이터 소스에서 사용할 수 있는 읽기 전용 사용자가 적어도 있어야 합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 EMC VNXe 데이터 소스에서 다음과 같은 인벤토리 정보를 가져옵니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+디스크
+ a| 
+디스크
+
+
+
+ a| 
+스토리지
+ a| 
+스토리지
+
+
+
+ a| 
+프로세서
+ a| 
+스토리지 노드
+
+
+
+ a| 
+스토리지 풀
+ a| 
+스토리지 풀
+
+
+
+ a| 
+일반 iSCSI 블록 정보, VMware VMFS
+ a| 
+볼륨
+
+
+
+ a| 
+공유 폴더
+ a| 
+내부 볼륨
+
+
+
+ a| 
+CIFS 공유, NFS 공유, VMware NFS 데이터 저장소에서 공유
+ a| 
+공유
+
+
+
+ a| 
+복제 원격 시스템
+ a| 
+동기화
+
+
+
+ a| 
+iSCSI 노드
+ a| 
+iSCSI 타겟 노드
+
+
+
+ a| 
+iSCSI 초기자
+ a| 
+iSCSI 대상 초기자
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 요구 사항
+
+다음은 이 데이터 소스를 구성하고 사용하기 위한 요구 사항입니다.
+
+* VNXe 데이터 수집기는 CLI를 기반으로 합니다. VNXe 데이터 수집기가 있는 획득 유닛에 Unisphere for VNXe CLI(uemcli.exe)를 설치해야 합니다.
+* uemcli.exe 전송 프로토콜로 HTTPS를 사용하므로 획득 장치에서 VNXe에 대한 HTTPS 연결을 시작할 수 있어야 합니다.
+* 데이터 소스에서 사용할 수 있는 읽기 전용 사용자가 적어도 있어야 합니다.
+* 관리 솔루션 Enabler 서버의 IP 주소입니다.
+* 포트 443의 HTTPS가 필요합니다
+* EMC VNXe 데이터 수집기는 인벤토리에 대한 NAS 및 iSCSI 지원을 제공합니다. Fibre Channel 볼륨은 검색되지만 Insight는 FC 매핑, 마스킹 또는 스토리지 포트에 대해서는 보고하지 않습니다.
+
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+VNXe 스토리지
+ a| 
+VNXe 디바이스의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+VNXe 디바이스의 사용자 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+VNXe 디바이스의 암호입니다
+
+
+
+ a| 
+uemcli 실행 파일의 전체 경로입니다
+ a| 
+에 대한 전체 경로입니다 `uemcli.exe` 실행 파일
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값 40분)
+
+
+
+ a| 
+VNXe CLI 포트
+ a| 
+VNXe CLI에 사용되는 포트입니다
+
+
+
+ a| 
+재고 외부 프로세스 시간 초과(초)
+ a| 
+외부 프로세스 시간 초과(기본값 1800초)
+
+|===

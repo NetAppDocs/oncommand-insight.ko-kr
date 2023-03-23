@@ -1,0 +1,16 @@
+---
+permalink: config-admin/preparing-a-special-troubleshooting-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight는 소프트웨어 설치 후 설정한 ASUP 시스템을 통해 NetApp 고객 지원 팀에 정보를 자동으로 전송합니다. 그러나 문제 해결 보고서를 만들고 지원 팀에 특정 문제에 대한 케이스를 개설할 수 있습니다. 
+---
+= 특수 문제 해결 보고서 준비
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight는 소프트웨어 설치 후 설정한 ASUP 시스템을 통해 NetApp 고객 지원 팀에 정보를 자동으로 전송합니다. 그러나 문제 해결 보고서를 만들고 지원 팀에 특정 문제에 대한 케이스를 개설할 수 있습니다.
+
+Insight의 툴을 사용하여 수동 Insight 백업을 수행하고 로그를 번들로 묶어 NetApp 고객 지원 센터로 보낼 수 있습니다.

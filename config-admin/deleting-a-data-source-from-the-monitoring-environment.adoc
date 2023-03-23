@@ -1,0 +1,29 @@
+---
+permalink: config-admin/deleting-a-data-source-from-the-monitoring-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 환경에서 데이터 소스를 제거한 경우에는 OnCommand Insight 모니터링 환경에서도 삭제해야 합니다. 
+---
+= 데이터 원본을 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+환경에서 데이터 소스를 제거한 경우에는 OnCommand Insight 모니터링 환경에서도 삭제해야 합니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭합니다.
++
+데이터 소스 목록이 열립니다.
+
+. 삭제할 데이터 원본을 선택합니다.
+. 연결된 데이터 원본 이름을 클릭합니다.
+. 요약 페이지에서 선택한 데이터 원본에 대한 정보를 확인하여 삭제할 데이터 원본인지 확인합니다.
+. 삭제 * 를 클릭합니다.
+. 확인 * 을 클릭하여 작업을 확인합니다.
+

@@ -1,0 +1,20 @@
+---
+permalink: install-windows/back-up-the-security-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight 환경에서 기본이 아닌 보안 구성을 사용하는 경우 새 소프트웨어를 설치한 후 보안 구성을 백업한 다음 보안 구성을 복원해야 합니다. 데이터 웨어하우스 데이터베이스 백업을 복원하기 전에 보안 구성을 복원해야 합니다. 
+---
+= 보안 구성 백업
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight 환경에서 기본이 아닌 보안 구성을 사용하는 경우 새 소프트웨어를 설치한 후 보안 구성을 백업한 다음 보안 구성을 복원해야 합니다. 데이터 웨어하우스 데이터베이스 백업을 복원하기 전에 보안 구성을 복원해야 합니다.
+
+
+
+== 이 작업에 대해
+
+를 사용합니다 `securityadmin` 구성 백업을 생성하고 저장된 구성을 복원하는 도구입니다. 자세한 내용을 보려면 을 검색합니다 `securityadmin` OnCommand Insight 문서 센터에서: http://docs.netapp.com/oci-73/index.jsp[]

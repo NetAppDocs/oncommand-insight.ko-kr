@@ -1,0 +1,16 @@
+---
+permalink: config-admin/replacing-licenses-for-older-insight-versions.html 
+sidebar: sidebar 
+keywords:  
+summary: 이전 버전과 호환되지 않는 새 Insight 버전을 구입한 경우 이전 라이센스를 새 라이센스로 교체해야 합니다. 
+---
+= 이전 Insight 버전의 라이센스 대체
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이전 버전과 호환되지 않는 새 Insight 버전을 구입한 경우 이전 라이센스를 새 라이센스로 교체해야 합니다.
+
+새 라이센스를 설치할 때 라이센스 키 텍스트를 저장하기 전에 * 바꾸기 * 작업을 선택해야 합니다.

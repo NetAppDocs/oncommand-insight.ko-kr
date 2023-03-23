@@ -1,0 +1,79 @@
+---
+permalink: howto/configure-insight-for-filesystem-collection.html 
+sidebar: sidebar 
+keywords:  
+summary: 파일 시스템 사용률 데이터 수집에 대한 Insight를 구성하려면 Host Utilization Pack 라이센스를 설치하고 NetApp Host and VM File Systems 데이터 소스를 구성해야 합니다. 
+---
+= 파일 시스템 수집에 대한 Insight를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+파일 시스템 사용률 데이터 수집에 대한 Insight를 구성하려면 Host Utilization Pack 라이센스를 설치하고 NetApp Host and VM File Systems 데이터 소스를 구성해야 합니다.
+
+
+
+== 시작하기 전에
+
+아직 Host Utilization Pack 라이센스를 설치하지 않은 경우 Admin * > * Setup * 페이지의 * Licenses * 탭에서 라이센스를 확인할 수 있습니다.
+
+호스트 및 VM 파일 시스템 데이터 원본은 현재 Insight에서 수집 또는 검색되고 있는 알려진 * 컴퓨팅 리소스 * (호스트 및 VM)에 대한 파일 시스템 사용률 및 파일 시스템 메타데이터만 보고합니다.
+
+* 가상 시스템은 Hyper-V 및 VMware와 같은 하이퍼바이저 데이터 소스에 의해 수집됩니다.
+* 호스트는 장치 확인을 통해 검색됩니다.
+
+
+적절한 스토리지 리소스에 적절한 계층 주석이 있어야 합니다.
+
+다음과 같은 연결된 블록 스토리지 디바이스가 지원됩니다.
+
+* NetApp clustered Data ONTAP(cDOT)
+* NetApp 7-Mode에서 직접 지원합니다
+* CLARiX
+* Windows: FC, iSCSI용 VMware 가상 디스크(VMDK)입니다
+* Linux: VMware VMDK(iSCSI 및 FC 지원 안 됨)
+
+
+Compute Resource Group * 은 공통 관리 자격 증명을 공유하는 호스트 및/또는 가상 시스템을 그룹화할 수 있는 주석입니다.
+
+
+
+== 단계
+
+. 먼저 * Compute Resource Group * 에 포함될 호스트 및/또는 가상 시스템에 주석을 답니다. 쿼리 * > * + 새 쿼리 * 로 이동하여 _Virtual Machine_assets를 검색합니다.
++
+Host_assets에 대해 이 단계를 반복해야 합니다.
+
+. 테이블 오른쪽의 열 선택기를 클릭하고 * Compute Resource Group * 열을 선택하여 쿼리 결과 테이블에 표시합니다.
+. 원하는 컴퓨팅 리소스 그룹에 추가할 가상 머신을 선택합니다. 필터를 사용하여 특정 자산을 검색할 수 있습니다.
+. Actions * 버튼을 클릭하고 * Edit annotation * 을 선택합니다.
+. Compute Resource Group_annotation을 선택한 후 _Value_field에서 원하는 자원 그룹 이름을 선택합니다.
++
+선택한 VM에 리소스 그룹 주석이 추가됩니다. 리소스 그룹 이름은 나중에 호스트 및 VM 파일 시스템 데이터 소스에서 구성할 이름과 일치해야 합니다.
+
+. 컴퓨팅 리소스 그룹의 호스트 및 VM 파일 시스템 데이터 소스를 구성하려면 * Admin * > * Data Sources * 를 클릭하고 * Add * the_NetApp Host and VM File Systems_data source 를 클릭합니다.
++
+image::../media/hostutil-dsconfig.gif[HOSTUTIL dsconfig를 선택합니다]
+
+. 구성* 섹션에서 파일 시스템 데이터를 검색할 수 있는 적절한 권한이 있는 운영 체제 사용자의 * 사용자 이름 * 및 * 암호 * 를 입력합니다. Windows 운영 체제 사용자의 경우 Windows 환경에서 도메인 접두사를 사용해야 합니다.
++
+Linux에 설치된 AU(Insight Acquisition Unit)는 Linux 컴퓨팅 리소스에 대해 보고할 수 있고, Windows에 설치된 AU는 Linux 또는 Windows 컴퓨팅 리소스에 대해 말할 수 있습니다.
+
+. 파일 시스템 사용률 데이터를 수집할 자산에 대한 * 컴퓨팅 리소스 그룹 * 의 이름을 입력합니다. 이 이름은 위의 자산에 주석을 다는 데 사용한 리소스 그룹 이름과 일치해야 합니다.
++
+Compute Resource Group 필드를 비워 두면 데이터 소스에서 Compute Resource Group 주석이 없는 호스트 또는 VM에 대한 데이터를 수집합니다.
+
+. 고급 구성** 섹션에서 이 데이터 소스에 대해 원하는 폴링 간격을 입력합니다. 일반적으로 6시간의 기본값은 적당합니다.
+. 데이터 소스 연결을 저장하기 전에 * 테스트 * 하는 것이 좋습니다. 연결 결과가 성공하면 그룹에 포함된 컴퓨팅 리소스 타겟의 수도 표시됩니다.
+. 저장 * 을 클릭합니다. 호스트 및 VM 파일 시스템 데이터 소스가 다음 폴에서 데이터 수집을 시작합니다.
+. 파일 시스템 데이터가 수집되면 호스트 또는 VM의 자산 페이지의 파일 시스템 위젯에서 해당 데이터를 볼 수 있습니다.
++
+image::../media/hostutil-vmlpfstable.gif[HOSTUTIL vmlpfstable]
+
+. 가질 각 컴퓨팅 리소스 그룹에 대해 이 단계를 반복합니다. 각 컴퓨팅 리소스 그룹은 자체 호스트 및 VM 파일 시스템 데이터 소스와 연결되어야 합니다.
++
+파일 시스템 정보는 사용자 환경의 기존 VMware 또는 Hyper-V 데이터 소스에 의해 이미 획득되고 있는 호스트 및 VM에 대해 수집됩니다.
+
+

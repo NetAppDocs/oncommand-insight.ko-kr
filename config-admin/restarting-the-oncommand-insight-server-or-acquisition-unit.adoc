@@ -1,0 +1,33 @@
+---
+permalink: config-admin/restarting-the-oncommand-insight-server-or-acquisition-unit.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 서버를 다시 시작하면 페이지를 새로 고치고 OnCommand Insight 포털에 다시 로그인합니다. 
+---
+= OnCommand Insight 서버를 다시 시작합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 서버를 다시 시작하면 페이지를 새로 고치고 OnCommand Insight 포털에 다시 로그인합니다.
+
+
+
+== 이 작업에 대해
+
+[NOTE]
+====
+이 두 옵션은 모두 NetApp 고객 지원 본부의 요청에 따라 사용해야 합니다. 다시 시작하기 전에 확인 메시지가 없습니다.
+
+====
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
+. 다른 작업 영역의 페이지 하단에서 * 고급 문제 해결 * 링크를 클릭합니다.
+. 고급 메뉴의 다음 페이지에서 * 작업 * 탭을 클릭합니다.
+. 서버 재시작 * 을 클릭합니다.
+

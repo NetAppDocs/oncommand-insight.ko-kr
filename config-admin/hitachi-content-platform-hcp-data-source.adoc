@@ -1,0 +1,134 @@
+---
+permalink: config-admin/hitachi-content-platform-hcp-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: '이 데이터 수집기는 HCP 관리 API를 사용하여 Hitachi Content Platform\(HCP\)을 지원합니다.' 
+---
+= Hitachi Content Platform(HCP) 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 데이터 수집기는 HCP 관리 API를 사용하는 HCP(Hitachi Content Platform)를 지원합니다.
+
+
+
+== 용어
+
+OnCommand Insight는 HCP 데이터 소스에서 다음 재고 정보를 가져옵니다. Insight에서 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 소스를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.
+
+|===
+
+
+| 공급업체/모델 기간 | Insight 용어입니다 
+
+
+ a| 
+HCP 클러스터
+ a| 
+스토리지
+
+
+
+ a| 
+테넌트
+ a| 
+스토리지 풀
+
+
+
+ a| 
+네임스페이스
+ a| 
+내부 볼륨
+
+
+
+ a| 
+노드
+ a| 
+노드
+
+|===
+[NOTE]
+====
+이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 소스의 모든 경우를 나타내는 것은 아닙니다.
+
+====
+
+
+== 재고 요건
+
+* HCP 서버의 IP 주소입니다
+* HCP 소프트웨어 및 피어 권한에 대한 읽기 전용 사용자 이름 및 암호입니다
+
+
+
+
+== 구성
+
+|===
+
+
+| * 필드 * | * 설명 * 
+
+
+ a| 
+HCP 호스트
+ a| 
+HCP 호스트의 IP 주소 또는 정규화된 도메인 이름입니다
+
+
+
+ a| 
+HCP 포트
+ a| 
+기본값은 9090입니다
+
+
+
+ a| 
+HCP 사용자 ID입니다
+ a| 
+HCP 호스트의 사용자 이름입니다
+
+
+
+ a| 
+HCP 암호
+ a| 
+HCP 호스트에 사용되는 암호입니다
+
+
+
+ a| 
+HCP 인증 유형
+ a| 
+HCP_LOCAL 또는 ACTIVE_DIRECTORY 를 선택합니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값: 60분)
+
+
+
+ a| 
+성능 폴링 간격(초)
+ a| 
+성능 폴링 간격(기본값 900초)
+
+|===

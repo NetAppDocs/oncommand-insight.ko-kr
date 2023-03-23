@@ -1,0 +1,32 @@
+---
+permalink: dwh/data-warehouse-software-components.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 데이터 웨어하우스에는 여러 소프트웨어 구성 요소가 포함되어 있습니다. 
+---
+= 데이터 웨어하우스 소프트웨어 구성 요소
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 데이터 웨어하우스에는 여러 소프트웨어 구성 요소가 포함되어 있습니다.
+
+* MySQL 데이터베이스
++
+Data Mart 테이블의 백엔드 저장소입니다
+
+* IBM Cognos
++
+OnCommand Insight의 보고 엔진입니다
+
+* Apache Derby 데이터베이스
++
+Cognos 구성 및 콘텐츠를 저장하는 데 사용됩니다
+
+* 와일드플라이
++
+OnCommand Insight 구성 요소를 호스팅하는 Java Enterprise 애플리케이션 서버입니다
+
+

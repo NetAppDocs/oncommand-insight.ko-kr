@@ -1,0 +1,22 @@
+---
+section: faq
+title: FAQ 를 참조하십시오
+entries:
+- title: 일반적인 질문
+  url: "/faq/faq-general-insight-questions.html"
+- title: OnCommand Insight 라이센스
+  url: "/faq/faq-insight-licensing.html"
+- title: 구성 및 지원 장치
+  url: "/faq/faq-configuration-and-supported-devices.html"
+- title: 확장성 및 사용 편의성
+  url: "/faq/faq-scale-and-ease-of-use.html"
+- title: 성능 문제 해결
+  url: "/faq/faq-performance-troubleshooting.html"
+- title: 환경 관리
+  url: "/faq/faq-environment-management.html"
+- title: Insight를 다른 툴과 통합
+  url: "/faq/faq-integrating-insight-and-third-party-tools.html"
+- title: Data ONTAP 스토리지 IOPS
+  url: "/faq/oci-faq-netapp-storage-iops.html"
+- title: 이상 징후 탐지
+  url: "/faq/faq-anomaly-detection.html"

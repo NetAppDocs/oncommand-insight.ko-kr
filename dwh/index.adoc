@@ -1,0 +1,12 @@
+---
+permalink: dwh/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 데이터 웨어하우스 관리 가이드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

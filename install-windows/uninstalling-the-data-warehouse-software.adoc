@@ -1,0 +1,41 @@
+---
+permalink: install-windows/uninstalling-the-data-warehouse-software.html 
+sidebar: sidebar 
+keywords:  
+summary: 업그레이드하기 전에 데이터 웨어하우스 소프트웨어를 제거해야 합니다. 
+---
+= 데이터 웨어하우스 소프트웨어 제거
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+업그레이드하기 전에 데이터 웨어하우스 소프트웨어를 제거해야 합니다.
+
+
+
+== 시작하기 전에
+
+보관하려는 보고서를 변경한 경우 데이터 웨어하우스를 제거하기 전에 백업을 생성하는 것이 중요합니다. Data Warehouse를 제거하면 이전에 수집된 모든 데이터가 영구적으로 삭제되며 새로 생성되거나 편집된 보고서를 비롯한 모든 보고서가 제거됩니다.
+
+
+
+== 단계
+
+. 데이터 웨어하우스 서버에 로그인합니다.
+. 서버의 모든 Insight 창을 닫았는지 확인합니다.
+. 제어판을 사용하여 제거하려면:
++
+.. 제어판에서 프로그램 제거 * 를 열고 제거할 OnCommand Insight 응용 프로그램을 선택합니다. 제거 * 를 클릭하고 화면의 지시를 따릅니다.
+.. 제거할 IBM DB2 애플리케이션을 선택합니다. 제거 * 를 클릭하고 화면의 지시를 따릅니다.
+.. DB2 설치 폴더(예: _C:\Program Files\IBM\DB2_)를 삭제하여 DB2 데이터베이스를 완전히 제거합니다.
+
+
+. 제공된 스크립트를 사용하여 제거하려면 다음을 수행하십시오.
++
+.. <download location>\OCI_dWh_uninstall\_폴더로 이동하고 _INSTALL_OCI_dWh.bat_script를 실행합니다.
+
+
+. 서버를 재부팅합니다.
+

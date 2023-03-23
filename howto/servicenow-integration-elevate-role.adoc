@@ -1,0 +1,22 @@
+---
+permalink: howto/servicenow-integration-elevate-role.html 
+sidebar: sidebar 
+keywords:  
+summary: Insight와 통합하려면 ServiceNow 역할을 security_admin으로 승격해야 합니다. 
+---
+= 권한 상승 역할
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight와 통합하려면 ServiceNow 역할을 security_admin으로 승격해야 합니다.
+
+
+
+== 단계
+
+. 관리자 권한으로 ServiceNow 인스턴스에 로그인합니다.
+. 시스템 관리자 * 드롭다운에서 * Elevate Roles * 를 선택하고 역할을 security_admin으로 승격합니다. 확인 을 클릭합니다.
+

@@ -1,0 +1,14 @@
+---
+permalink: howto/assigning-application-to-assets-how-to-chargeback.html 
+sidebar: sidebar 
+keywords:  
+summary: 응용 프로그램을 정의한 후에는 응용 프로그램을 특정 자산과 연결해야 합니다. 간단한 Ad Hoc 방법을 사용하여 응용 프로그램을 자산에 적용할 수 있습니다. 응용 프로그램을 대량으로 적용하려는 사용자는 쿼리 방법을 사용하여 응용 프로그램에 할당할 자산을 식별해야 합니다. 
+---
+= 자산에 애플리케이션 할당
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+응용 프로그램을 정의한 후에는 응용 프로그램을 특정 자산과 연결해야 합니다. 간단한 Ad Hoc 방법을 사용하여 응용 프로그램을 자산에 적용할 수 있습니다. 응용 프로그램을 대량으로 적용하려는 사용자는 쿼리 방법을 사용하여 응용 프로그램에 할당할 자산을 식별해야 합니다.

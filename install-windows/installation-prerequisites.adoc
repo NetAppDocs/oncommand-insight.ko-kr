@@ -1,0 +1,47 @@
+---
+permalink: install-windows/installation-prerequisites.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight를 설치하기 전에 현재 소프트웨어 버전을 다운로드하고 적절한 라이센스를 취득하며 환경을 설정해야 합니다. 
+---
+= 설치 필수 구성 요소
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight를 설치하기 전에 현재 소프트웨어 버전을 다운로드하고 적절한 라이센스를 취득하며 환경을 설정해야 합니다.
+
+OnCommand Insight를 설치하기 전에 다음 사항을 확인하십시오.
+
+* 현재 버전의 다운로드한 설치 패키지에 있는 OnCommand Insight 소프트웨어 파일입니다
+* 다운로드한 OnCommand Insight 버전을 작동하는 라이센스입니다
+* 최소 하드웨어 및 소프트웨어 환경
++
+현재 제품은 이전 버전의 OnCommand Insight 제품에서 사용되지 않은 추가 하드웨어 리소스(향상된 OnCommand Insight 제품 기능)를 사용할 수 있습니다.
+
+* OnCommand Insight 서버, 데이터 웨어하우스 및 보고, 원격 획득 장치의 하드웨어 및 네트워크 구성을 포함하는 배포 계획.
+* OnCommand Insight Java UI용 Java 8.
++
+
+NOTE: OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오 http://docs.netapp.com/oci-73/topic/com.netapp.ndc.notices/GUID-93BE9A1E-D79E-4A97-87A2-4DBE31372A16.html["통지"] 페이지를 참조하십시오.
+
+* 바이러스 검사 소프트웨어를 비활성화했습니다
++
+OnCommand Insight를 설치하는 동안 모든 바이러스 스캐너를 완전히 비활성화해야 합니다. 설치 후 Insight 구성 요소(설치, 백업 및 Archiver 경로)에서 사용하는 경로는 전체 경로를 제외하고 바이러스 검사에서 제외되어야 합니다 `sanscreen` 스캔 디렉터리.
+
++
+또한 설치 후 바이러스 백신 검사에서 IBM/DB2 폴더(예: _C:\Program Files\IBM\DB2_)를 제외해야 합니다.
+
+
+
+[NOTE]
+====
+업그레이드 또는 새 하드웨어로 전체 설치를 수행하는 경우 기존 시스템에 기본값이 아닌 보안 구성이 포함되어 있는 경우 설치를 수행하기 전에 보안 구성을 백업해야 합니다. 설치가 완료되면 서버(로컬 획득 장치 포함) 또는 데이터 웨어하우스 데이터베이스를 복원하기 전에 보안 구성을 복원해야 합니다. DWH 데이터베이스를 복원하기 전에 모든 Insight 서버에 보안 구성을 복원해야 합니다.
+
+현재 위치 업그레이드의 경우(Insight Server에서만 사용 가능) 보안 구성이 올바르게 처리되므로 복원할 필요가 없습니다.
+
+를 사용합니다 `securityadmin` 구성 백업을 생성하고 저장된 구성을 복원하는 도구입니다. 자세한 내용을 보려면 을 검색합니다 `securityadmin` OnCommand Insight 문서 센터에서: http://docs.netapp.com/oci-73/index.jsp[]
+
+====

@@ -1,0 +1,29 @@
+---
+permalink: config-admin/forcing-annotation-updates.html 
+sidebar: sidebar 
+keywords:  
+summary: 주석을 변경한 후 즉시 보고서에 사용하려면 힘 주석 옵션 중 하나를 사용합니다. 
+---
+= 주석 업데이트 적용
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+주석을 변경한 후 즉시 보고서에 사용하려면 힘 주석 옵션 중 하나를 사용합니다.
+
+
+
+== 단계
+
+. 웹 UI에서 * Admin * 을 클릭하고 * Troubleshooting * 을 선택합니다.
+. 페이지 하단에서 * 고급 문제 해결 * 링크를 클릭합니다.
+. 작업 * 탭을 클릭합니다.
+. 다음 옵션 중 하나를 선택합니다.
++
+** * DWH 주석 * 을 업데이트하여 보고서에 데이터 웨어하우스의 주석 업데이트를 사용하도록 합니다.
+** * DWH 주석 업데이트( 삭제됨) * 데이터 웨어하우스의 주석 업데이트(삭제된 개체 포함)를 보고서에 사용하도록 강제합니다.
+
+
+

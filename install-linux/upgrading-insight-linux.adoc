@@ -1,0 +1,21 @@
+---
+permalink: install-linux/upgrading-insight-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: '새 버전의 OnCommand Insight를 사용할 수 있는 경우 새 기능 및 문제 해결 방법을 활용하기 위해 업그레이드할 수 있습니다. Insight 서버 및 데이터 웨어하우스\(DWH\)는 별도로 업그레이드해야 합니다.' 
+---
+= Insight 업그레이드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새 버전의 OnCommand Insight를 사용할 수 있는 경우 새 기능 및 문제 해결 방법을 활용하기 위해 업그레이드할 수 있습니다. Insight 서버 및 DWH(데이터 웨어하우스)는 별도로 업그레이드해야 합니다.
+
+
+IMPORTANT: 업그레이드 프로세스 중에 전체 설치 폴더를 덮어쓰므로 Insight 설치 디렉토리에 자동 또는 수동 백업을 저장하면 안 됩니다. 이러한 디렉토리에 백업 파일을 저장한 경우 업그레이드 또는 제거 프로세스를 수행하기 전에 백업을 다른 위치로 이동해야 합니다.
+
+Insight의 최신 버전은 디스크 공간, 메모리 및 CPU 요구 사항이 더 큽니다. Insight 최신 버전으로 업그레이드하기 전에 설치 요구 사항을 검토하십시오. Insight를 설치 또는 업그레이드하기 전에 세일즈 엔지니어에게 자세한 사이징 지침을 문의하는 것이 좋습니다.
+
+Insight 소프트웨어를 업그레이드하기 전에 보안 백업 및 데이터베이스 백업을 수행하는 것이 좋습니다.

@@ -1,0 +1,153 @@
+---
+section: dwh
+title: 데이터 웨어하우스 관리
+entries:
+- title: OnCommand Insight 데이터 웨어하우스에 오신 것을 환영합니다
+  url: "/dwh/welcome-to-data-warehouse.html"
+  entries:
+  - title: 데이터 웨어하우스 기능
+    url: "/dwh/data-warehouse-features.html"
+  - title: 데이터 웨어하우스 구성 요소
+    url: "/dwh/data-warehouse-components.html"
+    entries:
+    - title: 데이터 웨어하우스 포털을 사용하여 수행할 수 있는 작업
+      url: "/dwh/oncommand-insight-data-warehouse-portal.html"
+    - title: 데이터 웨어하우스 소프트웨어 구성 요소
+      url: "/dwh/data-warehouse-software-components.html"
+  - title: 데이터 웨어하우스 프로세스
+    url: "/dwh/data-warehouse-processes.html"
+  - title: 데이터 웨어하우스가 데이터를 추출하는 방법
+    url: "/dwh/how-data-warehouse-extracts-data.html"
+  - title: ETL 빈도 및 날짜 데이터
+    url: "/dwh/etl-frequency.html"
+  - title: 과거 데이터가 데이터 웨어하우스에 보관되는 방식
+    url: "/dwh/historical-data-retention-in-data-warehouse.html"
+    entries:
+    - title: 데이터 보존, ETL 및 기간
+      url: "/dwh/data-retention-and-time-periods.html"
+- title: 데이터 웨어하우스 시작
+  url: "/dwh/getting-started-with-data-warehouse.html"
+  entries:
+  - title: 데이터 웨어하우스 포털에 액세스
+    url: "/dwh/accessing-the-data-warehouse-portal.html"
+  - title: 데이터 웨어하우스 및 보고 사용자 계정 관리
+    url: "/dwh/managing-data-warehouse-and-reporting-user-accounts.html"
+    entries:
+    - title: 데이터 웨어하우스 및 보고 포털 액세스
+      url: "/dwh/accessing-the-data-warehouse-and-reporting.html"
+    - title: 사용자 역할을 보고합니다
+      url: "/dwh/reporting-user-roles.html"
+    - title: 보고 사용자 추가
+      url: "/dwh/adding-a-reporting-user.html"
+    - title: 사용자 계정 관리
+      url: "/dwh/managing-user-accounts.html"
+    - title: 보고를 위해 LDAP 구성
+      url: "/dwh/configuring-reporting-ldap.html"
+  - title: OnCommand Insight 서버에 데이터 웨어하우스 연결
+    url: "/dwh/connecting-data-warehouse-to-oncommand-insight-servers.html"
+  - title: 데이터 웨어하우스 데이터베이스는 기록 개요에서 빌드됩니다
+    url: "/dwh/data-warehouse-database-build-from-history-overview.html"
+    entries:
+    - title: 기록에서 데이터 웨어하우스 데이터베이스를 구축하는 작업 추가
+      url: "/dwh/adding-a-build-from-history-job.html"
+    - title: 기록 작업에서 빌드를 취소합니다
+      url: "/dwh/canceling-a-build-from-history-job.html"
+  - title: 데이터 웨어하우스 데이터베이스 백업
+    url: "/dwh/backing-up-the-data-warehouse-database.html"
+  - title: 사용자 정의 보고서 및 보고서 아티팩트 백업
+    url: "/dwh/backing-up-custom-reports-and-report-artifacts.html"
+  - title: 데이터 웨어하우스 데이터베이스 복원
+    url: "/dwh/restoring-the-data-warehouse-database.html"
+  - title: 보고에서 다중 임차 설정
+    url: "/dwh/setting-up-multiple-tenancy-in-reporting.html"
+    entries:
+    - title: 사용자 계정을 구성하는 중입니다
+      url: "/dwh/configuring-user-accounts.html"
+    - title: 비즈니스 엔티티에 사용자 할당
+      url: "/dwh/assigning-users-to-business-entities.html"
+  - title: 설치 문제 해결
+    url: "/dwh/troubleshooting-setup-issues.html"
+    entries:
+    - title: 주석을 볼 수 없는 이유
+      url: "/dwh/why-i-cannot-see-my-annotations.html"
+      entries:
+      - title: 데이터 웨어하우스에 대한 주석 업데이트 강제 적용
+        url: "/dwh/forcing-an-update-of-annotations-for-data-warehouse.html"
+      - title: 수동 데이터 웨어하우스 빌드 생성
+        url: "/dwh/generating-a-manual-data-warehouse-build.html"
+      - title: 사용자 정의 주석을 데이터 웨어하우스로 불러오기
+        url: "/dwh/importing-user-defined-annotations-into-data-warehouse.html"
+    - title: 실패한 기간별 빌드 포인트에 대한 조치
+      url: "/dwh/what-to-do-with-failing-historical-build-points.html"
+- title: 데이터 웨어하우스를 사용하여 수행할 수 있는 관리 작업입니다
+  url: "/dwh/administrative-tasks-you-can-perform-using-data-warehouse.html"
+  entries:
+  - title: 작업 관리
+    url: "/dwh/managing-jobs.html"
+  - title: 데이터 웨어하우스 상태 모니터링
+    url: "/dwh/monitoring-data-warehouse-health.html"
+  - title: 일별 빌드 예약
+    url: "/dwh/scheduling-daily-builds.html"
+  - title: 주별 스케줄 구성
+    url: "/dwh/configuring-a-weekly-schedule.html"
+  - title: 일일 백업 예약
+    url: "/dwh/scheduling-daily-backups.html"
+  - title: 데이터 웨어하우스에서 사용자 정의 스크립트 실행
+    url: "/dwh/running-external-scripts-in-data-warehouse.html"
+  - title: 주석을 사용하여 수행할 수 있는 작업
+    url: "/dwh/annotations.html"
+    entries:
+    - title: OnCommand Insight에서 주석 준비 중
+      url: "/dwh/preparing-annotations-in-oncommand-insight.html"
+    - title: 사용자 정의 주석을 데이터 웨어하우스로 불러오기
+      url: "/dwh/importing-user-defined-annotations-into-data-warehouse.html"
+    - title: 작업 목록에서 주석 작업 보기
+      url: "/dwh/viewing-the-annotations-job-in-the-jobs-list.html"
+    - title: 데이터베이스 스키마의 주석 변경 표시
+      url: "/dwh/seeing-the-annotation-changes-in-the-database-schema.html"
+  - title: 이메일 알림 설정
+    url: "/dwh/setting-email-notifications.html"
+  - title: 보고 포털에 액세스
+    url: "/dwh/accessing-the-reporting-portal.html"
+  - title: 데이터 웨어하우스 데이터베이스 스키마 문서 보기
+    url: "/dwh/viewing-the-data-warehouse-documentation.html"
+  - title: 데이터 웨어하우스 데이터베이스 스키마 보기
+    url: "/dwh/viewing-the-data-warehouse-database-schema.html"
+  - title: 시스템 정보 보기
+    url: "/dwh/editing-the-site-name-and-viewing-system-information.html"
+  - title: 고급 옵션
+    url: "/dwh/advanced-options.html"
+    entries:
+    - title: 실패한 빌드를 건너뜁니다
+      url: "/dwh/skipping-failed-builds.html"
+    - title: 데이터 웨어하우스 데이터베이스 또는 보고 서버 재설정
+      url: "/dwh/resetting-the-data-warehouse-database.html"
+    - title: 6.3 이전 버전의 보고서 복원 및 업그레이드
+      url: "/dwh/restoring-and-upgrading-reports-for-versions-prior-to-6-3.html"
+    - title: 명령줄 인터페이스를 사용하여 MySQL 액세스
+      url: "/dwh/accessing-mysql-using-the-command-line-interface-valid.html"
+    - title: 데이터 웨어하우스 문제 해결
+      url: "/dwh/troubleshooting-data-warehouse.html"
+      entries:
+      - title: ASUP로 문제를 해결합니다
+        url: "/dwh/issue-resolution-with-autosupport-asup.html"
+        entries:
+        - title: 자동 ASUP 전송 비활성화
+          url: "/dwh/configuring-your-asup-processing.html"
+        - title: 데이터 웨어하우스 데이터베이스의 백업 포함
+          url: "/dwh/including-the-data-warehouse-database.html"
+        - title: ASUP에 Insight 로그 전송
+          url: "/dwh/sending-oncommand-insight-logs-to-asup.html"
+      - title: OnCommand Insight 로그 보기
+        url: "/dwh/viewing-oncommand-insight-logs.html"
+      - title: 여러 서버 섀시 통합 문제
+        url: "/dwh/multiple-server-chassis-consolidation-issues.html"
+        entries:
+        - title: 호스트 및 어댑터 통합 문제 보기
+          url: "/dwh/viewing-hosts-and-adapters-consolidation-issues.html"
+        - title: 스토리지 시스템 통합 문제 보기
+          url: "/dwh/viewing-storage-arrays-consolidation-issues.html"
+        - title: 스위치 통합 문제 보기
+          url: "/dwh/viewing-switches-consolidation-issues.html"
+      - title: 여러 서버 주석 통합 문제 해결
+        url: "/dwh/resolving-multiple-server-annotation-consolidation-issues.html"

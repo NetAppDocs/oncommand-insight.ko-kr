@@ -1,0 +1,25 @@
+---
+permalink: howto/downloading-the-servicenow-connector.html 
+sidebar: sidebar 
+keywords:  
+summary: ServiceNow 통합용 Python 커넥터를 다운로드하여 선택한 위치에 압축을 풀어야 합니다. 
+---
+= ServiceNow Python 커넥터 다운로드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ServiceNow 통합용 Python 커넥터를 다운로드하여 선택한 위치에 압축을 풀어야 합니다.
+
+
+
+== 단계
+
+. 에서 * ServiceNow Integration 커넥터 * 를 다운로드합니다 https://automationstore.netapp.com/onCommandInsight.shtml["NetApp Storefront"].
+. 예를 들어 .zip 파일의 압축을 폴더에 풉니다 `c:\OCI2SNOW`.
++
+통합 커넥터 스크립트의 이름은 입니다 `oci_snow_sync.pyz`.
+
+

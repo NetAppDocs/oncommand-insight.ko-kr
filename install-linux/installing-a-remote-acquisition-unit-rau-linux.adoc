@@ -1,0 +1,57 @@
+---
+permalink: install-linux/installing-a-remote-acquisition-unit-rau-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Insight 환경에 하나 이상의 원격 획득 장치\(RU\)를 설치할 수 있습니다. 획득 장치는 데이터 소스라고 하는 모듈을 통해 \ 에 액세스하고 데이터 센터의 여러 장치에서 데이터를 수집하는 네트워크에서 실행됩니다.' 
+---
+= 원격 획득 장치 설치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 환경에 하나 이상의 원격 획득 장치(RU)를 설치할 수 있습니다. 획득 장치는 데이터 센터의 여러 장치에서 데이터에 액세스하고(data_sources _ 라는 모듈 사용) 데이터를 수집하는 네트워크에서 실행됩니다.
+
+
+
+== 시작하기 전에
+
+설치 필수 구성 요소를 모두 완료해야 합니다.
+
+변경 정보를 서버로 전달하려면 RAU 서버와 OnCommand Insight 서버 간에 하나 이상의 포트가 열려 있고 사용 가능해야 합니다. 확실하지 않은 경우 RAU 컴퓨터에서 웹 브라우저를 열고 OnCommand Insight 서버로 전달하여 유효성을 검사합니다.
+
+[listing]
+----
+ https://< OnCommand Insight Server hostname >:< acquisition_port >
+----
+획득 포트는 기본적으로 443으로 설정되지만 서버 설치 중에 변경되었을 수 있습니다. 연결에 성공하면 OnCommand Insight 응답 페이지가 표시되어 RAU와 OnCommand Insight 서버 간에 사용 가능한 포트가 열려 있음을 나타냅니다.
+
+네트워크 주소 변환 또는 포트 주소 변환(NAT/PAT:i.e, IP 주소 변환)을 사용하는 환경의 경우 Insight는 NAT와 장치 사이에 RAU만 삽입할 수 있습니다.
+
+* 지원: OnCommand Insight\->NAT\->RAU\->장치
+* 지원되지 않음: OnCommand Insight\->RAU\->NAT\->장치
+
+
+
+
+== 단계
+
+. sudo 권한이 있는 계정을 사용하여 RAU 서버에 로그인합니다.
+. 설치 파일이 있는 서버의 디렉터리로 이동하여 다음 명령을 입력합니다.
++
+`unzip oci-rau-<version>-linux-x86_64.zip`
+
+. 에 대한 구문, 명령 인수 및 매개 변수 사용을 볼 수 있습니다 `oci-install.sh`:
++
+`sudo ./oci-rau-<version>-linux-x86_64/oci-install.sh --help`
+
+. 설치 스크립트를 실행합니다.
++
+`sudo ./oci-rau-<version>-linux-x86_64/oci-install.sh`
+
+. 사용권 계약을 읽고 동의한 다음 화면의 지시를 따릅니다.
++
+모든 메시지에 응답하면 설치가 시작되고 설치된 응용 프로그램에 따라 약 10분 정도 소요됩니다.
+
+

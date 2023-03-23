@@ -1,0 +1,51 @@
+---
+permalink: howto/servicenow-integration-python-middleware-setup.html 
+sidebar: sidebar 
+keywords:  
+summary: 이제 Python과 필요한 라이브러리가 설치되었으므로 OnCommand Insight 및 ServiceNow와 통신하도록 미들웨어 커넥터를 구성할 수 있습니다. 
+---
+= Python 미들웨어를 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이제 Python과 필요한 라이브러리가 설치되었으므로 OnCommand Insight 및 ServiceNow와 통신하도록 미들웨어 커넥터를 구성할 수 있습니다.
+
+
+
+== 단계
+
+. 커넥터 소프트웨어를 다운로드한 호스트 또는 VM에서 cmd 창을 관리자로 열고 로 변경합니다 `\OCI2SNOW\` 폴더.
+. 빈 * config.ini* 파일을 생성하려면 스크립트를 초기화해야 합니다. 다음 명령을 실행합니다. `oci_snow_sync.pyz init`
+. 텍스트 편집기에서** config.ini**file 을 열고 [OCI] 섹션에서 다음과 같이 변경합니다.
++
+** URL * 을 로 설정합니다 `https://<name.domain>` 또는 `https://<ip address>` Insight 인스턴스에 대해 .
+** 사용자 * 와 * 암호 * 를 OCI2SNOW 와 같이 생성된 Insight 사용자로 설정합니다.
+** include_off_vms * 를 * false * 로 설정합니다
+
+
+. [Snow](눈) 섹션에서 다음 사항을 변경합니다.
++
+** ServiceNow 인스턴스의 FQDN 또는 IP 주소로 * instance * 를 설정합니다
+** 사용자 * 및 * 암호 * 를 ServiceNow 서비스 계정 사용자(예: OCI2SNOW)로 설정합니다.
+** OCI URL*의 * 필드에서 * url * 필드를 "'u_oci_url'"로 설정합니다. 이 필드는 커넥터 OCI 업데이트 집합의 일부로 생성됩니다. 고객 환경에서 이 설정을 변경할 수 있지만 변경할 경우 여기서 ServiceNow에서 수정해야 합니다. 모범 사례는 이 필드를 그대로 두는 것입니다.
+** filter_status * 필드를 ""설치됨, 재고 있음""으로 설정합니다. 상태가 다른 경우 새 레코드를 업로드하기 전에 Insight 레코드와 일치하는 모든 레코드를 가져오려면 여기에서 해당 상태를 설정해야 합니다. 대부분의 경우 이 필드는 변경되지 않아야 합니다.
+** stale_status** 값을 ""Retired""로 설정합니다.
+
+
+. [프록시] 섹션은 프록시 서버를 사용하는 경우에만 필요합니다. 이 섹션을 사용해야 하는 경우 다음 설정을 확인하십시오.
++
+** ; https = http://<host>:<port>[]
+** ;http= http://<host>:<port>[]
+** ; include_oci = True
+** ; include_snow = True
+
+
+. 자세한 디버그 정보가 필요한 경우에만 [Log] 섹션을 편집합니다.
+. 커넥터를 테스트하려면 관리자 권한으로 cmd 프롬프트를 열고 \OCI2SNOW 폴더로 변경합니다. 다음 명령을 실행합니다. `oci_snow_sync.pyz test`
++
+자세한 내용은 에서 확인할 수 있습니다 `logs\` 폴더.
+
+

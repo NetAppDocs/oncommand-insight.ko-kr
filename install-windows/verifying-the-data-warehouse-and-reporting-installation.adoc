@@ -1,0 +1,92 @@
+---
+permalink: install-windows/verifying-the-data-warehouse-and-reporting-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 데이터 웨어하우스를 성공적으로 설치한 후에는 모든 DWH 및 보고 서비스를 Microsoft Windows 서비스에서 사용할 수 있는지 확인해야 합니다. 
+---
+= 데이터 웨어하우스 및 보고 설치 확인
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 데이터 웨어하우스를 성공적으로 설치한 후에는 모든 DWH 및 보고 서비스를 Microsoft Windows 서비스에서 사용할 수 있는지 확인해야 합니다.
+
+
+
+== 단계
+
+. Windows 시작 메뉴에서 제어판 [시스템 및 보안 > 관리 도구 > 서비스] 메뉴를 선택합니다.
+. 서비스 목록에 다음 항목이 나타나는지 확인합니다.
++
+|===
+
+
+| 이름/상태 | 설명 
+
+
+ a| 
+* SANscreen 서버/실행 *
+ a| 
+OnCommand Insight DWH 서버
+
+
+
+ a| 
+* MySQL/Running *
+ a| 
+OnCommand Insight SQL 데이터베이스
+
+
+
+ a| 
+* IBM Cognos/Running *
+ a| 
+IBM Cognos 콘텐츠 데이터베이스
+
+
+
+ a| 
+* DB2-DB2COPY1-DB2-0/실행 중 *
+ a| 
+DB2 데이터베이스 관리
+
+
+
+ a| 
+* DB2 Governor(DB2COPY1)/Not Running *
+ a| 
+DB2 데이터베이스에 연결된 애플리케이션에 대한 통계를 수집합니다.
+
+
+
+ a| 
+* DB2 라이센스 서버(DB2COPY1)/실행 안 됨 *
+ a| 
+DB2 라이센스 규정 준수 모니터링
+
+
+
+ a| 
+* DB2 관리 서비스(DB2COPY1)/실행 중 *
+ a| 
+DB2 레지스트리 항목이 이전 DB2 사본 버전과 호환되도록 관리합니다.
+
+
+
+ a| 
+* DB2 원격 명령 서버(DB2COPY1)/실행 중 *
+ a| 
+원격 DB2 명령 실행을 지원합니다.
+
+
+
+ a| 
+* Windows용 IBM Secure Shell 서버/실행 안 함 *
+ a| 
+Windows용 IBM Secure Shell Server
+
+|===
+

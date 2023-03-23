@@ -1,0 +1,39 @@
+---
+permalink: config-admin/what-the-user-data-section-enables-you-to-do-with-business-entities.html 
+sidebar: sidebar 
+keywords:  
+summary: 환경 데이터를 더 세밀한 수준에서 추적 및 보고할 비즈니스 엔터티를 정의할 수 있습니다. 자산 페이지의 사용자 데이터 섹션을 사용하면 자산에 할당된 업무 엔티티를 변경하거나 자산에서 업무 엔티티를 제거할 수 있습니다. 
+---
+= 사용자 데이터 섹션을 사용하여 업무 엔티티를 할당하거나 수정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+환경 데이터를 더 세밀한 수준에서 추적 및 보고할 비즈니스 엔터티를 정의할 수 있습니다. 자산 페이지의 사용자 데이터 섹션을 사용하면 자산에 할당된 업무 엔티티를 변경하거나 자산에서 업무 엔티티를 제거할 수 있습니다.
+
+
+
+== 단계
+
+. OnCommand Insight 웹 UI에 로그인합니다.
+. 다음 중 하나를 수행하여 자산 페이지를 찾습니다.
++
+** Insight 도구 모음에서 를 클릭합니다 image:../media/icon-sanscreen-magnifying-glass-gif.gif[""]을 클릭하고 자산 이름을 입력한 다음 목록에서 자산을 선택합니다.
+** 대시보드 * 를 클릭하고 * 자산 대시보드 * 를 선택한 다음 자산 이름을 찾아 클릭합니다. 자산 페이지가 표시됩니다.
+
+
+. 다음을 수행할 수 있습니다.
++
+** 지정된 엔티티를 변경하거나 엔티티를 할당하려면 을 클릭합니다 image:../media/pencil-icon-landing-page-be.gif[""] 목록에서 요소를 선택합니다.
+** 업무 엔티티를 제거하려면 을 클릭합니다 image:../media/trash-can-query.gif[""].
++
+[NOTE]
+====
+자산에 할당된 애플리케이션에서 파생된 엔티티는 제거할 수 없습니다.
+
+====
+
+
+

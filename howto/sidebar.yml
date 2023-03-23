@@ -1,0 +1,235 @@
+---
+section: howto
+title: 사용 방법 가이드
+entries:
+- title: Insight 시작하기
+  url: "/howto/getting-started-with-insight.html"
+  entries:
+  - title: 알림 설정
+    url: "/howto/setting-up-notifications.html"
+    entries:
+    - title: 알림을 위한 이메일 설정
+      url: "/howto/setting-up-email-for-notifications.html"
+    - title: 로깅할 Syslog 설정
+      url: "/howto/setting-up-syslog-for-notifications.html"
+    - title: 알림에 대한 SNMP 설정
+      url: "/howto/setting-up-snmp-for-notifications.html"
+  - title: 자산 준비:주석 달기
+    url: "/howto/preparing-assets-annotating.html"
+    entries:
+    - title: 엔터프라이즈에 대한 주석 만들기
+      url: "/howto/assigning-annotations-to-assets.html"
+    - title: 데이터 센터 주석 구성
+      url: "/howto/configuring-data-center-annotations.html"
+    - title: 계층 주석을 구성합니다
+      url: "/howto/configure-tier-annotations.html"
+    - title: 서비스 수준 주석을 구성합니다
+      url: "/howto/configure-service-level-annotations.html"
+    - title: 사용자 정의 환경 주석을 구성합니다
+      url: "/howto/configure-custom-environment-annotations.html"
+  - title: 자산 찾기:질의
+    url: "/howto/finding-assets-querying.html"
+    entries:
+    - title: 쿼리를 사용하여 자산에 주석을 답니다
+      url: "/howto/using-queries-to-annotate-your-assets.html"
+    - title: 데이터 센터 쿼리 및 주석 달기
+      url: "/howto/querying-and-annotating-data-centers.html"
+    - title: 계층 쿼리 및 주석 달기
+      url: "/howto/querying-and-annotating-tiers.html"
+    - title: 서비스 수준 및 환경 주석
+      url: "/howto/service-level-and-environment.html"
+  - title: '기업 구조: 업무 엔티티 및 애플리케이션 설정'
+    url: "/howto/your-corporate-structure-setting-up-business-entities-and-applications.html"
+    entries:
+    - title: 회사의 업무 엔티티를 구성합니다
+      url: "/howto/configuring-business-entities-for-your-company.html"
+    - title: 회사의 애플리케이션을 구성하는 중입니다
+      url: "/howto/configuring-applications-for-your-company.html"
+  - title: 알림을 위한 성능 정책 생성
+    url: "/howto/creating-a-performance-policy-for-alerting.html"
+  - title: 대시보드를 사용하여 데이터 강조 표시
+    url: "/howto/viewing-data-on-a-dashboard-how-to.html"
+- title: 사용자 지정 대시보드 만들기
+  url: "/howto/custom-dashboards.html"
+  entries:
+  - title: 사용자 지정 대시보드 개념
+    url: "/howto/custom-dashboard-concepts.html"
+    entries:
+    - title: 대시보드 변수
+      url: "/howto/custom-dashboard-variables.html"
+      entries:
+      - title: 대시보드 변수에 대한 자세한 정보
+        url: "/howto/more-on-dashboard-variables.html"
+    - title: 위젯 범례 표시
+      url: "/howto/displaying-widget-legends.html"
+    - title: 대시보드 위젯 쿼리 및 필터
+      url: "/howto/custom-dashboard-queries-and-filters.html"
+    - title: 롤업 및 집선
+      url: "/howto/custom-dashboard-roll-up.html"
+    - title: 대시보드 위젯에 위/아래 결과 표시
+      url: "/howto/custom-dashboard-top-bottom-results.html"
+    - title: 표 위젯에서 그룹화
+      url: "/howto/custom-dashboard-group-by.html"
+      entries:
+      - title: 그룹화 예제(롤업 설명 포함)
+        url: "/howto/grouping-example-with-rollup-explained.html"
+    - title: 개별 위젯에 대한 대시보드 시간 재정의
+      url: "/howto/custom-dashboard-override-dashboard-time.html"
+    - title: 기본 및 보조 축에 대해 설명합니다
+      url: "/howto/primary-and-secondary-axis-explained.html"
+    - title: 대시보드 위젯의 식
+      url: "/howto/expressions-in-dashboard-widgets.html"
+      entries:
+      - title: '표현식 예: 읽기 IOPS 백분율'
+        url: "/howto/expressions-example-read-iops-percentage.html"
+      - title: '식 예: "System" I/O'
+        url: "/howto/expressions-example-system-i-o.html"
+  - title: '사용자 지정 대시보드: 가상 머신 성능'
+    url: "/howto/custom-dashboard-vm-performance.html"
+  - title: 변수가 있는 스토리지 노드 활용률 대시보드 예
+    url: "/howto/custom-dashboard-example-with-variables.html"
+    entries:
+    - title: 노드 대시보드 위젯 설정의 예
+      url: "/howto/node-dashboard-example-widget-settings.html"
+  - title: 대시보드 및 위젯에 대한 모범 사례
+    url: "/howto/best-practices-for-dashboards-and-widgets.html"
+    entries:
+    - title: '모범 사례: 올바른 메트릭 찾기'
+      url: "/howto/finding-the-right-metric.html"
+    - title: '모범 사례: 적합한 자산 찾기'
+      url: "/howto/finding-the-right-assets.html"
+    - title: '산점도 예: 축 이해'
+      url: "/howto/scatterplot-example-knowing-your-axis.html"
+- title: 성능 정책 생성 중
+  url: "/howto/creating-performance-policies.html"
+  entries:
+  - title: 성능을 구성하고 위반 알림을 확인합니다
+    url: "/howto/configuring-performance-and-assurance-violation-notifications.html"
+  - title: 네트워크 위반 모니터링
+    url: "/howto/opening-the-violations-dashboard.html"
+- title: Fibre Channel BB 크레딧 0 오류 문제 해결
+  url: "/howto/how-to-troubleshoot-fibre-channel-bb-credit-0-errors.html"
+  entries:
+  - title: 포트에 대한 성능 정책 및 임계값 생성
+    url: "/howto/creating-performance-policies-and-thresholds-for-ports.html"
+- title: 인프라 분석 중
+  url: "/howto/analyzing-your-infrastructure.html"
+  entries:
+  - title: 시간이 지남에 따라 개체의 동작을 관찰합니다
+    url: "/howto/observe-an-objects-behavior-over-time.html"
+  - title: 오브젝트 및 비슷한 모든 오브젝트의 평균 지연 시간과 상위 10개 지연 시간을 비교합니다
+    url: "/howto/compare-objects-with-the-top-10-latency-total-to-the-average-latency-for-all-like-objects.html"
+  - title: 한 개체의 총 지연 시간을 상위 10개 개체의 총 지연 시간과 비교합니다
+    url: "/howto/compare-one-object-s-latency-total-to-the-latency-total-of-the-top-10-objects.html"
+  - title: 메트릭-A를 메트릭-B와 비교하여 범주 및 이상을 표시합니다
+    url: "/howto/compare-metrics-a-against-metrics-b-to-show-categories-and-anomalies.html"
+  - title: 식을 사용하여 대체 메트릭을 식별합니다
+    url: "/howto/use-an-expression-to-identify-alternate-metrics.html"
+- title: 씬 프로비저닝의 위험 최소화 소개
+  url: "/howto/introduction-to-minimizing-risk-in-thin-provisioning.html"
+  entries:
+  - title: 스토리지 풀 모니터링
+    url: "/howto/monitoring-the-storage-pool.html"
+  - title: 데이터 저장소 모니터링
+    url: "/howto/monitoring-the-data-stores.html"
+  - title: 대시보드를 생성하여 씬 프로비저닝 환경을 모니터링합니다
+    url: "/howto/create-dashboards-to-monitor-thin-provisioned-environments.html"
+  - title: 성능 정책을 사용하여 씬 프로비저닝의 위험 감소
+    url: "/howto/using-performance-policies-to-reduce-risk-in-thin-provisioning.html"
+  - title: 스토리지 풀에 대한 성능 정책 생성
+    url: "/howto/creating-policies-and-thresholds-for-storage-pools.html"
+  - title: 데이터 저장소에 대한 성능 정책 생성
+    url: "/howto/creating-performance-policies-for-datastores.html"
+- title: 호스트 및 VM 파일 시스템 사용률 데이터 수집
+  url: "/howto/host-and-vm-filesystem-utilization.html"
+  entries:
+  - title: 파일 시스템 수집에 대한 Insight를 구성합니다
+    url: "/howto/configure-insight-for-filesystem-collection.html"
+  - title: 파일 시스템 차지백 및 보고
+    url: "/howto/file-system-utilization-chargeback.html"
+- title: 차지백 데이터를 보고하도록 시스템을 구성합니다
+  url: "/howto/introduction-to-configuring-your-system-for-chargeback.html"
+  entries:
+  - title: 차지백과 함께 사용할 주석 정의
+    url: "/howto/defining-annotations.html"
+  - title: 차지백과 함께 사용할 애플리케이션 정의
+    url: "/howto/defining-applications-how-to-chargeback.html"
+  - title: 자산에 애플리케이션 할당
+    url: "/howto/assigning-application-to-assets-how-to-chargeback.html"
+    entries:
+    - title: 임시 방법을 사용하여 자산에 응용 프로그램 할당
+      url: "/howto/assigning-applications-using-an-ad-hoc-method.html"
+    - title: 쿼리를 사용하여 자산에 응용 프로그램 할당
+      url: "/howto/assigning-applications-using-a-query.html"
+  - title: 단순 차지백 보고서 생성
+    url: "/howto/creating-a-simple-chargeback-report.html"
+- title: 입출력 밀도 보고서가 내부 데이터 볼륨만 설명하도록 합니다
+  url: "/howto/introduction-to-root-volume-isolation.html"
+  entries:
+  - title: 사용자 환경에서 NetApp 루트 애그리게이트를 식별하는 쿼리를 생성합니다
+    url: "/howto/creating-a-query-to-identify-netapp-root-aggregates.html"
+  - title: 쿼리에서 반환된 루트 볼륨에 대한 주석을 생성합니다
+    url: "/howto/create-an-annotation-for-the-root-volumes-returned-by-your-queries.html"
+  - title: I/O 밀도 보고서에서 특정 애그리게이트를 제외하도록 주석 규칙을 생성합니다
+    url: "/howto/create-an-annotation-rule-to-automate-excluding-specific-aggregates-from-your-query.html"
+- title: 통합 데이터 수집 중
+  url: "/howto/collecting-integration-data.html"
+  entries:
+  - title: SNMP 통합 데이터를 수집하는 중입니다
+    url: "/howto/collecting-snmp-integration-data.html"
+    entries:
+    - title: SNMP 통합 팩을 가져오는 중입니다
+      url: "/howto/importing-snmp-integration-data.html"
+    - title: SNMP 통합 데이터 소스 생성
+      url: "/howto/adding-the-snmp-integration-data-source.html"
+    - title: integration.json 파일 정보
+      url: "/howto/integration-code-sample.html"
+- title: 애플리케이션 성능 문제 분석
+  url: "/howto/analyzing-an-application-performance-problem.html"
+  entries:
+  - title: 내부 볼륨 검사
+    url: "/howto/examining-the-internal-volume.html"
+  - title: greedy 리소스 검사
+    url: "/howto/examining-the-greedy-resource.html"
+  - title: 스토리지 풀을 검토합니다
+    url: "/howto/examining-the-details-of-the-storage-pool.html"
+  - title: 볼륨을 검사하는 중입니다
+    url: "/howto/examining-the-server-volume.html"
+  - title: VM 검사
+    url: "/howto/examining-the-vm.html"
+- title: AWS 청구 데이터 수집 및 보고
+  url: "/howto/collecting-aws-billing-data.html"
+  entries:
+  - title: Insight 데이터 수집을 위한 AWS 준비
+    url: "/howto/preparing-aws-for-insight-collection.html"
+  - title: AWS Cloud Cost 데이터 소스 구성
+    url: "/howto/configuring-the-aws-cloud-cost-data-source.html"
+  - title: Insight에서 AWS Cloud Cost 데이터 처리
+    url: "/howto/processing-cloud-cost-data-in-insight.html"
+  - title: Insight의 클라우드 비용 데이터 보고
+    url: "/howto/reporting-on-cloud-cost-data-task.html"
+- title: ServiceNow와 통합
+  url: "/howto/integrating-with-servicenow.html"
+  entries:
+  - title: Service Now 통합을 위한 준비 및 사전 요구 사항
+    url: "/howto/preparation-and-prerequisites-for-servicenow-integration.html"
+    entries:
+    - title: ServiceNow Python 커넥터 다운로드
+      url: "/howto/downloading-the-servicenow-connector.html"
+  - title: 통합용 ServiceNow 구성
+    url: "/howto/configuring-servicenow-for-integration.html"
+    entries:
+    - title: 권한 상승 역할
+      url: "/howto/servicenow-integration-elevate-role.html"
+    - title: 업데이트 세트를 설치합니다
+      url: "/howto/servicenow-integration-install-update-set.html"
+    - title: ServiceNow 통합 - 사용자 설정
+      url: "/howto/servicenow-integration-set-up-user.html"
+    - title: Python 및 라이브러리를 설치합니다
+      url: "/howto/servicenow-integration-install-python-and-libraries.html"
+    - title: Python 미들웨어를 설정합니다
+      url: "/howto/servicenow-integration-python-middleware-setup.html"
+    - title: 커넥터 동기화 중
+      url: "/howto/servicenow-integration-syncing-the-connector.html"
+    - title: 동기화가 매일 수행되도록 예약 중입니다
+      url: "/howto/servicenow-integration-scheduling-daily-sync.html"

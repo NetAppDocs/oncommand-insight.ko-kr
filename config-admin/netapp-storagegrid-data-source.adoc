@@ -1,0 +1,79 @@
+---
+permalink: config-admin/netapp-storagegrid-data-source.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 데이터 소스는 StorageGRID에 대한 인벤토리 및 성능 데이터를 수집합니다. 
+---
+= NetApp StorageGRID 데이터 소스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 데이터 소스는 StorageGRID에 대한 인벤토리 및 성능 데이터를 수집합니다.
+
+
+
+== 요구 사항
+
+다음은 이 데이터 소스를 구성하기 위한 요구 사항입니다.
+
+* StorageGRID 호스트 IP 주소입니다
+* 메트릭 쿼리 및 테넌트 액세스 역할이 할당된 사용자의 사용자 이름 및 암호입니다
+* 포트 443
+
+
+
+
+== 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+StorageGRID 호스트 IP 주소(MVIP)
+ a| 
+StorageGRID의 호스트 IP 주소입니다
+
+
+
+ a| 
+사용자 이름
+ a| 
+StorageGRID에 로그인하는 데 사용되는 이름입니다
+
+
+
+ a| 
+암호
+ a| 
+StorageGRID에 로그인하는 데 사용되는 암호입니다
+
+|===
+
+
+== 고급 구성
+
+|===
+
+
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+재고 폴링 간격(분)
+ a| 
+재고 조사 간격(기본값: 60분)
+
+
+
+ a| 
+성능 폴링 간격(초)
+ a| 
+성능 폴링 간격(기본값 900초)
+
+|===

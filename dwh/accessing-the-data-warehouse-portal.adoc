@@ -1,0 +1,29 @@
+---
+permalink: dwh/accessing-the-data-warehouse-portal.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight 데이터 웨어하우스 포털은 커넥터 정보 업데이트, 작업 대기열 보기, 일별 빌드 예약, 주석 선택, 이메일 알림 설정, 시스템 정보 보기, 데이터베이스 구축, 데이터 웨어하우스 재설정, 데이터베이스 백업 및 복원, 문제 해결, 데이터 웨어하우스 및 보고 포털 사용자 계정을 관리하고 문서 및 스키마 다이어그램에 액세스합니다. 
+---
+= 데이터 웨어하우스 포털에 액세스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 데이터 웨어하우스 포털은 커넥터 정보 업데이트, 작업 대기열 보기, 일별 빌드 예약, 주석 선택, 이메일 알림 설정, 시스템 정보 보기, 데이터베이스 구축, 데이터 웨어하우스 재설정, 데이터베이스 백업 및 복원, 문제 해결, 데이터 웨어하우스 및 보고 포털 사용자 계정을 관리하고 문서 및 스키마 다이어그램에 액세스합니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 사용자 이름과 암호를 입력합니다.
+. 로그인 * 을 클릭합니다.
++
+데이터 웨어하우스 포털이 열립니다.
+
++
+image::../media/oci-dwh-admin-login-gif.gif[On Command Insight DWH 로그인]
+
+

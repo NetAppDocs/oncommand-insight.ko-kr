@@ -1,0 +1,24 @@
+---
+permalink: config-admin/cac-configuration-for-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: Linux OnCommand Insight 서버에서 CAC를 활성화하려면 몇 가지 수정이 필요합니다. 
+---
+= Linux 서버에 대한 CAC 활성화
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux OnCommand Insight 서버에서 CAC를 활성화하려면 몇 가지 수정이 필요합니다.
+
+
+
+== 단계
+
+. 로 이동합니다 `/opt/netapp/oci/conf/`
+. 편집 `wildfly.properties` 의 값을 변경합니다 `CLIENT_AUTH_ENABLED` "참"으로
+. 아래에 있는 "루트 인증서"를 가져옵니다 `/opt/netapp/oci/wildfly/standalone/configuration/server.keystore`
+. 서버를 다시 시작합니다
+

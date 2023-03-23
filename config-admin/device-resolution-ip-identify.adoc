@@ -1,0 +1,16 @@
+---
+permalink: config-admin/device-resolution-ip-identify.html 
+sidebar: sidebar 
+keywords:  
+summary: IP 식별 화면에는 자동 디바이스 확인 또는 수동 디바이스 확인으로 식별된 iSCSI 및 CIFS 또는 NFS 공유가 표시됩니다. 식별되지 않은 장치도 표시됩니다. 화면에는 장치의 IP 주소, 이름, 상태, iSCSI 노드 및 공유 이름이 포함됩니다. 성공적으로 식별된 디바이스의 비율도 표시됩니다. 
+---
+= IP 장치 해상도
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IP 식별 화면에는 자동 디바이스 확인 또는 수동 디바이스 확인으로 식별된 iSCSI 및 CIFS 또는 NFS 공유가 표시됩니다. 식별되지 않은 장치도 표시됩니다. 화면에는 장치의 IP 주소, 이름, 상태, iSCSI 노드 및 공유 이름이 포함됩니다. 성공적으로 식별된 디바이스의 비율도 표시됩니다.
+
+image::../media/ipidentify.gif[IPIdentify(IP식별]

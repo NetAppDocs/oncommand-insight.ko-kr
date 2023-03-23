@@ -1,0 +1,37 @@
+---
+permalink: howto/servicenow-integration-scheduling-daily-sync.html 
+sidebar: sidebar 
+keywords:  
+summary: Windows 작업 스케줄러를 사용하여 ServiceNow 커넥터를 자동으로 동기화할 수 있습니다. 
+---
+= 동기화가 매일 수행되도록 예약 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows 작업 스케줄러를 사용하여 ServiceNow 커넥터를 자동으로 동기화할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+자동 동기화로 Insight 데이터를 ServiceNow로 정기적으로 이동합니다. 모든 예약 방법을 사용할 수 있습니다. 다음 단계에서는 Windows 작업 스케줄러를 사용하여 자동 동기화를 수행합니다.
+
+
+
+== 단계
+
+. Windows 화면에서 * 시작 * 을 클릭하고 * 실행 * > * 작업 스케줄러 * 를 입력합니다.
+. 기본 작업 생성... * 을 클릭합니다
+. ""OCI2SNOW Connector Sync""와 같은 의미 있는 이름을 입력합니다. 작업에 대한 설명을 입력합니다. 다음 * 을 클릭합니다.
+. 를 선택하여 * 매일 * 작업을 실행합니다. 다음 * 을 클릭합니다.
+. 작업을 실행할 시간을 선택합니다. 다음 * 을 클릭합니다.
+. 동작에서 * 프로그램 시작 * 을 선택합니다. 다음 * 을 클릭합니다.
+. Program/script * 필드에 를 입력합니다 `C:\OCI2SNOW\oci_snow_sync_pyz`. arguments * 필드에 를 입력합니다 `sync`. 시작 위치 * 필드에 를 입력합니다 `C:\OCI2SNOW`. 다음 * 을 클릭합니다.
+. 요약 정보를 검토하고 * 마침 * 을 클릭합니다.
++
+이제 동기화가 매일 실행되도록 예약되었습니다.
+
+

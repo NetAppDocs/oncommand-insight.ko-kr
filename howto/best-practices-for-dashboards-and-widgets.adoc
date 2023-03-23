@@ -1,0 +1,14 @@
+---
+permalink: howto/best-practices-for-dashboards-and-widgets.html 
+sidebar: sidebar 
+keywords:  
+summary: 대시보드와 위젯의 강력한 기능을 최대한 활용할 수 있도록 도와주는 팁과 요령. 
+---
+= 대시보드 및 위젯에 대한 모범 사례
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+대시보드와 위젯의 강력한 기능을 최대한 활용할 수 있도록 도와주는 팁과 요령.

@@ -1,0 +1,34 @@
+---
+permalink: config-admin/cdot-landing-page-terminology-storage-node.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp clustered Data ONTAP 스토리지 노드 자산 랜딩 페이지에서 찾을 수 있는 오브젝트 또는 참조에 적용되는 용어입니다. 
+---
+= Clustered Data ONTAP 스토리지 노드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp clustered Data ONTAP 스토리지 노드 자산 랜딩 페이지에서 찾을 수 있는 오브젝트 또는 참조에 적용되는 용어입니다.
+
+
+
+== Clustered Data ONTAP 스토리지 노드 용어
+
+다음 용어는 NetApp clustered Data ONTAP 스토리지 풀 자산 랜딩 페이지에서 찾을 수 있는 오브젝트 또는 참조에 적용됩니다. 이러한 용어 중 다수는 다른 데이터 수집기에도 적용됩니다.
+
+* 스토리지 -- 이 노드가 속하는 스토리지 시스템입니다. 필수입니다.
+* HA 파트너 -- 노드가 1개 노드로 페일오버되고 다른 1개 노드만 장애 조치되는 플랫폼에서는 일반적으로 이 노드에 표시됩니다.
+* State -- 노드의 상태입니다. 배열이 데이터 소스에 의해 인벤토리를 작성할 수 있을 만큼 양호한 경우에만 사용할 수 있습니다.
+* 모델 -- 노드의 모델 이름입니다.
+* Version -- 디바이스의 버전 이름입니다.
+* 일련 번호 -- 노드 일련 번호입니다.
+* 메모리 -- 베이스 2 메모리(있는 경우)
+* 활용률 -- ONTAP에서 이것은 독점 알고리즘의 컨트롤러 스트레스 인덱스입니다. 성능 폴링이 발생할 때마다 WAFL 디스크 경합 또는 평균 CPU 사용률의 증가인 0에서 100% 사이의 숫자가 보고됩니다. 값이 50%를 초과하는 경우 이는 낮은 크기 조정을 나타내는 것입니다. 컨트롤러/노드가 충분히 크지 않거나 회전 디스크가 부족하여 쓰기 워크로드를 흡수할 수 없습니다.
+* IOPS -- 노드 개체에 대해 ONTAP ZAPI 호출에서 직접 파생됩니다.
+* 지연 시간 -- 노드 개체에 대해 ONTAP ZAPI 호출에서 직접 파생됩니다.
+* 처리량 -- 노드 개체에서 ONTAP ZAPI 호출에서 직접 파생됩니다.
+* 프로세서 -- CPU 수입니다.
+

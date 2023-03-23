@@ -1,0 +1,37 @@
+---
+permalink: reporting/customizing-a-report-s-output-format-and-delivery.html 
+sidebar: sidebar 
+keywords:  
+summary: 보고서의 형식 및 전달 방법을 사용자 지정할 수 있습니다. 
+---
+= 보고서의 출력 형식 및 배달 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보고서의 형식 및 전달 방법을 사용자 지정할 수 있습니다.
+
+
+
+== 단계
+
+. OnCommand Insight 보고 포털을 열고 사용자 정의할 보고서를 선택하고 * [...] * 를 클릭합니다.
++
+image::../media/run-report.gif[보고서를 실행합니다]
+
+. Properties * > * Schedule * 을 클릭합니다
++
+image::../media/email-report.gif[보고서를 이메일로 보냅니다]
+
+. 다음 옵션을 설정할 수 있습니다.
++
+** * 보고서를 실행하려는 경우 별표 * 를 사용합니다.
+** * 보고서 출력 형식 *.
+** * Delivery * 보고서를 인쇄, 저장 또는 이메일로 전송합니다.
+** * 언어 * 보고서가 제공되는 언어를 정의합니다.
+
+
+. 선택한 항목을 사용하여 보고서를 생성하려면 * Create * 를 클릭합니다.
+

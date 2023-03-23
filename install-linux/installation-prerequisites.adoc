@@ -1,0 +1,30 @@
+---
+permalink: install-linux/installation-prerequisites.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight를 설치하기 전에 현재 소프트웨어 버전을 다운로드하고 적절한 라이센스를 취득하며 환경을 설정해야 합니다. 
+---
+= 설치 필수 구성 요소
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight를 설치하기 전에 현재 소프트웨어 버전을 다운로드하고 적절한 라이센스를 취득하며 환경을 설정해야 합니다.
+
+OnCommand Insight를 설치하기 전에 다음 사항을 확인하십시오.
+
+* 현재 버전의 다운로드한 설치 패키지에 있는 OnCommand Insight 소프트웨어 파일입니다
+* 다운로드한 OnCommand Insight 버전을 작동하는 라이센스입니다
+* 최소 하드웨어 및 소프트웨어 환경
++
+현재 제품은 이전 버전의 OnCommand Insight 제품에서 사용되지 않은 추가 하드웨어 리소스(향상된 OnCommand Insight 제품 기능)를 사용할 수 있습니다.
+
+* OnCommand Insight 서버, 데이터 웨어하우스 및 보고, 원격 획득 장치의 하드웨어 및 네트워크 구성을 포함하는 배포 계획.
+* OnCommand Insight Java UI용 Java 8.
++
+
+NOTE: OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오 http://docs.netapp.com/oci-73/topic/com.netapp.ndc.notices/GUID-93BE9A1E-D79E-4A97-87A2-4DBE31372A16.html["통지"] 페이지를 참조하십시오.
+
+

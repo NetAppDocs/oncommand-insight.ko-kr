@@ -1,0 +1,106 @@
+---
+permalink: dwh/viewing-oncommand-insight-logs.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Insight에서 다양한 데이터 웨어하우스 및 Cognos 로그를 볼 수 있습니다. 
+---
+= OnCommand Insight 로그 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight에서 다양한 데이터 웨어하우스 및 Cognos 로그를 볼 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+Cognos 및 데이터 웨어하우스 로그 파일에서 문제 해결 및 상태 정보를 확인할 수 있습니다.
+
+
+
+== 단계
+
+. 에서 데이터 웨어하우스 포털에 로그인합니다 `+https://hostname/dwh+`, 위치 `hostname` OnCommand Insight 데이터 웨어하우스가 설치된 시스템의 이름입니다.
+. 왼쪽의 탐색 창에서 * 문제 해결 * 을 클릭합니다.
+. 로그 * 섹션에서 * 로그 파일 * 을 클릭합니다.
++
+다음 로그 파일이 표시됩니다.
+
++
+|===
+
+
+ a| 
+dwh.log
+
+
+
+ a| 
+데이터 웨어하우스 작업의 상태를 나열합니다
+
+
+
+ a| 
+wildfly.log
+
+
+
+ a| 
+WildFly 응용 프로그램 서버에 대한 자세한 내용은 에 나와 있습니다
+
+
+
+ a| 
+dWh_업그레이드 로그
+
+
+
+ a| 
+데이터 웨어하우스의 업그레이드에 대한 내용은 에 나와 있습니다
+
+
+
+ a| 
+ldap.log
+
+
+
+ a| 
+LDAP 인증과 관련된 메시지를 기록합니다
+
+
+
+ a| 
+dwh_troubleshoot.log
+
+
+
+ a| 
+DWH 문제 해결에 도움이 되는 메시지를 기록합니다
+
+
+
+ a| 
+sanscreenap.log
+
+
+
+ a| 
+서버 연결, Cognos 리포지토리에 대한 인증 및 액세스, 기타 프로세스에 대한 정보를 제공합니다
+
+
+
+ a| 
+cognosserver.log
+
+
+
+ a| 
+Cognos 로그
+
+|===
+. 보려는 로그 파일의 이름을 클릭합니다.
+

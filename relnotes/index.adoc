@@ -1,0 +1,21 @@
+---
+permalink: relnotes/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 릴리즈 노트
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+OnCommand Insight 릴리스 정보는 문서 센터 외부에서 제공됩니다. NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.
+
+릴리즈 노트는 여러 가지 형식으로 제공됩니다.
+
+link:https://library.netapp.com/ecmdocs/ECMLP2652943/html/frameset.html["HTML"^]
+
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2652943["PDF를 참조하십시오"^]
+
+link:https://library.netapp.com/ecm/ecm_get_file2/ECMLP2652943?Rendition=EPUB["EPUB"^]

@@ -1,0 +1,20 @@
+---
+permalink: config-admin/advanced-troubleshooting.html 
+sidebar: sidebar 
+keywords: Legacy portal 
+summary: OnCommand Insight 구성을 완료하려면 고급 문제 해결 도구를 사용해야 합니다. 이러한 도구는 브라우저에서 실행되며 관리\>문제 해결 페이지에서 열립니다. 
+---
+= 고급 문제 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 구성을 완료하려면 고급 문제 해결 도구를 사용해야 합니다. 이러한 도구는 브라우저에서 실행되며 * Admin * > * Troubleshooting * 페이지에서 열립니다.
+
+브라우저에서 고급 문제 해결 도구를 열려면 페이지 하단의 * 고급 문제 해결 * 링크를 클릭하십시오.
+
+고급 문제 해결 도구를 사용하면 다양한 보고서, 시스템 정보, 설치된 패키지 및 로그를 볼 수 있을 뿐만 아니라 서버 또는 획득 장치 재시작, DWH 주석 업데이트, 주석 가져오기 등의 다양한 작업을 수행할 수 있습니다.
+
+사용 가능한 모든 옵션은 고급 문제 해결 페이지를 참조하십시오.

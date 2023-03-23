@@ -1,0 +1,33 @@
+---
+permalink: config-admin/adding-a-new-data-source-patch-us26313-fr.html 
+sidebar: sidebar 
+keywords:  
+summary: 새 데이터 소스는 패치 프로세스를 사용하여 시스템에 로드할 수 있는 패치 파일로 릴리스됩니다. 이 프로세스를 통해 예약된 OnCommand Insight 릴리스 간에 새 데이터 소스를 사용할 수 있습니다. 
+---
+= 패치를 사용하여 새 데이터 원본을 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새 데이터 소스는 패치 프로세스를 사용하여 시스템에 로드할 수 있는 패치 파일로 릴리스됩니다. 이 프로세스를 통해 예약된 OnCommand Insight 릴리스 간에 새 데이터 소스를 사용할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+설치할 패치 파일을 업로드해야 합니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭합니다.
+. 패치 * 를 선택합니다.
+. Actions * > * Install service pack or patch * 를 선택합니다.
+. 서비스 팩 또는 패치* 설치 대화 상자에서 * 찾아보기 * 를 클릭하여 업로드한 패치 파일을 찾아 선택합니다.
+. 패치 요약 * 대화 상자에서 * 다음 * 을 클릭합니다.
+. 추가 정보 * 를 검토하고 계속하려면 * 다음 * 을 클릭합니다.
+. 설치 * 대화 상자에서 * 마침 * 을 클릭합니다.
+

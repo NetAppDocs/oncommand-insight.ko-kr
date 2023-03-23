@@ -1,0 +1,26 @@
+---
+permalink: install-linux/validating-the-rau-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: 원격 획득 장치가 올바르게 설치되었는지 확인하려면 서버에 연결된 원격 획득 장치의 상태를 볼 수 있습니다. 
+---
+= 원격 획득 장치 설치를 검증합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+원격 획득 장치가 올바르게 설치되었는지 확인하려면 서버에 연결된 원격 획득 장치의 상태를 볼 수 있습니다.
+
+
+
+== 단계
+
+. Insight 도구 모음에서 * Admin * 을 클릭합니다.
+. 획득 단위 * 를 클릭합니다.
+. 새 원격 획득 장치가 올바르게 등록되었고 연결 상태인지 확인합니다.
++
+그렇지 않으면 기술 지원 부서에 문의해야 합니다.
+
+

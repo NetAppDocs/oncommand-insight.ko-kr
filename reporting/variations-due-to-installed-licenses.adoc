@@ -1,0 +1,18 @@
+---
+permalink: reporting/variations-due-to-installed-licenses.html 
+sidebar: sidebar 
+keywords:  
+summary: 'OnCommand Insight 보고서의 데이터는 사용자가 구매한 OnCommand Insight 라이센스를 기반으로 합니다. 예를 들어, Plan 라이센스가 없으면 인벤토리 데이터마트에 용량 및 성능에 대한 시점 데이터 \(오늘\)를 가져오지만 특정 장치에 대한 용량 또는 성능 데이터를 \(일정 기간 동안 보고\) 추세 분석하지 못합니다.' 
+---
+= 설치된 라이센스로 인한 변형
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Insight 보고서의 데이터는 사용자가 구매한 OnCommand Insight 라이센스를 기반으로 합니다. 예를 들어, Plan 라이센스가 없으면 인벤토리 데이터마트에 용량 및 성능을 위한 시점 데이터(오늘)를 얻지만 디바이스의 용량 또는 성능 데이터를 추세 분석(특정 기간 동안 보고)할 수는 없습니다.
+
+플랜 라이센스가 없으면 새 보고서를 만들거나 기존 보고서를 편집할 수 없습니다. OnCommand Insight 시스템에서 사용할 수 있는 보고서와 문서의 그림이 다를 수 있습니다. 이러한 차이는 시스템에 설치된 라이센스와 일러스트레이션을 만드는 데 사용되는 시스템의 라이센스 간의 차이로 인해 발생합니다.
+
+라이센스에 대한 자세한 내용은 OnCommand Insight 설치 가이드를 참조하십시오.

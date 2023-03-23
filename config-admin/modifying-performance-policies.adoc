@@ -1,0 +1,35 @@
+---
+permalink: config-admin/modifying-performance-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 기존 및 기본 성능 정책을 편집하여 Insight에서 사용자 네트워크의 관심 조건을 모니터링하는 방법을 변경할 수 있습니다. 예를 들어 정책의 임계값을 변경할 수 있습니다. 
+---
+= 성능 정책 편집
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 및 기본 성능 정책을 편집하여 Insight에서 사용자 네트워크의 관심 조건을 모니터링하는 방법을 변경할 수 있습니다. 예를 들어 정책의 임계값을 변경할 수 있습니다.
+
+
+
+== 단계
+
+. 브라우저에서 Insight를 엽니다.
+. Manage * (관리 *) 메뉴에서 * Performance Policies * (성능 정책 *)를 선택합니다.
++
+성능 정책 페이지가 표시됩니다.
+
+. 개체의 성능 정책 목록에서 정책 이름 위에 커서를 놓습니다.
+. 을 클릭합니다 image:../media/oci-edit-threshold-policy-icon.gif[""].
++
+정책 편집 대화 상자가 표시됩니다.
+
+. 필요한 사항을 변경합니다.
++
+정책 이름 이외의 다른 옵션을 변경하면 Insight에서 해당 정책에 대한 모든 기존 위반 사항을 삭제합니다.
+
+. 저장 * 을 클릭합니다
+

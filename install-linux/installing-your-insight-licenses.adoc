@@ -1,0 +1,46 @@
+---
+permalink: install-linux/installing-your-insight-licenses.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp의 Insight 라이센스 키가 포함된 라이센스 파일을 받으면 설정 기능을 사용하여 모든 라이센스를 동시에 설치할 수 있습니다. 
+---
+= Insight 라이센스 설치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp의 Insight 라이센스 키가 포함된 라이센스 파일을 받으면 설정 기능을 사용하여 모든 라이센스를 동시에 설치할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+Insight 라이센스 키는 에 저장됩니다 `.txt` 또는 `.lcn` 파일.
+
+
+
+== 단계
+
+. 텍스트 편집기에서 라이센스 파일을 열고 텍스트를 복사합니다.
+. 브라우저에서 Insight를 엽니다.
+. Insight 도구 모음에서 * Admin * 을 클릭합니다.
+. 설정 * 을 클릭합니다.
+. Licenses * 탭을 클릭합니다.
+. Update License * 를 클릭합니다.
+. 라이센스 키 텍스트를 * 라이센스 * 텍스트 상자에 복사합니다.
+. 업데이트(가장 일반적인) * 작업을 선택합니다.
+. 저장 * 을 클릭합니다.
+. Insight 소비 라이센스 모델을 사용하는 경우 * Send usage information * 섹션에서 * Enable susage information to NetApp * 확인란을 선택해야 합니다. 프록시는 환경에 맞게 적절히 구성 및 설정되어 있어야 합니다.
+
+
+
+
+== 작업을 마친 후
+
+라이센스를 설치한 후 다음 구성 작업을 수행할 수 있습니다.
+
+* 데이터 소스를 구성합니다.
+* OnCommand Insight 사용자 계정을 생성합니다.
+

@@ -1,0 +1,31 @@
+---
+permalink: config-admin/deleting-performance-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 네트워크의 객체를 모니터링하는 데 더 이상 적용되지 않을 경우 성능 정책을 삭제할 수 있습니다. 
+---
+= 성능 정책을 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+네트워크의 객체를 모니터링하는 데 더 이상 적용되지 않을 경우 성능 정책을 삭제할 수 있습니다.
+
+
+
+== 단계
+
+. 브라우저에서 Insight를 엽니다.
+. Manage * (관리 *) 메뉴에서 * Performance Policies * (성능 정책 *)를 선택합니다.
++
+성능 정책 페이지가 표시됩니다.
+
+. 개체의 성능 정책 목록에 있는 정책 이름 위에 커서를 놓습니다.
+. 을 클릭합니다 image:../media/oci-delete-policy-threshold-icon.gif[""].
++
+정책을 삭제할 것인지 묻는 메시지가 나타납니다.
+
+. 확인 * 을 클릭합니다.
+

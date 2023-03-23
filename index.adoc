@@ -1,0 +1,19 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: index.html 
+summary: OnCommand Insight은 사내 환경, 퍼블릭 및 프라이빗 클라우드에서 하이브리드 IT 인프라의 운영 관리를 단순화합니다. 
+---
+= OnCommand Insight 문서
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다.
+
+Insight를 사용하면 현재 인프라를 최적화할 수 있으므로 비즈니스 요구에 맞게 올바른 규모의 운영을 수행할 수 있습니다. 구입 항목 및 구입 시기를 결정하는 프로세스를 간소화합니다. 또한 클라우드 마이그레이션에 적합한 워크로드를 식별하여 하이브리드 클라우드로 전환하는 등의 복잡한 기술 마이그레이션 과정에서도 위험을 줄여줍니다. Insight를 사용하면 리소스를 회사의 전체 IT 서비스 제공망으로 통합하여 IT 인프라를 엔드 투 엔드 서비스로 관리할 수 있습니다.

@@ -1,0 +1,18 @@
+---
+permalink: config-admin/licenses-no-longer-compliant.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Insight Licenses 페이지에서 "Not Compliant" 메시지가 표시되면 Insight에서 회사의 라이센스된 것보다 테라바이트를 더 많이 관리하고 있는 것입니다.' 
+---
+= 라이센스가 더 이상 규정을 준수하지 않습니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Insight Licenses 페이지에서 "Not Compliant" 메시지가 표시되면 Insight에서 회사의 라이센스된 것보다 테라바이트를 더 많이 관리하고 있는 것입니다.
+
+"규정을 준수하지 않음" 메시지는 회사가 현재 Insight에서 관리하는 것보다 TB를 적게 지불했다는 의미입니다. 관리 테라바이트 및 라이센스 용량(TB)의 차이가 규정 미준수 메시지 옆에 표시됩니다.
+
+Insight 시스템의 작동은 영향을 받지 않지만, NetApp 담당자에게 문의하여 라이센스 범위를 늘리고 적절한 라이센스를 업데이트해야 합니다.
