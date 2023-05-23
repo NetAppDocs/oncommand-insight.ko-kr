@@ -35,9 +35,9 @@ summary: 클라이언트 시스템은 스마트 카드 사용 및 인증서 로�
 
 다음은 일반적인 클라이언트 구성 요구 사항입니다.
 
-* ActivClient와 같은 스마트 카드 미들웨어 설치( 참조 http://militarycac.com/activclient.htm)[]
-* IE 브라우저 수정( 참조 http://militarycac.com/files/Making_AKO_work_with_Internet_Explorer_color.pdf)[]
-* Firefox 브라우저 수정( 참조 https://militarycac.com/firefox2.htm)[]
+* ActivClient와 같은 스마트 카드 미들웨어 설치( 참조
+* IE 브라우저 수정( 참조
+* Firefox 브라우저 수정( 참조
 
 
 추가 구성 단계는 다음과 같습니다.
