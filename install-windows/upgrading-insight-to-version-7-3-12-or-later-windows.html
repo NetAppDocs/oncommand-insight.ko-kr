@@ -32,6 +32,17 @@
   <link rel="stylesheet" href="/ko-kr/oncommand-insight/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/oncommand-insight/css/tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" />
   <link rel='stylesheet' href='/ko-kr/oncommand-insight/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
@@ -166,7 +177,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight/issues/new?body=Page%3A%20[Insight를 버전 7.3.12 이상으로 업그레이드 - Windows](https://docs.netapp.com/ko-kr/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/discuss-sm.svg" alt="" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight/blob/main/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/edit-sm.svg" alt="" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/oncommand-insight/images/article-sm.svg" alt="" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html&page-title=Insight를 버전 7.3.12 이상으로 업그레이드 - Windows" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/discuss-sm.svg" alt="" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight/blob/main/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/edit-sm.svg" alt="" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/oncommand-insight/images/article-sm.svg" alt="" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">이 페이지의 내용</div>
@@ -259,8 +270,8 @@
           data-did-you-mean="{suggestion}을(를) 검색해보십시오."
           data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?"
           data-results-found="{hitCount}개의 결과를 찾음"
-          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-          data-error-reset="Reset Search"
+          data-error-message="죄송합니다. 결과를 가져오는 도중 문제가 발생했습니다. 다시 시도해 주십시오."
+          data-error-reset="검색 재설정"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -301,8 +312,11 @@
           <a href="https://docs.netapp.com/es-es/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
           <a href="https://docs.netapp.com/fr-fr/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/it-it/oncommand-insight/install-windows/upgrading-insight-to-version-7-3-12-or-later-windows.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
-    </div><!-- End Language Selector -->
+    </div>
+    <!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
   </div>
