@@ -425,6 +425,8 @@ entries:
     - title: HDS HiCommand Device Manager 데이터 소스
       url: "/config-admin/hds-hicommand-devicemanager-data-source.html"
       entries:
+      - title: HDS 운영 센터
+        url: "/collector_hds_ops_center.html"
       - title: HDS 스토리지
         url: "/config-admin/hds-landing-page-terminology-storage.html"
       - title: HDS 스토리지 풀

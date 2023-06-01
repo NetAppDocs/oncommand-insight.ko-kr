@@ -8205,6 +8205,42 @@
   <block id="135cca1b87ae0b4a874f6d6184055603" category="sidebar">시간이 지남에 따라 개체의 동작을 관찰합니다</block>
   <block id="a8ccc3b97766b616055316a691052a65" category="sidebar">한 개체의 총 지연 시간을 상위 10개 개체의 총 지연 시간과 비교합니다</block>
   <block id="1e6ff685c4fea5f20ae54d736f584efe" category="sidebar">보고서의 출력 형식 및 배달 사용자 지정</block>
-  <block id="782e478a3967380e548c616b53e48fa3" category="paragraph">OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다. Insight를 사용하면 현재 인프라를 최적화할 수 있으므로 비즈니스 요구에 맞게 올바른 규모의 운영을 수행할 수 있습니다. 구입 항목 및 구입 시기를 결정하는 프로세스를 간소화합니다. 또한 클라우드 마이그레이션에 적합한 워크로드를 식별하여 하이브리드 클라우드로 전환하는 등의 복잡한 기술 마이그레이션 과정에서도 위험을 줄여줍니다. Insight를 사용하면 리소스를 회사의 전체 IT 서비스 제공망으로 통합하여 IT 인프라를 엔드 투 엔드 서비스로 관리할 수 있습니다.</block>
   <block id="9a94b99275970f0f82451969eeccb836" category="sidebar">HDS 운영 센터</block>
+  <block id="8020d56a67ade967a3254ada824b1406" category="summary">HDS Ops Center 데이터 수집기 구성</block>
+  <block id="edfa0366cb6c25de6aa46576a0e54251" category="doc">Hitachi Ops Center 데이터 수집기</block>
+  <block id="317ca49a534ef6dc0317a60fdf058fef" category="paragraph">이 데이터 수집기는 Hitachi Ops Center의 통합 애플리케이션 제품군을 사용하여 여러 스토리지 디바이스의 인벤토리 및 성능 데이터에 액세스합니다. 인벤토리 및 용량 검색을 위해 Ops Center 설치에는 "공통 서비스" 및 "관리자" 구성 요소가 모두 포함되어야 합니다. 성능 수집을 위해 "Analyzer"를 추가로 구축해야 합니다.</block>
+  <block id="aa274d02dd5bbca295ce4b6cd3594c6d" category="paragraph">OnCommand Insight는 이 데이터 수집기에서 다음 인벤토리 정보를 가져옵니다. 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 수집기를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.</block>
+  <block id="5c6ab1284b6b7a5a7102854a969c99be" category="cell">스토리지 시스템</block>
+  <block id="6fa6e2299a829e04bba19b10e38dc56c" category="cell">패리티 그룹</block>
+  <block id="7f47ab518e59deb2aed009c3db49ddbd" category="cell">스토리지 풀(RAID), 디스크 그룹</block>
+  <block id="88bda324c3afff84ed43de6af0cfdc82" category="cell">스토리지 풀(씬, 스냅)</block>
+  <block id="b539957d5ac5efa3c17ecf122d0aef01" category="cell">외부 패리티 그룹</block>
+  <block id="8d574b46d24459c09062877c134e14a5" category="cell">스토리지 풀(백엔드), 디스크 그룹</block>
+  <block id="08aa09e012efb5b185b38b15d4ded675" category="cell">스토리지 노드 → 컨트롤러 노드 → 포트</block>
+  <block id="a18b5712dface3f20bce7750886350d3" category="cell">호스트 그룹</block>
+  <block id="5b52c3da7acdc6837b619fa0e7beb98b" category="cell">볼륨 매핑 및 마스킹</block>
+  <block id="b4a20e3a6be7e6cd6f8e3dcdd45cb2a8" category="cell">볼륨 쌍</block>
+  <block id="561b06d0d233f84983c474e6cd225d20" category="paragraph">참고: 이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 수집기의 모든 경우를 나타내는 것은 아닙니다.</block>
+  <block id="ea9460ea7afc9634eafcb42137ae3f7b" category="paragraph">재고 데이터를 수집하려면 다음이 있어야 합니다.</block>
+  <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">"공통 서비스" 구성 요소를 호스팅하는 Ops Center 서버의 IP 주소 또는 호스트 이름입니다</block>
+  <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">Ops Center 구성 요소를 호스팅하는 모든 서버에 있는 루트/sysadmin 사용자 계정 및 암호입니다. HDS는 Ops Center 10.8 이상이 될 때까지 LDAP/SSO 사용자의 REST API 지원을 구현하지 않았습니다</block>
+  <block id="fdfceedcfadaa8fc4e641a9271ff7595" category="section-title">성능 요구사항</block>
+  <block id="8f2fd5a7846dd234e704c033378310ab" category="paragraph">성능 데이터를 수집하려면 다음 요구사항을 충족해야 합니다.</block>
+  <block id="d3a405c96e9fcea92b0929c28b531e59" category="list-text">HDS Ops Center "Analyzer" 모듈을 설치해야 합니다</block>
+  <block id="e71e6bc0f8f44471c52859083251c1b7" category="list-text">스토리지 어레이가 운영 센터 "Analyzer" 모듈에 제공되어야 합니다</block>
+  <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center IP 주소입니다</block>
+  <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">"공통 서비스" 구성 요소를 호스팅하는 Ops Center 서버의 IP 주소 또는 정규화된 도메인 이름입니다</block>
+  <block id="8db0f231405345684c1dab98cc049f52" category="cell">Ops Center 서버의 사용자 이름입니다.</block>
+  <block id="18bf6f2c111fb8ac2dbe99d3445cbadd" category="cell">Ops Center 서버에 사용되는 암호입니다.</block>
+  <block id="bc742a3b20c159bc11ea844e4d798e34" category="cell">기본값은 HTTPS(포트 443)입니다</block>
+  <block id="d394f4a37cee9ff0a48907bfdacc4a9f" category="cell">TCP 포트를 재정의합니다</block>
+  <block id="cd5f584259d833ff583a4824164dfbc3" category="cell">기본값이 아닌 경우 사용할 포트를 지정합니다</block>
+  <block id="4908467e27b4191d95f9c906a4d8dcd3" category="cell">재고 조사 사이의 간격입니다. 기본값은 40입니다.</block>
+  <block id="07570853d28c7dc0401130aea747f9fb" category="cell">데이터를 수집할 때 아래 어레이 목록을 포함할지 제외할지 여부를 지정합니다.</block>
+  <block id="e245ed75c6b828ee4ae338a39e57c9bc" category="cell">장치 목록을 필터링합니다</block>
+  <block id="0f6a3a02976086b90f48da7e5992aa82" category="cell">포함하거나 제외할 장치 일련 번호의 쉼표로 구분된 목록입니다</block>
+  <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">성능 폴링 간격입니다. 기본값은 300입니다.</block>
+  <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">Data Collector 지원 매트릭스</block>
+  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">추가 정보는 에서 찾을 수 있습니다 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 페이지 또는 에 있습니다 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
+  <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다. Insight를 사용하면 현재 인프라를 최적화할 수 있으므로 비즈니스 요구에 맞게 올바른 규모의 운영을 수행할 수 있습니다. 구입 항목 및 구입 시기를 결정하는 프로세스를 간소화합니다. 또한 클라우드 마이그레이션에 적합한 워크로드를 식별하여 하이브리드 클라우드로 전환하는 등의 복잡한 기술 마이그레이션 과정에서도 위험을 줄여줍니다. Insight를 사용하면 리소스를 회사의 전체 IT 서비스 제공망으로 통합하여 IT 인프라를 엔드 투 엔드 서비스로 관리할 수 있습니다.</block>
 </blocks>
