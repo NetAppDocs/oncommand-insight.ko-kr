@@ -431,6 +431,8 @@ entries:
         url: "/config-admin/hds-landing-page-terminology-storage-pool.html"
       - title: HDS 스토리지 노드
         url: "/config-admin/hds-landing-page-terminology-storage-node.html"
+    - title: HDS 운영 센터
+      url: "/collector_hds_ops_center.html"
     - title: HDS NAS(HNAS) 데이터 소스
       url: "/config-admin/hds-hnas-data-source.html"
     - title: HP CommandView AE 데이터 소스
