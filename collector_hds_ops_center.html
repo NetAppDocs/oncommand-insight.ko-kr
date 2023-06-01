@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head class="at-element-marker">
-  <title>AutoSupport(ASUP) 패키지에 포함된 내용</title>
+  <title>Hitachi Ops Center 데이터 수집기</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="AutoSupport(ASUP) 패키지에 포함된 내용" />
+  <meta property="og:title" content="Hitachi Ops Center 데이터 수집기" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ko-kr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-	<meta property="og:description" content="AutoSupport 패키지에는 데이터베이스 백업과 확장 정보가 들어 있습니다." />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/oncommand-insight/collector_hds_ops_center.html" />
+	<meta property="og:description" content="HDS Ops Center 데이터 수집기 구성" />
   <meta property="og:image" content="https://docs.netapp.com/ko-kr/oncommand-insight/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="AutoSupport 패키지에는 데이터베이스 백업과 확장 정보가 들어 있습니다.">
-  <meta name="keywords" content=" "><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="HDS Ops Center 데이터 수집기 구성">
+  <meta name="keywords" content=" data collector, Hitachi Ops Center"><!-- Icons -->
   <link rel="icon" href="/ko-kr/oncommand-insight/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -32,17 +32,17 @@
   <link rel="stylesheet" href="/ko-kr/oncommand-insight/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/oncommand-insight/css/tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
-  <link rel="canonical" href="https://docs.netapp.com/ko-kr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
-  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" />
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/oncommand-insight/collector_hds_ops_center.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/oncommand-insight/collector_hds_ops_center.html" />
   <link rel='stylesheet' href='/ko-kr/oncommand-insight/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
@@ -177,7 +177,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html&page-title=AutoSupport(ASUP) 패키지에 포함된 내용" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/discuss-sm.svg" alt="" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight/blob/main/config-admin/what-s-included-in-the-autosupport-package.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/edit-sm.svg" alt="" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/oncommand-insight/images/article-sm.svg" alt="" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/oncommand-insight/collector_hds_ops_center.html&page-title=Hitachi Ops Center 데이터 수집기" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/discuss-sm.svg" alt="" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/oncommand-insight/blob/main/config-admin/collector_hds_ops_center.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/oncommand-insight/images/edit-sm.svg" alt="" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/oncommand-insight/images/article-sm.svg" alt="" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">이 페이지의 내용</div>
@@ -297,23 +297,23 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/ko-kr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/us-en/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/de-de/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+          <a href="https://docs.netapp.com/de-de/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/es-es/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+          <a href="https://docs.netapp.com/es-es/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/fr-fr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+          <a href="https://docs.netapp.com/fr-fr/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/it-it/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+          <a href="https://docs.netapp.com/it-it/oncommand-insight/collector_hds_ops_center.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
     </div>
     <!-- End Language Selector -->
@@ -1524,8 +1524,6 @@
             ASUP 처리 구성
           </a>
           
-    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
-  
 
 
         </li>
@@ -2370,6 +2368,8 @@
             HDS HiCommand Device Manager 데이터 소스
           </a>
           
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -2385,6 +2385,8 @@
   
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -6088,7 +6090,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="AutoSupport(ASUP) 패키지에 포함된 내용"
       data-li-level="4#" 
-      class="  active "
+      class=" "
     ><a class="na-navbar-padding" href="/ko-kr/oncommand-insight/config-admin/what-s-included-in-the-autosupport-package.html">
         AutoSupport(ASUP) 패키지에 포함된 내용
       </a></li></ul></li><li 
@@ -7136,7 +7138,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="HDS 운영 센터"
       data-li-level="5#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/ko-kr/oncommand-insight/collector_hds_ops_center.html">
         HDS 운영 센터
       </a></li><li 
@@ -7164,7 +7166,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="HDS 운영 센터"
       data-li-level="4#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/ko-kr/oncommand-insight/collector_hds_ops_center.html">
         HDS 운영 센터
       </a></li><li 
@@ -9791,14 +9793,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">AutoSupport(ASUP) 패키지에 포함된 내용</h1>
+  <h1 class="n-doc__component-detail-heading">Hitachi Ops Center 데이터 수집기</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2023-03-23 18:57:56 +0000">03/23/2023</time>
+    <time datetime="2023-06-01 18:03:40 +0000">06/01/2023</time>
     
   
 
@@ -9808,117 +9810,184 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>AutoSupport 패키지에는 데이터베이스 백업과 확장 정보가 들어 있습니다.</p>
+<p>이 데이터 수집기는 Hitachi Ops Center의 통합 애플리케이션 제품군을 사용하여 여러 스토리지 디바이스의 인벤토리 및 성능 데이터에 액세스합니다. 인벤토리 및 용량 검색을 위해 Ops Center 설치에는 "공통 서비스" 및 "관리자" 구성 요소가 모두 포함되어야 합니다. 성능 수집을 위해 "Analyzer"를 추가로 구축해야 합니다.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="용어">용어</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>AutoSupport 패키지에는 다음이 포함됩니다.</p>
+<p>OnCommand Insight는 이 데이터 수집기에서 다음 인벤토리 정보를 가져옵니다. 획득한 각 자산 유형에 대해 이 자산에 가장 일반적으로 사용되는 용어가 표시됩니다. 이 데이터 수집기를 보거나 문제를 해결할 때 다음 용어를 염두에 두십시오.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>재고 데이터</p>
-</li>
-<li>
-<p>성능 데이터(ASUP에 포함할 경우)</p>
-</li>
-<li>
-<p>데이터 원본 및 데이터 원본 설정</p>
-</li>
-<li>
-<p>통합 팩</p>
-</li>
-<li>
-<p>원격 획득 장치</p>
-</li>
-<li>
-<p>이더넷 모니터링 장치</p>
-</li>
-<li>
-<p>ASUP/프록시 설정</p>
-</li>
-<li>
-<p>위치 설정 백업</p>
-</li>
-<li>
-<p>보관 위치 설정</p>
-</li>
-<li>
-<p>알림 설정</p>
-</li>
-<li>
-<p>이상 징후 감지 점수 및 장치</p>
-</li>
-<li>
-<p>이상 현상 감지 응용 프로그램 설정</p>
-</li>
-<li>
-<p>사용자</p>
-</li>
-<li>
-<p>성능 정책</p>
-</li>
-<li>
-<p>업무 엔티티 및 애플리케이션</p>
-</li>
-<li>
-<p>장치 해상도 규칙 및 설정</p>
-</li>
-<li>
-<p>대시보드 및 위젯</p>
-</li>
-<li>
-<p>맞춤형 자산 페이지 대시보드 및 위젯</p>
-</li>
-<li>
-<p>쿼리</p>
-</li>
-<li>
-<p>주석 및 주석 규칙</p>
-</li>
-<li>
-<p>로그</p>
-</li>
-<li>
-<p>추가 수익 실적을</p>
-</li>
-<li>
-<p>획득/데이터 소스 상태</p>
-</li>
-<li>
-<p>MySQL 상태</p>
-</li>
-<li>
-<p>시스템 정보</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>AutoSupport 패키지에는 다음이 포함되지 않습니다.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>보안 도구 설정/볼트 정보(별도의 CLI 프로세스를 통해 백업)</p>
-</li>
-<li>
-<p>성능 데이터(ASUP에 포함할 것을 선택하지 않은 경우)</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
 <tr>
-<td class="icon">
-<img src="/us-en/oncommand-insight/images/note.svg" alt="참고">
-</td>
-<td class="content">
-<div class="paragraph">
-<p>ASUP에 성능 데이터를 포함하려는 경우 가장 최근의 7일 데이터가 포함됩니다. 해당 기능이 활성화된 경우 나머지 데이터는 아카이브에 포함됩니다. 아카이브 데이터는 ASUP에 포함되지 않습니다.</p>
-</div>
-</td>
+<th class="tableblock halign-left valign-top">공급업체/모델 기간</th>
+<th class="tableblock halign-left valign-top">OnCommand Insight 용어입니다</th>
 </tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지 시스템</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">패리티 그룹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지 풀(RAID), 디스크 그룹</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">디스크</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">디스크</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지 풀</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지 풀(씬, 스냅)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">외부 패리티 그룹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지 풀(백엔드), 디스크 그룹</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">포트</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">스토리지 노드 → 컨트롤러 노드 → 포트</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">호스트 그룹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨 매핑 및 마스킹</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨 쌍</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">저장소 동기화</p></td>
+</tr>
+</tbody>
 </table>
+<div class="paragraph">
+<p>참고: 이러한 용어 매핑은 일반적인 용어 매핑일 뿐이며 이 데이터 수집기의 모든 경우를 나타내는 것은 아닙니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="재고-요건">재고 요건</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>재고 데이터를 수집하려면 다음이 있어야 합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"공통 서비스" 구성 요소를 호스팅하는 Ops Center 서버의 IP 주소 또는 호스트 이름입니다</p>
+</li>
+<li>
+<p>Ops Center 구성 요소를 호스팅하는 모든 서버에 있는 루트/sysadmin 사용자 계정 및 암호입니다. HDS는 Ops Center 10.8 이상이 될 때까지 LDAP/SSO 사용자의 REST API 지원을 구현하지 않았습니다</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="성능-요구사항">성능 요구사항</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>성능 데이터를 수집하려면 다음 요구사항을 충족해야 합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>HDS Ops Center "Analyzer" 모듈을 설치해야 합니다</p>
+</li>
+<li>
+<p>스토리지 어레이가 운영 센터 "Analyzer" 모듈에 제공되어야 합니다</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="구성">구성</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">필드에 입력합니다</th>
+<th class="tableblock halign-left valign-top">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hitachi Ops Center IP 주소입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"공통 서비스" 구성 요소를 호스팅하는 Ops Center 서버의 IP 주소 또는 정규화된 도메인 이름입니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">사용자 이름</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ops Center 서버의 사용자 이름입니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">암호</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ops Center 서버에 사용되는 암호입니다.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="고급-구성">고급 구성</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">필드에 입력합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">설명</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">연결 유형</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">기본값은 HTTPS(포트 443)입니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TCP 포트를 재정의합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">기본값이 아닌 경우 사용할 포트를 지정합니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">재고 폴링 간격(분)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">재고 조사 사이의 간격입니다. 기본값은 40입니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">목록을 지정하려면 '제외' 또는 '포함&#8217;을 선택하십시오</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">데이터를 수집할 때 아래 어레이 목록을 포함할지 제외할지 여부를 지정합니다.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">장치 목록을 필터링합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">포함하거나 제외할 장치 일련 번호의 쉼표로 구분된 목록입니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">성능 폴링 간격(초)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">성능 폴링 간격입니다. 기본값은 300입니다.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>추가 정보는 에서 찾을 수 있습니다 <a href="concept_requesting_support.html">"지원"</a> 페이지 또는 에 있습니다 <a href="https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf">"Data Collector 지원 매트릭스"</a>.</p>
+</div>
+</div>
 </div>
 
     </article>
