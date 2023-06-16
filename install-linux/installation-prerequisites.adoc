@@ -25,6 +25,6 @@ OnCommand Insight를 설치하기 전에 다음 사항을 확인하십시오.
 * OnCommand Insight Java UI용 Java 8.
 +
 
-NOTE: OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오 http://docs.netapp.com/oci-73/topic/com.netapp.ndc.notices/GUID-93BE9A1E-D79E-4A97-87A2-4DBE31372A16.html["통지"] 페이지를 참조하십시오.
+NOTE: OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오 link:legal-notices.html["통지"] 페이지를 참조하십시오.
 
 

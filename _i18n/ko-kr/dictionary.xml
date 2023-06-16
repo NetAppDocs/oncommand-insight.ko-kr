@@ -228,7 +228,6 @@
   <block id="f54e475559c1e0bbea40068043297640" category="list-text">OnCommand Insight 서버, 데이터 웨어하우스 및 보고, 원격 획득 장치의 하드웨어 및 네트워크 구성을 포함하는 배포 계획.</block>
   <block id="3f8a6e68b00f22c533895ece22d473da" category="list-text">OnCommand Insight Java UI용 Java 8.</block>
   <block id="d254861f20bb59d58db872722e57ba9c" category="inline-link">통지</block>
-  <block id="699321795769c28cf1c69b5372a7d45b" category="admonition">OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오<block ref="def4fc5b0e06154939b4ae3afd91bf54" category="inline-link-rx"></block> 페이지를 참조하십시오.</block>
   <block id="b9f2c94d18eb493993627757483e8d1e" category="summary">NetApp의 Insight 라이센스 키가 포함된 라이센스 파일을 받으면 설정 기능을 사용하여 모든 라이센스를 동시에 설치할 수 있습니다.</block>
   <block id="595e865728eb02f9590430ea2511cab5" category="doc">Insight 라이센스 설치</block>
   <block id="fad1f300af08a9c525cdac95524a08aa" category="paragraph">Insight 라이센스 키는 에 저장됩니다<block ref="be4117b0c842c4be8f9960294bdc2cd1" prefix=" " category="inline-code"></block> 또는<block ref="38d7925a50d5b22cb1c850b0d12c9086" prefix=" " category="inline-code"></block> 파일.</block>
@@ -8240,7 +8239,6 @@
   <block id="e245ed75c6b828ee4ae338a39e57c9bc" category="cell">장치 목록을 필터링합니다</block>
   <block id="0f6a3a02976086b90f48da7e5992aa82" category="cell">포함하거나 제외할 장치 일련 번호의 쉼표로 구분된 목록입니다</block>
   <block id="7cde90d1aea7fffbc619c41625a35c52" category="cell">성능 폴링 간격입니다. 기본값은 300입니다.</block>
-  <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">Data Collector 지원 매트릭스</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">추가 정보는 에서 찾을 수 있습니다 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 페이지 또는 에 있습니다 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다. Insight를 사용하면 현재 인프라를 최적화할 수 있으므로 비즈니스 요구에 맞게 올바른 규모의 운영을 수행할 수 있습니다. 구입 항목 및 구입 시기를 결정하는 프로세스를 간소화합니다. 또한 클라우드 마이그레이션에 적합한 워크로드를 식별하여 하이브리드 클라우드로 전환하는 등의 복잡한 기술 마이그레이션 과정에서도 위험을 줄여줍니다. Insight를 사용하면 리소스를 회사의 전체 IT 서비스 제공망으로 통합하여 IT 인프라를 엔드 투 엔드 서비스로 관리할 수 있습니다.</block>
+  <block id="ee3e2c17548456b388eeca1c8945d0fb" category="admonition">OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오 <block ref="22f0bd9eac0233f917b202967c553066" category="inline-link-macro-rx"></block> 페이지를 참조하십시오.</block>
 </blocks>
