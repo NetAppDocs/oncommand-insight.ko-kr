@@ -3376,7 +3376,6 @@
   <block id="ae5ec4adfd829d0ce42eda85f1bf19f3" category="list-text">윈도우 -<block ref="09b50f27173fab90f2f09515f3322532" prefix=" " category="inline-code"></block></block>
   <block id="6d43f414975e3172b0e6b0387f3c9660" category="list-text">Linux -<block ref="9363a944a51c65486664aed0f6e192fa" prefix=" " category="inline-code"></block></block>
   <block id="2d805e40f048f8ac5921fd582a426f41" category="list-text">데이터 웨어하우스 서버에 원격 로그인을 수행합니다.</block>
-  <block id="92c5c92115fe622170841b7252788aa3" category="list-text">대화형 모드에서 보안 관리 도구를 시작합니다.<block ref="977ec0e53c2f0026946e460f126d1758" prefix=" " category="inline-code"></block></block>
   <block id="1e0243d49be54f99f7eef9855a7cee80" category="paragraph">시스템에서 로그인 자격 증명을 요청합니다.</block>
   <block id="445ee2e4288af83712e4c04825cf6c34" category="list-text">"Admin" 자격 증명이 있는 계정의 사용자 이름과 암호를 입력합니다.</block>
   <block id="c10f995fef645bfed0597a66f5e22e68" category="paragraph">데이터 웨어하우스에 대한 보안 관리 메뉴가 표시됩니다.</block>
@@ -4404,7 +4403,6 @@
   <block id="166ace9389f2989154d4edf8ca669668" category="doc">Insight 서버의 보안 관리</block>
   <block id="d71586f0584584e73897bf02e9802afa" category="paragraph">를 클릭합니다<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 도구를 사용하면 Insight 서버의 보안 옵션을 관리할 수 있습니다. 보안 관리에는 암호 변경, 새 키 생성, 사용자가 만든 보안 구성 저장 및 복원, 기본 설정으로 구성 복원 등이 포함됩니다.</block>
   <block id="34466f85207045ded27b393581889d20" category="list-text">Insight 서버에 원격 로그인을 수행합니다.</block>
-  <block id="0bc4782a44f12c3fb60ecc61006b818c" category="list-text">대화형 모드에서 보안 관리 도구를 시작합니다.<block ref="095b9dfc195e5bbeafd5a7c2bb0ccd3f" prefix=" " category="inline-code"></block></block>
   <block id="4b2f543780a949ab3938618b76a6aeb5" category="list-text">서버 * 를 선택합니다.</block>
   <block id="15cf432cc55f528ff3c57c6406d8bcd4" category="paragraph">다음 서버 구성 옵션을 사용할 수 있습니다.</block>
   <block id="55ef7bc8b50b24453b764be4b80da043" category="paragraph">모든 암호 및 키가 포함된 볼트의 백업 zip 파일을 작성하고 사용자가 지정한 위치 또는 다음 기본 위치에 파일을 배치합니다.</block>
@@ -6252,7 +6250,6 @@
   <block id="0a03d1757c591cb47b67e3867b2aa573" category="doc">로컬 획득 장치의 보안 관리</block>
   <block id="1843d0ce10aa71f1d72edd6683f93064" category="paragraph">를 클릭합니다<block ref="4924cdf1992856713a11ebac184ceb81" prefix=" " category="inline-code"></block> 도구를 사용하면 로컬 획득 사용자(Lau)의 보안 옵션을 관리할 수 있습니다. 보안 관리에는 키 및 암호 관리, 사용자가 만들고 복원한 보안 구성을 기본 설정으로 저장 및 복원하는 작업이 포함됩니다.</block>
   <block id="70ba259bdcb1df4b8b8840343db3ba72" category="paragraph">이(가) 있어야 합니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 보안 구성 작업을 수행할 수 있는 권한.</block>
-  <block id="19ba4ac9871bca5c94c0fac78e3c3a9b" category="list-text">대화형 모드(-I)에서 보안 관리 도구를 시작합니다.</block>
   <block id="bf598265068097bdfb964fb65b464993" category="list-text">Local Acquisition Unit(로컬 획득 장치) * 을 선택하여 Local Acquisition Unit(로컬 획득 장치) 보안 구성을 재구성합니다.</block>
   <block id="3efa8859202eff1b280ec70c247e9ef0" category="paragraph">다음 옵션이 표시됩니다.</block>
   <block id="db48c1af350671c4ffd32d01200d5950" category="paragraph">복원을 사용하여 여러 서버의 패스워드와 키를 동기화할 수 있습니다. 예를 들어: - Lau에서 암호화 키 변경 - 볼트 백업 작성 - 각 RA에 볼트 백업을 복원합니다</block>
@@ -8242,4 +8239,7 @@
   <block id="16d15d3f29508a543513f5bccddd527e" category="paragraph">OnCommand Insight는 물리적 환경과 가상 환경의 네트워크, 스토리지 및 서버에서 도메인 간, 멀티벤더 리소스 관리 및 분석을 지원하는 단일 솔루션입니다. Insight를 사용하면 현재 인프라를 최적화할 수 있으므로 비즈니스 요구에 맞게 올바른 규모의 운영을 수행할 수 있습니다. 구입 항목 및 구입 시기를 결정하는 프로세스를 간소화합니다. 또한 클라우드 마이그레이션에 적합한 워크로드를 식별하여 하이브리드 클라우드로 전환하는 등의 복잡한 기술 마이그레이션 과정에서도 위험을 줄여줍니다. Insight를 사용하면 리소스를 회사의 전체 IT 서비스 제공망으로 통합하여 IT 인프라를 엔드 투 엔드 서비스로 관리할 수 있습니다.</block>
   <block id="ee3e2c17548456b388eeca1c8945d0fb" category="admonition">OnCommand Insight에는 Java SE 8용 유료 Oracle 라이센스가 포함되어 있습니다. 고객은 추가 Java SE 8 라이센스를 구입할 필요가 없습니다. 이 라이센스는 모든 OCI 구성 요소와 함께 Java SE 8을 사용하는 것을 포함합니다. 을 참조하십시오 <block ref="22f0bd9eac0233f917b202967c553066" category="inline-link-macro-rx"></block> 페이지를 참조하십시오.</block>
   <block id="e465e42419c3405f98dfba07fa9da3fc" category="paragraph">OnCommand Insights는 * Azure Active Directory * 에서만 SSO를 지원합니다.</block>
+  <block id="1cb3ec988e29678c641cba59564947b3" category="list-text">대화형 모드에서 보안 관리 도구를 시작합니다.</block>
+  <block id="f098be646546d6fe2a75059a01c330f7" category="list-text">윈도우 -<block ref="6fc3ad2c3aa4e51a6e001ff98a533c91" prefix=" " category="inline-code"></block></block>
+  <block id="a8b0a56b2ae62eec476aea5806960a1a" category="list-text">Linux -<block ref="7e8977b89fc4dcb2507a133fc2b8b1fe" prefix=" " category="inline-code"></block></block>
 </blocks>
