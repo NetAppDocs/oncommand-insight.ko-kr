@@ -12,4 +12,4 @@ summary:
 
 OnCommand Insight 릴리스 정보는 문서 센터 외부에서 제공됩니다. NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.
 
-link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2652943["릴리즈 노트.pdf"^]
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2652943["릴리즈 노트.pdf"^] (새 창에서 열림)
