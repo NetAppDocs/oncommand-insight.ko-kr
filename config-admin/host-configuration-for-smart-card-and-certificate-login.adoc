@@ -59,29 +59,7 @@ summary: '스마트 카드\(CAC\) 및 인증서 로그인을 지원하려면 OnC
 모든 중간 인증서에 대해 이 단계를 반복합니다.
 
 . 이 예제와 일치하도록 LDAP에 도메인을 지정합니다.
-. OnCommand Insight 서버에서 를 클릭합니다 `wildfly/standalone/configuration/standalone-full.xml` 에서 verify-client를 "requested"로 업데이트하여 파일을 수정해야 합니다 ``/subsystem=undertow/server=default-server/https-listener=default-https``CAC 활성화 적절한 명령을 실행합니다.
-+
-|===
 
-
-| OS | 스크립트 
-
-
- a| 
-Windows
- a| 
-<install dir>\SANscreen\Wildlfly\bin\enableCACforRemoteEJB.bat 을 참조하십시오
-
-
-
- a| 
-리눅스
- a| 
-/opt/netapp/OCI/Wildlfly/bin/enableCACforRemoteEJB.sh 을 참조하십시오
-
-|===
-+
-스크립트를 실행한 후 다음 단계로 진행하기 전에 Wildlfly 서버의 재로드가 완료될 때까지 기다립니다.
 
 . 서버를 다시 시작합니다.
 

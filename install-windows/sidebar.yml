@@ -22,10 +22,6 @@ entries:
     url: "/install-windows/data-warehouse-and-reporting-server-requirements.html"
   - title: 원격 획득 장치 서버 요구 사항
     url: "/install-windows/remote-acquisition-unit-server-requirements.html"
-  - title: 이상 징후 탐지 요구 사항
-    url: "/install-windows/anomaly-detection-requirements.html"
-  - title: Insight Java UI 요구 사항
-    url: "/install-windows/insight-java-ui-requirements.html"
   - title: OnCommand Insight에서 지원되는 브라우저
     url: "/install-windows/insight-browser-support.html"
 - title: Insight 설치 지침
@@ -49,10 +45,6 @@ entries:
       url: "/install-windows/verifying-the-rau-service.html"
     - title: 원격 획득 장치 설치를 검증합니다
       url: "/install-windows/validating-the-rau-installation.html"
-  - title: 이상 현상 감지 소프트웨어 설치
-    url: "/install-windows/installing-the-anomaly-detection-software.html"
-  - title: 이더넷 모니터링 장치 설치
-    url: "/install-windows/installing-an-ethernet-monitoring-unit-linux.html"
   - title: 설치 확인
     url: "/install-windows/checking-the-installation.html"
     entries:
@@ -111,8 +103,6 @@ entries:
       url: "/install-windows/back-up-the-security-configuration.html"
     - title: 원격 획득 장치 서버 업그레이드
       url: "/install-windows/upgrading-remote-acquisition-servers.html"
-    - title: 이상 현상 감지 엔진 업그레이드
-      url: "/install-windows/upgrading-the-anomaly-detection-engine.html"
   - title: 업그레이드 후 작업 완료
     url: "/install-windows/completing-post-upgrade-tasks.html"
     entries:
@@ -149,5 +139,3 @@ entries:
     url: "/install-windows/uninstalling-the-data-warehouse-software.html"
   - title: 원격 획득 장치 소프트웨어 제거
     url: "/install-windows/uninstalling-the-remote-acquisition-unit-software.html"
-  - title: 이상 현상 감지 엔진 제거
-    url: "/install-windows/uninstalling-the-anomaly-detection-engine-linux.html"

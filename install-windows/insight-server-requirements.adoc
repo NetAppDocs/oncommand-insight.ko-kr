@@ -2,7 +2,7 @@
 permalink: install-windows/insight-server-requirements.html 
 sidebar: sidebar 
 keywords: redhat 
-summary: 전용 서버가 권장됩니다. 다른 애플리케이션이 설치된 서버에 Insight를 설치하지 마십시오. 제품 요구 사항이 충족되는 경우 물리적 서버와 가상 서버가 모두 지원됩니다. 
+summary: OnCommand Insight 서버 구성 요소 설치 요구 사항 
 ---
 = Insight Server 요구사항
 :allow-uri-read: 
@@ -66,7 +66,7 @@ Insight를 설치 또는 업그레이드하기 전에 세일즈 엔지니어에�
  a| 
 운영 체제
  a| 
-최신 서비스 팩이 설치된 64비트 Microsoft Windows Server 2012, 2012 R2, 2016 또는 2019를 실행하는 컴퓨터.
+최신 서비스 팩이 설치된 64비트 Microsoft Windows Server 2016, 2019 또는 2022를 실행하는 컴퓨터.
 
 Windows Server 2012에 도입된 복구 파일 시스템(ReFS)은 OnCommand Insight와 호환되지 않습니다. OnCommand Insight의 Windows 설치는 NTFS 파일 시스템에서만 지원됩니다.
 

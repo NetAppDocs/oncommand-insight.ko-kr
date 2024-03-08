@@ -39,7 +39,6 @@ Insight Server에는 소프트웨어 방화벽이 설치되어 있을 수 있습
 * Insight 서버에 연결하려는 원격 획득 장치
 * 이 Insight 서버에 대한 커넥터가 있는 OCI DWH 서버
 * Insight REST API와의 프로그래밍 상호 작용
-* 이상 현상 감지 이상 정보를 렌더링하기 위해 Insight 성능 데이터를 소스를 찾는 엔진
 
 
 Insight 서버 호스트 레벨 방화벽 구축을 원하는 모든 사람에게 NetApp은 모든 기업 네트워크 IP 블록에 HTTPS 액세스를 허용하도록 권장합니다.

@@ -35,7 +35,7 @@ image::../media/search-exchange.gif[교환 검색]
 ====
 . 검색 결과에서 "Exchange 2016"을 선택하면 애플리케이션 랜딩 페이지가 표시됩니다.
 +
-image::../media/exch2016-land-page.gif[exch2016 랜드 페이지입니다]
+image::../media/exch2016-land-page.png[exch2016 랜드 페이지입니다]
 
 +
 애플리케이션 랜딩 페이지에서 다음 정보를 확인할 수 있습니다.

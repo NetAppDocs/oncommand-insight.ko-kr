@@ -22,10 +22,6 @@ entries:
     url: "/install-linux/data-warehouse-server-requirements-linux.html"
   - title: 원격 획득 장치 서버 요구 사항
     url: "/install-linux/remote-acquisition-unit-server-requirements.html"
-  - title: 이상 징후 탐지 요구 사항
-    url: "/install-linux/anomaly-detection-requirements.html"
-  - title: Insight Java UI 요구 사항
-    url: "/install-linux/insight-java-ui-requirements.html"
   - title: OnCommand Insight에서 지원되는 브라우저
     url: "/install-linux/insight-browser-support.html"
 - title: Insight 설치 지침
@@ -42,10 +38,6 @@ entries:
     entries:
     - title: 원격 획득 장치 설치를 검증합니다
       url: "/install-linux/validating-the-rau-installation.html"
-  - title: 이상 현상 감지 소프트웨어 설치
-    url: "/install-linux/installing-the-anomaly-detection-software.html"
-  - title: 이더넷 모니터링 장치 설치
-    url: "/install-linux/installing-an-ethernet-monitoring-unit-linux.html"
   - title: 설치 확인
     url: "/install-linux/checking-the-installation.html"
     entries:
@@ -78,10 +70,6 @@ entries:
     url: "/install-linux/upgrading-data-warehouse.html"
   - title: 원격 획득 장치 소프트웨어 업그레이드
     url: "/install-linux/upgrading-remote-acquisition-units.html"
-  - title: 이상 현상 감지 엔진 업그레이드
-    url: "/install-linux/upgrading-the-anomaly-detection-engine.html"
-  - title: 이더넷 모니터링 장치 소프트웨어 업그레이드
-    url: "/install-linux/upgrading-ethernet-monitoring-units.html"
   - title: Windows에서 Linux로 마이그레이션
     url: "/install-linux/migrating-from-windows-to-linux.html"
 - title: OnCommand Insight를 제거하는 중입니다
@@ -93,7 +81,3 @@ entries:
     url: "/install-linux/uninstalling-data-warehouse.html"
   - title: 원격 획득 장치 제거
     url: "/install-linux/uninstalling-a-remote-acquisition-unit-rau.html"
-  - title: 이더넷 모니터링 장치 제거
-    url: "/install-linux/uninstalling-an-ethernet-monitoring-unit-emu-linux.html"
-  - title: 이상 현상 감지 엔진 제거
-    url: "/install-linux/uninstalling-the-anomaly-detection-engine-linux.html"

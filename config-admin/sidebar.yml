@@ -28,8 +28,6 @@ entries:
       url: "/config-admin/editing-a-user-definition.html"
     - title: 사용자 계정을 삭제하는 중입니다
       url: "/config-admin/deleting-a-user-account.html"
-    - title: SSO(Single Sign-On) 구성
-      url: "/config-admin/configuring-sso.html"
   - title: 로그인 경고 메시지 설정
     url: "/config-admin/configuring-a-login-warning-message.html"
   - title: Insight Security 를 참조하십시오
@@ -125,17 +123,6 @@ entries:
       url: "/config-admin/editing-applications.html"
     - title: 응용 프로그램을 삭제하는 중입니다
       url: "/config-admin/deleting-an-application.html"
-  - title: OnCommand Insight 이상 징후 탐지 작동 방식
-    url: "/config-admin/about-oncommand-insight-anomaly-detection.html"
-    entries:
-    - title: 이상 징후 검출을 위한 애플리케이션 구성
-      url: "/config-admin/configuring-anomaly-detection-for-applications.html"
-    - title: 이상 섹션 사용
-      url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
-    - title: 이상 징후 탐지 모니터링 상태
-      url: "/config-admin/anomaly-detection-monitoring-status.html"
-    - title: 애플리케이션 성능 정책 생성
-      url: "/config-admin/creating-an-application-performance-policy.html"
   - title: 업무 엔티티 계층 구조
     url: "/config-admin/your-business-entities-hierarchy.html"
     entries:
@@ -274,17 +261,6 @@ entries:
   url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
 - title: SSL 인증서를 가져오는 중입니다
   url: "/config-admin/importing-an-ssl-certificate.html"
-- title: OnCommand Insight 이상 징후 탐지 작동 방식
-  url: "/config-admin/about-oncommand-insight-anomaly-detection.html"
-  entries:
-  - title: 이상 징후 검출을 위한 애플리케이션 구성
-    url: "/config-admin/configuring-anomaly-detection-for-applications.html"
-  - title: 이상 섹션 사용
-    url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
-  - title: 이상 징후 탐지 모니터링 상태
-    url: "/config-admin/anomaly-detection-monitoring-status.html"
-  - title: 애플리케이션 성능 정책 생성
-    url: "/config-admin/creating-an-application-performance-policy.html"
 - title: 업무 엔티티 계층 구조
   url: "/config-admin/your-business-entities-hierarchy.html"
   entries:
@@ -635,8 +611,6 @@ entries:
         url: "/config-admin/moving-mysql-data-using-the-command-line.html"
     - title: 주석 업데이트 적용
       url: "/config-admin/forcing-annotation-updates.html"
-    - title: 클라이언트 설정 구성
-      url: "/config-admin/configuring-client-settings.html"
     - title: 서버 리소스의 상태 확인
       url: "/config-admin/checking-the-status-of-server-resources.html"
     - title: 고스트 데이터 소스 찾기
@@ -688,11 +662,6 @@ entries:
           url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-business-entities.html"
         - title: User Data(사용자 데이터) 섹션을 사용하여 주석을 할당하거나 수정합니다
           url: "/config-admin/what-the-user-data-section-enables-you-to-do-with-annotations.html"
-      - title: 이상
-        url: "/config-admin/anomalies.html"
-        entries:
-        - title: 이상 섹션 사용
-          url: "/config-admin/what-the-anomalies-section-enables-you-to-do.html"
       - title: 전문가 뷰
         url: "/config-admin/expert-view.html"
         entries:

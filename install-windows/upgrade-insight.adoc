@@ -2,7 +2,7 @@
 permalink: install-windows/upgrade-insight.html 
 sidebar: sidebar 
 keywords:  
-summary: '일반적으로 모든 Insight 서버(Insight 서버, 데이터 웨어하우스 서버, 원격 수집 장치, 이더넷 모니터링 장치\)에서 업그레이드를 수행해야 합니다. 단, 이상 현상 감지 소프트웨어를 실행하는 서버는 예외입니다. OnCommand Insight의 새 릴리스에 대한 업그레이드 요구 사항은 항상 릴리스 노트를 참조하십시오.' 
+summary: '일반적으로 업그레이드는 모든 Insight 서버\(Insight 서버, 데이터 웨어하우스 서버, 원격 수집 장치\)에서 수행되어야 합니다. OnCommand Insight의 새 릴리스에 대한 업그레이드 요구 사항은 항상 릴리스 노트를 참조하십시오.' 
 ---
 = OnCommand Insight 업그레이드 중
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: '일반적으로 모든 Insight 서버(Insight 서버, 데이터 웨어
 
 
 [role="lead"]
-일반적으로 모든 Insight 서버(Insight 서버, 데이터 웨어하우스 서버, 원격 수집 장치, 이더넷 모니터링 장치)에서 업그레이드를 수행해야 합니다. 단, 이상 현상 감지 소프트웨어를 실행하는 서버는 예외입니다. OnCommand Insight의 새 릴리스에 대한 업그레이드 요구 사항은 항상 릴리스 노트를 참조하십시오.
+일반적으로 업그레이드는 모든 Insight 서버(Insight Server, Data Warehouse Server, Remote Acquisition Unit)에서 수행되어야 합니다. OnCommand Insight의 새 릴리스에 대한 업그레이드 요구 사항은 항상 릴리스 노트를 참조하십시오.
 
 달리 명시하지 않는 한, 요구 사항 및 절차는 Insight 7.x에서 Insight의 현재 버전으로 업그레이드하는 데 적용됩니다. 7.0 이전 버전에서 업그레이드하는 경우 계정 담당자에게 문의하십시오.

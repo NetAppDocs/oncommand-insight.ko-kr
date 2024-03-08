@@ -18,5 +18,3 @@ entries:
   url: "/faq/faq-integrating-insight-and-third-party-tools.html"
 - title: Data ONTAP 스토리지 IOPS
   url: "/faq/oci-faq-netapp-storage-iops.html"
-- title: 이상 징후 탐지
-  url: "/faq/faq-anomaly-detection.html"

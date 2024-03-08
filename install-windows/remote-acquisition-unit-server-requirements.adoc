@@ -2,7 +2,7 @@
 permalink: install-windows/remote-acquisition-unit-server-requirements.html 
 sidebar: sidebar 
 keywords: redhat 
-summary: '방화벽 뒤, 원격 사이트, 사설 네트워크 또는 다른 네트워크 세그먼트에 있는 SAN 장치에서 정보를 가져오려면 RAU(원격 획득 장치)\ 를 설치해야 합니다. RAU를 설치하기 전에 사용 환경이 RAU 운영 체제, CPU, 메모리 및 디스크 공간 요구 사항을 충족하는지 확인해야 합니다.' 
+summary: '방화벽 뒤, 원격 사이트, 사설 네트워크 또는 다른 네트워크 세그먼트에 있는 SAN 장치에서 정보를 가져오려면 RAU(원격 획득 장치)를 설치해야 합니다. RAU를 설치하기 전에 사용 환경이 RAU 운영 체제, CPU, 메모리 및 디스크 공간 요구 사항을 충족하는지 확인해야 합니다.' 
 ---
 = 원격 획득 장치 서버 요구 사항
 :allow-uri-read: 
@@ -22,7 +22,7 @@ summary: '방화벽 뒤, 원격 사이트, 사설 네트워크 또는 다른 네
  a| 
 운영 체제
  a| 
-최신 서비스 팩이 설치된 64비트 Microsoft Windows Server 2012, 2012 R2, 2016 또는 2019를 실행하는 컴퓨터
+최신 서비스 팩이 설치된 64비트 Microsoft Windows Server 2016, 2019 또는 2022를 실행하는 컴퓨터.
 
 
 
