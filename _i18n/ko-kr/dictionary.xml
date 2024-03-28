@@ -51,8 +51,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="24efa7ee4511563b16144f39706d594f" category="section-title">주의</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="96532acff98306bde184975084e9549c" category="inline-link">OnCommand Insight 7.3에 대한 고지 사항</block>
-  <block id="f4c7a3c5ae1df7a6c170973ba1bdce85" category="paragraph"><block ref="f4c7a3c5ae1df7a6c170973ba1bdce85" category="inline-link-rx"></block></block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="doc">릴리즈 노트</block>
   <block id="496375f0bbb802e5ea6f5a6fcba708e1" category="paragraph">OnCommand Insight 릴리스 정보는 문서 센터 외부에서 제공됩니다. NetApp Support 사이트 자격 증명을 사용하여 로그인하라는 메시지가 표시됩니다.</block>
   <block id="b1ff5704b48e42d700d43961dd415064" category="doc">상표</block>
@@ -7921,4 +7919,10 @@
   <block id="1767cf140ccb13b28bdcc76c42d20028" category="summary">설치 시 여러 OnCommand Insight 구성 요소, Insight Server 및 데이터 웨어하우스를 설치해야 합니다.</block>
   <block id="91d2987029cf3cc4274c5eb4680b41dc" category="inline-link-macro">릴리즈 노트.pdf</block>
   <block id="4a72f4d610aba1b283b741c8990f9bb9" category="paragraph"><block ref="698989a8d25ebae051898deae3187b3f" category="inline-link-macro-rx"></block> (새 창에서 열림)</block>
+  <block id="a025a7deda19d8febe29b4915330a80f" category="inline-link">OnCommand Insight 7.3.15에 대한 고지 사항</block>
+  <block id="3c68b49692fae1f44d5bcc3f3ff40570" category="paragraph"><block ref="3c68b49692fae1f44d5bcc3f3ff40570" category="inline-link-rx"></block></block>
+  <block id="1eeac4787b3b9277406496e9c0b0460d" category="inline-link">OnCommand Insight 7.3.14에 대한 고지 사항</block>
+  <block id="2d38b7c541c52f4778b0146ee5977422" category="paragraph"><block ref="2d38b7c541c52f4778b0146ee5977422" category="inline-link-rx"></block></block>
+  <block id="84cf7cbe773d4bdce52df2d271ec42ad" category="inline-link">OnCommand Insight 7.3.13에 대한 고지 사항</block>
+  <block id="7b06c1df3904beda719ace07d24e5d2e" category="paragraph"><block ref="7b06c1df3904beda719ace07d24e5d2e" category="inline-link-rx"></block></block>
 </blocks>
