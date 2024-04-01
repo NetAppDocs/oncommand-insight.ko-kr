@@ -1,0 +1,159 @@
+---
+sidebar: sidebar 
+permalink: task_config_telegraf_kubernetes.html 
+keywords: telegraf, installation, install, kubernetes 
+summary: Kubernetes 데이터 수집기 구성 
+---
+= Kubernetes Data Collector를 참조하십시오
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Insights는 이 데이터 수집기를 사용하여 Kubernetes Pod, 노드 및 컨테이너 메트릭을 수집합니다.
+
+
+
+== 설치
+
+Kubernetes 설치 지침은 를 참조하십시오 link:task_config_telegraf_agent.html#kubernetes["Agent 설치"] 페이지.
+
+
+NOTE: kubbe-state-metrics * 에 대한 정보가 로 이동되었습니다 link:task_config_telegraf_agent.html#kubernetes["Agent 설치"] 페이지.
+
+
+
+== 개체 및 카운터
+
+다음 개체와 해당 카운터가 수집됩니다.
+
+[cols="<.<,<.<,<.<,<.<"]
+|===
+| 오브젝트: | 식별자: | 특성: | 데이터 요소: 
+
+
+| Kubernetes 컨테이너 | 네임스페이스
+포드
+컨테이너
+클러스터 | Kubernetes 노드
+노드 이름
+노드 OS
+노드 UUID
+노드 IP | CPU 나노초
+CPU 사용량 나노코어
+메모리 주 페이지 오류
+메모리 상주 설정 크기(RSS)
+메모리 작업 집합
+메모리 페이지 오류
+메모리 사용량
+루트 파일 시스템을 사용할 수 있습니다
+루트 파일 시스템 용량입니다
+사용된 루트 파일 시스템입니다 
+
+
+| Kubernetes 노드 | Kubernetes 노드
+클러스터 | 노드 이름
+노드 OS
+노드 UUID
+노드 IP | CPU 사용량 나노코어
+CPU 사용량 나노초
+파일 시스템을 사용할 수 있습니다
+파일 시스템 합계
+파일 시스템이 사용되었습니다
+사용 가능한 메모리
+메모리 사용량
+메모리 주 페이지 오류
+메모리 페이지 오류
+메모리 상주 설정 크기(RSS)
+메모리 작업 집합
+네트워크 RX 오류(초당)
+네트워크 RX 바이트(초당)
+네트워크 TX 오류(초당)
+네트워크 TX 바이트(초당)
+런타임 이미지 파일 시스템을 사용할 수 있습니다
+런타임 이미지 파일 시스템이 사용되었습니다
+런타임 이미지 파일 시스템 용량입니다 
+
+
+| Kubernetes Pod를 클릭합니다 | 네임스페이스
+포드
+클러스터 | Kubernetes 노드
+노드 이름
+노드 IP
+노드 OS
+노드 UUID | 네트워크 TX 바이트(초당)
+네트워크 TX 오류(초당)
+네트워크 RX 바이트(초당)
+네트워크 RX 오류(초당) 
+
+
+| Kubernetes Pod 볼륨 | 볼륨
+포드
+클러스터
+네임스페이스 | Kubernetes 노드
+노드 이름
+노드 UUID
+노드 IP
+노드 OS | 사용 가능
+용량
+사용됨 
+
+
+| Kubernetes 시스템 컨테이너 | 시스템 컨테이너
+Kubernetes 노드
+클러스터 | 노드 이름
+노드 IP
+노드 OS
+노드 UUID | CPU 사용량 나노코어
+CPU 사용량 코어 나노초
+메모리 주 페이지 오류
+메모리 페이지 오류
+메모리 상주 설정 크기(RSS)
+메모리 사용량
+메모리 작업 집합
+루트 파일 시스템을 사용할 수 있습니다
+루트 파일 시스템 용량입니다
+로그 파일 시스템을 사용할 수 있습니다
+파일 시스템 용량을 기록합니다 
+|===
+
+
+== 문제 해결
+
+[cols="2*"]
+|===
+| 문제: | 다음을 시도해 보십시오. 
+
+
+| Kubernetes 에이전트 설치 프로그램 명령을 실행했지만 다음을 통해 실행되는 Telegraf 에이전트 포드가 표시되지 않습니다.
+
+ sudo kubectl -- 네임스페이스 ci-monitoring get pods | DemonSet 배포 중 오류가 있는지 확인합니다.
+
+ sudo kubectl -- namespace ci-monitoring ds Telegraf-DS에 대해 설명합니다
+
+SecurityContextConstraints 와 관련된 오류가 있으면 다음을 실행합니다.
+
+1.Telegraf DemonSet YAML을 생성합니다
+
+ sudo kubectl -- namespace ci-monitoring get DS Telegraf -DS -o YAML > /tmp/Telegraf -DS.YAML
+
+2.Telegraf 서비스를 중지합니다
+
+ sudo kubectl -- namespace ci-monitoring delete DS Telegraf -DS
+
+필요한 SecurityContextConstraint를 만듭니다("데이터를 수집하도록 Agent 구성" 섹션 참조).
+
+4.Telegraf DemonSet을 다시 만듭니다 
+
+
+| Kubernetes 클러스터에 대한 정보를 가져오기 위해 Telegraf를 구성했지만 Cloud Insights에 아무 정보도 표시되지 않습니다. 내가 구성한 Kubernetes 입력 플러그인과 관련된 Telegraf 로그 파일에서 "잘못된 헤더 필드 값" 오류가 표시됩니다. | 참조된 bearer_token 파일에 후행 줄 바꿈이 없는지 확인합니다. 확인하려면 다음 명령을 실행하고 0이 반환되는지 확인합니다.
+
+ 테일 - C1 <bearer_token_file> 
+|===
+추가 정보는 에서 찾을 수 있습니다 link:concept_requesting_support.html["지원"] 페이지.
