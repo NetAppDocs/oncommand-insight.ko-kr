@@ -75,9 +75,9 @@ OnCommand Unified Manager는 스토리지 어레이 "장치 관리" 계층에서
 
 
 
-== Automation Storefront에 언급된 OnCommand Insight 보조 ETL은 무엇입니까?
+== OnCommand Insight 보조 ETL은 무엇입니까?
 
-일부 OnCommand Insight 자동화 Storefront 보고서 다운로드에서 참조되는 "보조 ETL" 요구 사항은 캡처된 데이터의 추가 ETL(Extract, Transform, Load)을 호출하는 데 사용되는 개발된 전문 서비스 구현을 나타냅니다. 이 구현은 OnCommand Insight 데이터 웨어하우스로 모을 수 있습니다.
+"2차 ETL"은 OnCommand Insight 데이터 웨어하우스에 입력하기 위해 캡처된 데이터의 추가 추출, 변환 및 로드(ETL)를 호출하는 데 사용되는 개발된 전문 서비스 구현을 의미합니다.
 
 보조 ETL 프로세스의 주요 목적은 "배치" 데이터를 프리페치하여 복잡한 보고서를 더 빠르게 생성하거나 매일 실행되도록 예약하는 것입니다.
 

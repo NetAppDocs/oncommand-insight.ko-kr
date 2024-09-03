@@ -208,16 +208,6 @@ entries:
     url: "/howto/processing-cloud-cost-data-in-insight.html"
   - title: Insight의 클라우드 비용 데이터 보고
     url: "/howto/reporting-on-cloud-cost-data-task.html"
-- title: ServiceNow와 통합
-  url: "/howto/integrating-with-servicenow.html"
-  entries:
-  - title: Service Now 통합을 위한 준비 및 사전 요구 사항
-    url: "/howto/preparation-and-prerequisites-for-servicenow-integration.html"
-    entries:
-    - title: ServiceNow Python 커넥터 다운로드
-      url: "/howto/downloading-the-servicenow-connector.html"
-  - title: 통합용 ServiceNow 구성
-    url: "/howto/configuring-servicenow-for-integration.html"
     entries:
     - title: 권한 상승 역할
       url: "/howto/servicenow-integration-elevate-role.html"
