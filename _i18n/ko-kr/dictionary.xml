@@ -7849,4 +7849,8 @@
   <block id="bcc7ff777637bae2501eae2f8ccdf7d1" category="paragraph">"2차 ETL"은 OnCommand Insight 데이터 웨어하우스에 입력하기 위해 캡처된 데이터의 추가 추출, 변환 및 로드(ETL)를 호출하는 데 사용되는 개발된 전문 서비스 구현을 의미합니다.</block>
   <block id="85dd174d18eb0c4d3fd90177f2a31485" category="paragraph">OCI와 타사 CMDB, 청구 및 오케스트레이션 기술의 통합 기능은 성공을 위한 핵심 가치이며 WFA도 예외는 아닙니다. NetApp의 프로페셔널 서비스는 현재 WFA 워크플로우 및 OCI와 수많은 성공적인 통합을 수행했습니다.</block>
   <block id="b220d44db6780bcb3edb81b057ad8db8" category="paragraph">예, OCI와 함께 제공된 여러 보고서가 있으며 사용 사례를 기반으로 당사의 프로페셔널 서비스 카탈로그에 여러 보고서가 있습니다. 또한 데이터 웨어하우스 모듈에는 사용자가 자신의 보고서를 만들 수 있는 Cognos 보고서 작성 도구 제품군이 함께 제공됩니다.</block>
+  <block id="082d4fc1b30e86ee41f3aee683450d1e" category="summary">데이터 수집기(데이터 소스) 지원 매트릭스는 지원되는 데이터 수집기에 대한 정보를 제공합니다.</block>
+  <block id="2fcf0efc6b86f1c82038c0503c617ffb" category="doc">OnCommand Insight 데이터 수집기 지원 매트릭스</block>
+  <block id="0509ce941df7b1b926535ae26a759985" category="paragraph">Data Collector Support Matrix는 공급업체 및 모델 정보를 포함하여 OCI에서 지원하는 데이터 수집기에 대한 참조를 제공합니다.</block>
+  <block id="929760a91ec2d785d90375c3e050830f" category="paragraph">이 페이지는 자리 표시자입니다.</block>
 </blocks>
