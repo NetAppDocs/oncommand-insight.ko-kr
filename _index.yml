@@ -1,5 +1,8 @@
 ---
 indexpage:
+  title: OnCommand Insight 설명서
+  summary: OnCommand Insight은 사내 환경, 퍼블릭 및 프라이빗 클라우드에서 하이브리드 IT 인프라의 운영 관리를 단순화합니다.
+  keywords: oci, insight
   lead: OnCommand Insight은 사내 환경, 퍼블릭 및 프라이빗 클라우드에서 하이브리드 IT 인프라의 운영 관리를 단순화합니다.
   tiles:
   - title: 시작하십시오

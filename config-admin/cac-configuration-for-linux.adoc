@@ -13,12 +13,14 @@ summary: Linux OnCommand Insight 서버에서 CAC를 활성화하려면 몇 가�
 [role="lead"]
 Linux OnCommand Insight 서버에서 CAC를 활성화하려면 몇 가지 수정이 필요합니다.
 
+루트 CA를 truststore로 가져와야 합니다.
+
 
 
 == 단계
 
 . 로 이동합니다 `/opt/netapp/oci/conf/`
 . 편집 `wildfly.properties` 의 값을 변경합니다 `CLIENT_AUTH_ENABLED` "참"으로
-. 아래에 있는 "루트 인증서"를 가져옵니다 `/opt/netapp/oci/wildfly/standalone/configuration/server.keystore`
+. 에 있는 ""루트 인증서""를 가져옵니다 `/opt/netapp/oci/wildfly/standalone/configuration/server.truststore`
 . 서버를 다시 시작합니다
 

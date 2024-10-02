@@ -13,6 +13,13 @@ summary: 새 버전으로 업그레이드하려면 기존 버전의 원격 획�
 [role="lead"]
 새 버전으로 업그레이드하려면 기존 버전의 원격 획득 장치 소프트웨어를 제거해야 합니다. 사용자 환경의 모든 원격 획득 장치 서버에서 이 작업을 수행해야 합니다.
 
+[NOTE]
+====
+* OnCommand Insight를 제거하기 전에 볼트를 백업하는 것이 좋습니다 *. * OnCommand Insight를 업그레이드할 경우 볼트를 백업해야 합니다 *.
+
+자세한 내용은 지침을 link:../config-admin\/security-management.html["SecurityAdmin 도구"]참조하십시오.
+
+====
 
 
 == 단계

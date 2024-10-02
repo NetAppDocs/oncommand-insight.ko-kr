@@ -99,8 +99,6 @@ entries:
       entries:
       - title: 데이터 웨어하우스 업그레이드 중에 사용자 정의 Cognos 설정 유지
         url: "/install-windows/preserving-custom-settings-when-upgrading-data-warehouse.html"
-    - title: 보안 구성 백업
-      url: "/install-windows/back-up-the-security-configuration.html"
     - title: 원격 획득 장치 서버 업그레이드
       url: "/install-windows/upgrading-remote-acquisition-servers.html"
   - title: 업그레이드 후 작업 완료

@@ -39,6 +39,14 @@ OnCommand Insight 서버는 명령줄을 사용하여 설치됩니다.
 +
 `sudo ./oci-<version>-linux-x86_64/oci-install.sh`
 
++
+CentOS 9 Stream, Red Hat Enterprise Linux 9.4 또는 Oracle Linux 9.4에 Insight Server를 설치할 때는 먼저 설치 관리자 파일이 포함된 디렉토리로 변경한 다음 "--install-mysql-pendencies" 명령줄 옵션을 사용하여 install 명령을 실행해야 합니다.
+
++
+....
+cd /tmp/oci-7.3.16.1.297-linux-x86_64
+sudo ./oci-install.sh --install-mysql-dependencies
+....
 . 사용권 계약을 읽고 동의하며 화면의 지시를 따릅니다.
 . Insight 소비 라이센스 모델을 사용하는 경우 사용 정보를 NetApp에 전송할 수 있어야 합니다. 를 입력합니다 `Y` 메시지가 표시됩니다.
 
@@ -48,3 +56,24 @@ OnCommand Insight 서버는 명령줄을 사용하여 설치됩니다.
 == 결과
 
 모든 메시지에 응답하면 설치가 시작되고 설치된 응용 프로그램에 따라 약 10분 정도 소요됩니다.
+
+. 원격 획득 장치(RAU)를 설치할 경우 SecurityAdmin 도구를 실행하여 _acquisition_user에 대한 암호를 만들어야 합니다. RAU를 설치할 때 이 암호가 필요합니다.
++
+참고: 이 암호를 만든 경우 아래에 설명된 대로 서버와 RAU를 동기화하지 않아도 됩니다.
+
+
+
+
+
+== DWH 및 RAU와 서버 동기화
+
+
+IMPORTANT: 원격 수집 장치 및/또는 데이터 웨어하우스를 설치한 후에는 RAU/DWH를 OnCommand Insight 서버와 * 동기화해야 합니다. 아래 설명된 단계를 따르십시오.
+
+link:../install-windows/installing-a-remote-acquisition-unit-rau.html#synchronize-server-and-rau["서버 및 RAU 동기화(Windows)"]
+
+link:../install-windows/installing-the-oncommand-insight-data-warehouse-and-reporting.html#synchronize-server-and-dwh["서버 및 DWH 동기화(Windows)"]
+
+link:../install-linux/installing-a-remote-acquisition-unit-rau-linux.html#synchronize-server-and-rau["서버와 RAU 동기화(Linux)"]
+
+link:../install-linux/installing-oncommand-insight-data-warehouse-linux.html#synchronize-server-and-dwh["서버와 DWH 동기화(Linux)"]

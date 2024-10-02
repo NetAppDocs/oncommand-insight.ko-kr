@@ -51,7 +51,7 @@ Linux의 경우 를 수정합니다 `clientAuth` 매개 변수 in `/opt/netapp/o
 . CA(인증 기관)를 데이터 웨어하우스 trustore에 추가합니다.
 +
 .. 명령 창에서 로 이동합니다 `..\SANscreen\wildfly\standalone\configuration`.
-.. 를 사용합니다 `keytool` 신뢰할 수 있는 CA를 나열하는 유틸리티: `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -keystore server.trustore -storepass changeit`
+..  `keytool`유틸리티를 사용하여 신뢰할 수 있는 CA 나열: `C:\Program Files\SANscreen\java64\bin\keytool.exe -list -keystore server.trustore -storepass <password>` + server_trustore의 암호 설정 또는 변경에 대한 자세한 내용은 설명서를 참조하십시오link:../config-admin/securityadmin-tool.html["SecurityAdmin 을 클릭합니다"].
 +
 각 줄의 첫 번째 단어는 CA 별칭을 나타냅니다.
 

@@ -17,6 +17,13 @@ summary: 제공된 체크리스트를 사용하여 업그레이드를 준비하�
 
 == 업그레이드 준비 체크리스트(필수)
 
+[NOTE]
+====
+* OnCommand Insight를 업그레이드하기 전에 볼트 * 를 백업해야 합니다.
+
+자세한 내용은 지침을 link:../config-admin\/security-management.html["SecurityAdmin 도구"]참조하십시오.
+
+====
 |===
 
 

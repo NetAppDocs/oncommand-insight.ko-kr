@@ -13,6 +13,13 @@ summary: Insight 업그레이드를 시작하기 전에 업그레이드 프로�
 [role="lead"]
 Insight 업그레이드를 시작하기 전에 업그레이드 프로세스를 이해하는 것이 중요합니다. 대부분의 Insight 버전에서 업그레이드 프로세스는 동일합니다.
 
+[NOTE]
+====
+* OnCommand Insight를 업그레이드하기 전에 볼트 * 를 백업해야 합니다.
+
+자세한 내용은 지침을 link:../config-admin\/security-management.html["SecurityAdmin 도구"]참조하십시오.
+
+====
 Insight의 업그레이드 프로세스에는 다음과 같은 상위 작업이 포함됩니다.
 
 * 설치 패키지를 다운로드합니다

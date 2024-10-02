@@ -19,6 +19,13 @@ summary: 모든 필수 작업을 완료한 후 Insight 서버에 로그인하여
 
 Insight 설치 패키지는 서버에 있어야 합니다.
 
+[NOTE]
+====
+* OnCommand Insight를 업그레이드하기 전에 볼트 * 를 백업해야 합니다.
+
+자세한 내용은 지침을 link:../config-admin\/security-management.html["SecurityAdmin 도구"]참조하십시오.
+
+====
 
 
 == 단계

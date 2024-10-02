@@ -13,6 +13,13 @@ summary: 업그레이드하기 전에 데이터 웨어하우스 소프트웨어�
 [role="lead"]
 업그레이드하기 전에 데이터 웨어하우스 소프트웨어를 제거해야 합니다.
 
+[NOTE]
+====
+* OnCommand Insight를 제거하기 전에 볼트를 백업하는 것이 좋습니다 *. * OnCommand Insight를 업그레이드할 경우 볼트를 백업해야 합니다 *.
+
+자세한 내용은 지침을 link:../config-admin\/security-management.html["SecurityAdmin 도구"]참조하십시오.
+
+====
 
 
 == 시작하기 전에

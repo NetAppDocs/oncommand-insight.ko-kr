@@ -31,7 +31,7 @@ summary: 업그레이드 후 OnCommand Insight 웹 UI를 열면 인증 경고가
 
 . 키 저장소의 내용을 나열합니다. `C:\Program Files\SANscreen\java64\bin>keytool.exe -list -v -keystore "c:\Program Files\SANscreen\wildfly\standalone\configuration\server.keystore"`
 +
-암호를 묻는 메시지가 나타나면 를 입력합니다 `changeit`.
+link:../config-admin/securityadmin-tool.html["SecurityAdmin 을 클릭합니다"]키 저장소 암호 설정 또는 변경에 대한 자세한 내용은 설명서를 참조하십시오.
 
 +
 키 저장소에 인증서가 하나 이상 있어야 합니다. `ssl certificate`.

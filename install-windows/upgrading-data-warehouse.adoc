@@ -21,29 +21,33 @@ DWH(데이터 웨어하우스)에서는 인라인 업그레이드를 지원하�
 
 [NOTE]
 ====
-DWH를 업그레이드하면 _SecurityAdmin_tool 볼트 백업이 포함된 폴더가 삭제됩니다. DWH를 업그레이드하기 전에 볼트를 백업하는 것이 좋습니다. 참조의 경우 기본 볼트 폴더는 다음과 같습니다.
+* DWH를 업그레이드하기 전에 볼트 * 를 백업해야 합니다.
 
-* 볼트 폴더 (사용 중인 볼트):``%SANSCREEN_HOME%\wildfly\standalone\configuration\vault``
-* 볼트 백업: `%SANSCREEN_HOME%\backup\vault`
-
-
-을 참조하십시오 http://ie-docs.rtp.openeng.netapp.com/oci-73_ram/topic/com.netapp.doc.oci-acg/GUID-E3351676-2088-4767-AAB5-CB1D8476291C.html?resultof=%22%76%61%75%6c%74%22%20["데이터 웨어하우스의 보안 관리"] 를 참조하십시오.
+자세한 내용은 지침을 link:../config-admin\/security-management.html["SecurityAdmin 도구"]참조하십시오.
 
 ====
 
 
 == 단계
 
+데이터 웨어하우스를 업그레이드할 때 다음 작업을 수행해야 합니다.
+
+. DWH 7.3.16을 설치한 후 다음 순서로 볼트와 데이터베이스를 복원합니다.
++
+.. 볼트
+.. 데이터베이스
+
+
 . Windows 로컬 관리자 권한이 있는 계정을 사용하여 DWH 서버에 로그인합니다.
 . DWH 포털 인터페이스를 사용하여 DWH DB 및 보고서를 백업합니다.
-. 서버가 기본값이 아닌 보안 구성을 사용하는 경우 보안 구성을 백업합니다.
+. 볼트를 백업합니다. link:../config-admin/security-management.html["SecurityAdmin 을 클릭합니다"]설명서를 참조하십시오.
 . 서버에서 DWH 소프트웨어를 제거합니다.
 . 메모리를 구성 요소 제거하기 위해 서버를 재부팅합니다.
 . 새 버전의 DWH를 서버에 설치합니다.
 +
 설치 시간은 약 2시간입니다. 모든 기본값을 그대로 두는 것이 가장 좋습니다.
 
-. 기본이 아닌 보안 구성을 DWH 서버로 복원합니다.
+. 볼트를 DWH 서버로 복원합니다.
 . DWH 데이터베이스를 서버로 복원합니다.
 
 

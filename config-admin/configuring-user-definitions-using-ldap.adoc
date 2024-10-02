@@ -37,9 +37,8 @@ LDAP 사용자는 * Admin * > menu:Setup [Users](설정 [사용자]) 목록에 �
 . Insight 도구 모음에서 * Admin * 을 클릭합니다.
 . 설정 * 을 클릭합니다.
 . 사용자 * 탭을 클릭합니다.
-. 여기에 표시된 것처럼 LDAP 섹션으로 스크롤합니다.
-+
-image::../media/ldap-setup.gif[LDAP 설정]
+. LDAP 섹션으로 스크롤합니다.
+
 
 . LDAP 사용자 인증 및 권한 부여를 허용하려면 * LDAP 활성화 * 를 클릭합니다.
 . 다음 필드에 내용을 입력합니다.

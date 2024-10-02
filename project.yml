@@ -20,5 +20,7 @@ sidebar:
   - section: reporting
   - section: faq
   - section: howto
+  - title: Data Collector 지원 매트릭스
+    url: "/config-admin/reference_data_collector_support_matrix.html"
   - title: 법적 고지
     url: "/legal-notices.html"

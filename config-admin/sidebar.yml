@@ -30,8 +30,8 @@ entries:
       url: "/config-admin/deleting-a-user-account.html"
   - title: 로그인 경고 메시지 설정
     url: "/config-admin/configuring-a-login-warning-message.html"
-  - title: Insight Security 를 참조하십시오
-    url: "/config-admin/security-management.html"
+  - title: Insight 보안(SecurityAdmin 툴)
+    url: "/config-admin/securityadmin-tool.html"
     entries:
     - title: Insight 서버의 보안 관리
       url: "/config-admin/managing-security-on-the-insight-server.html"
@@ -59,24 +59,10 @@ entries:
       url: "/config-admin/cac-configuration-for-linux.html"
     - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
       url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-    - title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
-      url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
     - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
       url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-    - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
-      url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
     - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
       url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
-  - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
-    url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-  - title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
-    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
-  - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
-    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
-    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
-  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
-    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
   - title: SSL 인증서를 가져오는 중입니다
     url: "/config-admin/importing-an-ssl-certificate.html"
   - title: Insight 데이터베이스의 주별 백업 설정
@@ -241,22 +227,14 @@ entries:
     url: "/config-admin/cac-configuration-for-linux.html"
   - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
     url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-  - title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
-    url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
   - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
     url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-  - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
-    url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
   - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
     url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
 - title: 스마트 카드 및 인증서 로그인을 위한 데이터 웨어하우스 구성
   url: "/config-admin/host-configuration-for-smart-card-and-certificate-login-dwh.html"
-- title: 스마트 카드 및 인증서 로그인을 위한 Cognos 구성(OnCommand Insight 7.3.5 ~ 7.3.9)
-  url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-5-through-7-3-9.html"
 - title: 스마트 카드 및 인증서 로그인에 대한 Cognos 구성(OnCommand Insight 7.3.10 이상)
   url: "/config-admin/cognos-configuration-for-smart-card-and-certificate-login-7-3-10-and-later.html"
-- title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.5 ~ 7.3.9)
-  url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-5-to-7-3-9.html"
 - title: Cognos 및 DWH에 대해 CA 서명 SSL 인증서 가져오기(Insight 7.3.10 이상)
   url: "/config-admin/importing-ca-signed-ssl-certificates-for-cognos-and-dwh-insight-7-3-10-and-later.html"
 - title: SSL 인증서를 가져오는 중입니다
@@ -703,3 +681,5 @@ entries:
     url: "/config-admin/nas-path-for-vms.html"
   - title: 시간 시리즈로서의 용량
     url: "/config-admin/capacity-as-time-series.html"
+- title: Data Collector 지원 매트릭스
+  url: "/config-admin/reference_data_collector_support_matrix.html"

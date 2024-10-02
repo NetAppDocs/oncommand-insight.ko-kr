@@ -13,6 +13,13 @@ summary: 서버에 로그인한 후 OnCommand Insight 서버 업데이트를 확
 [role="lead"]
 서버에 로그인한 후 OnCommand Insight 서버 업데이트를 확인할 수 있습니다.
 
+[NOTE]
+====
+OnCommand Insight를 업그레이드하기 전에 볼트와 데이터베이스를 백업하는 것이 좋습니다.
+
+link:../config-admin\/security-management.html["SecurityAdmin 도구"]볼트에 대한 자세한 내용은 지침을 참조하십시오.
+
+====
 
 
 == 단계

@@ -13,6 +13,13 @@ summary: Insight 서버 소프트웨어를 업그레이드한 후에는 원격 �
 [role="lead"]
 Insight 서버 소프트웨어를 업그레이드한 후에는 원격 구입 소프트웨어를 업그레이드해야 합니다.
 
+[NOTE]
+====
+DWH를 업그레이드하기 전에 볼트와 데이터베이스를 백업하는 것이 좋습니다.
+
+link:../config-admin\/security-management.html["SecurityAdmin 도구"]볼트에 대한 자세한 내용은 지침을 참조하십시오.
+
+====
 
 
 == 단계

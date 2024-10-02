@@ -46,7 +46,8 @@ SSL 인증서를 추가하여 데이터 웨어하우스 및 Cognos 환경에 대
 . Cognos에서 인증서 암호화 요청을 생성합니다. 관리자 CMD 창에서 다음을 실행합니다.
 +
 .. CD `“\Program Files\sanscreen\cognos\analytics\bin”`
-.. `ThirdPartyCertificateTool.bat -java:local -c -e -p NoPassWordSet -a RSA -r c:\temp\encryptRequest.csr -d “CN=server.domain.com,O=NETAPP,C=US” -H “server.domain.com” -I “ipaddress”`. 참고: 여기서 -H와 -I는 DNS 및 ipaddress와 같은 subjectAltNames를 추가합니다.
+.. `ThirdPartyCertificateTool.bat -java:local -c -e -p <password> -a RSA -r c:\temp\encryptRequest.csr -d “CN=server.domain.com,O=NETAPP,C=US” -H “server.domain.com” -I “ipaddress”`.. 참고: 여기서 -H와 -I는 DNS 및 ipaddress와 같은 subjectAltNames를 추가합니다.
+.. <password>의 경우 _/SANscreen/bin/cognos_info.dat_file의 암호를 사용합니다.
 
 
 . 를 엽니다 `c:\temp\encryptRequest.csr` 생성된 콘텐츠를 파일로 만들어 복사합니다.
@@ -93,14 +94,16 @@ FQDN.p7b 파일이 다운로드됩니다
 . 관리 CMD 프롬프트를 사용하여 최신 Cognos 인증서를 cognos.crt로 내보냅니다.
 +
 .. CD "'C:\Program Files\SANscreen"
-.. java\bin\keytool.exe -exportcert -file c:\temp\cognos.crt -keystore cognos\analytics\configuration\certs\CAMKeystore-storetype pkcs12-storepass NoPassWordSet-alias encryption
+.. java\bin\keytool.exe - exportcert-file c:\temp\cognos.crt-keystore cognos\analysis\configuration\cert\caMKeystore-storetype pkcs12 - storepass <password>-alias 암호화
+.. <password>의 경우 _/SANscreen/bin/cognos_info.dat_file의 암호를 사용합니다.
 
 
 . 에서 DWH 서버 트뤼스토어를 백업합니다``..\SANscreen\wildfly\standalone\configuration\server.trustore``
 . 관리 CMD 프롬프트 창을 사용하여 "'c:\temp\cognos.crt""를 DWH trustore로 가져와서 Cognos와 DWH 간에 SSL 통신을 설정합니다.
 +
 .. CD "'C:\Program Files\SANscreen"
-.. java\bin\keytool.exe - importcert -file c:\temp\cognos.crt -keystore wandiderfly\standalone\configuration\server.trutstore -storephass changeit -alias coclnos3rdca
+.. java\bin\keytool.exe -importcert -file c:\temp\cognos.crt -keystore wildfly\standalone\configuration\server.trutstore -storepass <password> -alias cognos3rdca
+.. <password>의 경우 _/SANscreen/bin/cognos_info.dat_file의 암호를 사용합니다.
 
 
 . SANscreen 서비스를 다시 시작합니다.
@@ -108,7 +111,7 @@ FQDN.p7b 파일이 다운로드됩니다
 . 'sl 인증서'만 변경되고 기본 Cognos 인증서는 변경되지 않은 경우에도 다음 단계를 수행해야 합니다. 그렇지 않으면 Cognos가 새 SANscreen 인증서에 대해 불만을 제기하거나 DWH 백업을 생성할 수 없습니다.
 +
 .. `cd “%SANSCREEN_HOME%cognos\analytics\bin\”`
-.. `“%SANSCREEN_HOME%java64\bin\keytool.exe” -exportcert -file “c:\temp\sanscreen.cer” -keystore “%SANSCREEN_HOME%wildfly\standalone\configuration\server.keystore” -storepass changeit -alias “ssl certificate”`
+.. `“%SANSCREEN_HOME%java64\bin\keytool.exe” -exportcert -file “c:\temp\sanscreen.cer” -keystore “%SANSCREEN_HOME%wildfly\standalone\configuration\server.keystore” -storepass <password> -alias “ssl certificate”`
 .. `ThirdPartyCertificateTool.bat -java:local -i -T -r “c:\temp\sanscreen.cer”`
 
 

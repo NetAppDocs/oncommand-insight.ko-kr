@@ -45,6 +45,14 @@ summary: '설치는 자동으로 포함되며 OnCommand Insight 데이터 웨어
 +
 `sudo ./oci-dwh-<version>-linux-x86_64/oci-install.sh`
 
++
+CentOS 9 Stream, Red Hat Enterprise Linux 9.4 또는 Oracle Linux 9.4에 Insight Server 또는 Data Warehouse를 설치할 때는 먼저 설치 관리자 파일이 포함된 디렉토리로 변경한 다음 "--install-mysql-pendiences" 명령줄 옵션을 사용하여 install 명령을 실행해야 합니다.
+
++
+....
+cd /tmp/oci-7.3.16.1.297-linux-x86_64
+sudo ./oci-install.sh --install-mysql-dependencies
+....
 . 사용권 계약을 읽고 동의하며 화면의 지시를 따릅니다.
 
 
@@ -53,3 +61,23 @@ summary: '설치는 자동으로 포함되며 OnCommand Insight 데이터 웨어
 == 결과
 
 모든 메시지에 응답하면 설치가 시작되고 설치된 응용 프로그램에 따라 약 10분 정도 소요됩니다.
+
+
+
+== 서버와 DWH를 동기화합니다
+
+
+IMPORTANT: 데이터 웨어하우스를 설치한 후에는 * 데이터 웨어하우스를 OnCommand Insight 서버와 * 동기화해야 합니다. 다음 단계를 수행하십시오.
+
+. OnCommand Insight 서버 시스템에서 * SecurityAdmin * 도구를 대화형 모드로 시작합니다
++
+ securityadmin -i
+. _inventory_and_dwh_internal_users의 암호를 원하는 암호로 변경합니다. * 이 암호를 기록해 두십시오 * 아래 필요한 경우.
+. DWH 서비스를 다시 시작합니다
+. On * 각 커넥터 * 는 대화형 모드에서 * SecurityAdmin * 도구를 시작합니다. 위의 2단계에서 기록한 암호가 필요합니다.
++
+ securityadmin -i
+. _inventory_and_dwh_internal_users의 암호를 2단계에서 사용한 암호로 변경합니다.
+. 커넥터에서 서비스를 다시 시작합니다.
+. 2단계에서 _inventory_and_dwh_internal_users 암호를 사용하여 DWH에 커넥터를 추가합니다
+

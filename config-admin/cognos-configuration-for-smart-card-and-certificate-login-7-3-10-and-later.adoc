@@ -38,17 +38,20 @@ Cognos 서버에 대한 스마트 카드(CAC) 및 인증서 로그인을 지원�
 . Cognos Trustore에 CA(인증 기관)를 추가합니다.
 +
 .. 명령 창에서 로 이동합니다 `..\SANscreen\cognos\analytics\configuration\certs\`
-.. 를 사용합니다 `keytool` 신뢰할 수 있는 CA를 나열하는 유틸리티: `..\..\ibm-jre\jre\bin\keytool.exe -list -keystore CAMKeystore.jks -storepass NoPassWordSet`
+.. 유틸리티를 사용하여 `keytool` 신뢰할 수 있는 CA를 나열하십시오: '.\..\IBM-JRE\JRE\bin\keytool.exe -list-keystore CAMKeystore.jks-storepass <password>
+
+
 +
 각 줄의 첫 번째 단어는 CA 별칭을 나타냅니다.
 
++
 .. 적합한 파일이 없는 경우 CA 인증서 파일(일반적으로 A)을 제공합니다 `.pem` 파일.
 .. OnCommand Insight의 신뢰할 수 있는 CA와 함께 고객의 CA를 포함하려면 으로 이동합니다 `..\SANscreen\cognos\analytics\configuration\certs\`.
 .. 를 사용합니다 `keytool` 을(를) 가져오는 유틸리티입니다 `.pem` 파일: `..\..\ibm-jre\jre\bin\keytool.exe -importcert -keystore CAMKeystore.jks -alias my_alias -file 'path/to/my.pem' -v -trustcacerts`
 +
-`my_alias` 는 일반적으로 에서 CA를 쉽게 식별하는 별칭입니다``keytool -list`` 작동.
+`my_alias` 는 일반적으로 작업에서 CA를 쉽게 식별할 수 있는 별칭입니다.``keytool -list``
 
-.. 암호를 묻는 메시지가 나타나면 를 입력합니다 `NoPassWordSet`.
+.. 암호를 입력하라는 메시지가 나타나면 _/SANscreen/bin/cognos_info.dat_file에서 암호를 입력합니다.
 .. 답변 `yes` 인증서를 신뢰할 수 있는 것인지 묻는 메시지가 표시됩니다.
 
 

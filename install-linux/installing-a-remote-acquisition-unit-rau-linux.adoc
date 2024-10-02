@@ -55,3 +55,24 @@ OnCommand Insight 환경에 하나 이상의 원격 획득 장치(RU)를 설치�
 모든 메시지에 응답하면 설치가 시작되고 설치된 응용 프로그램에 따라 약 10분 정도 소요됩니다.
 
 
+
+데이터 획득이 시작되면 모든 설정이 완료됩니다. 아래에 설명된 대로 서버와 RAU를 동기화하지 않아도 됩니다.
+
+
+
+== 서버와 RAU를 동기화합니다
+
+
+IMPORTANT: 원격 획득 장치를 설치한 후 데이터 획득이 시작되지 않으면 RAU를 OnCommand Insight 서버와 동기화합니다. 다음 단계를 수행하십시오.
+
+. OnCommand Insight 서버 시스템에서 * SecurityAdmin * 도구를 대화형 모드로 시작합니다
++
+ securityadmin -i
+. Insight Server의 _acquisition_user 암호를 선택한 암호로 변경합니다. * 이 암호를 기록해 두십시오 * 아래 필요한 경우.
+. 서버/Lau를 다시 시작합니다.
+. RAU(원격 수집 장치) 시스템에서 대화식 모드에서 * SecurityAdmin * 도구를 시작합니다. 위의 2단계에서 기록한 암호가 필요합니다.
++
+ securityadmin -i
+. acquisition_user의 암호를 2단계에서 사용한 암호로 변경합니다.
+. RAU를 다시 시작합니다.
+

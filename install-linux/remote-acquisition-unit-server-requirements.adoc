@@ -24,9 +24,9 @@ summary: '방화벽 뒤, 원격 사이트, 사설 네트워크 또는 다른 네
  a| 
 다음 중 하나의 라이센스 버전을 실행하는 컴퓨터, 다른 응용 프로그램 수준 소프트웨어를 실행하지 않는 컴퓨터:
 
-* Red Hat Enterprise Linux 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.1, 8.2, 8.3, 8.4, 8.5, 8.8, 9.2
-* CentOS 7.2, 7.5, 7.6, 7.7, 7.8, 7.9, CentOS 8 스트림, CentOS 9 스트림
-* Oracle Enterprise Linux 7.5, 7.6, 7.7, 7.8, 7.9, 8.1, 8.2, 8.3, 8.4, 8.5, 8.8
+* Red Hat Enterprise Linux 7.9, 8.10, 9.4
+* CentOS 8 스트림, CentOS 9 스트림
+* Oracle Enterprise Linux 7.9, 8.10, 9.4
 
 
 전용 서버가 권장됩니다.
