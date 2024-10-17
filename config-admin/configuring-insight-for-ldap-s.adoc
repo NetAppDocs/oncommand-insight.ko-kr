@@ -17,6 +17,9 @@ LDAP 또는 보안 LDAP(LDAPS)와 함께 사용하도록 Insight를 구성하기
 
 모든 보안 Active Directory(예: LDAPS) 사용자의 경우 인증서에 정의된 대로 AD 서버 이름을 정확히 사용해야 합니다. 보안 AD 로그인에 IP 주소를 사용할 수 없습니다.
 
+
+NOTE: 를 사용하여 _server.keystore_and/or_server.trutstore_passwordslink:../config-admin/security-management.html["SecurityAdmin 을 클릭합니다"]를 변경한 경우 LDAP 인증서를 가져오기 전에 _SANscreen_service를 다시 시작하십시오.
+
 [NOTE]
 ====
 OnCommand Insight는 Microsoft Active Directory 서버 또는 Azure AD를 통해 LDAP 및 LDAPS를 지원합니다. 추가 LDAP 구현은 작동할 수 있지만 Insight에서 검증되지 않았습니다. 이 가이드의 절차에서는 Microsoft Active Directory 버전 2 또는 3 LDAP(Lightweight Directory Access Protocol)를 사용하고 있다고 가정합니다.

@@ -8697,4 +8697,8 @@
   <block id="90264ebb70e49e99bceb1035bdcc8307" category="sidebar">OnCommand Insight 설명서</block>
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="sidebar">Data Collector 지원 매트릭스</block>
   <block id="b0430548e2edafebde6bfdf10cf93cc6" category="sidebar">Insight 보안(SecurityAdmin 툴)</block>
+  <block id="4924cdf1992856713a11ebac184ceb81" category="inline-link-macro">SecurityAdmin 을 클릭합니다</block>
+  <block id="280dd41aa1500bfa7ef3a8678e713080" category="admonition">를 사용하여 _server.keystore_and/or_server.trutstore_passwords<block ref="5055fc7731112a1043a6604413e43539" category="inline-link-macro-rx"></block>를 변경한 경우 LDAP 인증서를 가져오기 전에 _SANscreen_service를 다시 시작하십시오.</block>
+  <block id="ec4ef90f124e4475455cd66560c26fde" category="admonition">를 사용하여 _server.keystore_and/or_server.trutstore_passwords<block ref="5055fc7731112a1043a6604413e43539" category="inline-link-macro-rx"></block>를 변경한 경우 LDAP 인증서를 가져오기 전에 _SANscreen_service를 다시 시작하십시오.</block>
+  <block id="a10389a2280f5287a5b5a38c80d3521f" category="admonition">LDAP 인증서를 가져올 때 를 사용하여 _server.keystore_and/or_server.trutstore_passwords<block ref="5055fc7731112a1043a6604413e43539" category="inline-link-macro-rx"></block>를 변경한 경우 LDAP 인증서를 가져오기 전에 _SANscreen_서비스를 다시 시작하십시오.</block>
 </blocks>

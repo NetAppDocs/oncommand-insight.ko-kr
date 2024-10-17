@@ -24,6 +24,9 @@ summary: '스마트 카드\(CAC\) 및 인증서 로그인을 지원하도록 OnC
 
 
 
+
+NOTE: 를 사용하여 _server.keystore_and/or_server.trutstore_passwordslink:../config-admin/security-management.html["SecurityAdmin 을 클릭합니다"]를 변경한 경우 LDAP 인증서를 가져오기 전에 _SANscreen_service를 다시 시작하십시오.
+
 [NOTE]
 ====
 최신 CAC 및 인증서 지침은 다음 기술 자료 문서를 참조하십시오(Support login required).
